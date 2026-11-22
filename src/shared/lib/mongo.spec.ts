@@ -1,5 +1,13 @@
+import { setServers } from 'node:dns';
+
 import mongoose from 'mongoose';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
+
+vi.mock('node:dns', () => {
+  const setServers = vi.fn();
+  return { setServers, default: { setServers } };
+});
+
 
 vi.mock('mongoose', async (importOriginal) => {
   const actual = await importOriginal<typeof mongoose>();
@@ -64,5 +72,21 @@ describe('MongoClientManager', () => {
     vi.mocked(mongoose.disconnect).mockResolvedValueOnce();
     await manager.disconnect();
     expect(mongoose.disconnect).not.toHaveBeenCalled();
+  });
+
+  it('pins DNS servers when MONGO_DNS_SERVERS is set', async () => {
+    vi.stubEnv('MONGO_DNS_SERVERS', '192.168.0.1, 8.8.8.8');
+    vi.mocked(mongoose.connect).mockResolvedValueOnce(mongoose);
+    await manager.connect();
+    expect(setServers).toHaveBeenCalledWith(['192.168.0.1', '8.8.8.8']);
+    vi.unstubAllEnvs();
+  });
+
+  it('leaves DNS alone when MONGO_DNS_SERVERS is unset', async () => {
+    vi.stubEnv('MONGO_DNS_SERVERS', '');
+    vi.mocked(mongoose.connect).mockResolvedValueOnce(mongoose);
+    await manager.connect();
+    expect(setServers).not.toHaveBeenCalled();
+    vi.unstubAllEnvs();
   });
 });

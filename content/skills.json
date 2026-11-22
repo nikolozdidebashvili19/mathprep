@@ -1,0 +1,832 @@
+{
+  "version": 1,
+  "weightSource": "exams",
+  "topics": [
+    {
+      "code": "N",
+      "nameKa": "რიცხვები და გამოთვლები",
+      "nameEn": "Numbers & arithmetic"
+    },
+    {
+      "code": "A",
+      "nameKa": "ალგებრა",
+      "nameEn": "Algebra"
+    },
+    {
+      "code": "S",
+      "nameKa": "მიმდევრობები",
+      "nameEn": "Sequences"
+    },
+    {
+      "code": "F",
+      "nameKa": "ფუნქციები",
+      "nameEn": "Functions"
+    },
+    {
+      "code": "E",
+      "nameKa": "ხარისხი და ლოგარითმი",
+      "nameEn": "Exponents & logarithms"
+    },
+    {
+      "code": "T",
+      "nameKa": "ტრიგონომეტრია",
+      "nameEn": "Trigonometry"
+    },
+    {
+      "code": "C",
+      "nameKa": "ანალიზის საწყისები",
+      "nameEn": "Intro to calculus"
+    },
+    {
+      "code": "G",
+      "nameKa": "პლანიმეტრია",
+      "nameEn": "Plane geometry"
+    },
+    {
+      "code": "V",
+      "nameKa": "კოორდინატები და ვექტორები",
+      "nameEn": "Coordinates & vectors"
+    },
+    {
+      "code": "K",
+      "nameKa": "სტერეომეტრია",
+      "nameEn": "Solid geometry"
+    },
+    {
+      "code": "P",
+      "nameKa": "ალბათობა და სტატისტიკა",
+      "nameEn": "Probability & statistics"
+    },
+    {
+      "code": "L",
+      "nameKa": "სიმრავლეები და ლოგიკა",
+      "nameEn": "Sets & logic"
+    }
+  ],
+  "skills": [
+    {
+      "code": "N1",
+      "topic": "N",
+      "nameKa": "ნატურალური რიცხვები, გაყოფადობა, უსგ და უსჯ",
+      "nameEn": "Divisibility, GCD & LCM",
+      "examWeight": 1.43,
+      "minPracticeMinutes": 90,
+      "prerequisites": []
+    },
+    {
+      "code": "N2",
+      "topic": "N",
+      "nameKa": "ჩვეულებრივი და ათწილადები",
+      "nameEn": "Fractions & decimals",
+      "examWeight": 1.36,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "N1"
+      ]
+    },
+    {
+      "code": "N3",
+      "topic": "N",
+      "nameKa": "პროცენტები",
+      "nameEn": "Percentages",
+      "examWeight": 1.72,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "N2"
+      ]
+    },
+    {
+      "code": "N4",
+      "topic": "N",
+      "nameKa": "შეფარდება და პროპორცია",
+      "nameEn": "Ratio & proportion",
+      "examWeight": 1.18,
+      "minPracticeMinutes": 60,
+      "prerequisites": [
+        "N2"
+      ]
+    },
+    {
+      "code": "N5",
+      "topic": "N",
+      "nameKa": "ხარისხი მთელი მაჩვენებლით",
+      "nameEn": "Integer exponents",
+      "examWeight": 0.13,
+      "minPracticeMinutes": 60,
+      "prerequisites": [
+        "N2"
+      ]
+    },
+    {
+      "code": "N6",
+      "topic": "N",
+      "nameKa": "ფესვები და ირაციონალური გამოსახულებები",
+      "nameEn": "Roots & irrational expressions",
+      "examWeight": 0.58,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "N5"
+      ]
+    },
+    {
+      "code": "N7",
+      "topic": "N",
+      "nameKa": "რიცხვითი წრფე და მოდული",
+      "nameEn": "Number line & absolute value",
+      "examWeight": 0.55,
+      "minPracticeMinutes": 60,
+      "prerequisites": [
+        "N2"
+      ]
+    },
+    {
+      "code": "N8",
+      "topic": "N",
+      "nameKa": "პოზიციური თვლის სისტემები (ორობითი და სხვ.)",
+      "nameEn": "Positional number systems (binary etc.)",
+      "examWeight": 0.18,
+      "minPracticeMinutes": 45,
+      "prerequisites": [
+        "N1"
+      ]
+    },
+    {
+      "code": "A1",
+      "topic": "A",
+      "nameKa": "ალგებრული გამოსახულებების გამარტივება",
+      "nameEn": "Simplifying algebraic expressions",
+      "examWeight": 0.75,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "N5"
+      ]
+    },
+    {
+      "code": "A2",
+      "topic": "A",
+      "nameKa": "მამრავლებად დაშლა, შემოკლებული გამრავლების ფორმულები",
+      "nameEn": "Factoring & special products",
+      "examWeight": 0.71,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "A1"
+      ]
+    },
+    {
+      "code": "A3",
+      "topic": "A",
+      "nameKa": "რაციონალური გამოსახულებები",
+      "nameEn": "Rational expressions",
+      "examWeight": 0.12,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "A2"
+      ]
+    },
+    {
+      "code": "A4",
+      "topic": "A",
+      "nameKa": "წრფივი განტოლებები",
+      "nameEn": "Linear equations",
+      "examWeight": 2.61,
+      "minPracticeMinutes": 60,
+      "prerequisites": [
+        "A1"
+      ]
+    },
+    {
+      "code": "A5",
+      "topic": "A",
+      "nameKa": "წრფივი უტოლობები და მათი სისტემები",
+      "nameEn": "Linear inequalities & systems",
+      "examWeight": 1.09,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "A4",
+        "N7"
+      ]
+    },
+    {
+      "code": "A6",
+      "topic": "A",
+      "nameKa": "წრფივ განტოლებათა სისტემები",
+      "nameEn": "Systems of linear equations",
+      "examWeight": 1.01,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "A4"
+      ]
+    },
+    {
+      "code": "A7",
+      "topic": "A",
+      "nameKa": "კვადრატული განტოლებები, ვიეტის თეორემა",
+      "nameEn": "Quadratic equations, Vieta",
+      "examWeight": 1.25,
+      "minPracticeMinutes": 150,
+      "prerequisites": [
+        "A2",
+        "N6"
+      ]
+    },
+    {
+      "code": "A8",
+      "topic": "A",
+      "nameKa": "კვადრატული უტოლობები, ინტერვალთა მეთოდი",
+      "nameEn": "Quadratic inequalities, interval method",
+      "examWeight": 0.67,
+      "minPracticeMinutes": 150,
+      "prerequisites": [
+        "A7",
+        "A5"
+      ]
+    },
+    {
+      "code": "A9",
+      "topic": "A",
+      "nameKa": "რაციონალური (წილადური) განტოლებები",
+      "nameEn": "Rational equations",
+      "examWeight": 0.2,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "A3",
+        "A7"
+      ]
+    },
+    {
+      "code": "A10",
+      "topic": "A",
+      "nameKa": "მოდულიანი განტოლებები და უტოლობები",
+      "nameEn": "Absolute-value equations & inequalities",
+      "examWeight": 0.35,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "N7",
+        "A5"
+      ]
+    },
+    {
+      "code": "A11",
+      "topic": "A",
+      "nameKa": "ირაციონალური განტოლებები",
+      "nameEn": "Irrational (radical) equations",
+      "examWeight": 0.1,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "N6",
+        "A7"
+      ]
+    },
+    {
+      "code": "A12",
+      "topic": "A",
+      "nameKa": "ტექსტური ამოცანები (მოძრაობა, სამუშაო, ნარევები)",
+      "nameEn": "Word problems (motion, work, mixtures)",
+      "examWeight": 2.35,
+      "minPracticeMinutes": 180,
+      "prerequisites": [
+        "A4",
+        "A6",
+        "N3",
+        "N4"
+      ]
+    },
+    {
+      "code": "S1",
+      "topic": "S",
+      "nameKa": "არითმეტიკული პროგრესია",
+      "nameEn": "Arithmetic progression",
+      "examWeight": 1.05,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "A4"
+      ]
+    },
+    {
+      "code": "S2",
+      "topic": "S",
+      "nameKa": "გეომეტრიული პროგრესია",
+      "nameEn": "Geometric progression",
+      "examWeight": 1.53,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "A4",
+        "N5"
+      ]
+    },
+    {
+      "code": "F1",
+      "topic": "F",
+      "nameKa": "ფუნქცია, განსაზღვრის არე და მნიშვნელობათა სიმრავლე",
+      "nameEn": "Function, domain & range",
+      "examWeight": 1.05,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "A5"
+      ]
+    },
+    {
+      "code": "F2",
+      "topic": "F",
+      "nameKa": "ფუნქციის გრაფიკი და თვისებები",
+      "nameEn": "Graphs & properties of functions",
+      "examWeight": 0.61,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "F1"
+      ]
+    },
+    {
+      "code": "F3",
+      "topic": "F",
+      "nameKa": "წრფივი ფუნქცია",
+      "nameEn": "Linear function",
+      "examWeight": 0.55,
+      "minPracticeMinutes": 60,
+      "prerequisites": [
+        "F1",
+        "A4"
+      ]
+    },
+    {
+      "code": "F4",
+      "topic": "F",
+      "nameKa": "კვადრატული ფუნქცია, პარაბოლა",
+      "nameEn": "Quadratic function, parabola",
+      "examWeight": 1.26,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "F2",
+        "A7"
+      ]
+    },
+    {
+      "code": "F5",
+      "topic": "F",
+      "nameKa": "ხარისხოვანი ფუნქცია, უკუპროპორციულობა",
+      "nameEn": "Power functions, inverse proportion",
+      "examWeight": 0.1,
+      "minPracticeMinutes": 60,
+      "prerequisites": [
+        "F2",
+        "N5"
+      ]
+    },
+    {
+      "code": "F6",
+      "topic": "F",
+      "nameKa": "გრაფიკის გარდაქმნები",
+      "nameEn": "Graph transformations",
+      "examWeight": 0.23,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "F2"
+      ]
+    },
+    {
+      "code": "E1",
+      "topic": "E",
+      "nameKa": "ხარისხი რაციონალური მაჩვენებლით",
+      "nameEn": "Rational exponents",
+      "examWeight": 0.37,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "N6"
+      ]
+    },
+    {
+      "code": "E2",
+      "topic": "E",
+      "nameKa": "მაჩვენებლიანი ფუნქცია",
+      "nameEn": "Exponential function",
+      "examWeight": 0.21,
+      "minPracticeMinutes": 60,
+      "prerequisites": [
+        "E1",
+        "F2"
+      ]
+    },
+    {
+      "code": "E3",
+      "topic": "E",
+      "nameKa": "მაჩვენებლიანი განტოლებები და უტოლობები",
+      "nameEn": "Exponential equations & inequalities",
+      "examWeight": 0.43,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "E2",
+        "A7"
+      ]
+    },
+    {
+      "code": "E4",
+      "topic": "E",
+      "nameKa": "ლოგარითმი და მისი თვისებები",
+      "nameEn": "Logarithms & their properties",
+      "examWeight": 1.62,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "E1"
+      ]
+    },
+    {
+      "code": "E5",
+      "topic": "E",
+      "nameKa": "ლოგარითმული ფუნქცია, განტოლებები და უტოლობები",
+      "nameEn": "Logarithmic functions, equations & inequalities",
+      "examWeight": 0.45,
+      "minPracticeMinutes": 150,
+      "prerequisites": [
+        "E4",
+        "E2"
+      ]
+    },
+    {
+      "code": "T1",
+      "topic": "T",
+      "nameKa": "ტრიგონომეტრიული ფარდობები მართკუთხა სამკუთხედში",
+      "nameEn": "Trig ratios in a right triangle",
+      "examWeight": 1.29,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "G4"
+      ]
+    },
+    {
+      "code": "T2",
+      "topic": "T",
+      "nameKa": "რადიანული ზომა, ერთეულოვანი წრეწირი",
+      "nameEn": "Radians & the unit circle",
+      "examWeight": 0.29,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "T1"
+      ]
+    },
+    {
+      "code": "T3",
+      "topic": "T",
+      "nameKa": "ტრიგონომეტრიული იგივეობები, დაყვანის ფორმულები",
+      "nameEn": "Trig identities & reduction formulas",
+      "examWeight": 0.39,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "T2",
+        "A1"
+      ]
+    },
+    {
+      "code": "T4",
+      "topic": "T",
+      "nameKa": "შეკრებისა და ორმაგი კუთხის ფორმულები",
+      "nameEn": "Sum & double-angle formulas",
+      "examWeight": 0.17,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "T3"
+      ]
+    },
+    {
+      "code": "T5",
+      "topic": "T",
+      "nameKa": "ტრიგონომეტრიული ფუნქციები და გრაფიკები",
+      "nameEn": "Trig functions & graphs",
+      "examWeight": 0.96,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "T2",
+        "F2"
+      ]
+    },
+    {
+      "code": "T6",
+      "topic": "T",
+      "nameKa": "ტრიგონომეტრიული განტოლებები",
+      "nameEn": "Trig equations",
+      "examWeight": 0.23,
+      "minPracticeMinutes": 150,
+      "prerequisites": [
+        "T3",
+        "A7"
+      ]
+    },
+    {
+      "code": "C1",
+      "topic": "C",
+      "nameKa": "წარმოებული და გაწარმოების წესები",
+      "nameEn": "Derivative & differentiation rules",
+      "examWeight": 0.1,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "F2",
+        "E1"
+      ]
+    },
+    {
+      "code": "C2",
+      "topic": "C",
+      "nameKa": "მხები, მონოტონურობა, ექსტრემუმები",
+      "nameEn": "Tangent, monotonicity, extrema",
+      "examWeight": 0.1,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "C1",
+        "F3"
+      ]
+    },
+    {
+      "code": "C3",
+      "topic": "C",
+      "nameKa": "უდიდესი და უმცირესი მნიშვნელობა, ოპტიმიზაცია",
+      "nameEn": "Max/min values, optimisation",
+      "examWeight": 1.12,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "C2"
+      ]
+    },
+    {
+      "code": "G1",
+      "topic": "G",
+      "nameKa": "კუთხეები და პარალელური წრფეები",
+      "nameEn": "Angles & parallel lines",
+      "examWeight": 0.5,
+      "minPracticeMinutes": 60,
+      "prerequisites": []
+    },
+    {
+      "code": "G2",
+      "topic": "G",
+      "nameKa": "სამკუთხედის თვისებები, ტოლობის ნიშნები",
+      "nameEn": "Triangle properties & congruence",
+      "examWeight": 1.12,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "G1"
+      ]
+    },
+    {
+      "code": "G3",
+      "topic": "G",
+      "nameKa": "მსგავსი სამკუთხედები, თალესის თეორემა",
+      "nameEn": "Similar triangles, Thales",
+      "examWeight": 1.12,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "G2",
+        "N4"
+      ]
+    },
+    {
+      "code": "G4",
+      "topic": "G",
+      "nameKa": "პითაგორას თეორემა",
+      "nameEn": "Pythagorean theorem",
+      "examWeight": 1.05,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "G2",
+        "N6"
+      ]
+    },
+    {
+      "code": "G5",
+      "topic": "G",
+      "nameKa": "წრეწირი: კუთხეები, ქორდები, მხებები",
+      "nameEn": "Circle: angles, chords, tangents",
+      "examWeight": 0.99,
+      "minPracticeMinutes": 150,
+      "prerequisites": [
+        "G1",
+        "G2"
+      ]
+    },
+    {
+      "code": "G6",
+      "topic": "G",
+      "nameKa": "ოთხკუთხედები: პარალელოგრამი, რომბი, ტრაპეცია",
+      "nameEn": "Quadrilaterals",
+      "examWeight": 1.11,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "G2"
+      ]
+    },
+    {
+      "code": "G7",
+      "topic": "G",
+      "nameKa": "მრავალკუთხედების ფართობები",
+      "nameEn": "Areas of polygons",
+      "examWeight": 1.88,
+      "minPracticeMinutes": 150,
+      "prerequisites": [
+        "G6",
+        "G4"
+      ]
+    },
+    {
+      "code": "G8",
+      "topic": "G",
+      "nameKa": "წრეწირის სიგრძე, წრისა და სექტორის ფართობი",
+      "nameEn": "Circumference, circle & sector area",
+      "examWeight": 1.04,
+      "minPracticeMinutes": 60,
+      "prerequisites": [
+        "G5"
+      ]
+    },
+    {
+      "code": "G9",
+      "topic": "G",
+      "nameKa": "სინუსებისა და კოსინუსების თეორემები",
+      "nameEn": "Laws of sines & cosines",
+      "examWeight": 0.49,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "T1",
+        "G4"
+      ]
+    },
+    {
+      "code": "G10",
+      "topic": "G",
+      "nameKa": "ჩახაზული და შემოხაზული მრავალკუთხედები",
+      "nameEn": "Inscribed & circumscribed polygons",
+      "examWeight": 0.44,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "G5",
+        "G7"
+      ]
+    },
+    {
+      "code": "V1",
+      "topic": "V",
+      "nameKa": "კოორდინატთა სიბრტყე: მანძილი, შუაწერტილი",
+      "nameEn": "Coordinate plane: distance, midpoint",
+      "examWeight": 1.16,
+      "minPracticeMinutes": 60,
+      "prerequisites": [
+        "G4"
+      ]
+    },
+    {
+      "code": "V2",
+      "topic": "V",
+      "nameKa": "წრფისა და წრეწირის განტოლება",
+      "nameEn": "Equations of a line & circle",
+      "examWeight": 0.57,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "V1",
+        "F3"
+      ]
+    },
+    {
+      "code": "V3",
+      "topic": "V",
+      "nameKa": "ვექტორები, სკალარული ნამრავლი",
+      "nameEn": "Vectors & dot product",
+      "examWeight": 1.39,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "V1",
+        "T1"
+      ]
+    },
+    {
+      "code": "V4",
+      "topic": "V",
+      "nameKa": "გეომეტრიული გარდაქმნები: სიმეტრია, პარალელური გადატანა, მობრუნება, ჰომოთეტია",
+      "nameEn": "Geometric transformations: symmetry, translation, rotation, homothety",
+      "examWeight": 0.67,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "V1",
+        "V3"
+      ]
+    },
+    {
+      "code": "K1",
+      "topic": "K",
+      "nameKa": "წრფეები და სიბრტყეები სივრცეში",
+      "nameEn": "Lines & planes in space",
+      "examWeight": 0.5,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "G1"
+      ]
+    },
+    {
+      "code": "K2",
+      "topic": "K",
+      "nameKa": "პრიზმა და პარალელეპიპედი",
+      "nameEn": "Prisms & parallelepipeds",
+      "examWeight": 0.72,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "K1",
+        "G7"
+      ]
+    },
+    {
+      "code": "K3",
+      "topic": "K",
+      "nameKa": "პირამიდა",
+      "nameEn": "Pyramids",
+      "examWeight": 1.08,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "K2",
+        "G4"
+      ]
+    },
+    {
+      "code": "K4",
+      "topic": "K",
+      "nameKa": "ცილინდრი, კონუსი, სფერო",
+      "nameEn": "Cylinder, cone, sphere",
+      "examWeight": 0.76,
+      "minPracticeMinutes": 120,
+      "prerequisites": [
+        "K1",
+        "G8"
+      ]
+    },
+    {
+      "code": "P1",
+      "topic": "P",
+      "nameKa": "გადათვლის ძირითადი პრინციპი",
+      "nameEn": "Counting principle",
+      "examWeight": 0.48,
+      "minPracticeMinutes": 60,
+      "prerequisites": []
+    },
+    {
+      "code": "P2",
+      "topic": "P",
+      "nameKa": "გადანაცვლებები და ჯუფთებები",
+      "nameEn": "Permutations & combinations",
+      "examWeight": 0.54,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "P1"
+      ]
+    },
+    {
+      "code": "P3",
+      "topic": "P",
+      "nameKa": "ალბათობის კლასიკური განმარტება",
+      "nameEn": "Classical probability",
+      "examWeight": 0.87,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "P1",
+        "N2"
+      ]
+    },
+    {
+      "code": "P4",
+      "topic": "P",
+      "nameKa": "ხდომილებათა ალბათობები: დამოუკიდებელი, საწინააღმდეგო",
+      "nameEn": "Combined events: independent, complementary",
+      "examWeight": 0.34,
+      "minPracticeMinutes": 90,
+      "prerequisites": [
+        "P3"
+      ]
+    },
+    {
+      "code": "P5",
+      "topic": "P",
+      "nameKa": "საშუალო, მედიანა, მოდა",
+      "nameEn": "Mean, median, mode",
+      "examWeight": 0.7,
+      "minPracticeMinutes": 60,
+      "prerequisites": [
+        "N2"
+      ]
+    },
+    {
+      "code": "P6",
+      "topic": "P",
+      "nameKa": "მონაცემთა წარმოდგენა: ცხრილები, დიაგრამები",
+      "nameEn": "Data representation: tables & charts",
+      "examWeight": 0.57,
+      "minPracticeMinutes": 60,
+      "prerequisites": [
+        "P5",
+        "N3"
+      ]
+    },
+    {
+      "code": "L1",
+      "topic": "L",
+      "nameKa": "სიმრავლეები, ოპერაციები, ვენის დიაგრამები",
+      "nameEn": "Sets, operations, Venn diagrams",
+      "examWeight": 1.02,
+      "minPracticeMinutes": 60,
+      "prerequisites": []
+    }
+  ]
+}

@@ -1,63 +1,104 @@
-export type DashboardMetric = {
+export const DASHBOARD_COPY = {
+  greeting: 'გამარჯობა',
+  fallbackName: 'მოსწავლე',
+  startBubble: 'დაწყება',
+  openLabel: 'გახსნა',
+  streakLabel: 'დღე ზედიზედ',
+  xpLabel: 'XP სულ',
+  dailyGoalTitle: 'დღიური მიზანი',
+  dailyGoalUnit: 'წთ',
+  statsTitle: 'შენი სტატისტიკა',
+};
+
+export type JourneyStepStatus = 'done' | 'current' | 'locked';
+
+export const JOURNEY_STATUS_LABELS: Record<JourneyStepStatus, string> = {
+  done: 'დასრულებულია',
+  current: 'მიმდინარე',
+  locked: 'ჩაკეტილია',
+};
+
+export type JourneyStep = {
+  key: string;
   title: string;
-  value: string;
-  delta: string;
-  trend: 'up' | 'down' | 'flat';
-  icon: 'activity' | 'clock' | 'trending-up' | 'users';
+  description: string;
+  icon: 'clipboard' | 'map' | 'route' | 'calendar' | 'trophy';
+  href: string;
+  /** Green banner on the dashboard while this is the current step. */
+  banner: { label: string; title: string; description: string; cta: string };
 };
 
-export const DASHBOARD_METRICS: DashboardMetric[] = [
+export const JOURNEY_STEPS: JourneyStep[] = [
   {
-    title: 'Total users',
-    value: '1,234',
-    delta: '+12%',
-    trend: 'up',
-    icon: 'users',
+    key: 'diagnostic',
+    title: 'დიაგნოსტიკა',
+    description: 'სწრაფი შემოწმება ან სრული გამოცდა',
+    icon: 'clipboard',
+    href: '/diagnostic',
+    banner: {
+      label: 'ნაწილი 1',
+      title: 'დიაგნოსტიკა და ცოდნის რუკა',
+      description: 'გაიარე სწრაფი შემოწმება (12 კითხვა), და შენს გზას შენზე მოვარგებთ.',
+      cta: 'დიაგნოსტიკის დაწყება',
+    },
   },
   {
-    title: 'Active sessions',
-    value: '56',
-    delta: '+4',
-    trend: 'up',
-    icon: 'activity',
+    key: 'report',
+    title: 'ცოდნის რუკა',
+    description: 'სუსტი უნარები და შეცდომების ანალიზი',
+    icon: 'map',
+    href: '/report',
+    banner: {
+      label: 'ნაწილი 1',
+      title: 'ცოდნის რუკა',
+      description: 'ნახე, რა იცი უკვე და სად გიჭირს.',
+      cta: 'ცოდნის რუკის ნახვა',
+    },
   },
   {
-    title: 'Growth rate',
-    value: '8.2%',
-    delta: '+1.1%',
-    trend: 'up',
-    icon: 'trending-up',
+    key: 'course',
+    title: 'კურსის აწყობა',
+    description: 'ხანგრძლივობა და დღიური დრო',
+    icon: 'route',
+    href: '/course',
+    banner: {
+      label: 'ნაწილი 2',
+      title: 'შენი კურსი',
+      description: 'დიაგნოსტიკა დასრულდა. ავაწყოთ კურსი შენი სუსტი უნარებიდან.',
+      cta: 'კურსის აწყობა',
+    },
   },
   {
-    title: 'Avg. session',
-    value: '24m',
-    delta: '-2m',
-    trend: 'down',
-    icon: 'clock',
+    key: 'weekly',
+    title: 'კურსი და ყოველკვირეული შემოწმება',
+    description: 'დღიური გეგმა; ყოველ მე-7 დღეს შემოწმება',
+    icon: 'calendar',
+    href: '/course',
+    banner: {
+      label: 'ნაწილი 3',
+      title: 'შენი კურსი მიმდინარეობს',
+      description: 'დღიური გეგმა მზადაა. ყოველ მე-7 დღეს შემოწმება და გეგმის განახლება.',
+      cta: 'დღის გეგმა',
+    },
+  },
+  {
+    key: 'mock',
+    title: 'საბოლოო საცდელი გამოცდა',
+    description: 'შედეგები: მანამდე და შემდეგ',
+    icon: 'trophy',
+    href: '/diagnostic',
+    banner: {
+      label: 'ნაწილი 4',
+      title: 'საბოლოო საცდელი გამოცდა',
+      description: 'სრული გამოცდა და შედარება დიაგნოსტიკასთან.',
+      cta: 'გამოცდის დაწყება',
+    },
   },
 ];
 
-export type DashboardActivity = {
-  title: string;
-  detail: string;
-  time: string;
+export type LearningStats = {
+  streakDays: number;
+  xp: number;
+  minutesToday: number;
+  dailyGoalMinutes: number;
 };
-
-export const DASHBOARD_ACTIVITY: DashboardActivity[] = [
-  { title: 'New user registered', detail: 'jordan@acme.co', time: '2m ago' },
-  { title: 'Subscription upgraded', detail: 'Pro · annual', time: '40m ago' },
-  { title: 'API key created', detail: 'production', time: '1h ago' },
-  { title: 'Password reset', detail: 'sam@acme.co', time: '3h ago' },
-];
-
-export type DashboardChannel = {
-  label: string;
-  share: number;
-};
-
-export const DASHBOARD_CHANNELS: DashboardChannel[] = [
-  { label: 'Direct', share: 48 },
-  { label: 'Organic', share: 27 },
-  { label: 'Referral', share: 16 },
-  { label: 'Social', share: 9 },
-];

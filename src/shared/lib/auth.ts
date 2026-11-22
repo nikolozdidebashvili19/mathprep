@@ -70,6 +70,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           token.name = dbUser.name;
           token.avatar = dbUser.avatar ?? (token.avatar as string | null | undefined);
           token.role = (dbUser.role as 'admin' | 'user') ?? 'user';
+          token.grade = dbUser.grade ?? null;
         } else {
           token.role = 'user';
         }
@@ -84,12 +85,14 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           id: string;
           role: 'admin' | 'user';
           avatar?: string | null;
+          grade: number | null;
         };
         user.id = token.id as string;
         user.email = token.email as string;
         user.name = token.name as string;
         user.avatar = (token.avatar as string | null | undefined) ?? null;
         user.role = (token.role as 'admin' | 'user' | undefined) ?? 'user';
+        user.grade = (token.grade as number | null | undefined) ?? null;
       }
       return session;
     },

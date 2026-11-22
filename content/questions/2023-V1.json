@@ -1,0 +1,1432 @@
+[
+  {
+    "code": "2023-V1-Q01",
+    "examId": "2023-V1",
+    "number": 1,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$1\\frac{4}{9} - 0,5 =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{1}{18}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{17}{18}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{19}{18}$"
+      },
+      {
+        "key": "დ",
+        "text": "$0,9$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q02",
+    "examId": "2023-V1",
+    "number": 2,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $A \\cup B$, თუ $A = \\{-3; -12; 0; 1; 4; 7\\}$ და $B = \\{-12; -1; 0; 5; 7\\}$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\{-3; 1; 4\\}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\{-12; 0; 7\\}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\{-12; -3; -1; 0; 1; 5; 7\\}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\{-12; -3; -1; 0; 1; 4; 5; 7\\}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q03",
+    "examId": "2023-V1",
+    "number": 3,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რას უდრის $74$-ის ყველა მარტივი გამყოფის ჯამი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$56$"
+      },
+      {
+        "key": "ბ",
+        "text": "$40$"
+      },
+      {
+        "key": "გ",
+        "text": "$39$"
+      },
+      {
+        "key": "დ",
+        "text": "$38$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q04",
+    "examId": "2023-V1",
+    "number": 4,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABC$ სამკუთხედში $M$ და $N$ წერტილები მდებარეობს, შესაბამისად, $AB$ და $BC$ გვერდებზე (იხ. სურათი). იპოვეთ $\\angle BAC$ კუთხის სიდიდე, თუ $MN \\parallel AC$, $\\angle ABC = 67^\\circ$ და $\\angle MNC = 122^\\circ$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$30^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$45^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$55^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$60^\\circ$"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2023-V1/q04.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q05",
+    "examId": "2023-V1",
+    "number": 5,
+    "sourcePage": 6,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რომბის დიდი დიაგონალი $10$ სმ-ის, ხოლო მცირე დიაგონალი $4$ სმ-ის ტოლია. იპოვეთ რომბის პერიმეტრი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$14$ სმ"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\sqrt{29}$ სმ"
+      },
+      {
+        "key": "გ",
+        "text": "$4\\sqrt{21}$ სმ"
+      },
+      {
+        "key": "დ",
+        "text": "$4\\sqrt{29}$ სმ"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q06",
+    "examId": "2023-V1",
+    "number": 6,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $[-2; 3)$ და $(-\\sqrt{2}; \\sqrt{11}]$ შუალედების თანაკვეთა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$[-\\sqrt{2}; 11]$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-\\sqrt{2}; 3]$"
+      },
+      {
+        "key": "გ",
+        "text": "$[-\\sqrt{2}; 3)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(-\\sqrt{2}; 3)$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q07",
+    "examId": "2023-V1",
+    "number": 7,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $a$-ს მნიშვნელობა, თუ $(2p - 3q)^3 = 8p^3 - 36p^2q - apq^2 - 27q^3$ ტოლობა სამართლიანია ნებისმიერი $p$ და $q$ ნამდვილი რიცხვებისთვის.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-54$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-18$"
+      },
+      {
+        "key": "გ",
+        "text": "$18$"
+      },
+      {
+        "key": "დ",
+        "text": "$54$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q08",
+    "examId": "2023-V1",
+    "number": 8,
+    "sourcePage": 9,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "თو $m$ და $n$ რიცხვები აკმაყოფილებს $-2 < m \\le 7$ და $-8 \\le n < 4$ უტოლობებს, მაშინ $m - n$ გამოსულების მნიშვნელობა აუცილებლად ეკუთვნის შუალედს",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(3; 6)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-6; 15]$"
+      },
+      {
+        "key": "გ",
+        "text": "$(-6; 15)$"
+      },
+      {
+        "key": "დ",
+        "text": "$[3; 6]$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "There is a slight typo in the original text 'გამოსულების' instead of 'გამოთქმის' or 'გამოსახულების', but transcribed exactly as printed.",
+      "problems": [
+        "foreign letters in text: و"
+      ]
+    }
+  },
+  {
+    "code": "2023-V1-Q09",
+    "examId": "2023-V1",
+    "number": 9,
+    "sourcePage": 10,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "საკოორდინატო ბადით დაფარულ სიბრტყეზე მოცემულია $[-4; 2]$ შუალედზე განსაზღვრული $y = f(x)$ ფუნქციის გრაფიკი (იხ. სურათი). ქვემოთ ჩამოთვლილთაგან რომელ შუალედშია მოთავსებული ამ ფუნქციის მნიშვნელობათა სიმრავლე?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$[-4; 2]$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-5; 3)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(-4; 1)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(0; +\\infty)$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [
+      "content/images/2023-V1/q09.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q10",
+    "examId": "2023-V1",
+    "number": 10,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$x^2 - (a + 4)x + 2a = 0$ განტოლების ფესვების ჯამი $3$-ის ტოლია. რას უდრის ამ ფესვების ნამრავლი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-1$"
+      },
+      {
+        "key": "გ",
+        "text": "$1$"
+      },
+      {
+        "key": "დ",
+        "text": "$2$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q11",
+    "examId": "2023-V1",
+    "number": 11,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "წესიერი ხუთკუთხედის ერთი წვეროდან გამоმავალ ორ დიაგონალს შორის კუთხე ტოლია",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$12^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$36^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$24^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$30^\\circ$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: о"
+      ]
+    }
+  },
+  {
+    "code": "2023-V1-Q12",
+    "examId": "2023-V1",
+    "number": 12,
+    "sourcePage": 13,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "კლასში გოგონათა რაოდენობა $4$-ით მეტია ბიჭების რაოდენობაზე. ამ კლასის ბიჭებისა და გოგონების რაოდენობების გამოსახველ წრიულ დიაგრამაზე გოგონების შესაბამისი სექტორის ცენტრალური კუთხე $48^\\circ$-ით მეტია ბიჭების შესაბამისი სექტორის ცენტრალურ კუთხეზე. რამდენი მოსწავლე სწავლობს ამ კლასში?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$24$"
+      },
+      {
+        "key": "ბ",
+        "text": "$25$"
+      },
+      {
+        "key": "გ",
+        "text": "$28$"
+      },
+      {
+        "key": "დ",
+        "text": "$30$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q13",
+    "examId": "2023-V1",
+    "number": 13,
+    "sourcePage": 14,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "წესიერი ოთხკუთხა პირამიდის ფუძის გვერდის სიგრძე $2$ მეტრი, ხოლო პირამიდის სიმაღლე $6$ მეტრია. იპოვეთ პირამიდის მოცულობა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$6$ $\\text{მ}^3$"
+      },
+      {
+        "key": "ბ",
+        "text": "$8$ $\\text{მ}^3$"
+      },
+      {
+        "key": "გ",
+        "text": "$12$ $\\text{მ}^3$"
+      },
+      {
+        "key": "დ",
+        "text": "$24$ $\\text{მ}^3$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q14",
+    "examId": "2023-V1",
+    "number": 14,
+    "sourcePage": 15,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "საკოორდინატო სიბრტყეზე $\\vec{m}(a; b)$ ვექტორით განსაზღვრული პარალელური გადატანით $M(2; -3)$ წერტილი გადადის $P(-1; 4)$ წერტილში. რას უდრის $a + b$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$7$"
+      },
+      {
+        "key": "ბ",
+        "text": "$4$"
+      },
+      {
+        "key": "გ",
+        "text": "$2$"
+      },
+      {
+        "key": "დ",
+        "text": "$-2$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q15",
+    "examId": "2023-V1",
+    "number": 15,
+    "sourcePage": 16,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "2 ქალისა და 6 მამაკაცისაგან შედგენილი ჯგუფიდან უნდა შეირჩეს 3 წევრიანი დელეგაცია. რამდენი განსხვავებული გზით შეიძლება დელეგაციის შედგენა ისე, რომ მის წევრებს შორის ერთი ქალი მაინც იყოს.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$21$"
+      },
+      {
+        "key": "ბ",
+        "text": "$24$"
+      },
+      {
+        "key": "გ",
+        "text": "$30$"
+      },
+      {
+        "key": "დ",
+        "text": "$36$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q16",
+    "examId": "2023-V1",
+    "number": 16,
+    "sourcePage": 17,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$x, y, z, t$ დადებითი რიცხვები მოცემული თანმიმდევრობით ქმნის არითმეტიკულ პროგრესიას, რომლის სხვაობა განსხვავდება ნულისაგან. გამოთვალეთ $\\frac{t^2 - x^2}{z^2 - y^2}$ გამოსულხების მნიშვნელობა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$4$"
+      },
+      {
+        "key": "ბ",
+        "text": "$3$"
+      },
+      {
+        "key": "გ",
+        "text": "$2$"
+      },
+      {
+        "key": "დ",
+        "text": "მოცემული ინფორმაცია საკმარისი არ არის ამ გამოსულხების მნიშვნელობის გამოსათვლელად."
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "There is a slight typo in the question text image ('გამოსულხების' instead of 'გამოსახულების', but transcribed exactly as printed).",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q17",
+    "examId": "2023-V1",
+    "number": 17,
+    "sourcePage": 18,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ორი ნატურალური რიცხვის ნამრავლი 700-ის ტოლია. ქვემოთ მოყვანილი გამონათქვამებიდან რომელია აუცილებლად ჭეშმარიტი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "ამ რიცხვების ჯამი არ იყوفა 7-ზე;"
+      },
+      {
+        "key": "ბ",
+        "text": "ამ რიცხვების ჯამი არ იყوفა 5-ზე;"
+      },
+      {
+        "key": "გ",
+        "text": "ამ რიცხვების ჯამი არ იყوفა 2-ზე;"
+      },
+      {
+        "key": "დ",
+        "text": "ამ რიცხვების ჯამი არ იყوفა 10-ზე."
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "Typo in standard Georgian font rendering inside options, transcribed as printed (იყوفა/იყოფა).",
+      "problems": [
+        "foreign letters in text: وف"
+      ]
+    }
+  },
+  {
+    "code": "2023-V1-Q18",
+    "examId": "2023-V1",
+    "number": 18,
+    "sourcePage": 19,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რიცხვით ღერძზე აღებულია $A, B$ და $C$ წერტილები ისე, რომ $C$ წერტილი მდებარეობს $A$ და $B$ წერტილებს შორის და $AC : CB = 2 : 3$. რას უდრის იმის ალბათობა, რომ $AB$ მონაკვეთიდან შემთხვევით არჩეული წერტილი მოხვდება $CB$ მონაკვეთის შუაწერტილსა და $C$ წერტილს შორის?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{1}{10}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{3}{10}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{3}{5}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q19",
+    "examId": "2023-V1",
+    "number": 19,
+    "sourcePage": 20,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $a$ პარამეტრის ყველა იმ მნიშვნელობათა სიმრავლე, რომლისათვისაც $f(x)=\\log_{5a-2}x$ ფორმულით განსაზღვრული ფუნქცია არის ზრდადი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(0,4; 0,6)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-\\infty; \\frac{3}{5})$"
+      },
+      {
+        "key": "გ",
+        "text": "$(1; +\\infty)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(\\frac{3}{5}; +\\infty)$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q20",
+    "examId": "2023-V1",
+    "number": 20,
+    "sourcePage": 21,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABC$ სამკუთხედში $AB = 3$ სმ, $\\angle A = 75^\\circ$ და $\\angle B = 45^\\circ$. იპოვეთ $AC$ გვერდის სიგრძე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{2\\sqrt{6}}{3}$ სმ"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{2\\sqrt{3}}{3}$ სმ"
+      },
+      {
+        "key": "გ",
+        "text": "$3\\sqrt{2}$ სმ"
+      },
+      {
+        "key": "დ",
+        "text": "$\\sqrt{6}$ სმ"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q21",
+    "examId": "2023-V1",
+    "number": 21,
+    "sourcePage": 22,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "უჯრედებიან ფურცელზე, რომლის თითოეული უჯრედი $1$ ერთეულის ტოლი გვერის მქონე კვადრატს წარმოადგენს, გამოსახულია $\\vec{a}$ და $\\vec{b}$ ვექტორები, რომელთა სათავე და ბოლო წერტილები ემთხვევა უჯრედების წერტილებს (იხ. სურათი). სურათზე დაყრდნობით იპოვეთ $\\vec{a} \\cdot \\vec{b}$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-9$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-3$"
+      },
+      {
+        "key": "გ",
+        "text": "$3$"
+      },
+      {
+        "key": "დ",
+        "text": "$9$"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2023-V1/q21.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q22",
+    "examId": "2023-V1",
+    "number": 22,
+    "sourcePage": 23,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ყუთში მოთავსებულია ერთი ზომისა და მოდელის $2$ წყვილი ყავისფერი და $3$ წყვილი შავი ფეხსაცმელი (ფეხსაცმლის წყვილი შედგება მარცხენა და მარჯვენა ფეხსაცმლისგან). ნიკა შემთხვევით იღებს ორ ფეხსაცმელს. იპოვეთ ალბათობა იმისა, რომ შერჩეული ფეხსაცმლები შექმნის ერთი ფერის წყვილს.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{1}{9}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{1}{6}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{13}{45}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{14}{45}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q23",
+    "examId": "2023-V1",
+    "number": 23,
+    "sourcePage": 24,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$f(x) = \\sqrt{\\frac{x - 3}{x + 5}}$ ფუნქციის განსაზღვრის არეა",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-\\infty; -5) \\cup [3; +\\infty)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-\\infty; -3) \\cup [5; +\\infty)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(-5; 3]$"
+      },
+      {
+        "key": "დ",
+        "text": "$(-3; 5]$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q24",
+    "examId": "2023-V1",
+    "number": 24,
+    "sourcePage": 25,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ქვემოთ ჩამოთვლილ უტოლობათა სისტემებიდან ერთ-ერთის ამოხსნათა სიმრავლე გამოხატულია $Oxy$ საკოორდინატო სიბრტყეზე მუქი ფერით (იხ. სურათი). იპოვეთ ეს უტოლობათა სისტემა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "\\(\\begin{cases} 4x+5y \\ge 20 \\\\ y \\ge 0 \\end{cases}\\)"
+      },
+      {
+        "key": "ბ",
+        "text": "\\(\\begin{cases} 4x+5y \\le 20 \\\\ x \\ge 0 \\end{cases}\\)"
+      },
+      {
+        "key": "გ",
+        "text": "\\(\\begin{cases} 5x+4y \\ge 20 \\\\ x \\ge 0 \\end{cases}\\)"
+      },
+      {
+        "key": "დ",
+        "text": "\\(\\begin{cases} 5x+4y \\le 20 \\\\ y \\ge 0 \\end{cases}\\)"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2023-V1/q24.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q25",
+    "examId": "2023-V1",
+    "number": 25,
+    "sourcePage": 26,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რის ტოლია $\\cos^2 \\alpha$, თუ $\\operatorname{tg} \\alpha = 3$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{9}{10}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{3}{\\sqrt{10}}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{1}{10}$"
+      },
+      {
+        "key": "დ",
+        "text": "პოვნა შეუძლებელია, რადგან მოცემული ინფორმაცია არასაკმარისია"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q26",
+    "examId": "2023-V1",
+    "number": 26,
+    "sourcePage": 27,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ბურთის სიბრტყით კვეთისას მიღებული წრის ფართობი არის $24\\pi \\text{სმ}^2$. რას უდრის ამ ბურთის ცენტრიდან მკვეთ სიბრطყემდე მანძილი, თუ ბურთის რადიუსი არის $5 \\text{სმ}$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$4 \\text{სმ}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$3 \\text{სმ}$"
+      },
+      {
+        "key": "გ",
+        "text": "$2 \\text{სმ}$"
+      },
+      {
+        "key": "დ",
+        "text": "$1 \\text{სმ}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: ط"
+      ]
+    }
+  },
+  {
+    "code": "2023-V1-Q27",
+    "examId": "2023-V1",
+    "number": 27,
+    "sourcePage": 28,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რომელ წერტილში გადაჰყავს $(-3; -4)$ წერტილი ჰომოთეტიას ცენტრით $(-1; 3)$ წერტილში და კოეფიციენტით $k = -1$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(1; 7)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-4; -1)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(1; 10)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(-2; 10)$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q28",
+    "examId": "2023-V1",
+    "number": 28,
+    "sourcePage": 29,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$10$ გრამი სპირტის ხსნარი შეიცავს $0,5$ გრამ სპირტს. რამდენი გრამი სპირტი უნდა დავამატოთ ამ ხსნარს, რომ მასში სპირტის კონცენტრაცია გახდეს $20\\%$-ის ტოლი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{15}{4}$ გ"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{15}{8}$ გ"
+      },
+      {
+        "key": "გ",
+        "text": "$2,5$ გ"
+      },
+      {
+        "key": "დ",
+        "text": "$1,8$ გ"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q29",
+    "examId": "2023-V1",
+    "number": 29,
+    "sourcePage": 30,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "თუ $\\log_3 7 = a$, მაშინ $\\log_{21} 9 =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{2}{1 + a}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$2(1 + a)$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{1}{a}$"
+      },
+      {
+        "key": "დ",
+        "text": "$a + 1$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q30",
+    "examId": "2023-V1",
+    "number": 30,
+    "sourcePage": 31,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "მარკუთხედის ფორმის ორ ნაკვეთს ტოლი ფართობები აქვს. პირველი ნაკვეთის გვერდების შეფარდება $3:4$-ის, ხოლო მეორე ნაკვეთის გვერდების შეფარდება $4:5$ -ის ტოლია. იპოვეთ პირველი ნაკვეთის პერიმეტრის შეფარდება მეორე ნაკვეთის პერიმეტრთან.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{7}{9}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{9}{7}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{7\\sqrt{5}}{9\\sqrt{3}}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{7\\sqrt{3}}{9\\sqrt{5}}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q31",
+    "examId": "2023-V1",
+    "number": 31,
+    "sourcePage": 32,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $\\log_7{|x - 5|} = 0$ განტოლების ფესვების ნამრავლი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$5$"
+      },
+      {
+        "key": "ბ",
+        "text": "$21$"
+      },
+      {
+        "key": "გ",
+        "text": "$24$"
+      },
+      {
+        "key": "დ",
+        "text": "$25$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q32",
+    "examId": "2023-V1",
+    "number": 32,
+    "sourcePage": 33,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$(b_n)$ გეომეტრიული პროგრესიის წევრები აკმაყოფილებენ $b_1 + b_2 + b_3 + b_4 + b_5 = 1$ და $b_6 + b_7 + b_8 + b_9 + b_{10} = 32$ ტოლობებს. რას უდრის ამ პროგრესიის მნიშვნელი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{31}{25}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$2$"
+      },
+      {
+        "key": "გ",
+        "text": "$4$"
+      },
+      {
+        "key": "დ",
+        "text": "$8$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q33",
+    "examId": "2023-V1",
+    "number": 33,
+    "sourcePage": 34,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $a$ და $b$ რიცხვების ჯამი, თუ ორობით სისტემაში $a$ რიცხვი ჩაიწერება $111000$ სახით, ხოლო $b$ რიცხვი ჩაიწერება $11111$ სახით.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "ოთხმოცდაშვიდი"
+      },
+      {
+        "key": "ბ",
+        "text": "სამოცდათვრამეტი"
+      },
+      {
+        "key": "გ",
+        "text": "სამოცდათორმეტი"
+      },
+      {
+        "key": "დ",
+        "text": "ორმოცდაცხვრამეტი"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q34",
+    "examId": "2023-V1",
+    "number": 34,
+    "sourcePage": 35,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "პრიზმის წიბოების რაოდენობა $12$-ით მეტია წახნაგების რაოდენობაზე. სულ რამდენი წვერო აქვს ამ პრიზმას?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$7$"
+      },
+      {
+        "key": "ბ",
+        "text": "$12$"
+      },
+      {
+        "key": "გ",
+        "text": "$14$"
+      },
+      {
+        "key": "დ",
+        "text": "$15$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q35",
+    "examId": "2023-V1",
+    "number": 35,
+    "sourcePage": 36,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$24$ რიცხვისგან შედგენილ მონაცემებში $a$ რიცხვი $n$-ჯერ მეორდება. მას შემდეგ, რაც ამ მონაცემებიდან სამი ცალი $a$ რიცხვი წაშალეს, $a$ რიცხვის ფარდობითი სიხშირე $\\frac{1}{12}$-ით შემცირდა. იპოვეთ $n$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$14$"
+      },
+      {
+        "key": "ბ",
+        "text": "$6$"
+      },
+      {
+        "key": "გ",
+        "text": "$8$"
+      },
+      {
+        "key": "დ",
+        "text": "$10$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q36",
+    "examId": "2023-V1",
+    "number": 36,
+    "sourcePage": 37,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "წრიულ სექტორში, რომლის ცენტრალური კუთხე $60^\\circ$-ის ტოლია, ჩაზაზულია წრე, რომელიც ეხება სექტორის რადიუსებს და რკალს (იხ. სურათი). იპოვეთ ჩაზაზული წრის რადიუსი, თუ სექტორის რადიუსი $12$ სმ-ის ტოლია.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\pi\\sqrt{3}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$2\\sqrt{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$4$"
+      },
+      {
+        "key": "დ",
+        "text": "$4\\sqrt{3}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2023-V1/q36.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q37",
+    "examId": "2023-V1",
+    "number": 37,
+    "sourcePage": 38,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$SABC$ პირამიდის $ABC$ ფუძე წარმოადგენს ტოლგვერდა სამკუთხედს, რომლის გვერდი $6$ სმ-ის ტოლია. პირამიდის $SH$ სიმაღლის ფუძე მდებარეობს $AC$ გვერდის შუა წერტილზე. იპოვეთ პირამიდის სიმაღლე, თუ $BS = 9$ სმ.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$3\\sqrt{6}$ სმ"
+      },
+      {
+        "key": "ბ",
+        "text": "$6\\sqrt{2}$ სმ"
+      },
+      {
+        "key": "გ",
+        "text": "$6\\sqrt{3}$ სმ"
+      },
+      {
+        "key": "დ",
+        "text": "$9\\sqrt{6}$ სმ"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2023-V1/q37.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q38",
+    "examId": "2023-V1",
+    "number": 38,
+    "sourcePage": 39,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "იპოვეთ $f(x) = x^2 + bx + c$ ფუნქციის მნიშვნელობათა სიმრავლე, თუ $x^2 + bx + c < 0$ უტოლობის ამონახსნთა სიმრავლეა $(-4; 5)$ ინტერვალი.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q39",
+    "examId": "2023-V1",
+    "number": 39,
+    "sourcePage": 40,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "$ABCD$ ტრაპეციაში $AD$ და $BC$ ფუძეებია, ხოლო $O$ არის დიაგონალების გადაკვეთის წერტილი (იხ. სურათი). იპოვეთ $AOD$ და $ABC$ სამკუთხედების ფართობების შეფარდება, თუ $BC:AD=3:4$.",
+    "options": [],
+    "answer": "",
+    "images": [
+      "content/images/2023-V1/q39.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q40",
+    "examId": "2023-V1",
+    "number": 40,
+    "sourcePage": 41,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "მელვინს დაგეგმილი ჰქონდა გაეყიდა $440$ ლიტრი საფერავი და $360$ ლიტრი რქაწითელი, ამასთან ერთი ლიტრი საფერავის ფასი განსხვავდებოდა ერთი ლიტრი რქაწითელის ფასისაგან. თუმცა მელვინმა ორივე სახეობის ღვინის თითოეული ლიტრი გაყიდა ისეთ ერთსა და იმავე ფასად, რომ მთელი ღვინის გაყიდვით მიიღო იგივე თანხა, რასაც მიიღებდა, ორივე სახეობის ღვინო რომ გაეყიდა თავდაპირველად დაგეგმილ ფასებად. პირველ დღეს მან ამ ახალ ფასად გაყიდა $440$ ლიტრი ღვინო და მიიღო იგივე თანხა, რასაც მიიღებდა, ამ დღეს გაყიდული საფერავი და რქაწითელი თავდაპირველად დაგეგმილ ფასებად რომ გაეყიდა. რამდენი ლიტრი საფერავი გაყიდა მელვინმა პირველ დღეს?",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2023-V1-Q41",
+    "examId": "2023-V1",
+    "number": 41,
+    "sourcePage": 42,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "ნატურალურ რიცხვთა $x, y, z$ მიმდევრობა ქმნის გეომეტრიულ პროგრესიას, რომლის მნიშვნელი ნატურალური რიცხვია. იპოვეთ ამ პროგრესიის წევრები, თუ ცნობილია, რომ მათი საშუალო არითმეტიკული $(y + 9)$-ის ტოლია.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  }
+]

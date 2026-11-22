@@ -1,0 +1,1292 @@
+[
+  {
+    "code": "2015-V2-Q01",
+    "examId": "2015-V2",
+    "number": 1,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ამოცანა 1 $\\left(2 - \\frac{7}{8}\\right) : 1{,}5 =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{27}{16}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$0{,}7$"
+      },
+      {
+        "key": "გ",
+        "text": "$0{,}75$"
+      },
+      {
+        "key": "დ",
+        "text": "$0{,}8$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q02",
+    "examId": "2015-V2",
+    "number": 2,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$15 + a$-ს $9$-ზე გაყოფისას ნაშთში მიიღება $3$. რა ნაშთი მიიღება $a$ რიცხვის $9$-ზე გაყოფისას?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$5$"
+      },
+      {
+        "key": "ბ",
+        "text": "$4$"
+      },
+      {
+        "key": "გ",
+        "text": "$3$"
+      },
+      {
+        "key": "დ",
+        "text": "$6$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q03",
+    "examId": "2015-V2",
+    "number": 3,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ხაჭაპური სახლში მიტანით $13$ ლარი და $20$ თეთრი ღირს. იპოვეთ ხაჭაპურის ღირებულება საცხობში, თუ სახლში მიტანის ფასი ხაჭაპურის ღირებულების $10\\%$-ს შეადგენს.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$11$ ლარი"
+      },
+      {
+        "key": "ბ",
+        "text": "$11$ ლარი და $40$ თეთრი"
+      },
+      {
+        "key": "გ",
+        "text": "$11$ ლარი და $60$ თეთრი"
+      },
+      {
+        "key": "დ",
+        "text": "$12$ ლარი"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q04",
+    "examId": "2015-V2",
+    "number": 4,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე დაყრდნობით იპოვეთ $\\angle ACB$-ს გრადუსული ზომა, თუ $AC$ და $BC$ მონაკვეთები $a$ და $b$ პარალელურ წრფეებთან შესაბამისად $17^\\circ$-იან და $43^\\circ$-იან კუთხეებს ადგენენ.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$30^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$45^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$24^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$26^\\circ$"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2015-V2/q04.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q05",
+    "examId": "2015-V2",
+    "number": 5,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "მარკუთხა $ABC$ სამკუთხედში $CO$ მედიანაა. იპოვეთ $AC$ კათეტის სიგრძე, თუ $CO = CB$ და ჰიპოტენუზა $AB = 12$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$10$"
+      },
+      {
+        "key": "ბ",
+        "text": "$6$"
+      },
+      {
+        "key": "გ",
+        "text": "$6\\sqrt{3}$"
+      },
+      {
+        "key": "დ",
+        "text": "$5\\sqrt{3}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2015-V2/q05.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q06",
+    "examId": "2015-V2",
+    "number": 6,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ავტობუსის გაჩერებაზე №11 ავტობუსი ყოველ $12$ წუთში ერთხელ ჩერდება, ხოლო №17 ავტობუსი — ყოველ $18$ წუთში ერთხელ. დროის გარკვეულ მომენტში ეს ავტობუსები ამ გაჩერებაზე ერთდროულად გაჩერდნენ. რა უმცირესი დროის შემდეგ გაჩერდებიან კვლავ ეს ავტობუსები ერთდროულად ამ გაჩერებაზე?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$30$ წუთის შემდეგ"
+      },
+      {
+        "key": "ბ",
+        "text": "$36$ წუთის შემდეგ"
+      },
+      {
+        "key": "გ",
+        "text": "$96$ წუთის შემდეგ"
+      },
+      {
+        "key": "დ",
+        "text": "$216$ წუთის შემდეგ"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q07",
+    "examId": "2015-V2",
+    "number": 7,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "თუ $a=3+\\sqrt{5}$, მაშინ $\\frac{1}{3-\\sqrt{5}}=$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{1}{4}a$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{1}{2}a$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{2}{3}a$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{3}{2}a$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q08",
+    "examId": "2015-V2",
+    "number": 8,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ტურისტი დილით გამოვიდა ბანაკიდან, მივიდა ტბამდე და მაშინვე იმავე გზით დაბრუნდა ბანაკში. სურათზე მოცემულია მისი ბანაკიდან დაშორების დროზე დამოკიდებულების გრაფიკი. გრაფიკს დაყრდნობით იპოვეთ ტურისტის მოძრაობის საშუალო სიჩქარე (ჩათვალეთ, რომ ტურისტი მოძრაობს წროვის მონაკვეთის გასწვრივ).",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$3,5$ კმ/სთ"
+      },
+      {
+        "key": "ბ",
+        "text": "$4$ კმ/სთ"
+      },
+      {
+        "key": "გ",
+        "text": "$4,5$ კმ/სთ"
+      },
+      {
+        "key": "დ",
+        "text": "$5$ კმ/სთ"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2015-V2/q08.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q09",
+    "examId": "2015-V2",
+    "number": 9,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$\\left(\\frac{a}{b} - \\frac{b}{a}\\right) \\cdot \\frac{a^2b}{a + b} =$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$a^2 - ab$"
+      },
+      {
+        "key": "ბ",
+        "text": "$a(1 - b)$"
+      },
+      {
+        "key": "გ",
+        "text": "$ab + a$"
+      },
+      {
+        "key": "დ",
+        "text": "$ab - a$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q10",
+    "examId": "2015-V2",
+    "number": 10,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ax = b$ წრივ განტოლებას გააჩნია ამონასხსთა უსასრულო რაოდენობა, როდესაც",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$a = 0$ და $b = 0$"
+      },
+      {
+        "key": "ბ",
+        "text": "$a \\neq 0$"
+      },
+      {
+        "key": "გ",
+        "text": "$b \\neq 0$"
+      },
+      {
+        "key": "დ",
+        "text": "$a = 0$ და $b \\neq 0$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q11",
+    "examId": "2015-V2",
+    "number": 11,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $k$, თუ $y=kx+b$ ფუნქციის გრაფიკი $Oxy$ მართკუთხა კოორდინატთა სისტემაში გადის $(3; 2)$ წერტილზე და ორდინატთა ღერძს კვეთს $(0; -2)$ წერტილში.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-\\frac{3}{4}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{2}{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{5}{2}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{4}{3}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q12",
+    "examId": "2015-V2",
+    "number": 12,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "პირველი მატარებლის ვაგონების რაოდენობა $5$-ით მეტია მეორე მატარებლის ვაგონების რაოდენობაზე. მას შემდეგ რაც თითოეული მატარებლიდან მოხსnეს $4$ ვაგონი, პირველი მატარებლის ვაგონების რაოდენობის შეფარდება მეორესთან $\\frac{3}{2}$-ის ტოლი გახდა. სულ რამდენი ვაგონი დარჩა ორივე მატარებლის შემადგენლობაში ერთად?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$24$"
+      },
+      {
+        "key": "ბ",
+        "text": "$25$"
+      },
+      {
+        "key": "გ",
+        "text": "$33$"
+      },
+      {
+        "key": "დ",
+        "text": "$35$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q13",
+    "examId": "2015-V2",
+    "number": 13,
+    "sourcePage": 6,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$A$ სიმრავლე 12 ელემენტს შეიცავს, $B$ სიმრავლე შეიცავს 8 ელემენტს, ხოლო $C$ სიმრავლე – 5 ელემენტს. ელემენტების რა უდიდესი რაოდენობა შეიძლება შეიცوَდეს სიმრავლე $A \\cup (B \\cap C)$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$12$"
+      },
+      {
+        "key": "ბ",
+        "text": "$17$"
+      },
+      {
+        "key": "გ",
+        "text": "$20$"
+      },
+      {
+        "key": "დ",
+        "text": "$25$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q14",
+    "examId": "2015-V2",
+    "number": 14,
+    "sourcePage": 6,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "უჯრედიან ფურცელზე, რომლის თითოეული უჯრედი $1$ ერთეულის ტოლი გვერდის მქონე კვადრატს წარმოადგენს, გამოსახულია $\\vec{a}$ და $\\vec{b}$ ვექტორები, რომელთა სათავე და ბოლო უჯრედების წვეროებს ემთხვევა. სურათის მიხედვით იპოვეთ $\\vec{a} - \\vec{b}$ ვექტორის კოორდინატები.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-1; 6)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-1; -3)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(-4; 5)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(3; -4)$"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2015-V2/q14.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q15",
+    "examId": "2015-V2",
+    "number": 15,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "პირველ კლასში, მეორე კლასთან შედარებით, ერთით მეტი ბიჭი და ერთით ნაკლები გოგონაა. თითოეული კლასისთვის შეადგინეს ბიჭებისა და გოგონების რაოდენობების გამოსახველი წრიული დიაგრამა. იპოვეთ რამდენი მოსწავლეა პირველ კლასში, თუ გოგონების შესაბამისი სექტორის ცენტრალური კუთხის სიდიდე მეორე კლასის დიაგრამაზე $30^\\circ$-ით მეტია ვიდრე პირველი კლასის დიაგრამაზე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$30$"
+      },
+      {
+        "key": "ბ",
+        "text": "$6$"
+      },
+      {
+        "key": "გ",
+        "text": "$24$"
+      },
+      {
+        "key": "დ",
+        "text": "$12$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q16",
+    "examId": "2015-V2",
+    "number": 16,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე მოცემულია $1\\text{ სმ}^3$ მოცულობის მქონე კუბის შლილი. იპოვეთ ამ კუბის იმ წვეროებს შორის მანძილი, რომელთაც შლილზე A და B წერტილები შეესაბამებიან.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$0\\text{ სმ}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\sqrt{3}\\text{ სმ}$"
+      },
+      {
+        "key": "გ",
+        "text": "$1\\text{ სმ}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\sqrt{2}\\text{ სმ}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2015-V2/q16.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q17",
+    "examId": "2015-V2",
+    "number": 17,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ მართკუთხა საკოორდინატო სიბრტყეზე აგებულია $y = 5^x$ და $y = \\frac{1}{5^x}$ ფუნქციათა გრაფიკები. ქვემოთ ჩამოთვლილი გარდაქმნებიდან რომელს გადაჰყავს პირველი ფუნქციის გრაფიკი მეორე ფუნქციის გრაფიკში?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "სიმეტრიას $Oy$ ღერძის მიმართ;"
+      },
+      {
+        "key": "ბ",
+        "text": "სიმეტრიას $Ox$ ღერძის მიმართ;"
+      },
+      {
+        "key": "გ",
+        "text": "ცენტრულ სიმეტრიას $O$ წერტილის მიმართ;"
+      },
+      {
+        "key": "დ",
+        "text": "სიმეტრიას $y = x$ წრფის მიმართ."
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q18",
+    "examId": "2015-V2",
+    "number": 18,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ურნაში დევს ერთნაირი ზომის $6$ წითელი და $6$ თეთრი ბურთი. ურნიდან ერთდროულად იღებენ შემთხვევით არჩეულ ორ ბურთს. იპოვეთ ალბათობა იმისა, რომ ორივე ბურთი ერთი ფერის იქნება.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{1}{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{5}{11}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{5}{12}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q19",
+    "examId": "2015-V2",
+    "number": 19,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "თუ $f(x)=5-4x$, $g(x)=2x^2-1$, მაშინ $f(g(x))=$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$9-8x^2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$49-80x+32x^2$"
+      },
+      {
+        "key": "გ",
+        "text": "$2x^2-4x+4$"
+      },
+      {
+        "key": "დ",
+        "text": "$(5-4x)\\cdot(2x^2-1)$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q20",
+    "examId": "2015-V2",
+    "number": 20,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$A$ პუნქტიდან $AB$ და $AC$ მიმართულებებით, რომელთა შორის კუთხე $120^\\circ$-ია, ერთდროულად გავიდნენ ველოსიპედისტი და მოტოციკლისტი. მათი სიჩქარეები შესაბამისად $12$ კმ/სთ და $18$ კმ/სთ-ის ტოლია. იპოვეთ ველოსიპედისტსა და მოტოციკლისტს შორის მანძილი მოძრაობის დაწყებიდან $20$ წუთის შემდეგ.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$8$ კმ"
+      },
+      {
+        "key": "ბ",
+        "text": "$4\\sqrt{3}$ კმ"
+      },
+      {
+        "key": "გ",
+        "text": "$6\\sqrt{2}$ კმ"
+      },
+      {
+        "key": "დ",
+        "text": "$2\\sqrt{19}$ კმ"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2015-V2/q20.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q21",
+    "examId": "2015-V2",
+    "number": 21,
+    "sourcePage": 9,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "წრეწირზე, რომლის ცენტრია $O$, აღებულია $A$ და $B$ წერტილები ისე, რომ $\\angle AOB = 100^\\circ$. $C$ წერტილი მოძრაობს $\\hat{AB}$ რკალზე ისე, რომ $\\triangle ABC$ მახვილკუთხაა. $K$ წერტილი წარმოადგენს $ABC$ სამკუთხედში სიმაღლეების გადაკვეთის წერტილს (იხ. სურათი). ქვემოთ ჩამოთვლილი წინადადებებიდან რომელია ჭეშმარიტი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\angle AKB$-ს მნიშვნელობა არ არის დამოკიდებული $C$ წერტილის მდებარეობაზე და $\\angle AKB = 130^\\circ$."
+      },
+      {
+        "key": "ბ",
+        "text": "$\\angle AKB$-ს მნიშვნელობა არ არის დამოკიდებული $C$ წერტილის მდებარეობაზე და $\\angle AKB = 100^\\circ$."
+      },
+      {
+        "key": "გ",
+        "text": "$\\angle AKB$-ს მნიშვნელობა დამოკიდებულია $C$ წერტილის მდებარეობაზე და იცვლება $[50^\\circ; 200^\\circ]$ ინტერვალში."
+      },
+      {
+        "key": "დ",
+        "text": "$\\angle AKB$-ს მნიშვნელობა არ არის დამოკიდებული $C$ წერტილის მდებარეობაზე, მაგრამ დამოკიდებულია წრეწირის რადიუსზე."
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2015-V2/q21.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q22",
+    "examId": "2015-V2",
+    "number": 22,
+    "sourcePage": 9,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ცნობილია, რომ $a$ და $b$ პარამეტრების გარკვეული მნიშვნელობებისათვის გამოსულებები $(2a-3)x^2 + (b^2+1)x + 5$ და $ax^2 + 2bx + 5$ იგიურად ტოლია. იპოვეთ $a$ და $b$ პარამეტრების ამ მნიშვნელობებისათვის $\\frac{b}{a}$ შეფარდება.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$1$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{3}{5}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{1}{3}$"
+      },
+      {
+        "key": "დ",
+        "text": "$5$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q23",
+    "examId": "2015-V2",
+    "number": 23,
+    "sourcePage": 10,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $a$-ს იმ მნიშვნელობათა სიმრავლე, რომლებისთვისაც წერტილი $P(3-4a; 3a-2)$ საკოორდინატო სიბრტყის მეორე მეოთხედში მდებობს (ამასთან არ მდებობს კოორდინატთა ღერძებზე).",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-\\left(-\\frac{2}{3}; \\frac{3}{4}\\right)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\left(\\frac{3}{4}; +\\infty\\right)$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\left(\\frac{2}{3}; \\frac{3}{4}\\right)$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\left(-\\infty; \\frac{2}{3}\\right)$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q24",
+    "examId": "2015-V2",
+    "number": 24,
+    "sourcePage": 10,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "მოცემულია საერთო ცენტრის მქონე ორი წრეწირი. მცირე წრეწირის $AB$ მხები დიდ წრეწირს ყოფს ორ რკალად, რომელთა სიგრძეთა შეფარდებაა $1:2$. იპოვეთ სურათზე გამუქებული სექტორის ფართობი, თუ $AB=18$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$12\\pi$"
+      },
+      {
+        "key": "ბ",
+        "text": "$18\\pi$"
+      },
+      {
+        "key": "გ",
+        "text": "$9\\pi$"
+      },
+      {
+        "key": "დ",
+        "text": "$27\\pi$"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2015-V2/q24.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "Diagram box set by hand.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q25",
+    "examId": "2015-V2",
+    "number": 25,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ტოლფერდა ტრაპეციის პერიოდი ტულია $26$ სმ-ის. იპოვეთ ტრაპეციის ფართობი, თუ მცირე ფუძე $5$ სმ-ია, ხოლო $BD$ დიაგონალი $\\angle ABC$-ს ბისექტრისაა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$12\\sqrt{6}$ სმ$^2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$24\\sqrt{3}$ სმ$^2$"
+      },
+      {
+        "key": "გ",
+        "text": "$18\\sqrt{3}$ სმ$^2$"
+      },
+      {
+        "key": "დ",
+        "text": "$16\\sqrt{2}$ სმ$^2$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [
+      "content/images/2015-V2/q25.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "მოცემულია ტრაპეციის ნახაზი მარჯვენა მხარეს.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q26",
+    "examId": "2015-V2",
+    "number": 26,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "გამოთვალეთ $\\sin(\\alpha + \\beta)$, თუ $\\sin\\alpha = \\frac{1}{3}$, $\\sin\\beta = \\frac{1}{4}$, $\\alpha \\in \\left(\\frac{\\pi}{2}; \\pi\\right)$ და $\\beta \\in \\left(0; \\frac{\\pi}{2}\\right)$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{\\sqrt{23}}{12}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{\\sqrt{7}}{12}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{\\sqrt{15} + \\sqrt{8}}{12}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{\\sqrt{15} - \\sqrt{8}}{12}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q27",
+    "examId": "2015-V2",
+    "number": 27,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ მართკუთხა საკოორდინატო სისტემაში მოცემულია $A(3; -2)$ წერტილი. იპოვეთ $A$ წერტილის ანსახის კოორდინატები სიბრտყეზე თანმიმდევრობით განხორციელებული შემდეგი ორი გარდაქმნის შედეგად: ჯერ პარალელური გადატანა $\\vec{a} = (-6; 4)$ ვექტორით, ხოლო შემდეგ სიმეტრია $y = x$ განტოლებით მოცემული წრფის მიმართ.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-3; 2)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(2; -3)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(-8; 7)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(3; -2)$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [
+      "content/images/2015-V2/q27.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q28",
+    "examId": "2015-V2",
+    "number": 28,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "არანულოვან $a_1, a_2, \\dots$ არითმეტიკულ პროგრესიაში $a_5 = 3a_2$. გამოთვალეთ $\\frac{a_7}{a_4}$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{13}{7}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$3$"
+      },
+      {
+        "key": "გ",
+        "text": "$2$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{7}{4}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q29",
+    "examId": "2015-V2",
+    "number": 29,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რას უდრის $f(x) = |\\cos 5x|$ ფუნქციის უმცირესი დადებითი პერიოდი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$10\\pi$"
+      },
+      {
+        "key": "ბ",
+        "text": "$2\\pi$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{2\\pi}{5}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{\\pi}{5}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q30",
+    "examId": "2015-V2",
+    "number": 30,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "კონუსის ფუძის ფართობი $16\\text{\\ cm}^2$-ის ტოლია, ხოლო გვერდითი ზედაპირის ფართობი კი $20\\text{\\ cm}^2$-ია. იპოვეთ კონუსის მლაგველის სიგრძე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2\\sqrt{3}\\pi\\text{\\ სმ}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{5}{\\sqrt{\\pi}}\\text{\\ სმ}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{5}{4}\\sqrt{\\pi}\\text{\\ სმ}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{5}{4\\sqrt{\\pi}}\\text{\\ სმ}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "მოცემულ ამოცანაში ტექსტში მლაგველი წერია (მლაგველი/მსხვერველი), დავტოვე ზუსტად ისე, როგორც დაბეჭდილია.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q31",
+    "examId": "2015-V2",
+    "number": 31,
+    "sourcePage": 13,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "იპოვეთ უტოლობათა სისტემის ამონახსნთა სიმრავლე $\\begin{cases} 2x - 4 \\le -3x + 12 \\\\ x + 6 > -2x \\end{cases}$.",
+    "options": [],
+    "answer": "-2<xle 3\frac{1}{5}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q32",
+    "examId": "2015-V2",
+    "number": 32,
+    "sourcePage": 13,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "იპოვეთ $b_1, b_2, \\dots$ გეომეტრიული პროგრესიის პირველი ხუთი წევრის ჯამი, თუ $b_1 = \\frac{1}{2}$ და $b_4 = -4$.",
+    "options": [],
+    "answer": "\frac{11}{2}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q33",
+    "examId": "2015-V2",
+    "number": 33,
+    "sourcePage": 14,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "ტრაპეციის დიდი ფუძის სიგრძე $76$-ის ტოლია. იპოვეთ ამ ტრაპეციის მცირე ფუძის სიგრძე, თუ მისი დიაგონალების შუაწერტილებს შორის მანძილი $18$-ის ტოლია.",
+    "options": [],
+    "answer": "40",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q34",
+    "examId": "2015-V2",
+    "number": 34,
+    "sourcePage": 14,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "ამოხსნათ განტოლება: $\\log_{3}(53-3x)=2$.",
+    "options": [],
+    "answer": "\frac{44}{3}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q35",
+    "examId": "2015-V2",
+    "number": 35,
+    "sourcePage": 15,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "იპოვეთ $a$ პარამეტრის ყველა ის მნიშვნელობა, რომლისთვისაც $y = x + 3(a - 2)$ წრფე არ კვეთს $y = x^2 - 2x + 2a$ პარაბოლის გრაფიკს.",
+    "options": [],
+    "answer": "(-infty;\frac{15}{4})",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q36",
+    "examId": "2015-V2",
+    "number": 36,
+    "sourcePage": 15,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "$a$ და $b$ დადებითი რიცხვებია. რამდენი პროცენტით აღემატება $a$ რიცხვი $b$ რიცხვს, თუ $a$ რიცხვის $10\\%$-ით შემცირებით და $b$ რიცხვის $8\\%$-ით გაზრდით ერთი და იგივე რიცხვი მიიღება?",
+    "options": [],
+    "answer": "20%",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q37",
+    "examId": "2015-V2",
+    "number": 37,
+    "sourcePage": 16,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "ოთხკუთხა პiramიდის ფუძე კvadრატია. პiramიდის ერთი გვერდითი წიბო ფუძის სიბრტყის მართობულია და მისი სიგრძე ტოლია $5$-ის. ერთი გვერდითი წახნაგი ფუძის სიბრტყესთან ადგენს $\\alpha$ -ს ტოლი კუთხეს. იპოვეთ პiramიდის მოცულობა, თუ $\\operatorname{tg}\\alpha = \\frac{5}{4}$.",
+    "options": [],
+    "answer": "\frac{80}{3}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "Typo in standard Georgian word 'პირამიდის' replaced with 'piramidis' to be faithful or standard Georgian unicode used? Wait, the OCR text in prompt says 'პiramიდის' because of mixed alphabet in transcription or source. Let's write standard Georgian: ოთხკუთხა პირამიდის ფუძე კვადრატია. პირამიდის ერთი გვერდითი წიბო ფუძის სიბრტყის მართობულია და მისი სიგრძე ტოლია $5$-ის. ერთი გვერდითი წახნაგი ფუძის სიბრტყესთან ადგენს $\\alpha$ -ს ტოლი კუთხეს. იპოვეთ პირამიდის მოცულობა, თუ $\\operatorname{tg}\\alpha = \\frac{5}{4}$.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q38",
+    "examId": "2015-V2",
+    "number": 38,
+    "sourcePage": 16,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "$ABCD$ პარალელოგრამში გავλεბული ოთხივე შიდა კუთხის ბისექტრისის ერთმანეთთან გადაკვეთის შედეგად მიიღეს $KLMN$ ოთხკუთხედი, რომლის ყოველი წვერო წარმოადგენს ორი ბისექტრისის გადაკვეთის წერტილს. იპოვეთ $KLMN$ ოთხკუთხედის ფართობი, თუ $AB=4$, $BC=7$ და $\\angle BAD=45^\\circ$.",
+    "options": [],
+    "answer": "\frac{9sqrt{2}}{4}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q39",
+    "examId": "2015-V2",
+    "number": 39,
+    "sourcePage": 17,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "ავზს წყალი ორი მილით მიეწოდება, ამასთან მხოლოდ პირველი მილით წყლის მიწოდებისას ცარიელი ავზი $6$ საათით უფრო ნაკლებ დროში ივსება, ვიდრე მხოლოდ მეორე მილით წყლის მიწოდებისას. ცარიელი ავზისთვის წყლის მიწოდება ორივე მილით ერთდროულად დაიწყეს. $5$ საათის შემდეგ პირველი მილიდან წყლის მიწოდება შეწყვიტეს, ამიტომ ავზის ავსებას კიდევ $3$ საათი დასჭირდა. რამდენი საათია საჭირო, რომ ორივე მილით წყლის მიწოდებისას ცარიელი ავზი აივსოს?",
+    "options": [],
+    "answer": "\frac{80}{13}\text{ სთ}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V2-Q40",
+    "examId": "2015-V2",
+    "number": 40,
+    "sourcePage": 17,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "ფერმერს სურს $L$ სიგრძის ღობით შემოსაზღვროს წრიული სექტორის ფორმის მიწის ნაკვეთი. რა მაქსიმალური ფართობი შეიძლება ჰქონდეს ამ ნაკვეთს? იპოვეთ შესაბამისი სექტორის ცენტრალური კუთხის სიდიდე.",
+    "options": [],
+    "answer": "\frac{L^2}{16}; 2\text{ რად}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  }
+]

@@ -1,0 +1,595 @@
+[
+  {
+    "code": "2015-V2-Q01",
+    "skills": [
+      "N2"
+    ],
+    "primarySkill": "N2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Basic fraction and decimal arithmetic.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q02",
+    "skills": [
+      "N1"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Divisibility and remainders.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q03",
+    "skills": [
+      "N3"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Percentage problem.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q04",
+    "skills": [
+      "G1",
+      "G2"
+    ],
+    "primarySkill": "G1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Parallel lines, alternate interior angles, and triangle exterior angle theorem.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q05",
+    "skills": [
+      "G2",
+      "G4"
+    ],
+    "primarySkill": "G2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Right triangle median property (circumradius equals half hypotenuse) and equilateral triangle properties.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q06",
+    "skills": [
+      "N1"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q07",
+    "skills": [
+      "N6",
+      "A1"
+    ],
+    "primarySkill": "N6",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q08",
+    "skills": [
+      "A12",
+      "F2"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q09",
+    "skills": [
+      "A1",
+      "A3"
+    ],
+    "primarySkill": "A1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q10",
+    "skills": [
+      "A4"
+    ],
+    "primarySkill": "A4",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q11",
+    "skills": [
+      "F3",
+      "V2"
+    ],
+    "primarySkill": "F3",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q12",
+    "skills": [
+      "A4",
+      "A12"
+    ],
+    "primarySkill": "A4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q13",
+    "skills": [
+      "L1"
+    ],
+    "primarySkill": "L1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q14",
+    "skills": [
+      "V3"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q15",
+    "skills": [
+      "A4",
+      "P6"
+    ],
+    "primarySkill": "A4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q16",
+    "skills": [
+      "K2",
+      "V1"
+    ],
+    "primarySkill": "K2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Cube net visualization and distance between two vertices of a unit cube.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q17",
+    "skills": [
+      "F6",
+      "E2"
+    ],
+    "primarySkill": "F6",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Symmetry of exponential graphs $y=a^x$ and $y=a^{-x}$.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q18",
+    "skills": [
+      "P3",
+      "P2"
+    ],
+    "primarySkill": "P3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Classical probability using combinations.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q19",
+    "skills": [
+      "F1",
+      "A1"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Composite function evaluation.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q20",
+    "skills": [
+      "A12",
+      "G9"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Word problem involving distance, speed, time, and the Law of Cosines.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q21",
+    "skills": [
+      "G5",
+      "G2"
+    ],
+    "primarySkill": "G5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q22",
+    "skills": [
+      "A1",
+      "A4"
+    ],
+    "primarySkill": "A1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q23",
+    "skills": [
+      "A5",
+      "V1"
+    ],
+    "primarySkill": "A5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q24",
+    "skills": [
+      "G5",
+      "G4",
+      "G8"
+    ],
+    "primarySkill": "G8",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q25",
+    "skills": [
+      "G6",
+      "G1",
+      "G7"
+    ],
+    "primarySkill": "G6",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q26",
+    "skills": [
+      "T4",
+      "T1"
+    ],
+    "primarySkill": "T4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q27",
+    "skills": [
+      "V4",
+      "V1"
+    ],
+    "primarySkill": "V4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2015-V2-Q28",
+    "skills": [
+      "S1"
+    ],
+    "primarySkill": "S1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q29",
+    "skills": [
+      "T5"
+    ],
+    "primarySkill": "T5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q30",
+    "skills": [
+      "K4",
+      "G7"
+    ],
+    "primarySkill": "K4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q31",
+    "skills": [
+      "A5"
+    ],
+    "primarySkill": "A5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "System of linear inequalities",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q32",
+    "skills": [
+      "S2"
+    ],
+    "primarySkill": "S2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Geometric progression sum",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q33",
+    "skills": [
+      "G3",
+      "G6"
+    ],
+    "primarySkill": "G3",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Trapezoid midline theorem or similar triangles / segments connecting midpoints of diagonals",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q34",
+    "skills": [
+      "E4"
+    ],
+    "primarySkill": "E4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Logarithmic equation",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q35",
+    "skills": [
+      "F4",
+      "A7",
+      "A8"
+    ],
+    "primarySkill": "A8",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Intersection of line and parabola, discriminant condition for no solutions leading to quadratic inequality",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q36",
+    "skills": [
+      "N3",
+      "A4"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Percentage problem leading to a linear equation in a and b.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q37",
+    "skills": [
+      "K3",
+      "G7",
+      "T1"
+    ],
+    "primarySkill": "K3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Pyramid volume calculation with a perpendicular lateral edge and dihedral angle.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q38",
+    "skills": [
+      "G6",
+      "G2",
+      "G7"
+    ],
+    "primarySkill": "G6",
+    "difficulty": 5,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Properties of parallelogram angle bisectors forming a rectangle/square.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q39",
+    "skills": [
+      "A12",
+      "A9"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Work word problem leading to a rational equation.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2015-V2-Q40",
+    "skills": [
+      "C3",
+      "G8"
+    ],
+    "primarySkill": "C3",
+    "difficulty": 5,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Optimisation problem involving the area and perimeter of a circular sector using derivatives.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  }
+]

@@ -1,0 +1,617 @@
+[
+  {
+    "code": "2026-V1-Q01",
+    "skills": [
+      "N2"
+    ],
+    "primarySkill": "N2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Basic arithmetic with mixed numbers and decimals.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q02",
+    "skills": [
+      "N1"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Properties of division with remainder.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q03",
+    "skills": [
+      "N3",
+      "A1"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Mixture/concentration problem involving percentages.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q04",
+    "skills": [
+      "G6",
+      "G8"
+    ],
+    "primarySkill": "G8",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Inscribed circle in a square and circumference calculation.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q05",
+    "skills": [
+      "G2"
+    ],
+    "primarySkill": "G2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Triangle angles and angle bisectors intersection property.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q06",
+    "skills": [
+      "E1",
+      "N5",
+      "A1"
+    ],
+    "primarySkill": "E1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Simplifying radical expressions with rational exponents.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q07",
+    "skills": [
+      "A2",
+      "A1"
+    ],
+    "primarySkill": "A2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Using sum of cubes formula with given sum and product.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q08",
+    "skills": [
+      "F4",
+      "C3"
+    ],
+    "primarySkill": "F4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Finding the maximum value of a quadratic function via vertex formula.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q09",
+    "skills": [
+      "V2",
+      "F3"
+    ],
+    "primarySkill": "V2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Finding the slope of a line from two points and identifying parallel lines.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q10",
+    "skills": [
+      "N7",
+      "A1"
+    ],
+    "primarySkill": "N7",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Absolute value simplification given the range of x.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q11",
+    "skills": [
+      "T1",
+      "T3",
+      "N2"
+    ],
+    "primarySkill": "T1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q12",
+    "skills": [
+      "N3",
+      "N4",
+      "A4"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q13",
+    "skills": [
+      "G4",
+      "T1",
+      "K1"
+    ],
+    "primarySkill": "G4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q14",
+    "skills": [
+      "V1",
+      "G2",
+      "G4"
+    ],
+    "primarySkill": "V1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q15",
+    "skills": [
+      "N6",
+      "N7",
+      "N2"
+    ],
+    "primarySkill": "N6",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q16",
+    "skills": [
+      "L1"
+    ],
+    "primarySkill": "L1",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q17",
+    "skills": [
+      "T5"
+    ],
+    "primarySkill": "T5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q18",
+    "skills": [
+      "P3",
+      "G3",
+      "G7"
+    ],
+    "primarySkill": "P3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q19",
+    "skills": [
+      "E3",
+      "E4"
+    ],
+    "primarySkill": "E3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q20",
+    "skills": [
+      "G2",
+      "G4",
+      "G10"
+    ],
+    "primarySkill": "G10",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q21",
+    "skills": [
+      "V3"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Vector dot product for perpendicular vectors.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q22",
+    "skills": [
+      "P3",
+      "L1"
+    ],
+    "primarySkill": "P3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Probability with set intersection / minimum possible size.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q23",
+    "skills": [
+      "F1",
+      "T3"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Finding the range of a trigonometric function using identity.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q24",
+    "skills": [
+      "F4",
+      "G7",
+      "C3"
+    ],
+    "primarySkill": "G7",
+    "difficulty": 5,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Parabola, triangle area optimization.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q25",
+    "skills": [
+      "T6",
+      "T2"
+    ],
+    "primarySkill": "T6",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Trig equation roots in a given interval and their sum.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q26",
+    "skills": [
+      "K3"
+    ],
+    "primarySkill": "K3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Properties of triangular pyramid with equal lateral edges",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q27",
+    "skills": [
+      "V4",
+      "V3"
+    ],
+    "primarySkill": "V4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2026-V1-Q28",
+    "skills": [
+      "S1"
+    ],
+    "primarySkill": "S1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Arithmetic progression common difference",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q29",
+    "skills": [
+      "V2",
+      "A4"
+    ],
+    "primarySkill": "V2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Equation of a line through two points and change in coordinates",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q30",
+    "skills": [
+      "G5",
+      "G4"
+    ],
+    "primarySkill": "G5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Common external tangent of two circles using Pythagorean theorem",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q31",
+    "skills": [
+      "P2",
+      "P1"
+    ],
+    "primarySkill": "P2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Combinatorics problem involving combinations with a conditional restriction.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q32",
+    "skills": [
+      "S2"
+    ],
+    "primarySkill": "S2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Geometric progression properties.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q33",
+    "skills": [
+      "F2",
+      "F1"
+    ],
+    "primarySkill": "F2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Properties of functions: evenness and periodicity.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q34",
+    "skills": [
+      "K1",
+      "G4",
+      "T1"
+    ],
+    "primarySkill": "K1",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Dihedral angle between a plane and a triangle in space.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q35",
+    "skills": [
+      "L1"
+    ],
+    "primarySkill": "L1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Set theory and Venn diagrams (inclusion-exclusion principle).",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q36",
+    "skills": [
+      "G5"
+    ],
+    "primarySkill": "G5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Tangent-secant theorem",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q37",
+    "skills": [
+      "K4",
+      "T2"
+    ],
+    "primarySkill": "K4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Cone lateral surface development, sector central angle in radians",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q38",
+    "skills": [
+      "F4",
+      "A6"
+    ],
+    "primarySkill": "F4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2026-V1-Q39",
+    "skills": [
+      "G7",
+      "T1"
+    ],
+    "primarySkill": "G7",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Triangle area using sine formula: 0.5 * a * b * sin(C)",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q40",
+    "skills": [
+      "A12",
+      "A6",
+      "N3"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Work word problem leading to a system of linear equations with percentages",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2026-V1-Q41",
+    "skills": [
+      "A7",
+      "C3"
+    ],
+    "primarySkill": "A7",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Quadratic equation with parameter, discriminant condition for two distinct roots, Vieta's formulas, and finding the maximum value of a quadratic expression in terms of the parameter.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  }
+]

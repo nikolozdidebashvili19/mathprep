@@ -1,0 +1,613 @@
+[
+  {
+    "code": "2024-V1-Q01",
+    "skills": [
+      "N2"
+    ],
+    "primarySkill": "N2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q02",
+    "skills": [
+      "N1"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q03",
+    "skills": [
+      "N3"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q04",
+    "skills": [
+      "G1",
+      "G2"
+    ],
+    "primarySkill": "G2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q05",
+    "skills": [
+      "G6",
+      "G10"
+    ],
+    "primarySkill": "G6",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q06",
+    "skills": [
+      "N6",
+      "E1",
+      "N2"
+    ],
+    "primarySkill": "N6",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Estimating the value of a radical or rational power to place it in an interval.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q07",
+    "skills": [
+      "A2",
+      "A1"
+    ],
+    "primarySkill": "A2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Uses sum/difference of cubes factorization: b^3 - a^3 = (b-a)(b^2 + ab + a^2).",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q08",
+    "skills": [
+      "A1",
+      "A5"
+    ],
+    "primarySkill": "A1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Finding maximum value of expression given ranges for variables.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q09",
+    "skills": [
+      "F3",
+      "F2"
+    ],
+    "primarySkill": "F3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Reading properties of linear function graphs (slope and y-intercept).",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q10",
+    "skills": [
+      "A7",
+      "A8"
+    ],
+    "primarySkill": "A7",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Quadratic equation having two distinct real roots, discriminant > 0.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q11",
+    "skills": [
+      "G7",
+      "A4"
+    ],
+    "primarySkill": "G7",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Regular polygon interior angle formula",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q12",
+    "skills": [
+      "N3",
+      "P6"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Percentages and circle sectors",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q13",
+    "skills": [
+      "K2"
+    ],
+    "primarySkill": "K2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Volume of a prism",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q14",
+    "skills": [
+      "F6",
+      "V1"
+    ],
+    "primarySkill": "F6",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Geometric transformations in the coordinate plane",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q15",
+    "skills": [
+      "L1",
+      "P1"
+    ],
+    "primarySkill": "L1",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Set theory and counting with Venn diagrams",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q16",
+    "skills": [
+      "L1",
+      "N1"
+    ],
+    "primarySkill": "L1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Intersection of sets defined by divisibility properties.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q17",
+    "skills": [
+      "N1"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Division with remainder and congruence properties.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q18",
+    "skills": [
+      "P3",
+      "G10",
+      "G7"
+    ],
+    "primarySkill": "P3",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Geometric probability involving areas and triangle properties.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q19",
+    "skills": [
+      "A7"
+    ],
+    "primarySkill": "A7",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Quadratic equation roots relationship (Vieta's formulas or reciprocal roots condition).",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q20",
+    "skills": [
+      "G9"
+    ],
+    "primarySkill": "G9",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Law of sines applied to a triangle.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q21",
+    "skills": [
+      "V3"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q22",
+    "skills": [
+      "P4",
+      "P3",
+      "P1"
+    ],
+    "primarySkill": "P4",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q23",
+    "skills": [
+      "F1",
+      "N6",
+      "N2"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q24",
+    "skills": [
+      "V1",
+      "F2",
+      "F4"
+    ],
+    "primarySkill": "V1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q25",
+    "skills": [
+      "T2",
+      "T3"
+    ],
+    "primarySkill": "T2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q26",
+    "skills": [
+      "K1",
+      "G4",
+      "T1"
+    ],
+    "primarySkill": "T1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Angle between a line and a plane in a cube, right-angled triangle in the cube.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q27",
+    "skills": [
+      "F3",
+      "T1"
+    ],
+    "primarySkill": "F3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Slope of a line corresponds to the tangent of the angle of inclination.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q28",
+    "skills": [
+      "A12",
+      "A4"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Work word problem leading to a linear equation.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q29",
+    "skills": [
+      "E4",
+      "E1"
+    ],
+    "primarySkill": "E4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Logarithm properties and base change/simplification.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q30",
+    "skills": [
+      "G7",
+      "N4"
+    ],
+    "primarySkill": "G7",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Area of rectangle and trapezoid/triangles inside it using ratios.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q31",
+    "skills": [
+      "E4"
+    ],
+    "primarySkill": "E4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Solve for b using logarithm properties (change of base).",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q32",
+    "skills": [
+      "S2"
+    ],
+    "primarySkill": "S2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Geometric progression sum formula.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q33",
+    "skills": [
+      "T5"
+    ],
+    "primarySkill": "T5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Symmetry axis of trigonometric functions.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q34",
+    "skills": [
+      "K3"
+    ],
+    "primarySkill": "K3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Properties of a pyramid (vertices, edges, faces).",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q35",
+    "skills": [
+      "P5"
+    ],
+    "primarySkill": "P5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Mean of a dataset and overlapping subsets.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q36",
+    "skills": [
+      "G3",
+      "G4"
+    ],
+    "primarySkill": "G3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q37",
+    "skills": [
+      "K4",
+      "G8",
+      "T1"
+    ],
+    "primarySkill": "K4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q38",
+    "skills": [
+      "V1",
+      "A4"
+    ],
+    "primarySkill": "V1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q39",
+    "skills": [
+      "G8",
+      "G3",
+      "G2"
+    ],
+    "primarySkill": "G8",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q40",
+    "skills": [
+      "A12",
+      "A4"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2024-V1-Q41",
+    "skills": [
+      "C3",
+      "G7",
+      "A4"
+    ],
+    "primarySkill": "C3",
+    "difficulty": 5,
+    "offProgram": false,
+    "confidence": 0.85,
+    "notes": "Optimization problem involving areas of triangles formed in a trapezoid.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  }
+]

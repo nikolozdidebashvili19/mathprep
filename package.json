@@ -12,7 +12,15 @@
     "test:run": "vitest run",
     "test:cov": "vitest run --coverage",
     "typecheck": "tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "content:locate": "node scripts/extract/locate-questions.ts",
+    "content:render": "node scripts/extract/render-pages.ts",
+    "content:extract": "node --env-file=.env scripts/extract/extract-questions.ts",
+    "content:tag": "node --env-file=.env scripts/extract/tag-skills.ts",
+    "content:repair-text": "node --env-file=.env scripts/extract/repair-text.ts",
+    "content:explain": "node --env-file=.env scripts/extract/explain-questions.ts",
+    "content:weights": "node scripts/extract/compute-skill-weights.ts",
+    "seed": "node --env-file=.env --import tsx scripts/seed/seed.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",
@@ -21,6 +29,7 @@
     "@radix-ui/react-slot": "^1.2.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "katex": "^0.19.1",
     "lucide-react": "^0.577.0",
     "mongoose": "^9.6.3",
     "next": "^16.2.7",
@@ -37,6 +46,7 @@
     "zustand": "^5.0.14"
   },
   "devDependencies": {
+    "@napi-rs/canvas": "^1.1.1",
     "@tailwindcss/postcss": "^4.3.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
@@ -50,7 +60,9 @@
     "eslint-plugin-import": "^2.32.0",
     "husky": "^9.1.7",
     "jsdom": "^29.1.1",
+    "pdfjs-dist": "^6.5.438",
     "tailwindcss": "^4.3.0",
+    "tsx": "^4.23.15",
     "typescript": "^5",
     "vitest": "^4.1.8"
   },

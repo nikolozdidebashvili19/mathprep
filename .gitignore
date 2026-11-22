@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# exam source PDFs: never commit or serve (NAEC rights, PRODUCT.md §11)
+/content/raw/

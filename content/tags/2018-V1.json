@@ -1,0 +1,599 @@
+[
+  {
+    "code": "2018-V1-Q01",
+    "skills": [
+      "N2"
+    ],
+    "primarySkill": "N2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Decimal arithmetic evaluation.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q02",
+    "skills": [
+      "P5"
+    ],
+    "primarySkill": "P5",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Arithmetic mean of a given dataset.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q03",
+    "skills": [
+      "N3"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Percentage decrease calculation.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q04",
+    "skills": [
+      "G6",
+      "G1"
+    ],
+    "primarySkill": "G6",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Properties of parallelogram angles.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q05",
+    "skills": [
+      "G2",
+      "T1"
+    ],
+    "primarySkill": "G2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Ratio of perimeter to altitude (bisector) in an equilateral triangle.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q06",
+    "skills": [
+      "F3",
+      "V2"
+    ],
+    "primarySkill": "F3",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q07",
+    "skills": [
+      "L1"
+    ],
+    "primarySkill": "L1",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q08",
+    "skills": [
+      "G5",
+      "G8"
+    ],
+    "primarySkill": "G5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q09",
+    "skills": [
+      "K3",
+      "G7"
+    ],
+    "primarySkill": "K3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q10",
+    "skills": [
+      "A5"
+    ],
+    "primarySkill": "A5",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q11",
+    "skills": [
+      "A4",
+      "N2"
+    ],
+    "primarySkill": "A4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q12",
+    "skills": [
+      "V3",
+      "G3"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q13",
+    "skills": [
+      "N2"
+    ],
+    "primarySkill": "N2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q14",
+    "skills": [
+      "P2"
+    ],
+    "primarySkill": "P2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q15",
+    "skills": [
+      "F4",
+      "V1"
+    ],
+    "primarySkill": "F4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q16",
+    "skills": [
+      "P4",
+      "P1"
+    ],
+    "primarySkill": "P4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q17",
+    "skills": [
+      "T3",
+      "A1"
+    ],
+    "primarySkill": "T3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q18",
+    "skills": [
+      "G9",
+      "G7"
+    ],
+    "primarySkill": "G9",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q19",
+    "skills": [
+      "S1"
+    ],
+    "primarySkill": "S1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q20",
+    "skills": [
+      "G4",
+      "G2",
+      "V1"
+    ],
+    "primarySkill": "G4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q21",
+    "skills": [
+      "G4",
+      "G6"
+    ],
+    "primarySkill": "G4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Using the Pythagorean theorem in the right-angled triangles at the corners of the squares.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q22",
+    "skills": [
+      "A8",
+      "A2",
+      "N2"
+    ],
+    "primarySkill": "A8",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Quadratic expression maximum value via vertex formula.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q23",
+    "skills": [
+      "V1",
+      "A4"
+    ],
+    "primarySkill": "V1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Distance formula between points and setting distances equal.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q24",
+    "skills": [
+      "E3",
+      "E1"
+    ],
+    "primarySkill": "E3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Solving exponential equation with bases 0.2 and 5 (reciprocals).",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q25",
+    "skills": [
+      "G7",
+      "V1"
+    ],
+    "primarySkill": "G7",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Polygon area decomposed into triangles or using coordinates.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q26",
+    "skills": [
+      "N6",
+      "E4",
+      "N7"
+    ],
+    "primarySkill": "N6",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Estimate cube root and logarithm bounds to count integers in the interval.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q27",
+    "skills": [
+      "V1",
+      "G4",
+      "G2"
+    ],
+    "primarySkill": "V1",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Rotation around a point, distance between points using coordinates or triangle properties.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q28",
+    "skills": [
+      "T5",
+      "F6"
+    ],
+    "primarySkill": "T5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Question asks about the symmetry (axis of symmetry) of the cosine function graph after a horizontal shift.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q29",
+    "skills": [
+      "S2",
+      "N6"
+    ],
+    "primarySkill": "S2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.98,
+    "notes": "Geometric progression property (square of middle term equals product of extremes).",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q30",
+    "skills": [
+      "K1",
+      "G4"
+    ],
+    "primarySkill": "K1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Stereometry problem involving projections of a segment onto a plane and Pythagorean theorem.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q31",
+    "skills": [
+      "A6"
+    ],
+    "primarySkill": "A6",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q32",
+    "skills": [
+      "P5"
+    ],
+    "primarySkill": "P5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q33",
+    "skills": [
+      "G7",
+      "G8"
+    ],
+    "primarySkill": "G7",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q34",
+    "skills": [
+      "T3",
+      "T1"
+    ],
+    "primarySkill": "T3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q35",
+    "skills": [
+      "S1",
+      "S2"
+    ],
+    "primarySkill": "S2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q36",
+    "skills": [
+      "E3",
+      "A7"
+    ],
+    "primarySkill": "E3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Homogeneous exponential equation, can be divided by 2^{2x} or 3^{2x} to form a quadratic equation.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q37",
+    "skills": [
+      "K4",
+      "G7"
+    ],
+    "primarySkill": "K4",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Rotation of a parallelogram around its side yields a cylinder minus/plus a cone (or similar composite body of revolution).",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q38",
+    "skills": [
+      "G4",
+      "G10",
+      "G9"
+    ],
+    "primarySkill": "G10",
+    "difficulty": 5,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Inradius of right triangle ACD allows finding segments, then circumradius of ADB.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q39",
+    "skills": [
+      "A12",
+      "A5",
+      "N3"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Word problem leading to a system of linear inequalities.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2018-V1-Q40",
+    "skills": [
+      "F4",
+      "C2",
+      "C3"
+    ],
+    "primarySkill": "F4",
+    "difficulty": 5,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Quadratic function vertex, monotonicity intervals, and optimization of parameter sum.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  }
+]

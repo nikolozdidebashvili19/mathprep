@@ -14,3 +14,10 @@ export const SignUpSchema = z.object({
 });
 
 export type SignUpType = z.infer<typeof SignUpSchema>;
+
+export const OnboardingSchema = z.object({
+  grade: z.union([z.literal(11), z.literal(12)]),
+  targetScore: z.number().int().min(1).max(100).optional(),
+});
+
+export type OnboardingType = z.infer<typeof OnboardingSchema>;

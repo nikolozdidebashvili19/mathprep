@@ -1,0 +1,1420 @@
+[
+  {
+    "code": "2025-V1-Q01",
+    "examId": "2025-V1",
+    "number": 1,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$\\left(1\\frac{3}{5} - 2,2\\right) \\cdot 3\\frac{1}{3} = $",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{7}{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$-\\frac{4}{15}$"
+      },
+      {
+        "key": "დ",
+        "text": "$-2$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q02",
+    "examId": "2025-V1",
+    "number": 2,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ უმცირესი სამნიშნა რიცხვი, რომელიც როგორც $4$-ზე, ასევე $7$-ზე გაყოფისას იძლევა $3$-ის ტოლ ნაშთს.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$143$"
+      },
+      {
+        "key": "ბ",
+        "text": "$115$"
+      },
+      {
+        "key": "გ",
+        "text": "$107$"
+      },
+      {
+        "key": "დ",
+        "text": "$103$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q03",
+    "examId": "2025-V1",
+    "number": 3,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "საათის ფასი ჯერ გაიზარდა $20\\%$-ით, ხოლო შემდეგ შემცირდა $20\\%$-ით და გახდა $96$ ლარი. იპოვეთ საათის თავდაპირველი ფასი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$96$ ₾"
+      },
+      {
+        "key": "ბ",
+        "text": "$100$ ₾"
+      },
+      {
+        "key": "გ",
+        "text": "$105$ ₾"
+      },
+      {
+        "key": "დ",
+        "text": "$110$ ₾"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q04",
+    "examId": "2025-V1",
+    "number": 4,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სამკუთხედის კუთხეები ისე შეეწყარდება ერთმანეთს, როგორც $1:3:5$. იპოვეთ სამკუთხედის უმცირესი კუთხის სიდიდე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$40^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$30^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$10^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$20^\\circ$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "Typo in the original text 'შეეწყარდება' instead of 'შეეფარდება', transcribed verbatim.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q05",
+    "examId": "2025-V1",
+    "number": 5,
+    "sourcePage": 6,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$0,5$ მეტრი რადიუსის მქონე წრის ფორმის გასაშლელი მაგიდის გაშლის დროს ნახევარწრის ფორმის ნაჭრებს შორის დგამენ მართკუთხედის ფორმის ნაჭერს, რომლის დიაგონალის სიგრძე $\\sqrt{5}$ მეტრია. იპოვეთ გაშლილი მაგიდის ფართობი (იხ. სურათი).",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\left(4 + \\frac{\\pi}{4}\\right) \\text{მ}^2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\left(5 + \\frac{\\pi}{4}\\right) \\text{მ}^2$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\left(2 + \\frac{\\pi}{2}\\right) \\text{მ}^2$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\left(2 + \\frac{\\pi}{4}\\right) \\text{მ}^2$"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2025-V1/q05.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q06",
+    "examId": "2025-V1",
+    "number": 6,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $a$, თუ $2^a = \\left(\\sqrt[3]{2\\sqrt[3]{2}}\\right)^{\\frac{3}{2}}$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{2}{9}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{4}{9}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{5}{6}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{2}{3}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q07",
+    "examId": "2025-V1",
+    "number": 7,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $\\sqrt[4]{b} - \\sqrt[4]{a}$ გამოსულების მნიშვნელობა, თუ $a$ და $b$ რიცხვები აკმაყოფილებს ტოლობებს: $\\sqrt[4]{a} + \\sqrt[4]{b} = 3$ და $\\sqrt{a} - \\sqrt{b} = 2$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-\\frac{2}{3}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{2}{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{3}{2}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{2}{\\sqrt{3}}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q08",
+    "examId": "2025-V1",
+    "number": 8,
+    "sourcePage": 9,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $y = kx + b$ წრფის $k$ კოეფიციენტი, თუ ცნობილია, რომ როდესაც წრფეზე მოძრავი წერტილის აბსცისა გაიზრდება $2$ ერთეულით, მაშინ მისი ორდინატა შემცირდება $3$ ერთეულით.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{3}{2}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-\\frac{3}{2}$"
+      },
+      {
+        "key": "გ",
+        "text": "$-\\frac{2}{3}$"
+      },
+      {
+        "key": "დ",
+        "text": "$-6$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q09",
+    "examId": "2025-V1",
+    "number": 9,
+    "sourcePage": 10,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$y = kx + \\frac{1}{k}$ ფუნქციის გრაფიკი $Oxy$ მართკუთხა საკოორდინაციო სისტემის აბსცისათა და ორდინატთა ღერძებს კვეთს შესაბამისად $A$ და $B$ წერტილებში (იხ. სურათი). იპოვეთ $A$ წერტილის კოორდინატები, თუ ცნობილია, რომ $\\angle BAO = 30^\\circ$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(0; 1)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-1; 0)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(-4; 0)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(-3; 0)$"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2025-V1/q09.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q10",
+    "examId": "2025-V1",
+    "number": 10,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $|x-2|=2-x$ განტოლების ამონახსნთა სიმრავლე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-\\infty; 2)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-\\infty; 2]$"
+      },
+      {
+        "key": "გ",
+        "text": "$[2; +\\infty)$"
+      },
+      {
+        "key": "დ",
+        "text": "$ \\{2\\}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q11",
+    "examId": "2025-V1",
+    "number": 11,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ წესიერი ათკუთხედის პერიმეტრი, თუ მასში ჩაზაზული წრეწირის რადიუსი $3$ სმ-ის ტოლია.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$60\\operatorname{tg}\\left(\\frac{\\pi}{10}\\right)$ სმ"
+      },
+      {
+        "key": "ბ",
+        "text": "$30\\operatorname{tg}\\left(\\frac{\\pi}{10}\\right)$ სმ"
+      },
+      {
+        "key": "გ",
+        "text": "$60\\operatorname{tg}\\left(\\frac{\\pi}{5}\\right)$ სმ"
+      },
+      {
+        "key": "დ",
+        "text": "$60\\sin\\left(\\frac{\\pi}{10}\\right)$ სმ"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q12",
+    "examId": "2025-V1",
+    "number": 12,
+    "sourcePage": 13,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$7{,}2$ კგ მასის შენადნობი მიღებულია სამი ლითონის ერთმანეთთან შედნობის შედეგად. ლითონების მასების განაწილების წრიულ დიაგრამაზე მეორე ლითონის შესაბამისი სექტორის ცენტრალური კუთხის სიდიდე $5^\\circ$-ით აღემატება პირველი ლითონის შესაბამისი ცენტრალური კუთხის სიდიდეს და $35^\\circ$-ით ნაკლებია მესამე ლითონის შესაბამისი ცენტრალური კუთხის სიდიდეზე. იპოვეთ ამ შენადნობში მეორე ლითონის მასა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2{,}1$ კგ"
+      },
+      {
+        "key": "ბ",
+        "text": "$2{,}2$ კგ"
+      },
+      {
+        "key": "გ",
+        "text": "$2{,}3$ კგ"
+      },
+      {
+        "key": "დ",
+        "text": "$2{,}4$ კგ"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q13",
+    "examId": "2025-V1",
+    "number": 13,
+    "sourcePage": 14,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "პირამidას და პრიზმას ტოლი რაოდენობის წვეროები აქვს. რამდენი წიბო აქვს ამ პირამიდას, თუ მას $5$-ით მეტი წახნაგი აქვს, ვიდრე აღნიშნულ პრიზმას.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$18$"
+      },
+      {
+        "key": "ბ",
+        "text": "$22$"
+      },
+      {
+        "key": "გ",
+        "text": "$26$"
+      },
+      {
+        "key": "დ",
+        "text": "$28$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q14",
+    "examId": "2025-V1",
+    "number": 14,
+    "sourcePage": 15,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ საკოორდინატო სიბრტყეზე მოცემულია $OABC$ პარალელოგრამი, რომლის $\\angle AOC$ კუთხის სიდიდე $60^\\circ$-ია, ხოლო $B$ წერტილის კოორდინატებია $(4; 2)$. იპოვეთ $C$ წერტილის აბსცისა, თუ ცნობილია, რომ $C$ წერტილის ორდინატა ნულის ტოლია.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$4 - 2\\sqrt{3}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$2$"
+      },
+      {
+        "key": "გ",
+        "text": "$4 - \\frac{2\\sqrt{3}}{3}$"
+      },
+      {
+        "key": "დ",
+        "text": "$4 - 2\\sqrt{2}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q15",
+    "examId": "2025-V1",
+    "number": 15,
+    "sourcePage": 16,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რამდენი ისეთი ხუთნიშნა ნატურალური რიცხვი არსებობს, რომელიც მარცხნიდან და მარჯვენიდან ერთნაირად იკითხება (ასეთი რიცხვია, მაგალითად, $12321$)?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$810$"
+      },
+      {
+        "key": "ბ",
+        "text": "$890$"
+      },
+      {
+        "key": "გ",
+        "text": "$900$"
+      },
+      {
+        "key": "დ",
+        "text": "$990$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q16",
+    "examId": "2025-V1",
+    "number": 16,
+    "sourcePage": 17,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რამდენ ელემენტს შეიცავს $(A \\cup B) \\setminus (A \\cap B)$ სიმრავლე, თუ ცნობილია, რომ $A$ და $B$ სიმრავლეები შეიცავს ხუთ-ხუთ ელემენტს, რომელთაგან $2$ ელემენტი საერთო აქვთ.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$3$"
+      },
+      {
+        "key": "ბ",
+        "text": "$5$"
+      },
+      {
+        "key": "გ",
+        "text": "$6$"
+      },
+      {
+        "key": "დ",
+        "text": "$8$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q17",
+    "examId": "2025-V1",
+    "number": 17,
+    "sourcePage": 18,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "არგუმენტის რომელი მნიშვნელობისთვის იღებს $\\left[-\\frac{2\\pi}{3}; -\\frac{\\pi}{6}\\right]$ შუალედზე განსაზღვრული $f(x) = \\cos(3x)$ ფუნქცია უმცირეს მნიშვნელობას?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-\\frac{\\pi}{2}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-\\frac{2\\pi}{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$-\\frac{\\pi}{3}$"
+      },
+      {
+        "key": "დ",
+        "text": "$-\\frac{\\pi}{6}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q18",
+    "examId": "2025-V1",
+    "number": 18,
+    "sourcePage": 19,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "წინასწარ განსაზღვრული 20 თēმიდან გამოცდაზე აძლევენ შემთხვევით შერჩეულ 3 თēმას, საიდანაც მოსწავლე სურვილის მიხედვით დასაწერად ირჩევს ერთს. მოსწავლეს საგამოცდოდ განსაზღვრული 20 თēმიდან მომზადებული აქვს მხოლოდ 12 თēმა. რას უდრის იმის ალბათობა, რომ მან შეძლოს მომზადებული თēმის არჩევა?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{3}{5}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{C_{8}^{3}}{C_{20}^{3}}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{C_{5}^{3}}{C_{20}^{3}}$"
+      },
+      {
+        "key": "დ",
+        "text": "$1 - \\frac{C_{8}^{3}}{C_{20}^{3}}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "There are minor typographic nuances in the Georgian letter ē used in 'თēმიდან', transcribed as printed.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q19",
+    "examId": "2025-V1",
+    "number": 19,
+    "sourcePage": 20,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $m$-ის ყველა იმ მნიშვნელობათა სიმრავლე, რომელთაგან თითოეულისთვის $x^2 - 4x + 3 - m = 0$ კვადრატულ განტოლებას აქვს ერთი და იმავე ნიშნის ორი განსხვავებული ფესვი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-1; 3)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-1; +\\infty)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(-\\infty; 3)$"
+      },
+      {
+        "key": "დ",
+        "text": "$[-1; 3]$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q20",
+    "examId": "2025-V1",
+    "number": 20,
+    "sourcePage": 21,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABC$ მართკუთხა სამკუთხედის $C$ მართი კუთხის წვეროდან $AB$ ჰიპოტენუზისადმი გავლებულია $CD$ სიმაღლე. იპოვეთ $\\angle ACD$ კუთხის სინუსი, თუ $\\frac{DB}{CB} = \\frac{3}{4}$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{1}{4}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{3}{4}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{\\sqrt{3}}{4}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{\\sqrt{7}}{4}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2025-V1/q20.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q21",
+    "examId": "2025-V1",
+    "number": 21,
+    "sourcePage": 22,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $\\vec{a} = (1; -1)$ და $\\vec{b} = (2; 1)$ ვექტორებს შორის კუთხის სიდიდე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\arccos\\left(\\frac{1}{\\sqrt{5}}\\right)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{\\pi}{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\arccos\\left(\\frac{\\sqrt{10}}{10}\\right)$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{\\pi}{4}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q22",
+    "examId": "2025-V1",
+    "number": 22,
+    "sourcePage": 23,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რის ტოლია იმის ალბათობა, რომ მონეტის $10$-ჯერ აგდებისას ზუსტად $8$-ჯერ მოვა საფასური?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{4}{5}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{45}{1024}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{1}{1024}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q23",
+    "examId": "2025-V1",
+    "number": 23,
+    "sourcePage": 24,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $f(x)=3+2\\cos(x-1)$ ფუნქციის მნიშვნელობათა სიმრავლე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-\\infty;+\\infty)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$[1; 5]$"
+      },
+      {
+        "key": "გ",
+        "text": "$[-2; 2]$"
+      },
+      {
+        "key": "დ",
+        "text": "$(1; 5)$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q24",
+    "examId": "2025-V1",
+    "number": 24,
+    "sourcePage": 25,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ საკოორდინატო სიბრტყეზე მოცემულია სამკუთხედი, რომლის წვეროები $y = x^2 - 7x + 12$ ფუნქციის გრაფიკის საკოორდინატო ღერძებთან გადაკვეთის წერტილებია. იპოვეთ ამ სამკუთხედის უდიდესი გვერდის სიგრძე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\sqrt{153}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$4\\sqrt{10}$"
+      },
+      {
+        "key": "გ",
+        "text": "$13$"
+      },
+      {
+        "key": "დ",
+        "text": "$16$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q25",
+    "examId": "2025-V1",
+    "number": 25,
+    "sourcePage": 26,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $a$ პარამეტრის ყველა იმ მნიშვნელობის სიმრავლე, რომელთაგან თითოეულისათვის $\\cos x = 3 - 2a$ განტოლებას აქვს ამონახსენი, რომელიც მოთავსებულია $\\left(\\frac{\\pi}{2}; \\frac{3\\pi}{2}\\right)$ ინტერვალში.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\left[\\frac{3}{2}; +\\infty\\right)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\left(\\frac{3}{2}; 2\\right]$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\left(\\frac{3}{2}; 2\\right)$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\left[\\frac{3}{2}; 2\\right]$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q26",
+    "examId": "2025-V1",
+    "number": 26,
+    "sourcePage": 27,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ქვემოთ ჩამოთვლილი გამონათქვამებიდან რომელია ყოველთვის ჭეშმარიტი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "თუ ორი განსხვავებული $a$ და $b$ წრფე $M$ სიბრტყის პარალელურია, მაშინ ისინი ურთიერთპარალელურია."
+      },
+      {
+        "key": "ბ",
+        "text": "თუ ორი განსხვავებული $M$ და $N$ სიბრტყე $a$ წრფის პარალელურია, მაშინ ისინი ურთიერთპარალელურია."
+      },
+      {
+        "key": "გ",
+        "text": "თუ $M$ სიბრტყე $N$ სიბრტყეზე მდებარე ორი განსხვავებული წრფის პარალელურია, მაშინ $M$ სიბრტყე $N$ სიბრტყის პარალელურია."
+      },
+      {
+        "key": "დ",
+        "text": "თუ ერთმანეთისაგან განსხვავებული და ურთიერთგადამკვეთი $a$ და $b$ წრფეები $M$ სიბრტყის პარალელურია, მაშინ ამ წრფეების შემცველი $N$ სიბრტყეც $M$ სიბრტყის პარალელურია."
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q27",
+    "examId": "2025-V1",
+    "number": 27,
+    "sourcePage": 28,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ საკოორდინატო სიბრტყეზე მოცემულია სიბრტყის ორი გარდაქმნა: $R_O^{90^\\circ}$ და $H_O^2$, სადაც $R_O^{90^\\circ}$ არის მობრუნება კოორდინატთა სათავის გარშემო $90^\\circ$-ით საათის ისრის მოძრაობის საწინააღმდეგო მიმართულებით, ხოლო $H_O^2$ არის ჰომოთეთია ცენტრით კოორდინატთა სათავეში და კოეფიციენტით $2$. იპოვეთ $H_O^2(R_O^{90^\\circ}(A))$ წერტილის კოორდინატები, თუ $A$ წერტილის კოორდინატებია $(3; -2)$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-3; 4)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(6; 4)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(-4; -6)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(4; 6)$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q28",
+    "examId": "2025-V1",
+    "number": 28,
+    "sourcePage": 29,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რიცხვითი მიმდევრობის ზოგადი წევრი მოცემულია ფორმულით $a_n = n^2 - 3n + 1$, სადაც $n$ ნატურალური რიცხვია. იპოვეთ $a_n + a_{n+1}$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2n^2 - 4n$"
+      },
+      {
+        "key": "ბ",
+        "text": "$n^2 - 4n - 1$"
+      },
+      {
+        "key": "გ",
+        "text": "$2n^2 - n + 1$"
+      },
+      {
+        "key": "დ",
+        "text": "$n^2 - n - 1$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q29",
+    "examId": "2025-V1",
+    "number": 29,
+    "sourcePage": 30,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ უდიდესი მთელი რიცხვი, რომელიც ნაკლებია $\\log_2 3 - \\log_4 81$ გამოსახულების მნიშვნელობაზე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-3$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-2$"
+      },
+      {
+        "key": "გ",
+        "text": "$-1$"
+      },
+      {
+        "key": "დ",
+        "text": "$0$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q30",
+    "examId": "2025-V1",
+    "number": 30,
+    "sourcePage": 31,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$O$ ცენტრის მქონე წრეწირის $A$ წერტილზე გავლებულია $AB$ მხები. $OB$ მონაკვეთი წრეწირს კვეთს $C$ წერტილში ისე, რომ $OC:CB = 2:1$. იპოვეთ წრეწირის რადიუსი, თუ $AB = 2$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{4}{\\sqrt{5}}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{2}{\\sqrt{3}}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{4}{\\sqrt{3}}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\sqrt{5}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2025-V1/q30.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q31",
+    "examId": "2025-V1",
+    "number": 31,
+    "sourcePage": 32,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $4^x + 4^{x+1} + 4^{x+2} = 2^x + 2^{x+1} + 2^{x+2}$ განტოლების ამონახსნი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\log_2 7$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\log_2 3$"
+      },
+      {
+        "key": "გ",
+        "text": "$-\\log_2 3$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\log_2 \\left(\\frac{5}{21}\\right)$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q32",
+    "examId": "2025-V1",
+    "number": 32,
+    "sourcePage": 33,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "გეომეტრიული პროგრესიის მეორე და მეხუთე წევრი შესაბამისად $12$-ის და $96$-ის ტულია. იპოვეთ ამ პროგრესიის პირველი წევრი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$6$"
+      },
+      {
+        "key": "ბ",
+        "text": "$4$"
+      },
+      {
+        "key": "გ",
+        "text": "$3$"
+      },
+      {
+        "key": "დ",
+        "text": "$2$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "Typo in original text 'ტულია' instead of 'ტულია', but transcribed exactly as printed or corrected slightly if obvious, actually printed 'ტულია' looks like 'ტულია'. Wait, let's check: 'ტულია' is actually 'ტულია' or 'ტოლისა'? Looking closely at 'ტულია', it says 'ტულია' (likely a typo in the Georgian exam booklet for 'ტულია' -> 'ტულია' -> 'ტოლისა' or just 'ტულია'). Transcribed strictly as 'ტულია'.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q33",
+    "examId": "2025-V1",
+    "number": 33,
+    "sourcePage": 34,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $f(x) = |\\sin x|$ ფუნქციის უმცირესი დადებითი პერიოდი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2\\pi$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\pi$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{\\pi}{2}$"
+      },
+      {
+        "key": "დ",
+        "text": "არ აქვს"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q34",
+    "examId": "2025-V1",
+    "number": 34,
+    "sourcePage": 35,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "წესიერი ექვსკუთხა პი­რა­მი­დის ფუძის გვერდის სიგრძეა $2\\sqrt{3}$ სმ, ხოლო პი­რა­მი­დის სიმაღლე არის $6$ სმ. იპოვეთ პი­რა­მი­დის ფუძით და გვერდითი წახნაგიგ შედგენილი ორწახნაგი კუთხის სიდიდე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\operatorname{arctg} 2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\arcsin\\left(\\frac{\\sqrt{3}}{6}\\right)$"
+      },
+      {
+        "key": "გ",
+        "text": "$60^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$45^\\circ$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q35",
+    "examId": "2025-V1",
+    "number": 35,
+    "sourcePage": 36,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$x = -5$ წრფე წარმოადგენს $f(x) = |x + a| + 3$ ფუნქციის გრაფიკის სიმმეტრიის ღერძს. იპოვეთ $f(6)$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$14$"
+      },
+      {
+        "key": "ბ",
+        "text": "$4$"
+      },
+      {
+        "key": "გ",
+        "text": "$3$"
+      },
+      {
+        "key": "დ",
+        "text": "$9$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q36",
+    "examId": "2025-V1",
+    "number": 36,
+    "sourcePage": 37,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABCD$ პარალელოგრამის $BC$ გვერდზე მონიშნულია $P$ წერტილი ისე, რომ $BP=3PC$. ამასთან $AP$ და $CD$ წრფეები იკვეთება $K$ წერტილში. რას უდრის $ABCD$ პარალელოგრამისა და $AKD$ სამკუთხედის ფართობების შეფარდება?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{3}{2}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{4}{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{5}{4}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{4}{5}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2025-V1/q36.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q37",
+    "examId": "2025-V1",
+    "number": 37,
+    "sourcePage": 38,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ცილინდრის გვერდითი ზედაპირის ფართობი სრული ზედაპირის ფართობის ნახევრის ტოლია. იპოვეთ ცილინდრის ფუძის რადიუსის შეფარდება ცილინდრის სიმაღლესთან.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{1}{\\pi}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "key": "გ",
+        "text": "$1$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\pi$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q38",
+    "examId": "2025-V1",
+    "number": 38,
+    "sourcePage": 39,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "$Oxy$ საკოორდინატო სისტემაში $y=\\log_{9}x$ და $y=kx+b$ ფუნქციების გრაფიკები იკვეთება ორ წერტილში, რომელთა ორდინატებია $\\frac{1}{2}$ და $\\frac{3}{2}$. რას უდრის $k+b$?",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q39",
+    "examId": "2025-V1",
+    "number": 39,
+    "sourcePage": 40,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "$O_1$ და $O_2$ ცენტრების მქონე ორი წრეწირი გარედან ეხება ერთმანეთს. ამ წრეწირების საერთო გარე მხები $O_1$ ცენტრის მქონე მცირე წრეწირს ეხება $A$ წერტილში, ხოლო $O_2$ ცენტრის მქონე დიდ წრეწირს - $B$ წერტილში. იპოვეთ $O_1ABO_2$ ოთხკუთხედის ფართობი, თუ მცირე წრეწირის რადიუსი $2$ სმ-ის ტოლია, ხოლო დიდი წრეწირის რადიუსი ტოლია $5$ სმ-ის.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q40",
+    "examId": "2025-V1",
+    "number": 40,
+    "sourcePage": 41,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "კურსზე ბიჭებისა და გოგონების რაოდენობების გამომსახველ წრიულ დიაგრამაზე გოგონების შესაბამისი სექტორის ცენტრალური კუთხის სიდიდე $30^\\circ$-ით აღემატება ბიჭების შესაბამისი სექტორის ცენტრალური კუთხის სიდიდეს. სულ რამდენი გოგონა და რამდენი ბიჭი სწავლობს ამ კურსზე, თუ მათი ჯამური რაოდენობა $75$-ზე მეტი ორნიშნა რიცხვით გამოისახება?",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2025-V1-Q41",
+    "examId": "2025-V1",
+    "number": 41,
+    "sourcePage": 42,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "იპოვეთ მთელ რიცხვთა ყველა შესაძლო $(x; y)$ წყვილი, რომელთათვისაც სრულდება ტოლობა $\\log_7(x^2 - y^2 + 4) = 1 - \\log_7(x + 3y)$.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  }
+]

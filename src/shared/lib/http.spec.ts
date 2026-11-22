@@ -24,6 +24,16 @@ describe('HttpClient', () => {
     mockFetch.mockReset();
   });
 
+  it('POST sends FormData as-is without a JSON content type', async () => {
+    mockFetch.mockResolvedValueOnce(makeResponse({ ok: true }));
+    const form = new FormData();
+    form.append('sessionId', 'abc');
+    await client.post('/upload', form);
+    const init = mockFetch.mock.calls[0][1] as RequestInit;
+    expect(init.body).toBe(form);
+    expect((init.headers as Record<string, string>)['Content-Type']).toBeUndefined();
+  });
+
   it('GET sends correct request', async () => {
     mockFetch.mockResolvedValueOnce(makeResponse({ id: 1 }));
     const result = await client.get('/users');

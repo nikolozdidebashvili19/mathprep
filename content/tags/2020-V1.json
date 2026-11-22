@@ -1,0 +1,595 @@
+[
+  {
+    "code": "2020-V1-Q01",
+    "skills": [
+      "N2"
+    ],
+    "primarySkill": "N2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q02",
+    "skills": [
+      "N1"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q03",
+    "skills": [
+      "N3",
+      "N4"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q04",
+    "skills": [
+      "G3",
+      "N4"
+    ],
+    "primarySkill": "G3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q05",
+    "skills": [
+      "G6",
+      "G1"
+    ],
+    "primarySkill": "G6",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q06",
+    "skills": [
+      "A2"
+    ],
+    "primarySkill": "A2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q07",
+    "skills": [
+      "N4"
+    ],
+    "primarySkill": "N4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q08",
+    "skills": [
+      "N7"
+    ],
+    "primarySkill": "N7",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q09",
+    "skills": [
+      "P6"
+    ],
+    "primarySkill": "P6",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q10",
+    "skills": [
+      "A5",
+      "A4"
+    ],
+    "primarySkill": "A5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q11",
+    "skills": [
+      "P5"
+    ],
+    "primarySkill": "P5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Finding the median of a statistical dataset.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q12",
+    "skills": [
+      "N6",
+      "E1"
+    ],
+    "primarySkill": "N6",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Comparing radicals by reducing them to the same index.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q13",
+    "skills": [
+      "K2"
+    ],
+    "primarySkill": "K2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Properties of a prism's edges and base.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q14",
+    "skills": [
+      "P2",
+      "P1"
+    ],
+    "primarySkill": "P2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Combinatorics, combinations to select boys and girls.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q15",
+    "skills": [
+      "V4",
+      "V1"
+    ],
+    "primarySkill": "V4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2020-V1-Q16",
+    "skills": [
+      "P3",
+      "N2"
+    ],
+    "primarySkill": "P3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q17",
+    "skills": [
+      "E2",
+      "E3"
+    ],
+    "primarySkill": "E2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q18",
+    "skills": [
+      "G6",
+      "G7"
+    ],
+    "primarySkill": "G7",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q19",
+    "skills": [
+      "V3"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q20",
+    "skills": [
+      "K4",
+      "T1",
+      "G7"
+    ],
+    "primarySkill": "K4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q21",
+    "skills": [
+      "G8"
+    ],
+    "primarySkill": "G8",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q22",
+    "skills": [
+      "T5",
+      "F6"
+    ],
+    "primarySkill": "T5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q23",
+    "skills": [
+      "V4",
+      "V1"
+    ],
+    "primarySkill": "V4",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2020-V1-Q24",
+    "skills": [
+      "F1",
+      "E5",
+      "F4"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q25",
+    "skills": [
+      "G9",
+      "G10"
+    ],
+    "primarySkill": "G9",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q26",
+    "skills": [
+      "E5",
+      "E4"
+    ],
+    "primarySkill": "E5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Domain and logarithmic properties.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q27",
+    "skills": [
+      "S2"
+    ],
+    "primarySkill": "S2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Sum of an infinite geometric progression.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q28",
+    "skills": [
+      "T6",
+      "T2"
+    ],
+    "primarySkill": "T6",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Trigonometric equation with a condition on an interval.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q29",
+    "skills": [
+      "E3",
+      "E4"
+    ],
+    "primarySkill": "E3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Exponential equation involving logarithms.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q30",
+    "skills": [
+      "K2",
+      "G7",
+      "G2"
+    ],
+    "primarySkill": "K2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Right triangular prism volume and surface area.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q31",
+    "skills": [
+      "A6"
+    ],
+    "primarySkill": "A6",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q32",
+    "skills": [
+      "A5",
+      "A4"
+    ],
+    "primarySkill": "A5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q33",
+    "skills": [
+      "T1",
+      "G4"
+    ],
+    "primarySkill": "T1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q34",
+    "skills": [
+      "P5"
+    ],
+    "primarySkill": "P5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q35",
+    "skills": [
+      "S1"
+    ],
+    "primarySkill": "S1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q36",
+    "skills": [
+      "E2",
+      "A6",
+      "E4"
+    ],
+    "primarySkill": "E2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Substitute points into exponential function to form a system of equations for parameters a and b.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q37",
+    "skills": [
+      "K3",
+      "G4",
+      "G10"
+    ],
+    "primarySkill": "K3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Triangular pyramid with equal lateral edges, circumradius of the base relates to the angle with the base.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q38",
+    "skills": [
+      "G2",
+      "G7",
+      "A4"
+    ],
+    "primarySkill": "G2",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Properties of isosceles triangle and distances from a point on the base to the sides.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q39",
+    "skills": [
+      "A12",
+      "A4"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Standard motion word problem setting up linear equations for speeds.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2020-V1-Q40",
+    "skills": [
+      "C3",
+      "G6",
+      "G7"
+    ],
+    "primarySkill": "C3",
+    "difficulty": 5,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Optimisation problem involving perimeter of an isosceles trapezoid as a function of one variable.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  }
+]

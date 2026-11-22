@@ -15,6 +15,7 @@ export async function registerService(
     email: input.email,
     passwordHash: hashPassword(input.password),
     role: 'user',
+    locale: 'ka',
   });
 
   return { data: { message: 'Account created' }, status: 201 };
@@ -75,6 +76,7 @@ export async function upsertOAuthUserService(data: {
     email: data.email,
     passwordHash: '',
     role: 'user',
+    locale: 'ka',
     avatar: data.avatar ?? undefined,
   });
   return { isNew: true };

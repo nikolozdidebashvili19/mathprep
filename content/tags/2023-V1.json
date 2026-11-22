@@ -1,0 +1,616 @@
+[
+  {
+    "code": "2023-V1-Q01",
+    "skills": [
+      "N2"
+    ],
+    "primarySkill": "N2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q02",
+    "skills": [
+      "L1"
+    ],
+    "primarySkill": "L1",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q03",
+    "skills": [
+      "N1"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q04",
+    "skills": [
+      "G1",
+      "G2"
+    ],
+    "primarySkill": "G1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q05",
+    "skills": [
+      "G4",
+      "G6"
+    ],
+    "primarySkill": "G4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q06",
+    "skills": [
+      "L1",
+      "N7"
+    ],
+    "primarySkill": "L1",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Intersection of intervals",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q07",
+    "skills": [
+      "A2",
+      "A1"
+    ],
+    "primarySkill": "A2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Cube of a binomial",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q08",
+    "skills": [
+      "N7"
+    ],
+    "primarySkill": "N7",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Inequality range for subtraction",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q09",
+    "skills": [
+      "F1",
+      "F2"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Range of a function from its graph",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q10",
+    "skills": [
+      "A7",
+      "A4"
+    ],
+    "primarySkill": "A7",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Vieta's formulas",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q11",
+    "skills": [
+      "G6",
+      "G1"
+    ],
+    "primarySkill": "G6",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Regular pentagon diagonals and interior angles.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q12",
+    "skills": [
+      "N4",
+      "A4",
+      "P6"
+    ],
+    "primarySkill": "N4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Relating ratios of counts to central angles in a pie chart.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q13",
+    "skills": [
+      "K3"
+    ],
+    "primarySkill": "K3",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Volume of a regular square pyramid.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q14",
+    "skills": [
+      "V4",
+      "V3"
+    ],
+    "primarySkill": "V4",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2023-V1-Q15",
+    "skills": [
+      "P2",
+      "P4"
+    ],
+    "primarySkill": "P2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Combinations with condition 'at least one woman' (complementary counting or direct sum).",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q16",
+    "skills": [
+      "S1",
+      "A1",
+      "A2"
+    ],
+    "primarySkill": "S1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Arithmetic progression properties combined with algebraic simplification.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q17",
+    "skills": [
+      "N1"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Divisibility and prime factorization of 700 = 2^2 * 5^2 * 7.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q18",
+    "skills": [
+      "N4",
+      "P3",
+      "N7"
+    ],
+    "primarySkill": "P3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Geometric probability using segment lengths and ratios.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q19",
+    "skills": [
+      "E5",
+      "A5"
+    ],
+    "primarySkill": "E5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Logarithmic function monotonicity condition (base > 1) and domain.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q20",
+    "skills": [
+      "G9",
+      "G2",
+      "T1"
+    ],
+    "primarySkill": "G9",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Law of sines to find the side of a triangle, with angle sum of a triangle.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q21",
+    "skills": [
+      "V3"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q22",
+    "skills": [
+      "P3",
+      "P2"
+    ],
+    "primarySkill": "P3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q23",
+    "skills": [
+      "F1",
+      "A5"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q24",
+    "skills": [
+      "A5",
+      "V2",
+      "F2"
+    ],
+    "primarySkill": "A5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q25",
+    "skills": [
+      "T3"
+    ],
+    "primarySkill": "T3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q26",
+    "skills": [
+      "K4",
+      "G4",
+      "G8"
+    ],
+    "primarySkill": "K4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Sphere cross-section geometry involving sphere radius, circle area, and distance to plane via Pythagorean theorem.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q27",
+    "skills": [
+      "V4",
+      "V1"
+    ],
+    "primarySkill": "V4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2023-V1-Q28",
+    "skills": [
+      "A12",
+      "N3",
+      "N4"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Mixture word problem solved using a linear equation.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q29",
+    "skills": [
+      "E4"
+    ],
+    "primarySkill": "E4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Logarithm properties and change of base formula.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q30",
+    "skills": [
+      "N4",
+      "G7"
+    ],
+    "primarySkill": "N4",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Ratio and proportion applied to rectangle sides, areas, and perimeters involving square roots.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q31",
+    "skills": [
+      "E5",
+      "A10"
+    ],
+    "primarySkill": "E5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q32",
+    "skills": [
+      "S2"
+    ],
+    "primarySkill": "S2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q33",
+    "skills": [
+      "N8"
+    ],
+    "primarySkill": "N8",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2023-V1-Q34",
+    "skills": [
+      "K2"
+    ],
+    "primarySkill": "K2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q35",
+    "skills": [
+      "P6"
+    ],
+    "primarySkill": "P6",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q36",
+    "skills": [
+      "G8",
+      "G5",
+      "G4"
+    ],
+    "primarySkill": "G8",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q37",
+    "skills": [
+      "K3",
+      "G4",
+      "G2"
+    ],
+    "primarySkill": "K3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q38",
+    "skills": [
+      "F4",
+      "A7",
+      "F1"
+    ],
+    "primarySkill": "F4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q39",
+    "skills": [
+      "G6",
+      "G3",
+      "G7"
+    ],
+    "primarySkill": "G3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q40",
+    "skills": [
+      "A12",
+      "A4"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2023-V1-Q41",
+    "skills": [
+      "S2",
+      "A4",
+      "N1"
+    ],
+    "primarySkill": "S2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Uses geometric progression definition, arithmetic mean formula, and divisibility/integer constraints for natural numbers.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  }
+]

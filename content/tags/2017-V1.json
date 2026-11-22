@@ -1,0 +1,603 @@
+[
+  {
+    "code": "2017-V1-Q01",
+    "skills": [
+      "N2",
+      "N5"
+    ],
+    "primarySkill": "N2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q02",
+    "skills": [
+      "A2",
+      "N5"
+    ],
+    "primarySkill": "A2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q03",
+    "skills": [
+      "N1",
+      "N4"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q04",
+    "skills": [
+      "T2"
+    ],
+    "primarySkill": "T2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q05",
+    "skills": [
+      "G6",
+      "G7",
+      "T1"
+    ],
+    "primarySkill": "G6",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q06",
+    "skills": [
+      "F1",
+      "F2",
+      "A4"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q07",
+    "skills": [
+      "A5",
+      "A3"
+    ],
+    "primarySkill": "A5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q08",
+    "skills": [
+      "K2"
+    ],
+    "primarySkill": "K2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q09",
+    "skills": [
+      "P1"
+    ],
+    "primarySkill": "P1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q10",
+    "skills": [
+      "A6",
+      "V2",
+      "F3"
+    ],
+    "primarySkill": "A6",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q11",
+    "skills": [
+      "P6",
+      "N4"
+    ],
+    "primarySkill": "P6",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Bar chart data reading combined with circle chart sector proportions.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q12",
+    "skills": [
+      "N3",
+      "N4"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Percentage calculations involving ratios of prices.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q13",
+    "skills": [
+      "V3",
+      "G6"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Vector decomposition in a trapezoid using base ratio.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q14",
+    "skills": [
+      "N7",
+      "A5"
+    ],
+    "primarySkill": "N7",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Absolute value equation having no solution based on the sign of the right hand side.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q15",
+    "skills": [
+      "A7",
+      "A1"
+    ],
+    "primarySkill": "A7",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Vieta's formulas combined with algebraic expansion of symmetric polynomial.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q16",
+    "skills": [
+      "F1",
+      "A1"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Checking if a function is even ($f(-x) = f(x))$ along with domain considerations.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q17",
+    "skills": [
+      "P3",
+      "P4"
+    ],
+    "primarySkill": "P3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Probability with biased coin and combined events.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q18",
+    "skills": [
+      "N1",
+      "S2"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Sum of divisors of a prime power, geometric series sum.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q19",
+    "skills": [
+      "G5",
+      "G4",
+      "V1"
+    ],
+    "primarySkill": "G5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Tangent properties to circles, right triangle/Pythagorean theorem to find common tangent segment length.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q20",
+    "skills": [
+      "G7",
+      "G2"
+    ],
+    "primarySkill": "G7",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Area of polygon formed by rotating an equilateral triangle by 60 degrees.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q21",
+    "skills": [
+      "A1",
+      "A4"
+    ],
+    "primarySkill": "A1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Identical polynomials require matching coefficients of corresponding powers of x.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q22",
+    "skills": [
+      "V2",
+      "V1"
+    ],
+    "primarySkill": "V2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Distance from a point to a line formula.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q23",
+    "skills": [
+      "P5"
+    ],
+    "primarySkill": "P5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Changing one data point affects the sum and mean, but changing median does not determine the exact change in mean.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q24",
+    "skills": [
+      "G8"
+    ],
+    "primarySkill": "G8",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Circle area and sector area calculation.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q25",
+    "skills": [
+      "G6",
+      "G4",
+      "G7"
+    ],
+    "primarySkill": "G6",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Rhombus properties, height related to inscribed circle radius and area.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q26",
+    "skills": [
+      "E5",
+      "A5"
+    ],
+    "primarySkill": "E5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q27",
+    "skills": [
+      "V2",
+      "V3"
+    ],
+    "primarySkill": "V2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q28",
+    "skills": [
+      "S2",
+      "T3"
+    ],
+    "primarySkill": "S2",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q29",
+    "skills": [
+      "K2",
+      "G4",
+      "G7"
+    ],
+    "primarySkill": "K2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q30",
+    "skills": [
+      "V4",
+      "V1"
+    ],
+    "primarySkill": "V4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2017-V1-Q31",
+    "skills": [
+      "A8",
+      "A4"
+    ],
+    "primarySkill": "A8",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q32",
+    "skills": [
+      "S1"
+    ],
+    "primarySkill": "S1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q33",
+    "skills": [
+      "T1",
+      "G7"
+    ],
+    "primarySkill": "T1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q34",
+    "skills": [
+      "L1",
+      "P3"
+    ],
+    "primarySkill": "P3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q35",
+    "skills": [
+      "T6"
+    ],
+    "primarySkill": "T6",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q36",
+    "skills": [
+      "E4",
+      "A3"
+    ],
+    "primarySkill": "E4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Logarithm properties and domain constraints",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q37",
+    "skills": [
+      "K3",
+      "G4",
+      "V1"
+    ],
+    "primarySkill": "K3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Pyramid net, volume formula, distance between vertices on a plane net",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q38",
+    "skills": [
+      "G3",
+      "G6",
+      "V2"
+    ],
+    "primarySkill": "G3",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Similar triangles, proportional segments, coordinate geometry or intercept theorem",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q39",
+    "skills": [
+      "A12",
+      "N4"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Mixture word problem using ratios",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2017-V1-Q40",
+    "skills": [
+      "A5",
+      "A6"
+    ],
+    "primarySkill": "A5",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Linear inequality systems with parameters, empty solution set condition",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  }
+]

@@ -1,0 +1,620 @@
+[
+  {
+    "code": "2025-V1-Q01",
+    "skills": [
+      "N2"
+    ],
+    "primarySkill": "N2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q02",
+    "skills": [
+      "N1"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q03",
+    "skills": [
+      "N3"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q04",
+    "skills": [
+      "N4",
+      "G2"
+    ],
+    "primarySkill": "N4",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q05",
+    "skills": [
+      "G4",
+      "G7",
+      "G8"
+    ],
+    "primarySkill": "G8",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q06",
+    "skills": [
+      "N6",
+      "E1"
+    ],
+    "primarySkill": "E1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q07",
+    "skills": [
+      "A2",
+      "N6"
+    ],
+    "primarySkill": "A2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q08",
+    "skills": [
+      "F3"
+    ],
+    "primarySkill": "F3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q09",
+    "skills": [
+      "F3",
+      "T1"
+    ],
+    "primarySkill": "F3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q10",
+    "skills": [
+      "N7",
+      "A10"
+    ],
+    "primarySkill": "A10",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q11",
+    "skills": [
+      "G10",
+      "T1",
+      "G8"
+    ],
+    "primarySkill": "G10",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Regular polygon perimeter using inradius and trigonometry.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q12",
+    "skills": [
+      "N4",
+      "P6"
+    ],
+    "primarySkill": "N4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Ratio and proportion with a pie chart sector angles.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q13",
+    "skills": [
+      "K2",
+      "K3"
+    ],
+    "primarySkill": "K3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Faces, vertices, and edges of prisms and pyramids.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q14",
+    "skills": [
+      "V3",
+      "V1",
+      "V2"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Parallelogram in coordinate plane with dot product or vector geometry.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q15",
+    "skills": [
+      "P1"
+    ],
+    "primarySkill": "P1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Counting principle for palindromic 5-digit numbers.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q16",
+    "skills": [
+      "L1"
+    ],
+    "primarySkill": "L1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q17",
+    "skills": [
+      "T5"
+    ],
+    "primarySkill": "T5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q18",
+    "skills": [
+      "P3",
+      "P2",
+      "P4"
+    ],
+    "primarySkill": "P3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q19",
+    "skills": [
+      "A7",
+      "A5"
+    ],
+    "primarySkill": "A7",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q20",
+    "skills": [
+      "T1",
+      "G4",
+      "G3"
+    ],
+    "primarySkill": "T1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q21",
+    "skills": [
+      "V3"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Angle between two vectors using the dot product formula.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q22",
+    "skills": [
+      "P4",
+      "P2"
+    ],
+    "primarySkill": "P4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Bernoulli trials / binomial probability formula.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q23",
+    "skills": [
+      "F1",
+      "T5"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Range of a trigonometric function.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q24",
+    "skills": [
+      "F4",
+      "V1",
+      "G4"
+    ],
+    "primarySkill": "V1",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Parabola intercepts, distance between points, and Pythagorean theorem.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q25",
+    "skills": [
+      "T5",
+      "T2",
+      "F1"
+    ],
+    "primarySkill": "T5",
+    "difficulty": 5,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Trigonometric equation solutions within a specific interval on the unit circle.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q26",
+    "skills": [
+      "K1"
+    ],
+    "primarySkill": "K1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q27",
+    "skills": [
+      "V4",
+      "V1"
+    ],
+    "primarySkill": "V4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2025-V1-Q28",
+    "skills": [
+      "A1",
+      "S1"
+    ],
+    "primarySkill": "A1",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q29",
+    "skills": [
+      "E4"
+    ],
+    "primarySkill": "E4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q30",
+    "skills": [
+      "G5",
+      "T1",
+      "N4"
+    ],
+    "primarySkill": "G5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q31",
+    "skills": [
+      "E3",
+      "A2",
+      "E1"
+    ],
+    "primarySkill": "E3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Exponential equation reducible to a common base by factoring.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q32",
+    "skills": [
+      "S2"
+    ],
+    "primarySkill": "S2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Standard geometric progression problem using formula for the n-th term.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q33",
+    "skills": [
+      "T5"
+    ],
+    "primarySkill": "T5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Period of absolute value of sine function.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q34",
+    "skills": [
+      "K3",
+      "G3",
+      "T1"
+    ],
+    "primarySkill": "K3",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Dihedral angle of a regular hexagonal pyramid.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q35",
+    "skills": [
+      "F2",
+      "F6",
+      "N7"
+    ],
+    "primarySkill": "F2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Symmetry axis of absolute value function graph to find parameter a.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q36",
+    "skills": [
+      "G3",
+      "G6",
+      "G7"
+    ],
+    "primarySkill": "G3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Uses similar triangles formed by parallel lines and ratio of sides, then area calculations of parallelogram and triangles.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q37",
+    "skills": [
+      "K4"
+    ],
+    "primarySkill": "K4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Cylinder lateral and total surface area formulas.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q38",
+    "skills": [
+      "E4",
+      "E5",
+      "A6"
+    ],
+    "primarySkill": "E4",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Intersection points of logarithmic function and a line, solving for linear coefficients.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q39",
+    "skills": [
+      "G5",
+      "G6",
+      "G7"
+    ],
+    "primarySkill": "G5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Tangent properties to touching circles, trapezoid area.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q40",
+    "skills": [
+      "N3",
+      "P6",
+      "A4"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Pie chart central angles, proportions, and integer constraints.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2025-V1-Q41",
+    "skills": [
+      "E4",
+      "A2",
+      "A4"
+    ],
+    "primarySkill": "E4",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Uses logarithmic properties to combine logs, then factors the algebraic expression to find integer solutions.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  }
+]
