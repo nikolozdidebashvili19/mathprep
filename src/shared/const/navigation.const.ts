@@ -1,9 +1,16 @@
 export type SidebarNavItem = {
   href: string;
   label: string;
-  icon: 'dashboard';
+  icon: 'home' | 'clipboard' | 'map' | 'route' | 'trending' | 'book';
 };
 
+export const SIDEBAR_SECTION_LABEL = 'მომზადება';
+
 export const SIDEBAR_NAV_ITEMS: SidebarNavItem[] = [
-  { href: '/dashboard', label: 'Dashboard', icon: 'dashboard' },
+  { href: '/dashboard', label: 'მთავარი', icon: 'home' },
+  { href: '/diagnostic', label: 'დიაგნოსტიკა', icon: 'clipboard' },
+  { href: '/report', label: 'ცოდნის რუკა', icon: 'map' },
+  { href: '/course', label: 'ჩემი კურსი', icon: 'route' },
+  { href: '/revision', label: 'თეორიის გამეორება', icon: 'book' },
+  { href: '/progress', label: 'პროგრესი', icon: 'trending' },
 ];

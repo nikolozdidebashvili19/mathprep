@@ -1,0 +1,1144 @@
+[
+  {
+    "code": "2022-V1-Q01",
+    "examId": "2022-V1",
+    "number": 1,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$1\\frac{1}{3} + \\frac{2}{3} \\cdot 0,3 =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$1\\frac{8}{15}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{5}{8}$"
+      },
+      {
+        "key": "გ",
+        "text": "$1,5$"
+      },
+      {
+        "key": "დ",
+        "text": "$0,6$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q02",
+    "examId": "2022-V1",
+    "number": 2,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$0,0072 =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$7,2 \\cdot 10^{-3}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$72 \\cdot 10^{-3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$0,72 \\cdot 10^{-4}$"
+      },
+      {
+        "key": "დ",
+        "text": "$7,2 \\cdot 10^{-1}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q03",
+    "examId": "2022-V1",
+    "number": 3,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სპილენძისა და ვერცხლის შენადნობში ვერცხლის მასა სპილენძის მასის $25\\%$-ს შეადგენს. შენადნობის მასის რამდენ პროცენტს შეადგენს სპილენძის მასა?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$60\\%$"
+      },
+      {
+        "key": "ბ",
+        "text": "$75\\%$"
+      },
+      {
+        "key": "გ",
+        "text": "$80\\%$"
+      },
+      {
+        "key": "დ",
+        "text": "$84\\%$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q04",
+    "examId": "2022-V1",
+    "number": 4,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ტოლფერდა სამკუთხედის ერთ-ერთი კუთხის მოსაზღვრე კუთხის სიდიდე $25^\\circ$-ის ტოლია. იპოვეთ ამ სამკუთხედის ფუძესთან მდებარე კუთხის სიდიდე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$155^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$77,5^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$25^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$12,5^\\circ$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q05",
+    "examId": "2022-V1",
+    "number": 5,
+    "sourcePage": 6,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "წესიერ ექვსკუთხედზე შემოსაზღვრული წრეწირის სიგრძეა $24\\pi$ სმ. იპოვეთ ამ ექვსკუთხედის გვერდის სიგრძე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$12$ სმ"
+      },
+      {
+        "key": "ბ",
+        "text": "$8$ სმ"
+      },
+      {
+        "key": "გ",
+        "text": "$6$ სმ"
+      },
+      {
+        "key": "დ",
+        "text": "$2$ სმ"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q06",
+    "examId": "2022-V1",
+    "number": 6,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$\\frac{2}{\\sqrt{3}-1} =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\sqrt{3}-1$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\sqrt{3}+1$"
+      },
+      {
+        "key": "გ",
+        "text": "$2\\sqrt{3}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\sqrt{3}+\\sqrt{2}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q07",
+    "examId": "2022-V1",
+    "number": 7,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$\\frac{a^3 - 27}{a^2 + 3a + 9} =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$a - 3$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{a - 3}{a + 3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$-3$"
+      },
+      {
+        "key": "დ",
+        "text": "$a + 3$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q08",
+    "examId": "2022-V1",
+    "number": 8,
+    "sourcePage": 9,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რამდენი უარყოფითი მთელი ამონახსნი აქვს $\\frac{3}{11}x + 2 > 0,3$ უტოლობას?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$5$"
+      },
+      {
+        "key": "ბ",
+        "text": "$6$"
+      },
+      {
+        "key": "გ",
+        "text": "$7$"
+      },
+      {
+        "key": "დ",
+        "text": "$8$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q09",
+    "examId": "2022-V1",
+    "number": 9,
+    "sourcePage": 10,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "საკოორდინატო ბადით დაფარულ სიბრტყეზე მოცემულია $[-4; 4]$ შუალედზე განსაზღვრული $y = f(x)$ ფუნქციის გრაფიკი, რომელიც აბსცისათა ღერძს კვეთს მთელი კოორდინატების მქონე წერტილებში (იხ. სურათი). იპოვეთ $f(x)>0$ უტოლობის ამონახსნთა სიმრავლე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-4; -1)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-1; 2)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(0; 4)$"
+      },
+      {
+        "key": "დ",
+        "text": "(-4; -1) \\cup (2; 4)"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2022-V1/q09.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "Option დ has the union symbol, transcribed as text with parentheses.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q10",
+    "examId": "2022-V1",
+    "number": 10,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $a$ პარამეტრის მნიშვნელობა, თუ ცნობილია, რომ $2x^2 - ax + 3 = 0$ განტოლების ამონასხნთა ჯამი $7$-ის ტოლია.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$14$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-14$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{14}{3}$"
+      },
+      {
+        "key": "დ",
+        "text": "$7$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q11",
+    "examId": "2022-V1",
+    "number": 11,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $x$, თუ ცნობილია, რომ $4; 9; 1; 3; 12; x$ რიცხვითი მონაცემების მედიანა $5,5$-ის ტოლია.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$3$"
+      },
+      {
+        "key": "ბ",
+        "text": "$4$"
+      },
+      {
+        "key": "გ",
+        "text": "$5,5$"
+      },
+      {
+        "key": "დ",
+        "text": "$7$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q12",
+    "examId": "2022-V1",
+    "number": 12,
+    "sourcePage": 13,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე მოცემულია ქვემოთ ჩამოთვლილ მრავალწახნაგებიდან ერთ-ერთის შლილი. დაასახელეთ ეს მრავალწახნაგა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "სამკუთხა პირამიდა;"
+      },
+      {
+        "key": "ბ",
+        "text": "ოთხკუთხა პირამიდა;"
+      },
+      {
+        "key": "გ",
+        "text": "სამკუთხა პრიზმა;"
+      },
+      {
+        "key": "დ",
+        "text": "ოთხკუთხა პრიზმა."
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2022-V1/q12.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q13",
+    "examId": "2022-V1",
+    "number": 13,
+    "sourcePage": 14,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ საკოორდინატო სიბრطყეზე $y = -x$ წრფის მიმართ $(-3; 4)$ წერტილის სიმეტრიული წერტილია",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-4; 3)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-3; -4)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(3; -4)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(4; -3)$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: ط"
+      ]
+    }
+  },
+  {
+    "code": "2022-V1-Q14",
+    "examId": "2022-V1",
+    "number": 14,
+    "sourcePage": 15,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სულ რამდენი ათნიშნა ლუწი რიცხვი არსებობს, რომლის ჩანაწერში ოთხი ციფრია „2“, ხოლო ექვსი ციფრია „9“?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$128$"
+      },
+      {
+        "key": "ბ",
+        "text": "$96$"
+      },
+      {
+        "key": "გ",
+        "text": "$84$"
+      },
+      {
+        "key": "დ",
+        "text": "$64$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q15",
+    "examId": "2022-V1",
+    "number": 15,
+    "sourcePage": 16,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "არითმეტიკულ პროგრესიაში პირველი ცხრა წევრის ჯამი $m$-ის ტოლია, ხოლო მეორე წევრიდან მეათე წევრის ჩათვლით პროგრესიის წევრთა ჯამი $n$-ის ტოლია ($m \\neq n$). იპოვეთ ამ პროგრესიის სხვაობა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{m - n}{10}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{m - n}{9}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{n - m}{10}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{n - m}{9}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q16",
+    "examId": "2022-V1",
+    "number": 16,
+    "sourcePage": 17,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რას უდრის იმის ალბათობა, რომ სამი კამათლის გაგორებისას მოსული რიცხვების ჯამი მეტი იქნება $16$-ზე?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{53}{54}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{1}{54}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{17}{18}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{1}{18}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q17",
+    "examId": "2022-V1",
+    "number": 17,
+    "sourcePage": 18,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$A(0; 3)$ და $B\\left(4, \\frac{3}{2}\\right)$ წერტილები მდებარეობს $f(x) = a \\cdot 2^{bx}$ ფუნქციის გრაფიკზე (იხ. სურათი). იპოვეთ $a + b$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{5}{2}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{11}{4}$"
+      },
+      {
+        "key": "გ",
+        "text": "$3$"
+      },
+      {
+        "key": "დ",
+        "text": "$-1$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [
+      "content/images/2022-V1/q17.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q18",
+    "examId": "2022-V1",
+    "number": 18,
+    "sourcePage": 19,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABC$ სამკუთხედში $\\angle A = 60^\\circ$ და $\\angle B = 45^\\circ$. ქვემოთ ჩამოთვლილი გამონათქვამებიდან რომელია ჭეშმარიტი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{BC}{AC} = \\frac{\\sqrt{3}}{2}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{BC}{AC} < \\sqrt{2}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{BC}{AC} > \\sqrt{2}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{BC}{AC} = \\sqrt{\\frac{2}{3}}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q19",
+    "examId": "2022-V1",
+    "number": 19,
+    "sourcePage": 20,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ქვემოთ ჩამოთვლილთაგან რომელი გამოსახულებაა ყოველთვის ჭეშმარიტი $\\vec{a}$ და $\\vec{b}$ არანულოვანი ვექტორებისათვის?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\vec{a} \\cdot \\vec{b} = 0$;"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\vec{a} \\cdot \\vec{b} \\neq 0$;"
+      },
+      {
+        "key": "გ",
+        "text": "$|\\vec{a} \\cdot \\vec{b}| \\le 1$;"
+      },
+      {
+        "key": "დ",
+        "text": "$-1 \\le \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}| \\cdot |\\vec{b}|} \\le 1$."
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q20",
+    "examId": "2022-V1",
+    "number": 20,
+    "sourcePage": 21,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $k$ პარამეტრის ყველა ნამდვილი მნიშვნელობა, რომელთაგან თითოეულისათვის $|3x+4|-7+k=0$ განტოლებას არ გააჩნია ამონახსნი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-\\frac{4}{3}; \\infty)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(-7; \\infty)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(7; \\infty)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(-\\infty; \\infty)$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q21",
+    "examId": "2022-V1",
+    "number": 21,
+    "sourcePage": 22,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე გამოსახულია ქვემოთ ჩამოთვლილი ფუნქციებიდან ერთ-ერთის გრაფიკი. რომელია ეს ფუნქცია?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$f(x) = \\sqrt{\\sqrt{|x| - 1}}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$f(x) = \\sqrt{\\sqrt{|x|} - 1}$"
+      },
+      {
+        "key": "გ",
+        "text": "$f(x) = \\sqrt{\\sqrt{|x| + 1}}$"
+      },
+      {
+        "key": "დ",
+        "text": "$f(x) = \\sqrt{|x| - 1}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2022-V1/q21.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "Option დ has a slight typo in the image for the outer root placement, but transcribed as presented.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q22",
+    "examId": "2022-V1",
+    "number": 22,
+    "sourcePage": 23,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ქვემოთ ჩამოთვლილი უტოლობებიდან, რომელია ჭეშმარიტი ყოველი $\\alpha$ რიცხვისათვის $\\left(\\frac{\\pi}{3}; \\frac{\\pi}{2}\\right)$ შუალედიდან?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\sin \\alpha < \\frac{1}{2}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\cos \\alpha < \\frac{\\sqrt{2}}{2}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\cos \\alpha > \\frac{\\sqrt{3}}{2}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\sin \\alpha > \\frac{3\\sqrt{3}}{4}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q23",
+    "examId": "2022-V1",
+    "number": 23,
+    "sourcePage": 24,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ მართკუთხა საკოორდინატო სიბრტყეში $O$ წერტილის მიმართ $\\alpha$ მახვილი კუთხით მობრუნებას $(3; 1)$ წერტილი გადაჰყავს წერტილში, რომლის აბსცისა $1$-ის ტოლია. იპოვეთ $\\alpha$ კუთხის რადიანული ზომა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{\\pi}{3}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{\\pi}{6}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\operatorname{arctg}\\left(\\frac{2}{3}\\right)$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\operatorname{arctg} 3 - \\operatorname{arctg}\\left(\\frac{1}{3}\\right)$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q24",
+    "examId": "2022-V1",
+    "number": 24,
+    "sourcePage": 25,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ უმცირესი მთელი რიცხვი, რომელიც მეტია $\\log_2 11$-ზე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$3$"
+      },
+      {
+        "key": "გ",
+        "text": "$4$"
+      },
+      {
+        "key": "დ",
+        "text": "$5$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q25",
+    "examId": "2022-V1",
+    "number": 25,
+    "sourcePage": 26,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABCD$ კვადრატის გვერდი $\\sqrt{3}$-ის ტოლია. წრეწირი ცენტრით $A$ წერტილში, კვადრატის $BC$ და $CD$ გვერდებს კვეთს შესაბამისად $M$ და $N$ წერტილებში ისე, რომ $BM = DN = 1$ (იბ. სურათი). იპოვეთ $ABCD$ კვადრატის შიგნით მდებარე $MN$ რკალის გრადუსული ზომა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$60^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$45^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$30^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$15^\\circ$"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2022-V1/q25.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q26",
+    "examId": "2022-V1",
+    "number": 26,
+    "sourcePage": 27,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $f(x) = 2^{x^2 - 2x}$ ფუნქციის მნიშვნელობათა სიმრავლე, თუ $x \\in [0; 3]$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$[1; 8]$"
+      },
+      {
+        "key": "ბ",
+        "text": "$[\\frac{1}{2}; 8]$"
+      },
+      {
+        "key": "გ",
+        "text": "$(0; 8]$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\{1; 8\\}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q27",
+    "examId": "2022-V1",
+    "number": 27,
+    "sourcePage": 28,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ კონუსის მსاخველის სიგრძე, თუ მისი ფუძის ფართობია $3\\pi \\text{ სმ}^2$, ხოლო გვერდითი ზედაპირის ფართობია $6\\pi \\text{ სმ}^2$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2 \\text{ სმ}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$3 \\text{ სმ}$"
+      },
+      {
+        "key": "გ",
+        "text": "$2\\sqrt{3} \\text{ სმ}$"
+      },
+      {
+        "key": "დ",
+        "text": "$3\\sqrt{2} \\text{ სმ}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: اخ"
+      ]
+    }
+  },
+  {
+    "code": "2022-V1-Q28",
+    "examId": "2022-V1",
+    "number": 28,
+    "sourcePage": 29,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "ამოხსენით განტოლებათა სისტემა: $\\left\\{\\begin{aligned} x - 2y &= 3 \\\\ 4x - 3y &= 0 \\end{aligned}\\right.$",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q29",
+    "examId": "2022-V1",
+    "number": 29,
+    "sourcePage": 30,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "საათი აჩვენებს 2 საათსა და 20 წუთს. იპოვეთ კუთხის სიდიდე წუთებისა და საათების ისრებს შორის.",
+    "options": [],
+    "answer": "",
+    "images": [
+      "content/images/2022-V1/q29.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q30",
+    "examId": "2022-V1",
+    "number": 30,
+    "sourcePage": 31,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "$ABCD$ კვადრატის $BC$ გვერდზე აღებულია $E$ წერტილი ისე, რომ $\\angle ADE = 60^\\circ$. იპოვეთ $ABCD$ კვადრატის ფართობი, თუ $ECD$ სამკუთხედის ფართობი $S$-ის ტოლია.",
+    "options": [],
+    "answer": "",
+    "images": [
+      "content/images/2022-V1/q30.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q31",
+    "examId": "2022-V1",
+    "number": 31,
+    "sourcePage": 32,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "$b_n$ გეომეტრიული პროგრესიის წევრები განსაზღვrულია ფორმულით $b_n = -2 \\cdot \\left(\\frac{2}{3}\\right)^{n-1}$. იპოვეთ ამ პროგრესიის პირველი $10$ წევრის ჯამი.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q32",
+    "examId": "2022-V1",
+    "number": 32,
+    "sourcePage": 33,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "იპოვეთ $x$-ის ყველა იმ მნიშვნელingებათა სიმრავლე, რომლისათვისაც კუთხე $\\vec{a}(x + 1, 2x)$ და $\\vec{b}(3x, -x + 1)$ ვექტორებს შორის ეკუთვნის $[0^\\circ; 90^\\circ)$ შუალედს.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "There is a slight typo in the source image 'მნიშვნელingებათა' which contains a Latin 'ing', but the Georgian text is transcribed exactly as printed.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q33",
+    "examId": "2022-V1",
+    "number": 33,
+    "sourcePage": 34,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "$DABC$ პირამიდაში $\\angle ACD = \\angle ACB = \\angle BCD = 60^\\circ$. იპოვეთ პირამიდის $DH$ სიმაღლე, თუ $CD = 6$ სმ.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q34",
+    "examId": "2022-V1",
+    "number": 34,
+    "sourcePage": 35,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "ორმა მორბენალმა წრიული ფორმის სარბენი ბილიკის ერთი და იმავე ადგილიდან ურთიერთსაწინააღმდეგო მიმართულებით მუდმივი სიჩქარეებით ერთდროულად დაიწყო სირბილი და პირველად ერთმანეთს 6 წუთის შემდეგ შეხვდნენ. იმავე სიჩქარეებით სირბილისას პირველი მორბენალი 5 წუთით უფრო სწრაფად შემურბენს სარბენ ბილიკს, ვიდრე მეორე მორბენალი. რამდენი წუთში შემურბენს სარბენ ბილიკს პირველი მორბენალი?",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2022-V1-Q35",
+    "examId": "2022-V1",
+    "number": 35,
+    "sourcePage": 36,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "იპოვეთ $a$ პარამეტრის ყველა იმ მნიშვნელობათა სიმრავლე, რომელთათვისაც $x^2 \\le a - 2$ და $x^2 + 4x \\le 1 - a$ უტოლობების ამონახსნთა სიმრავლეებს აქვს ზუსტად ერთი საერთო ელემენტი.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  }
+]

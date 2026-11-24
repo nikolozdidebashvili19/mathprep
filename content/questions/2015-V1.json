@@ -1,0 +1,1308 @@
+[
+  {
+    "code": "2015-V1-Q01",
+    "examId": "2015-V1",
+    "number": 1,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$0,99 : 1,1 + 0,1 =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{1}{11}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$1$"
+      },
+      {
+        "key": "გ",
+        "text": "$1,1$"
+      },
+      {
+        "key": "დ",
+        "text": "$9,1$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q02",
+    "examId": "2015-V1",
+    "number": 2,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რა ნაშთი მიიღება $a$ რიცხვის $8$-ზე გაყოფისას, თუ $27 + a$ -ს $8$-ზე გაყოფისას ნაშთი მიიღება $2$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$7$"
+      },
+      {
+        "key": "ბ",
+        "text": "$5$"
+      },
+      {
+        "key": "გ",
+        "text": "$3$"
+      },
+      {
+        "key": "დ",
+        "text": "$2$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q03",
+    "examId": "2015-V1",
+    "number": 3,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ნავთობის გაიაფების შედეგად ერთი ლიტრი ბენზინის ფასი $20\\%$-ით შემცირდა და $1,68$ ლარი შეადგენა. რა ღირდა ერთი ლიტრი ბენზინი გაიაფებამდე?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2,016$ ლარი"
+      },
+      {
+        "key": "ბ",
+        "text": "$2,05$ ლარი"
+      },
+      {
+        "key": "გ",
+        "text": "$2,1$ ლარი"
+      },
+      {
+        "key": "დ",
+        "text": "$2,25$ ლარი"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q04",
+    "examId": "2015-V1",
+    "number": 4,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე დაყრდნობით იპოვეთ $\\angle ACB$ -ს გრადუსული ზომა, თუ $AC$ და $BC$ მონაკვეთები $a$ და $b$ პარალელურ წრფეებთან შესაბამისად $58^\\circ$ -იან და $12^\\circ$ -იან კუთხეებს ადგენს.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$146^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$120^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$46^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$134^\\circ$"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2015-V1/q04.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q05",
+    "examId": "2015-V1",
+    "number": 5,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABC$ მართკუთხა სამკუთხედში $\\angle C = 90^\\circ$, ხოლო $CO$ მედიანაა. იპოვეთ $AC$ კათეტის სიგრძე, თუ $CO = CB = 5$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$5\\sqrt{3}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$6$"
+      },
+      {
+        "key": "გ",
+        "text": "$10$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\sqrt{15}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2015-V1/q05.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q06",
+    "examId": "2015-V1",
+    "number": 6,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ავტობუსის გაჩერებაზე №11 ავტობუსი ყოველ $12$ წუთში ერთხელ ჩერდება, ხოლო №17 ავტობუსი - ყოველ $18$ წუთში ერთხელ. დროის გარკვეულ მომენტში ეს ავტობუსები ამ გაჩერებაზე ერთდროულად გაჩერდნენ. რა უმცირესი დროის შემდეგ გაჩერდებიან კვლავ ეს ავტობუსები ერთდროულად ამ გაჩერებაზე?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$30$ წუთის შემდეგ"
+      },
+      {
+        "key": "ბ",
+        "text": "$36$ წუთის შემდეგ"
+      },
+      {
+        "key": "გ",
+        "text": "$96$ წუთის შემდეგ"
+      },
+      {
+        "key": "დ",
+        "text": "$216$ წუთის შემდეგ"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q07",
+    "examId": "2015-V1",
+    "number": 7,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $n$, თუ $\\frac{4,5}{\\sqrt{n}} = \\frac{9}{50}$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$5$"
+      },
+      {
+        "key": "ბ",
+        "text": "$225$"
+      },
+      {
+        "key": "გ",
+        "text": "$25$"
+      },
+      {
+        "key": "დ",
+        "text": "$625$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q08",
+    "examId": "2015-V1",
+    "number": 8,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ველოსიპედისტი სახლიდან გამოსვლის შემდეგ დაიშვა დაღმართზე მაღაზიამდე და პროდუქტის შეძენის შემდეგ იმავე გზით დაბრუნდა სახლში. სურათზე მოცემულია მისი სახლიდან დაშორების დროზე დამოკიდებულების გრაფიკი. გრაფიკზე დაყრდნობით იპოვეთ ველოსიპედისტის სიჩქარე აღმართზე მოძრაობისას (ჩაatვალეთ, რომ ველოსიპედისტი მოძრაობს წროფის მონაკვეთის გასწვრივ).",
+    "options": [
+      {
+        "key": "ა",
+        "text": "10 \\text{ კმ/სთ}"
+      },
+      {
+        "key": "ბ",
+        "text": "15 \\text{ კმ/სთ}"
+      },
+      {
+        "key": "გ",
+        "text": "9 \\text{ კმ/სთ}"
+      },
+      {
+        "key": "დ",
+        "text": "12 \\text{ კმ/სთ}"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2015-V1/q08.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "მოძრაობს წროფის - typo in original text 'წროფის' instead of 'წრფის'.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q09",
+    "examId": "2015-V1",
+    "number": 9,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "თუ $a - b = 1$, მაშინ $a^3 - b^3 =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$1$"
+      },
+      {
+        "key": "ბ",
+        "text": "$1 + 3b + 3b^2$"
+      },
+      {
+        "key": "გ",
+        "text": "$1 - 3b + 3b^2$"
+      },
+      {
+        "key": "დ",
+        "text": "$1 + 2b$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q10",
+    "examId": "2015-V1",
+    "number": 10,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ax = b$ წრივ განტოლებას არ გააჩნია ამონახსენი, როდესაც",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$a = 0$ და $b = 0$"
+      },
+      {
+        "key": "ბ",
+        "text": "$a \\neq 0$"
+      },
+      {
+        "key": "გ",
+        "text": "$b = 0$"
+      },
+      {
+        "key": "დ",
+        "text": "$a = 0$ და $b \\neq 0$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q11",
+    "examId": "2015-V1",
+    "number": 11,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ იმ წრფის განტოლება, რომელიც $Oxy$ მართკუთხა კოორდინატთა სისტემაში გადის $(3; 2)$ და $(-1; -2)$ წერტილებზე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$y = -x + 5$"
+      },
+      {
+        "key": "ბ",
+        "text": "$y = \\frac{x}{2} - \\frac{3}{2}$"
+      },
+      {
+        "key": "გ",
+        "text": "$y = x - 1$"
+      },
+      {
+        "key": "დ",
+        "text": "$y = x^2 - x - 4$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q12",
+    "examId": "2015-V1",
+    "number": 12,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ძმა $5$ წლით უფროსია დაზე. იპოვეთ და-ძმის წლოვანებათა ჯამი, თუ მათი წლოვანებები $4$ წლის წინ ისე შეეფარდებოდა ერთმანეთს, როგორც $3:2$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$23$"
+      },
+      {
+        "key": "ბ",
+        "text": "$27$"
+      },
+      {
+        "key": "გ",
+        "text": "$33$"
+      },
+      {
+        "key": "დ",
+        "text": "$36$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q13",
+    "examId": "2015-V1",
+    "number": 13,
+    "sourcePage": 6,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე მოცემულ ვენის დიაგრამაზე $A$, $B$ და $C$ სიმრავლეები კვადრატებით არის გამოსახული. ქვემოთ ჩამოთვლილთაგან რომელია სურათზე გამუქებული ფიგურით მოცემული სიმრავლე?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$A \\cup (B \\cap C)$;"
+      },
+      {
+        "key": "ბ",
+        "text": "$(A \\cap C) \\cup (A \\cap B) \\cup (B \\cap C)$;"
+      },
+      {
+        "key": "გ",
+        "text": "$A \\cap B \\cap C$;"
+      },
+      {
+        "key": "დ",
+        "text": "$A \\cup B \\cup C$."
+      }
+    ],
+    "answer": "ბ",
+    "images": [
+      "content/images/2015-V1/q13.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q14",
+    "examId": "2015-V1",
+    "number": 14,
+    "sourcePage": 6,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "უჯრედებიან ფურცელზე, რომლის თითოეული უჯრა $1$ ერთეულის ტოლი გვერდის მქონე კვადრატს წარმოადგენს, გამოსახულია $\\vec{a}$ და $\\vec{b}$ ვექტორები, რომელთა სათავე და ბოლო უჯრების წერტილებს ემთხვევა. სურათის მიხედვით იპოვეთ $\\vec{a}+\\vec{b}$ ვექტორის კოორდინატები.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-1; 6)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(1; 3)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(-1; 2)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(1; 6)$"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2015-V1/q14.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q15",
+    "examId": "2015-V1",
+    "number": 15,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "პირველ კლასში, მეორე კლასთან შედარებით, ერთი მოტი ბიჭი და ერთიონ ნაკლები გოგონაა. თითოეული კლასისთვის შეადგინეს ბიჭებისა და გოგონების რაოდენობების გამოსახველი წრიული დიაგრამა. იპოვეთ რამდენი მოსწავლეა პირველ კლასში, თუ გოგონების შესაბამისი სექტორის ცენტრალური კუთხის სიდიდე მეორე კლასის დიაგრამაზე $30^\\circ$-ით მეტია ვიდრე პირველ კლასის დიაგრამაზე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$30$"
+      },
+      {
+        "key": "ბ",
+        "text": "$6$"
+      },
+      {
+        "key": "გ",
+        "text": "$24$"
+      },
+      {
+        "key": "დ",
+        "text": "$12$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q16",
+    "examId": "2015-V1",
+    "number": 16,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე მოცემულია $1\\text{ სმ}^3$ მოცულობის მქონე კუბის შლილი. იპოვეთ ამ კუბის იმ წვეროებს შორის მანძილი, რომელსაც შլილზე $A$ და $B$ წერტილები შეესაბამება.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$0\\text{ სმ}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\sqrt{3}\\text{ სმ}$"
+      },
+      {
+        "key": "გ",
+        "text": "$1\\text{ სმ}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\sqrt{2}\\text{ სმ}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2015-V1/q16.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: լ"
+      ]
+    }
+  },
+  {
+    "code": "2015-V1-Q17",
+    "examId": "2015-V1",
+    "number": 17,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ მართკუთხა საკოორდინატო სიბრطყეზე აგებულია $y = \\log_2 x$ და $y = \\log_2 \\left(\\frac{1}{x}\\right)$ ფუნქციათა გრაფიკები. ქვემოთ ჩამოთვლილი გარდაქმნებიდან რომელს გადაჰყავს პირველი ფუნქციის გრაფიკი მეორე ფუნქციის გრაფიკში?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "სიმეტრიას $Oy$ ღერძის მიმართ;"
+      },
+      {
+        "key": "ბ",
+        "text": "სიმეტრიას $Ox$ ღერძის მიმართ;"
+      },
+      {
+        "key": "გ",
+        "text": "ცენტრულ სიმეტრიას $O$ წერტილის მიმართ;"
+      },
+      {
+        "key": "დ",
+        "text": "სიმეტრიას $y = x$ წრფის მიმართ."
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: ط"
+      ]
+    }
+  },
+  {
+    "code": "2015-V1-Q18",
+    "examId": "2015-V1",
+    "number": 18,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ურნაში დევს ერთნაირი ზომის 8 წითელი და 8 თეთრი ბურთი. ურნიდან ერთდროულად იღებენ შემთხვევით არჩეულ ორ ბურთს. იპოვეთ ალბათობა იმისა, რომ ორივე ბურთი განსხვავებული ფერის იქნება.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{7}{16}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{1}{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{8}{15}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q19",
+    "examId": "2015-V1",
+    "number": 19,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "თუ $f(x)=2-3x$, $g(x)=2-5x$, მაშინ $f(g(x))=$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$15x-8$"
+      },
+      {
+        "key": "ბ",
+        "text": "$4-8x$"
+      },
+      {
+        "key": "გ",
+        "text": "$15x-4$"
+      },
+      {
+        "key": "დ",
+        "text": "$(2-3x)\\cdot(2-5x)$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q20",
+    "examId": "2015-V1",
+    "number": 20,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ტბის ნაპირზე მდებარე $A$ და $B$ პუნქტებს შორის მანძილის პოვნის მიზნით გაზომეს მანძილი $M$ წერტილიდან $B$ პუნქტამდე და $\\angle AMB$ და $\\angle ABM$ კუთხეები. იპოვეთ $AB$ მანძილი, თუ $MB = 2\\text{ კმ}$, $\\angle AMB = 45^\\circ$ და $\\angle ABM = 105^\\circ$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2\\sqrt{2}\\text{ კმ}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$3\\text{ კმ}$"
+      },
+      {
+        "key": "გ",
+        "text": "$2\\sqrt{3}\\text{ კმ}$"
+      },
+      {
+        "key": "დ",
+        "text": "$4\\text{ კმ}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2015-V1/q20.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q21",
+    "examId": "2015-V1",
+    "number": 21,
+    "sourcePage": 9,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე გამოსახულია $AC$ დიამეტრის მქონე ნახევარწრეწირი. $B$ წერტილი მდებარეობს ამ ნახევარწრეწირის რკალზე, ხოლო $K$ წერტილი წარმოადგენს $ABC$ სამკუთხედში ჩາხაზული წრეწირის ცენტრს. ქვემოთ ჩამოთვლილი წინადადებებიდან რომელია ჭეშმარიტი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\angle AKC$ კუთხის სიდიდე დამოკიდებულია $B$ წერტილის მდებარეობაზე ნახევარწრეწირის რკალზე."
+      },
+      {
+        "key": "ბ",
+        "text": "$\\angle AKC$ კუთხის სიდიდე არ არის დამოკიდებული $B$ წერტილის მდებარეობაზე ნახევარწრეწირის რკალზე, მაგრამ დამოკიდებულია ნახევარწრეწირის რადიუსზე."
+      },
+      {
+        "key": "გ",
+        "text": "$\\angle AKC$ კუთხის სიდიდე არ არის დამოკიდებული $B$ წერტილის მდებარეობაზე ნახევარწრეწირის რკალზე, მაგრამ დამოკიდებულია სამკუთხედში ჩახაზული წრეწირის რადიუსზე."
+      },
+      {
+        "key": "დ",
+        "text": "ნახევარწრეწირის რკალზე მდებარე ნებისმიერი $B$ წერტილისთვის $\\angle AKC = 135^\\circ$"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2015-V1/q21.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q22",
+    "examId": "2015-V1",
+    "number": 22,
+    "sourcePage": 9,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ცნობილია, რომ $\\frac{a}{x+1} + \\frac{b}{x-1}$ და $\\frac{7x+10}{x^2-1}$ გამოსახულებები $a$ და $b$ პარამეტრების გარკვეული მნიშვნელობებისათვის იგიურად ტოლია. იპოვეთ $a$ და $b$ პარამეტრების ამ მნიშვნელობებისათვის $a^2-b^2$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-70$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-35$"
+      },
+      {
+        "key": "გ",
+        "text": "$10$"
+      },
+      {
+        "key": "დ",
+        "text": "$0$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q23",
+    "examId": "2015-V1",
+    "number": 23,
+    "sourcePage": 10,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $a$-ს იმ მნიშვნელობათა სიმრავლე, რომლებისთვისაც წერტილი $P(2a+3; 3a-2)$ საკოორდინატო სიბრطყის მეოთხე მეოთხედში მდებარობს (ამასთან არ მდებარობს კოორდინატთა ღერძებზე).",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\left(\\frac{2}{3}; \\frac{3}{2}\\right)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\left(-\\frac{3}{2}; \\frac{2}{3}\\right)$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\left(\\frac{2}{3}; +\\infty\\right)$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\left(-\\infty; \\frac{2}{3}\\right)$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: ط"
+      ]
+    }
+  },
+  {
+    "code": "2015-V1-Q24",
+    "examId": "2015-V1",
+    "number": 24,
+    "sourcePage": 10,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABC$ კუთხის გვერდები ეხებიან წრეწირს $A$ და $C$ წერტილებში (იხ. სურათი). იპოვეთ სურათზე გამუქებული $AOC$ სექტორის ფართობი, თუ $AC = 6$ და $\\angle ABC = 60^\\circ$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$6\\pi$"
+      },
+      {
+        "key": "ბ",
+        "text": "$4\\pi$"
+      },
+      {
+        "key": "გ",
+        "text": "$3\\pi$"
+      },
+      {
+        "key": "დ",
+        "text": "$9\\pi$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [
+      "content/images/2015-V1/q24.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q25",
+    "examId": "2015-V1",
+    "number": 25,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABCD$ მართკუთხა ტრაპეციაში $AC \\perp CD$ (იხ. სურათი). იპოვეთ ტრაპეციის ფართობი, თუ $AC = 3$, $AD = 5$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$6,9$"
+      },
+      {
+        "key": "ბ",
+        "text": "$8\\frac{1}{4}$"
+      },
+      {
+        "key": "გ",
+        "text": "$8\\frac{4}{25}$"
+      },
+      {
+        "key": "დ",
+        "text": "$9\\frac{4}{25}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2015-V1/q25.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q26",
+    "examId": "2015-V1",
+    "number": 26,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "გამოთვალეთ $\\sin(\\alpha - \\beta)$, თუ $\\cos\\alpha = \\frac{1}{3}$, $\\cos\\beta = \\frac{1}{4}$, $\\alpha \\in (0; \\pi)$ და $\\beta \\in \\left(-\\frac{\\pi}{2}; 0\\right)$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{\\sqrt{23}}{12}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{\\sqrt{7}}{12}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{\\sqrt{15} + \\sqrt{8}}{12}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{\\sqrt{15} - \\sqrt{8}}{12}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q27",
+    "examId": "2015-V1",
+    "number": 27,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ მართკუთხა საკოორდინატო სისტემაში მოცემულია $A(3; -2)$ წერტილი. იპოვეთ $A$ წერტილის ანსახის კოორდინატები სიბრტყეზე თანმიმდევრობით განხორციელებული შემდეგი ორი გარდაქმნის შედეგად: ჯერ სიმეტრია $y = x$ განტოლებით მოცემული წრფის მიმართ, ხოლო შემდეგ პარალელური გადატანა $\\vec{a} = (3; -5)$ ვექტორით.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-7; 6)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(0; -3)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(1; -2)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(6; -7)$"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2015-V1/q27.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "Diagram box set by hand.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q28",
+    "examId": "2015-V1",
+    "number": 28,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "დადებითი რიცხვებისგან შედგენილ $a_1, a_2, \\dots$ არითმეტიკულ პროგრესიაში პირველი წევრი პროგრესიის სხვაობაზე $3$-ჯერ მეტია. გამოთვალეთ $\\frac{a_{20}}{a_{10}}$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{11}{6}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$2$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{23}{13}$"
+      },
+      {
+        "key": "დ",
+        "text": "$2,3$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q29",
+    "examId": "2015-V1",
+    "number": 29,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რას უდრის $f(x) = |\\sin 3x|$ ფუნქციის უმცირესი დადებითი პერიოდი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{\\pi}{3}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{2\\pi}{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$2\\pi$"
+      },
+      {
+        "key": "დ",
+        "text": "$6\\pi$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q30",
+    "examId": "2015-V1",
+    "number": 30,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "კონუსის ფუძის რადიუსი კონუსის სიმაღლეზე 2-ჯერ ნაკლებია. იპოვეთ კონუსის გვერდითი ზედაპირის ფართობის შეფარდება კონუსის ფუძის ფართობთან.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\sqrt{5}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\sqrt{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{\\sqrt{5}}{2}$"
+      },
+      {
+        "key": "დ",
+        "text": "$2\\sqrt{3}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q31",
+    "examId": "2015-V1",
+    "number": 31,
+    "sourcePage": 13,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "იპოვეთ უტოლობათა სისტემის ამონახსენთა სიმრავლე $\\begin{cases} 5x+4 \\ge 3x-2 \\\\ x-2 < -4x \\end{cases}$.",
+    "options": [],
+    "answer": "-3le x<\frac{2}{5}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q32",
+    "examId": "2015-V1",
+    "number": 32,
+    "sourcePage": 13,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "იპოვეთ $b_1, b_2, \\dots$ გეომეტრიული პროგრესიის პირველი ხუთი წევრის ჯამი, თუ $b_1 = \\frac{1}{2}$ და $b_4 = -4$.",
+    "options": [],
+    "answer": "\frac{11}{2}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q33",
+    "examId": "2015-V1",
+    "number": 33,
+    "sourcePage": 14,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "ტოლფაერდა ტრაპეციის დიაგონალი ფუძესთან ადგენს $30^{\\circ}$-ის ტოლ კუთხეს. იპოვეთ ტრაპეციის სიმაღლის სიგრძე, თუ ცნობილია, რომ ამ ტრაპეციის შუახაზი $8$ სმ-ის ტოლია.",
+    "options": [],
+    "answer": "\frac{8sqrt{3}}{3}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q34",
+    "examId": "2015-V1",
+    "number": 34,
+    "sourcePage": 14,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "ამოხსნით განტოლება: $\\log_2 (7x + 5) = 4$.",
+    "options": [],
+    "answer": "\frac{11}{7}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q35",
+    "examId": "2015-V1",
+    "number": 35,
+    "sourcePage": 15,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "იპოვეთ $k$ პარამეტრის ყველა ის მნიშვნელობა, რომლისთვისაც $y = kx - 5$ წრფეს $y = 8x^2$ პარაბოლასთან აქვს ერთი მაინც საერთო წერტილი.",
+    "options": [],
+    "answer": "(-infty;-4sqrt{10}]cup[4sqrt{10};+infty)",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q36",
+    "examId": "2015-V1",
+    "number": 36,
+    "sourcePage": 15,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "მოცემულია $\\frac{m}{n}$ წილადი, სადაც $m$ და $n$ დადებითი მთელი რიცხვებია. თუ წილადის მრიცხველს გავზრდით $5\\%$-ით, მაშინ რამდენი პროცენტით უნდა გავზარდოთ მნიშვნელი, რომ $\\frac{m}{n}$ წილადი შემცირდეს $10\\%$-ით?",
+    "options": [],
+    "answer": "\frac{50}{3}%",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q37",
+    "examId": "2015-V1",
+    "number": 37,
+    "sourcePage": 16,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "$A$ და $B$ წერტილები ცილინდრის სხვადასხვა ფუძეებზე დევს. $AB$ მონაკვეთზე გავლებულია ცილინდრის ღერძის პარალელური $\\alpha$ სიბრطყე. რისი ტოლია $AB$ მონაკვეთის სიგრძე, თუ ის ცილინდრის ფუძის სიბრტყესთან ადგენს $45^\\circ$ კუთხეს, ცილინდრის ფუძის რადიუსი ტოლია $5$-ის, ხოლო მანძილი ცილინდრის ღერძიდან $\\alpha$ სიბრტყემდე $4$-ის ტოლია?",
+    "options": [],
+    "answer": "AB=hsqrt{2}, 0<hle 6; AB=6sqrt{2}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: ط"
+      ]
+    }
+  },
+  {
+    "code": "2015-V1-Q38",
+    "examId": "2015-V1",
+    "number": 38,
+    "sourcePage": 16,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "ორი წრეწირი ცენტრებით $O_1$ და $O_2$ წერტილებში, რომელთა რადიუსებია შესაბამისად $3$ და $1$, გარედან ეხება ერთმანეთს. წრეწირებსა და მათ საერთო გარე მხებს შორის ჩახაზეს მესამე წრეწირი ისე, რომ ის ეხება მოცემულ ორ წრეწირს და გარე მხებს ისე, როგორც ეს სურათზეა მოცემული. იპოვეთ მესამე წრეწირის რადიუსი.",
+    "options": [],
+    "answer": "\frac{3}{(sqrt{3}+1)^2}",
+    "images": [
+      "content/images/2015-V1/q38.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2015-V1-Q39",
+    "examId": "2015-V1",
+    "number": 39,
+    "sourcePage": 17,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "საწარმოს უნდა დაემზადებინა გარკვეული რაოდენობის პროდუქტი. 4 საათიანი მუშაობის შემდეგ ძირითადი საწარმოო ხაზი ავარიულად გაჩერდა და მაშინვე ამომუშადა სათადარიგო საწარმოო ხაზი. იგი მთელი რაოდენობის დამზადებას 6 საათით უფრო მეტ დროს ანდომებს, ვიდრე ძირითადი ხაზი. ავარიიდან 3 საათის შემდეგ ძირითადი საწარმოო ხაზი შეأეთეს. აღმოჩნდა, რომ ამ დროისთვის დამზადებული იყო მთელი რაოდენობის მხოლოდ ნახევარი. რა დრო დასჭირდება პროდუქტის დარჩენილი რაოდენობის დამზადებას, თუ ორივე საწარმოო ხაზი ერთდროულად იმუშავებს?",
+    "options": [],
+    "answer": "\frac{18}{5}\text{ სთ}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: أ"
+      ]
+    }
+  },
+  {
+    "code": "2015-V1-Q40",
+    "examId": "2015-V1",
+    "number": 40,
+    "sourcePage": 17,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "საკოორდინატო სიბრტყეზე მოძراობს $A(x, y)$ წერტილი, რომლის კოორდინატები დროის ყოველ $t$ მომენტში აკმაყოფილებენ განტოლებათა სისტემას $\\begin{cases} x = 8\\sin t + 6\\cos t \\\\ y = 4\\sin t - 12\\cos t \\end{cases}$. იპოვეთ, რა უმცირესი მანძილი იქნება $A(x,y)$ წერტილი დაშორებული $B(-1; 2)$ წერტილიდან, როდესაც $\\frac{\\pi}{2} \\le t \\le \\frac{2\\pi}{3}$.",
+    "options": [],
+    "answer": "sqrt{76}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: را"
+      ]
+    }
+  }
+]

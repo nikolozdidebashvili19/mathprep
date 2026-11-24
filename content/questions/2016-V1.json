@@ -1,0 +1,1296 @@
+[
+  {
+    "code": "2016-V1-Q01",
+    "examId": "2016-V1",
+    "number": 1,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ქვემოთ ჩამოთვლილი რიცხვებიდან რომელი ეკუთვნის $(0,7;\\ 0,8)$ შუალედს?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{3}{5}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{7}{9}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{6}{7}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{8}{9}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q02",
+    "examId": "2016-V1",
+    "number": 2,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რისი ტოლია $2 \\cdot 3^3 \\cdot 5$ და $3^2 \\cdot 5^3$ რიცხვების უდიდესი საერთო გამყოფი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$6$"
+      },
+      {
+        "key": "ბ",
+        "text": "$15$"
+      },
+      {
+        "key": "გ",
+        "text": "$30$"
+      },
+      {
+        "key": "დ",
+        "text": "$45$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q03",
+    "examId": "2016-V1",
+    "number": 3,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "მოხარშვისას ყავა კარგავს თავისი წონის $12\\%$-ს. რამდენი კილოგრამი ნედლი ყავა უნდა ავიღოთ, რომ მივიღოთ $220$ გრამი მოხარშული ყავა?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$0,25$"
+      },
+      {
+        "key": "ბ",
+        "text": "$0,2464$"
+      },
+      {
+        "key": "გ",
+        "text": "$0,3$"
+      },
+      {
+        "key": "დ",
+        "text": "$0,34$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q04",
+    "examId": "2016-V1",
+    "number": 4,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$a$, $b$, $c$ და $d$ წრფეები ერთ სიბრტყეში მდებარეობს. სურათზე მითითებულია ამ წრფეებით წარმოქმნილი ორი კუთხის გრადუსული ზომა. რისი ტოლია $\\alpha$-თი აღნიშნული კუთხის სიდიდე, თუ $a$ და $b$ წრფეები პარალელურია?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$17^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$24^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$30^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$38^\\circ$"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2016-V1/q04.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q05",
+    "examId": "2016-V1",
+    "number": 5,
+    "sourcePage": 6,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე გამოსახულია $ABC$ სამკუთხედი. $D$ და $E$ წერტილები შესაბამისად ამ სამკუთხედის $BC$ და $AC$ გვერდების შუაწერტილებია. რისი ტოლია $BDE$ სამკუთხედის ფართობი, თუ $ABE$ სამკუთხედის ფართობია $36\\text{სმ}^2$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$12\\text{სმ}^2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$16\\text{სმ}^2$"
+      },
+      {
+        "key": "გ",
+        "text": "$15\\text{სმ}^2$"
+      },
+      {
+        "key": "დ",
+        "text": "$18\\text{სმ}^2$"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2016-V1/q05.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q06",
+    "examId": "2016-V1",
+    "number": 6,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ყუთში ორი შავი და სამი თეთრი ბურთულაა. რა არის ალბათობა იმისა, რომ ერთდროულად შემთხვევით ამოღებულ სამ ბურთულაში თეთრი ბურთულა არ შეგვხვდება?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$0$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{2}{3}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{3}{2}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q07",
+    "examId": "2016-V1",
+    "number": 7,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ უმცირესი ნატურალური $n$ რიცხვი, რომლისთვისაც სამართლიანია უტოლობა $8^{4n} > 2^{79}$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$7$"
+      },
+      {
+        "key": "ბ",
+        "text": "$8$"
+      },
+      {
+        "key": "გ",
+        "text": "$9$"
+      },
+      {
+        "key": "დ",
+        "text": "$10$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q08",
+    "examId": "2016-V1",
+    "number": 8,
+    "sourcePage": 9,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ავტომობილი თანაბრად მოძრაობს თბილისიდან ქუთაისის მიმართულებით. დილის $8$ საათისათვის ავტომობილს გავლილი ჰქონდა მთელი გზის $\\frac{1}{6}$ ნაწილი, ხოლო იმავე დღის დილის $11$ საათისათვის კი — მთელი გზის $\\frac{8}{9}$ ნაწილი. მთელი გზის რა ნაწილი ჰქონდა გავლილი ავტომობილს ამავე დღის დილის $10$ სთ და $30$ წთ-სთვის?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{65}{108}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{57}{108}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{8}{18}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{83}{108}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q09",
+    "examId": "2016-V1",
+    "number": 9,
+    "sourcePage": 10,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ერთი სკოლის მოსწავლეებს შორის ჩაატარეს გამოკითხვა, თუ რომელი ტრანსპორტით დადიან ისინი სკოლაში. სურათზე მოცემულია მათი პასუხების წრიული დიაგრამა. იპოვეთ სკოლაში ფეხით მოსიარულეთა შესაბამისი სექტორის ცენტრალური კუთხის სიდიდე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$120^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$144^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$154^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$145^\\circ$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [
+      "content/images/2016-V1/q09.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q10",
+    "examId": "2016-V1",
+    "number": 10,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე მოცემულია მართკუთხა კოორდინატთა სისტემაში აგებული შემდეგი ოთხი ფუნქციის გრაფიკი: • $f(x)=5x$; • $g(x)=-4x$; • $h(x)=-2x$; • $p(x)=2x$. სურათზე მითითებული $a$, $b$, $c$ და $d$ წрფეებიდან რომელი წარმოადგენს $h(x)=-2x$ ფუნქციის გრაფიკს?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$a$"
+      },
+      {
+        "key": "ბ",
+        "text": "$b$"
+      },
+      {
+        "key": "გ",
+        "text": "$c$"
+      },
+      {
+        "key": "დ",
+        "text": "$d$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [
+      "content/images/2016-V1/q10.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: р"
+      ]
+    }
+  },
+  {
+    "code": "2016-V1-Q11",
+    "examId": "2016-V1",
+    "number": 11,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ქვემოთ მოცემული ფუნქციებიდან რომლის გრაფიკია $y = 3(x - 1)^2 + 2$ ფუნქციის გრაფიკის სიმეტრიული აბსცissata ღერძის მიმართ?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$y = 3(x + 1)^2 - 2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$y = -3(x - 1)^2 - 2$"
+      },
+      {
+        "key": "გ",
+        "text": "$y = -3(x - 1)^2 + 2$"
+      },
+      {
+        "key": "დ",
+        "text": "$y = 3(x + 1)^2 + 2$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q12",
+    "examId": "2016-V1",
+    "number": 12,
+    "sourcePage": 13,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "დადებითი წევrianი არითმეტიკული პროგრესიის მეხუთე წევრი სამჯერ მეტია მეორე წევრზე. რამდენჯერ მეტია ამ პროგრესიის მეშვიდე წევრი მესამე წევრზე?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "3-$ჯერ$"
+      },
+      {
+        "key": "ბ",
+        "text": "3,5-$ჯერ$"
+      },
+      {
+        "key": "გ",
+        "text": "4-$ჯერ$"
+      },
+      {
+        "key": "დ",
+        "text": "2,6-$ჯერ$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q13",
+    "examId": "2016-V1",
+    "number": 13,
+    "sourcePage": 14,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$A$ წარმოადგენს ყველა იმ ნატურალურ რიცხვთა სიმრავლეს, რომლებიც $4$-ზე გაყოფისას ნაშთში გვაძლევს $1$-ს. $B$ კი წარმოადგენს ყველა იმ ნატურალურ რიცხვთა სიმრავლეს, რომლებიც $4$-ზე გაყოფისას ნაშთში გვაძლევს $3$-ს. მაშინ $A \\cup B$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "წარმოადგენს ყველა ნატურალურ რიცხვთა სიმრავლეს;"
+      },
+      {
+        "key": "ბ",
+        "text": "წარმოადგენს ყველა ოთხის ჯერად ნატურალურ რიცხვთა სიმრავლეს;"
+      },
+      {
+        "key": "გ",
+        "text": "წარმოადგენს ყველა კენტ ნატურალურ რიცხვთა სიმრავლეს;"
+      },
+      {
+        "key": "დ",
+        "text": "წარმოადგენს ყველა იმ ნატურალურ რიცხვთა სიმრავლეს, რომლებიც $4$-ზე გაყოფისას ნაშთში გვაძლევს $2$-ს."
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q14",
+    "examId": "2016-V1",
+    "number": 14,
+    "sourcePage": 15,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "გამოთვალეთ $(\\vec{a} - 2\\vec{b})$ და $\\vec{b}$ ვექტორების სკალარული ნამრავლი, თუ $\\vec{a} = (-1; 0)$ და $\\vec{b} = (-5; 1)$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$18$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-26$"
+      },
+      {
+        "key": "გ",
+        "text": "$36$"
+      },
+      {
+        "key": "დ",
+        "text": "$-47$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q15",
+    "examId": "2016-V1",
+    "number": 15,
+    "sourcePage": 16,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$\\sqrt{(1-2\\cos 45^\\circ)^2} - \\sqrt{(1+2\\sin 45^\\circ)^2} =$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-2\\sqrt{2}$"
+      },
+      {
+        "key": "გ",
+        "text": "$2\\sqrt{2} - 2$"
+      },
+      {
+        "key": "დ",
+        "text": "$0$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q16",
+    "examId": "2016-V1",
+    "number": 16,
+    "sourcePage": 17,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სულ რამდენი წახნაგი აქვს პრიზმას, თუ ცნობილია, რომ მისი ყველა წვეროს და ყველა წიბოს რაოდენობათა ჯამი არის $225$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$41$"
+      },
+      {
+        "key": "ბ",
+        "text": "$45$"
+      },
+      {
+        "key": "გ",
+        "text": "$47$"
+      },
+      {
+        "key": "დ",
+        "text": "$52$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q17",
+    "examId": "2016-V1",
+    "number": 17,
+    "sourcePage": 18,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ამოხსენით უთანტოობა: $0,5^{x-3} < 10$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-\\infty; 2 - \\log_2 5)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(2 - \\log_2 5; \\infty)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(-\\infty; 3 + \\log_2 5)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(3 - \\log_2 5; \\infty)$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q18",
+    "examId": "2016-V1",
+    "number": 18,
+    "sourcePage": 19,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ სამი არაუარყოფითი $x$, $x^2$, $1$ რიცხვისგან შედგენილი მონაცემების საშუალო, თუ მათი მედიანა $\\frac{1}{4}$ -ის ტოლია.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{21}{16}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{7}{16}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{7}{4}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{7}{12}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q19",
+    "examId": "2016-V1",
+    "number": 19,
+    "sourcePage": 20,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე გამოსახულია ქვემოთ ჩამოთვლილ ფუნქციებიდან ერთ-ერთის გრაფიკი. რომელი ფუნქციის გრაფიკია გამოსახული სურათზე?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$y = 2\\cos x|\\sin x|$"
+      },
+      {
+        "key": "ბ",
+        "text": "$y = \\cos x+|\\sin x|$"
+      },
+      {
+        "key": "გ",
+        "text": "$y = 2\\sin x+|\\sin x|$"
+      },
+      {
+        "key": "დ",
+        "text": "$y = \\sin x+|\\sin x|$"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2016-V1/q19.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q20",
+    "examId": "2016-V1",
+    "number": 20,
+    "sourcePage": 21,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $ABC$ სამკუთხედზე შემმოხაზული წრეწირის რადიუსი, თუ $AB=6$, $AC=9$ და $\\angle A=120^\\circ$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\sqrt{21}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{\\sqrt{63}}{\\sqrt{2}}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\sqrt{57}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{21\\sqrt{3}}{\\sqrt{2}}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q21",
+    "examId": "2016-V1",
+    "number": 21,
+    "sourcePage": 22,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ მართკუთხა საკოორდინაციო სისტემაში მოცემულია $ABCDEF$ წესიერი ექვსკუთხედი, რომლის $AF$ გვერდი აბსცისათა ღერძზე მდებარეობს (იბ. სურათი). იპოვეთ $E$ წერტილის კოორდინატები, თუ ცნობილია, რომ $OA = 6$ და $AB = 4$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(12; 2\\sqrt{3})$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(11,5; \\sqrt{3})$"
+      },
+      {
+        "key": "გ",
+        "text": "$(12; 3)$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\left(11,5; \\frac{3\\sqrt{3}}{2}\\right)$"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2016-V1/q21.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q22",
+    "examId": "2016-V1",
+    "number": 22,
+    "sourcePage": 23,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $b$ და $c$ პარამეტრების ჯამი, თუ $x^2 + bx + c = 0$ და $3x^2 + 2x - 5 = 0$ ტოლფასი განტოლებებია.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-3$"
+      },
+      {
+        "key": "ბ",
+        "text": "$1$"
+      },
+      {
+        "key": "გ",
+        "text": "$-1$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{7}{3}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q23",
+    "examId": "2016-V1",
+    "number": 23,
+    "sourcePage": 24,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$b$ პარამეტრის რა მნიშვნელობისათვის იქნება $3x+2y-8=0$ და $2x-by=2y-5$ განტოლებებით განსაზღვრული წრფეები ურთიერთმართობული $Oxy$ მართკუთხა საკოორდინატო სიბრტყეში?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-\\frac{10}{3}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-\\frac{4}{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$1$"
+      },
+      {
+        "key": "დ",
+        "text": "$3$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q24",
+    "examId": "2016-V1",
+    "number": 24,
+    "sourcePage": 25,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "პირველი წრეწირის $60^\\circ$-იანი რკალის სიგრძე ტოლია მეორე წრეწირის $45^\\circ$-იანი რკალის სიგრძის. იპოვეთ პირველი წრეწირით შემოსაზღვრული წრის ფართობის შეფარდება მეორე წრეწირით შემოსაზღვრული წრის ფართობთან.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{3}{4}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{9}{16}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{4}{3}$"
+      },
+      {
+        "key": "დ",
+        "text": "$2$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q25",
+    "examId": "2016-V1",
+    "number": 25,
+    "sourcePage": 26,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABC$ სამკუთხედის $AB$ გვერდზე აღებულია $D$ და $F$ წერტილები, ხოლო $BC$ გვერდზე $E$ და $G$ წერტილები ისე, რომ $DE$ და $FG$ მონაკვეთები $AC$ ფუძის პარალელურია და $ABC$ სამკუთხედს ტოლი ფართობის მქონე სამ ფიგურად ყოფს (იხ. სურათი). იპოვეთ $FD$ მონაკვეთის სიგრძის შეფარდება $AB$ მონაკვეთის სიგრძესთან.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{\\sqrt{3}-1}{\\sqrt{2}}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{\\sqrt{2}}{\\sqrt{3}+1}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{\\sqrt{3}}{\\sqrt{2}+1}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{\\sqrt{2}-1}{\\sqrt{3}}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2016-V1/q25.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q26",
+    "examId": "2016-V1",
+    "number": 26,
+    "sourcePage": 27,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $a$ პარამეტრის ყველა იმ მნიშვნელობათა სიმრავლე, რომლებისთვისაც $y = \\log_{a^2 + 1.5a} x$ ფორმულით განსაზღვრული ფუნქცია იქნება ზრդადი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(\\frac{1}{2}; +\\infty)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(1; +\\infty)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(-\\infty; 0)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(-\\infty; -2) \\cup (\\frac{1}{2}; +\\infty)$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: դ"
+      ]
+    }
+  },
+  {
+    "code": "2016-V1-Q27",
+    "examId": "2016-V1",
+    "number": 27,
+    "sourcePage": 28,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "საკოორდინატო სიბრტყეზე მოცემული წრფის განტოლებაა $y = 5x - 11$. ეს წრფე ჰომოთეტიას ცენტრით კოორდინატთა სათავეში და კოეფიციენტით $3$ გადაჰყავს წრფეში, რომლის განტოლებაა",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$y = 5x - 33$"
+      },
+      {
+        "key": "ბ",
+        "text": "$y = 5x + 33$"
+      },
+      {
+        "key": "გ",
+        "text": "$y = 15x - 33$"
+      },
+      {
+        "key": "დ",
+        "text": "$y = \\frac{5}{3}x - \\frac{11}{3}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q28",
+    "examId": "2016-V1",
+    "number": 28,
+    "sourcePage": 29,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ზრდადი გეომეტრიული პროგრესიის პირველი 20 წევრის ჯამი 50-ჯერ მეტია პირველი 10 წევრის ჯამზე. რას უდრის ამ გეომეტრიული პროგრესიის მნიშვნელი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\sqrt{5}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\log_2 5$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\sqrt[5]{7}$"
+      },
+      {
+        "key": "დ",
+        "text": "$2,5$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q29",
+    "examId": "2016-V1",
+    "number": 29,
+    "sourcePage": 30,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $y = \\frac{1}{2x^2 - 5x + 7}$ ფუნქციის უდიდესი მნიშვნელობა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$0,5$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{7}{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{8}{31}$"
+      },
+      {
+        "key": "დ",
+        "text": "$2,3$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q30",
+    "examId": "2016-V1",
+    "number": 30,
+    "sourcePage": 31,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "წესიერი სამკუთხა პირამიდის ფუძის გვერდის სიგრძე არის $4$, ხოლო გვერდითი წიბოს სიგრძე არის $5$. იპოვეთ ამ პირამიდის გვერდითი ზედაპირის ფართობი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$6$"
+      },
+      {
+        "key": "ბ",
+        "text": "$3\\sqrt{21}$"
+      },
+      {
+        "key": "გ",
+        "text": "$6\\sqrt{21}$"
+      },
+      {
+        "key": "დ",
+        "text": "$12\\sqrt{21}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q31",
+    "examId": "2016-V1",
+    "number": 31,
+    "sourcePage": 32,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "ამოხსენით განტოლებათა სისტემა $\\left\\{\\begin{matrix} \\frac{3}{2}x + 2y = 7 \\\\ 2x - 3y = 5 \\end{matrix}\\right.$",
+    "options": [],
+    "answer": "x=\frac{62}{17}, y=\frac{13}{17}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q32",
+    "examId": "2016-V1",
+    "number": 32,
+    "sourcePage": 33,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "ორმა ბიზნეს პარტნიორმა გაინაწილა $80500$ ლარის ტოლი მოგება პროპორციით $2:5$. რა თანხა შეხვდა თითოეულს?",
+    "options": [],
+    "answer": "23000\text{ ლარი}; 57500\text{ ლარი}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q33",
+    "examId": "2016-V1",
+    "number": 33,
+    "sourcePage": 34,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "იპოვეთ $ABC$ სამკუთხედის ფართობი, თუ $\\angle A = 30^\\circ, \\angle C = 45^\\circ$, ხოლო $B$ წვეროდან $AC$ გვერდზე დაშვებული $BD$ სიმაღლე $2$-ის ტოლია.",
+    "options": [],
+    "answer": "2+2sqrt{3}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q34",
+    "examId": "2016-V1",
+    "number": 34,
+    "sourcePage": 35,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "იპოვეთ $5x + 2y = 4$ განტოლებით მოცემულ წრფეზე მდებარე იმ წერტილის კოორდინატები, რომლის აბსცისას შეფარდება ორდინატთან ორის ტოლია.",
+    "options": [],
+    "answer": "(\frac{2}{3};\frac{1}{3})",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q35",
+    "examId": "2016-V1",
+    "number": 35,
+    "sourcePage": 36,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "ყუთში თეთრი და შავი ბურთებია, სულ $42$ ცალი. იპოვეთ იმის ალბათობა, რომ ყუთიდან შემთხვევით ამოღებული ბურთი იქნება თეთრი, თუ ცნობილია, რომ ყუთში კიდევ $6$ თეთრი ბურთის მოთავსების შემთხვევაში ეს ალბათობა $\\frac{5}{4}$-ჯერ გაიზრდება.",
+    "options": [],
+    "answer": "\frac{1}{3}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q36",
+    "examId": "2016-V1",
+    "number": 36,
+    "sourcePage": 37,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "იპოვეთ $f(5)$, თუ $f(x)=ax^2+bx+c$ კვადრატული ფუნქციის გრაფიკი ორდინატთა ღერძს კვეთს $(0; 3)$ წერტილში, ხოლო მისი წვერო მდებარეობს $(2; 0)$ წერტილში.",
+    "options": [],
+    "answer": "\frac{27}{4}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q37",
+    "examId": "2016-V1",
+    "number": 37,
+    "sourcePage": 38,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "კონუსის გვერდითი ზედაპირის შლისლის ცენტრალური კუთხე ტოლია $120^\\circ$-ის (იხ. სურათი). იპოვეთ კონუსის ფუძის რადიუსი, თუ მისი სიმაღლე ტოლია $8\\sqrt{2}$-ის.",
+    "options": [],
+    "answer": "4",
+    "images": [
+      "content/images/2016-V1/q37.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q38",
+    "examId": "2016-V1",
+    "number": 38,
+    "sourcePage": 39,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "$ABCD$ კვადრატის $AB$ გვერდზე აღებულია $E$ წერტილი ისე, რომ $AE:EB=2:1$. ოთხკუთხედი $LKND$ წარმოადგენს კვადრატს, რომლის $L$ და $N$ წერტილები შესაბამისად $AD$ და $CD$ მონაკვეთებზე მდებარეობენ, ხოლო $K$ წერტილი - $EC$ მონაკვეთზე (იხ. სურათი). იპოვეთ $LKND$ კვადრატის გვერდი, თუ $ABCD$ კვადრატის გვერდი $a$-ს ტოლია.",
+    "options": [],
+    "answer": "\frac{3a}{4}",
+    "images": [
+      "content/images/2016-V1/q38.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2016-V1-Q39",
+    "examId": "2016-V1",
+    "number": 39,
+    "sourcePage": 40,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "რამდენიმე მუშამ შეأსრულა სამუშაო 14 დღეში. მუშების რაოდენობა რომ ყოფილიყო 4-ით მეტი და სამუშაო დღის ხანგრძლივობა 1 საათით მეტი, მაშინ იგივე სამუშაო შესრულდებოდა 10 დღეში. ხოლო მუშების რაოდენობა რომ ყოფილიყო 10-ით მეტი და სამუშაო დღის ხანგრძლივობა 2 საათით მეტი, მაშინ იგივე სამუშაო შესრულდებოდა 7 დღეში. რამდენი მუშა ასრულებდა სამუშაოს და რამდენი საათისაგან შედგებოდა სამუშაო დღე, თუ ცნობილია, რომ ყველა მუშის შრომის ნაყოფიერება ერთმანეთის ტოლია?",
+    "options": [],
+    "answer": "20\text{ მუშა}, 6\text{ საათი}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: أ"
+      ]
+    }
+  },
+  {
+    "code": "2016-V1-Q40",
+    "examId": "2016-V1",
+    "number": 40,
+    "sourcePage": 41,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "$Oxy$ მართკუთხა საკოორდინატო სისტემაში $(3; 7)$ წერტილზე გამავალი ყოველი უარყოფითი საკუთხო კოეფიციენტის მქონე წრფე აბსცისათა და ორდინატთა ღერძებთან ერთად შემოსაზღვრავს მართკუთხა სამკუთხედს. იპოვეთ ამ ტიპის მართკუთხა სამკუთხედების ფართობებს შორის უმცირესი.",
+    "options": [],
+    "answer": "42",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  }
+]

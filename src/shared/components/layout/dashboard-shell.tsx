@@ -4,6 +4,7 @@ import { useState, type ReactNode } from 'react';
 
 import { Sidebar } from '@/shared/components/layout/sidebar';
 import { Button } from '@/shared/components/ui/button';
+import { SHELL_COPY } from '@/shared/const/ui.const';
 import { cn } from '@/shared/lib/utils';
 
 type DashboardShellProps = {
@@ -21,12 +22,12 @@ export const DashboardShell = ({ children }: DashboardShellProps) => {
           variant="outline"
           size="icon"
           onClick={() => setOpen(true)}
-          aria-label="Open navigation"
+          aria-label={SHELL_COPY.openNavigation}
           aria-expanded={open}
         >
           <Menu className="size-5" />
         </Button>
-        <span className="text-sm font-medium text-muted-foreground">Menu</span>
+        <span className="text-sm font-medium text-muted-foreground">{SHELL_COPY.menu}</span>
       </div>
 
       {/* Desktop static sidebar */}
@@ -43,7 +44,7 @@ export const DashboardShell = ({ children }: DashboardShellProps) => {
         <button
           type="button"
           tabIndex={open ? 0 : -1}
-          aria-label="Close navigation"
+          aria-label={SHELL_COPY.closeNavigation}
           onClick={() => setOpen(false)}
           className={cn(
             'absolute inset-0 bg-foreground/40 backdrop-blur-sm transition-opacity duration-300 motion-reduce:transition-none',
@@ -57,12 +58,12 @@ export const DashboardShell = ({ children }: DashboardShellProps) => {
           )}
         >
           <div className="flex items-center justify-between border-b border-border px-4 py-3">
-            <span className="text-sm font-semibold">Navigation</span>
+            <span className="text-sm font-semibold">{SHELL_COPY.navigation}</span>
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setOpen(false)}
-              aria-label="Close navigation"
+              aria-label={SHELL_COPY.closeNavigation}
             >
               <X className="size-5" />
             </Button>

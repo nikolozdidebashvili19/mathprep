@@ -1,0 +1,523 @@
+[
+  {
+    "code": "2022-V1-Q01",
+    "skills": [
+      "N2"
+    ],
+    "primarySkill": "N2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Basic arithmetic involving fractions and decimals.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q02",
+    "skills": [
+      "N5",
+      "N2"
+    ],
+    "primarySkill": "N5",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Converting a decimal to standard form using integer exponents of 10.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q03",
+    "skills": [
+      "N3",
+      "N4"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Percentage problem involving alloy composition.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q04",
+    "skills": [
+      "G2"
+    ],
+    "primarySkill": "G2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Properties of isosceles triangles and supplementary angles.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q05",
+    "skills": [
+      "G8",
+      "G10"
+    ],
+    "primarySkill": "G8",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Regular hexagon inscribed in a circle, circumference, and radius relationship.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q06",
+    "skills": [
+      "N6",
+      "A1"
+    ],
+    "primarySkill": "N6",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Rationalizing the denominator.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q07",
+    "skills": [
+      "A2",
+      "A1"
+    ],
+    "primarySkill": "A2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Difference of cubes and simplification.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q08",
+    "skills": [
+      "A5",
+      "N2"
+    ],
+    "primarySkill": "A5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Linear inequality with decimals and fractions.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q09",
+    "skills": [
+      "F2",
+      "A8",
+      "F1"
+    ],
+    "primarySkill": "F2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Reading function graph to solve an inequality.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q10",
+    "skills": [
+      "A7"
+    ],
+    "primarySkill": "A7",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Vieta's formulas for quadratic equations.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q11",
+    "skills": [
+      "P5"
+    ],
+    "primarySkill": "P5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q12",
+    "skills": [
+      "K2"
+    ],
+    "primarySkill": "K2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q13",
+    "skills": [
+      "V4",
+      "V1"
+    ],
+    "primarySkill": "V4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2022-V1-Q14",
+    "skills": [
+      "P1",
+      "P2"
+    ],
+    "primarySkill": "P1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q15",
+    "skills": [
+      "S1"
+    ],
+    "primarySkill": "S1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q16",
+    "skills": [
+      "P3",
+      "P1"
+    ],
+    "primarySkill": "P3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q17",
+    "skills": [
+      "E2",
+      "F2",
+      "A4"
+    ],
+    "primarySkill": "E2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q18",
+    "skills": [
+      "G9",
+      "T1"
+    ],
+    "primarySkill": "G9",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q19",
+    "skills": [
+      "V3"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q20",
+    "skills": [
+      "A10",
+      "A5"
+    ],
+    "primarySkill": "A10",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q21",
+    "skills": [
+      "F2",
+      "F6",
+      "F1"
+    ],
+    "primarySkill": "F2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Recognizing graph features, domain, and transformations/absolute value.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q22",
+    "skills": [
+      "T5",
+      "T1"
+    ],
+    "primarySkill": "T5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Trigonometric inequalities and monotonicity on an interval.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q23",
+    "skills": [
+      "V4",
+      "T2",
+      "V1"
+    ],
+    "primarySkill": "V4",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2022-V1-Q24",
+    "skills": [
+      "E4"
+    ],
+    "primarySkill": "E4",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Estimating the value of a logarithm.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q25",
+    "skills": [
+      "G5",
+      "G6",
+      "G4"
+    ],
+    "primarySkill": "G5",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "Circle, square, central angles or arc degrees.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q26",
+    "skills": [
+      "F1",
+      "F4",
+      "E2"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Finds the range of an exponential function with a quadratic exponent on a closed interval.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q27",
+    "skills": [
+      "K4"
+    ],
+    "primarySkill": "K4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Cone surface area and base area formulas.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q28",
+    "skills": [
+      "A6"
+    ],
+    "primarySkill": "A6",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "System of two linear equations.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q29",
+    "skills": [
+      "G1",
+      "A4"
+    ],
+    "primarySkill": "G1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Clock hands angle problem.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q30",
+    "skills": [
+      "G6",
+      "G7",
+      "T1"
+    ],
+    "primarySkill": "G7",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Square, right triangle trigonometry, area calculation in terms of S.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q31",
+    "skills": [
+      "S2"
+    ],
+    "primarySkill": "S2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q32",
+    "skills": [
+      "V3"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q33",
+    "skills": [
+      "K3",
+      "G4",
+      "T1"
+    ],
+    "primarySkill": "K3",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q34",
+    "skills": [
+      "A12",
+      "A9"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2022-V1-Q35",
+    "skills": [
+      "A8",
+      "A7"
+    ],
+    "primarySkill": "A8",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  }
+]

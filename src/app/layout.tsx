@@ -1,23 +1,25 @@
-import { Geist_Mono, Inter, Space_Grotesk } from 'next/font/google';
+import { Geist_Mono, Noto_Sans_Georgian, Nunito } from 'next/font/google';
 import { type ReactNode } from 'react';
 
-import { APP_DESCRIPTION, APP_NAME } from '@/shared/const/app.const';
+import { APP_DESCRIPTION, APP_LOCALE, APP_NAME } from '@/shared/const/app.const';
+import { LocaleProvider } from '@/shared/providers/locale-provider';
 import { ThemeProvider } from '@/shared/providers/theme-provider';
 
 import type { Metadata } from 'next';
 
 import './globals.css';
 
-const inter = Inter({
-  variable: '--font-sans',
+// Rounded, friendly display + body face for the playful learning UI. Variable font (see note below).
+const nunito = Nunito({
+  variable: '--font-nunito',
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: '--font-space-grotesk',
-  subsets: ['latin'],
-  weight: ['500', '600', '700'],
+// Variable font on purpose: fixed weights make Google serve `/l/font?kit=…&skey=…` URLs,
+// which Turbopack dev cannot resolve ("next/font/google queries have exactly one entry").
+const notoSansGeorgian = Noto_Sans_Georgian({
+  variable: '--font-georgian',
+  subsets: ['georgian'],
 });
 
 const geistMono = Geist_Mono({
@@ -33,12 +35,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
-      lang="en"
-      className={`${inter.variable} ${spaceGrotesk.variable} ${geistMono.variable} h-full antialiased`}
+      lang={APP_LOCALE}
+      className={`${nunito.variable} ${notoSansGeorgian.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <LocaleProvider>{children}</LocaleProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

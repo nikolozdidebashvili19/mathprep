@@ -18,6 +18,8 @@ import {
   FormMessage,
 } from '@/shared/components/ui/form';
 import { Input } from '@/shared/components/ui/input';
+import { AUTH_FORM_COPY, SIGNUP_COPY } from '@/shared/const/auth.const';
+import { HOME_ROUTE_AFTER_LOGIN } from '@/shared/const/routes.const';
 
 export const SignUpForm = () => {
   const { register } = useRegister();
@@ -31,8 +33,8 @@ export const SignUpForm = () => {
   return (
     <Card className="w-full max-w-md">
       <CardHeader>
-        <CardTitle className="text-2xl">Create account</CardTitle>
-        <CardDescription>Enter your details to get started</CardDescription>
+        <CardTitle className="text-2xl">{SIGNUP_COPY.title}</CardTitle>
+        <CardDescription>{SIGNUP_COPY.description}</CardDescription>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -42,9 +44,9 @@ export const SignUpForm = () => {
               name="fullName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Full name</FormLabel>
+                  <FormLabel>{SIGNUP_COPY.fullName}</FormLabel>
                   <FormControl>
-                    <Input placeholder="John Doe" {...field} />
+                    <Input placeholder={SIGNUP_COPY.fullNamePlaceholder} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -55,9 +57,9 @@ export const SignUpForm = () => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel>{AUTH_FORM_COPY.email}</FormLabel>
                   <FormControl>
-                    <Input type="email" placeholder="you@example.com" {...field} />
+                    <Input type="email" placeholder={AUTH_FORM_COPY.emailPlaceholder} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -68,7 +70,7 @@ export const SignUpForm = () => {
               name="password"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Password</FormLabel>
+                  <FormLabel>{AUTH_FORM_COPY.password}</FormLabel>
                   <FormControl>
                     <Input type="password" placeholder="••••••••" {...field} />
                   </FormControl>
@@ -80,28 +82,28 @@ export const SignUpForm = () => {
               <p className="text-sm font-medium text-destructive">{error}</p>
             )}
             <Button type="submit" className="w-full" disabled={loading}>
-              {loading ? 'Creating account...' : 'Create account'}
+              {loading ? SIGNUP_COPY.submitting : SIGNUP_COPY.submit}
             </Button>
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
                 <span className="w-full border-t" />
               </div>
-              <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-card px-2 text-muted-foreground">or</span>
+              <div className="relative flex justify-center text-xs font-bold">
+                <span className="bg-card px-2 text-muted-foreground">{AUTH_FORM_COPY.or}</span>
               </div>
             </div>
             <Button
               type="button"
               variant="outline"
               className="w-full"
-              onClick={() => signIn('google', { callbackUrl: '/dashboard' })}
+              onClick={() => signIn('google', { callbackUrl: HOME_ROUTE_AFTER_LOGIN })}
             >
-              Continue with Google
+              {AUTH_FORM_COPY.google}
             </Button>
             <p className="text-center text-sm text-muted-foreground">
-              Already have an account?{' '}
+              {SIGNUP_COPY.haveAccount}{' '}
               <Link href="/sign-in" className="underline underline-offset-4 hover:text-primary">
-                Sign in
+                {SIGNUP_COPY.signInLink}
               </Link>
             </p>
           </form>

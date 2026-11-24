@@ -47,15 +47,17 @@ class HttpClient {
     const qs = this.serializeParams(options?.params);
     const url = `${this.baseUrl}${path}${qs}`;
 
+    // FormData (file uploads) goes as-is so the browser sets the multipart boundary header itself.
+    const isForm = typeof FormData !== 'undefined' && body instanceof FormData;
     const headers: Record<string, string> = {
-      'Content-Type': 'application/json',
+      ...(isForm ? {} : { 'Content-Type': 'application/json' }),
       ...options?.headers,
     };
 
     const init: RequestInit = { method, headers };
 
     if (body !== undefined) {
-      init.body = JSON.stringify(body);
+      init.body = isForm ? body : JSON.stringify(body);
     }
 
     const response = await fetch(url, init);

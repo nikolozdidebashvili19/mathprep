@@ -304,12 +304,14 @@ Ask these exact axes; each meaningfully changes the design:
 
 ```
 STATUS: locked
-Product:    SaaS dashboard / B2B
-Palette:    Monochrome + electric indigo accent
-            base #FAFAFA (light) / #0A0A0A (dark); accent #5B5BFF
-            tokens: --primary oklch(0.555 0.243 271) light / oklch(0.62 0.21 271) dark
-Type:       Geometric sans — Space Grotesk (display, 500/600/700) + Inter (body) + Geist Mono (data)
-Feel:       Balanced — CSS load-rise stagger + hover micro-interactions; reduced-motion respected
-Signature:  Left-aligned typographic hero with one accent word + honest stat strip;
-            dashboard app-shell with mobile drawer sidebar and segmented indigo channel meters
+Product:    Consumer learning app (gamified exam prep, Duolingo-style UX; own brand, no mascot/Duolingo assets)
+Palette:    Playful brights on white; dark mode = deep navy
+            primary green oklch(0.66 0.19 142) + edge oklch(0.54 0.17 142) — actions, progress, correct
+            sky blue oklch(0.68 0.15 237) — navigation, selection, focus; amber --streak; gold --xp; red --destructive
+            every solid colour has an "-edge" shade; buttons/tiles/path nodes sit on it via shadow-edge-* utilities
+Type:       Rounded sans — Nunito (display + body, extrabold headings) + Noto Sans Georgian fallback; no CSS uppercase (Mtavruli)
+Feel:       Maximal & friendly — chunky pressable buttons (active:translate-y-1 active:shadow-none), rounded-2xl
+            cards with border-2, pop/bob/rise keyframes; reduced-motion respected
+Signature:  Winding lesson path of round nodes (done / current with bobbing "start" bubble / locked),
+            streak + XP pills, daily-goal bar, big tap-target choice tiles. See todo/T-029 for the session-screen rules.
 ```

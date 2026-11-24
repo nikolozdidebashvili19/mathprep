@@ -1,5 +1,5 @@
 'use client';
-import { Triangle } from 'lucide-react';
+import { Sigma } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSession } from 'next-auth/react';
@@ -8,6 +8,8 @@ import { useLogout } from '@/features/auth/hooks/use-logout';
 import { ThemeToggle } from '@/shared/components/layout/theme-toggle';
 import { Button } from '@/shared/components/ui/button';
 import { APP_NAME } from '@/shared/const/app.const';
+import { HOME_ROUTE_AFTER_LOGIN } from '@/shared/const/routes.const';
+import { HEADER_COPY } from '@/shared/const/ui.const';
 
 type SessionUser = {
   name?: string | null;
@@ -28,15 +30,15 @@ export const Header = () => {
     .join('');
 
   return (
-    <header className="flex items-center justify-between px-6 py-5 sm:px-10 border-b border-border">
+    <header className="flex items-center justify-between border-b-2 border-border px-4 py-4 sm:px-10">
       <Link href="/" className="flex items-center gap-2.5">
         <span
           aria-hidden="true"
-          className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-foreground text-background"
+          className="inline-flex size-9 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-edge-primary"
         >
-          <Triangle className="size-3 fill-current" />
+          <Sigma className="size-5" strokeWidth={3} />
         </span>
-        <span className="text-sm font-semibold tracking-tight text-foreground">
+        <span className="font-heading text-xl font-extrabold tracking-tight text-primary">
           {APP_NAME}
         </span>
       </Link>
@@ -46,11 +48,9 @@ export const Header = () => {
 
         {sessionUser ? (
           <>
-            {sessionUser.role === 'admin' && (
-              <Button variant="ghost" size="sm" asChild className="text-muted-foreground hover:text-foreground hover:bg-accent">
-                <Link href="/dashboard">Dashboard</Link>
-              </Button>
-            )}
+            <Button variant="ghost" size="sm" asChild className="text-muted-foreground hover:text-foreground hover:bg-accent">
+              <Link href={HOME_ROUTE_AFTER_LOGIN}>{HEADER_COPY.myPage}</Link>
+            </Button>
             <div className="flex items-center gap-3">
               {sessionUser.avatar ? (
                 <Image
@@ -58,14 +58,14 @@ export const Header = () => {
                   alt={userName}
                   width={32}
                   height={32}
-                  className="size-8 rounded-full border border-border object-cover"
+                  className="size-9 rounded-full border-2 border-border object-cover"
                 />
               ) : (
-                <div className="size-8 rounded-full border border-border bg-muted flex items-center justify-center text-xs font-semibold text-foreground">
-                  {initials || 'U'}
+                <div className="flex size-9 items-center justify-center rounded-full border-2 border-border bg-sky/10 text-xs font-extrabold text-sky">
+                  {initials || '?'}
                 </div>
               )}
-              <span className="text-sm text-muted-foreground hidden sm:block">{userName}</span>
+              <span className="hidden text-sm font-bold text-muted-foreground sm:block">{userName}</span>
             </div>
             <Button
               variant="ghost"
@@ -73,16 +73,16 @@ export const Header = () => {
               onClick={logout}
               className="text-muted-foreground hover:text-foreground hover:bg-accent"
             >
-              Sign out
+              {HEADER_COPY.signOut}
             </Button>
           </>
         ) : (
           <>
-            <Button variant="ghost" size="sm" asChild className="text-muted-foreground hover:text-foreground hover:bg-accent">
-              <Link href="/sign-in">Sign in</Link>
+            <Button variant="outline" size="sm" asChild className="hidden sm:inline-flex">
+              <Link href="/sign-in">{HEADER_COPY.signIn}</Link>
             </Button>
-            <Button size="sm" asChild className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold">
-              <Link href="/sign-up">Sign up</Link>
+            <Button size="sm" asChild>
+              <Link href="/sign-up">{HEADER_COPY.signUp}</Link>
             </Button>
           </>
         )}

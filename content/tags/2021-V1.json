@@ -1,0 +1,528 @@
+[
+  {
+    "code": "2021-V1-Q01",
+    "skills": [
+      "N2"
+    ],
+    "primarySkill": "N2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Basic arithmetic with fractions and decimals.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q02",
+    "skills": [
+      "N6"
+    ],
+    "primarySkill": "N6",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Estimating the value of a square root.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q03",
+    "skills": [
+      "N3"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Percentage decrease calculation.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q04",
+    "skills": [
+      "N4",
+      "G2"
+    ],
+    "primarySkill": "N4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Ratio and proportion applied to triangle angles.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q05",
+    "skills": [
+      "G3",
+      "G2"
+    ],
+    "primarySkill": "G3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Properties of the midline of a triangle and right isosceles triangle height.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q06",
+    "skills": [
+      "E1",
+      "N2"
+    ],
+    "primarySkill": "E1",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q07",
+    "skills": [
+      "N4",
+      "N2"
+    ],
+    "primarySkill": "N4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q08",
+    "skills": [
+      "A5",
+      "N2"
+    ],
+    "primarySkill": "A5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q09",
+    "skills": [
+      "P6",
+      "N3",
+      "N4"
+    ],
+    "primarySkill": "P6",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Bar chart reading combined with proportions.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q10",
+    "skills": [
+      "A11",
+      "A4"
+    ],
+    "primarySkill": "A11",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q11",
+    "skills": [
+      "P5",
+      "A4"
+    ],
+    "primarySkill": "P5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q12",
+    "skills": [
+      "F2",
+      "A12"
+    ],
+    "primarySkill": "F2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q13",
+    "skills": [
+      "V4",
+      "G6"
+    ],
+    "primarySkill": "V4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2021-V1-Q14",
+    "skills": [
+      "P2"
+    ],
+    "primarySkill": "P2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q15",
+    "skills": [
+      "S1"
+    ],
+    "primarySkill": "S1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q16",
+    "skills": [
+      "P4",
+      "P3"
+    ],
+    "primarySkill": "P4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Probability of intersection and complementary events.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q17",
+    "skills": [
+      "E5",
+      "A4"
+    ],
+    "primarySkill": "E5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Logarithmic equation using logarithm properties.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q18",
+    "skills": [
+      "G3",
+      "G7"
+    ],
+    "primarySkill": "G3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Similar triangles and area ratios.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q19",
+    "skills": [
+      "V3"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Parallel vectors and dot product.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q20",
+    "skills": [
+      "N1"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Divisibility, LCM, and product of two numbers relation.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q21",
+    "skills": [
+      "V2",
+      "A5"
+    ],
+    "primarySkill": "V2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q22",
+    "skills": [
+      "T4",
+      "T1"
+    ],
+    "primarySkill": "T4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q23",
+    "skills": [
+      "V4",
+      "V1"
+    ],
+    "primarySkill": "V4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2021-V1-Q24",
+    "skills": [
+      "E4"
+    ],
+    "primarySkill": "E4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q25",
+    "skills": [
+      "G5",
+      "G8",
+      "G3"
+    ],
+    "primarySkill": "G5",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q26",
+    "skills": [
+      "A8",
+      "F4",
+      "C3"
+    ],
+    "primarySkill": "F4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q27",
+    "skills": [
+      "K2",
+      "T1",
+      "G7"
+    ],
+    "primarySkill": "K2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q28",
+    "skills": [
+      "A10"
+    ],
+    "primarySkill": "A10",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q29",
+    "skills": [
+      "A6",
+      "N3",
+      "A4"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q30",
+    "skills": [
+      "G6",
+      "G7",
+      "G3"
+    ],
+    "primarySkill": "G7",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q31",
+    "skills": [
+      "S1",
+      "A4"
+    ],
+    "primarySkill": "S1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q32",
+    "skills": [
+      "F1",
+      "E3",
+      "E5"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q33",
+    "skills": [
+      "K1",
+      "G2",
+      "T1"
+    ],
+    "primarySkill": "K1",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q34",
+    "skills": [
+      "A12",
+      "N3",
+      "A4"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 5,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2021-V1-Q35",
+    "skills": [
+      "F4",
+      "C3",
+      "A8"
+    ],
+    "primarySkill": "F4",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  }
+]

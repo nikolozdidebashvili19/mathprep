@@ -1,0 +1,1288 @@
+[
+  {
+    "code": "2019-V1-Q01",
+    "examId": "2019-V1",
+    "number": 1,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$\\frac{1,1 - \\frac{3}{10}}{1\\frac{1}{2}} = $",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$0,6$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{8}{15}$"
+      },
+      {
+        "key": "გ",
+        "text": "$1,2$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{16}{3}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q02",
+    "examId": "2019-V1",
+    "number": 2,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "თუ $a < 0$ და $b > 0$, მაშინ $|a - b| =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$a + b$"
+      },
+      {
+        "key": "ბ",
+        "text": "$a - b$"
+      },
+      {
+        "key": "გ",
+        "text": "$b - a$"
+      },
+      {
+        "key": "დ",
+        "text": "$-a - b$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q03",
+    "examId": "2019-V1",
+    "number": 3,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "დათოს ახალი მანქანა $100$ კმ მანძილის გასავლელად მოიხმარს $7$ ლიტრ ბენზინს, რაც $40\\%$-ით ნაკლებია ძველი მანქანის მიერ იმავე მანძილის გასავლელად საჭირო ბენზინის რაოდენობაზე. რამდენი ლიტრ ბენზინს მოიხმარდა ძველი მანქანა $100$ კმ მანძილის გასავლელად?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$10\\frac{1}{3}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$10,6$"
+      },
+      {
+        "key": "გ",
+        "text": "$11,5$"
+      },
+      {
+        "key": "დ",
+        "text": "$11\\frac{2}{3}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q04",
+    "examId": "2019-V1",
+    "number": 4,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "უჯრედებიან ფურცელზე, რომლის თითოეული უჯრედი $1$ სმ-ის ტოლი გვერის მქონე კვადრატს წარმოადგენს, გამოსახულია $ABCD$ ოთხკუთხედი. ამ ოთხკუთხედის წერტილები უჯრედების წერტილებს ემთხვევა (იხ. სურათი). იპოვეთ $ABCD$ ოთხკუთხედის ფართობი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$64$ $\\text{სმ}^2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$32$ $\\text{სმ}^2$"
+      },
+      {
+        "key": "გ",
+        "text": "$16$ $\\text{სმ}^2$"
+      },
+      {
+        "key": "დ",
+        "text": "$8$ $\\text{სმ}^2$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [
+      "content/images/2019-V1/q04.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q05",
+    "examId": "2019-V1",
+    "number": 5,
+    "sourcePage": 6,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სამკუთხედის ორ წვეროზე მდებარე გარე კუთხეები ტოლია $120^\\circ$ და $135^\\circ$-ის. იპოვეთ ამ სამკუთხედის მესამე წვეროსთან მდებარე შიდა კუთხის სიდიდე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$15^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$45^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$75^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$105^\\circ$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q06",
+    "examId": "2019-V1",
+    "number": 6,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ნებისმიერი ერთმანეთის არატოლი $x$ და $y$ ნამდვილი რიცხვებისათვის $\\frac{x-y}{\\sqrt[3]{x}-\\sqrt[3]{y}} =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(\\sqrt[3]{x}-\\sqrt[3]{y})^{2}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\sqrt[3]{x^{2}}-\\sqrt[3]{xy}+\\sqrt[3]{y^{2}}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\sqrt[3]{x}+\\sqrt[3]{y}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\sqrt[3]{x^{2}}+\\sqrt[3]{xy}+\\sqrt[3]{y^{2}}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q07",
+    "examId": "2019-V1",
+    "number": 7,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რუკაზე, რომლის მასშტაბია $1:20000$, მიწის ნაკვეთს შეესაბამება $1{,}6\\text{ სმ}^2$ ფართობის მქონე მართკუთხედი. იპოვეთ ამ მიწის ნაკვეთის ფართობი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$32000\\text{ სმ}^2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$3200\\text{ მ}^2$"
+      },
+      {
+        "key": "გ",
+        "text": "$6400\\text{ მ}^2$"
+      },
+      {
+        "key": "დ",
+        "text": "$64000\\text{ მ}^2$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q08",
+    "examId": "2019-V1",
+    "number": 8,
+    "sourcePage": 9,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ქვემოთ ჩამოთვლილი რიცხვებიდან რომლის ტოლი შეიძლება იყოს 1-ზე მეტი მთელი $a$ რიცხვის 5-ზე გაყოფისას მიღებული ნაშთი, თუ $(a^2 - 4)$-ის 5-ზე გაყოფისას მიიღება 2-ის ტოლი ნაშთი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$0$"
+      },
+      {
+        "key": "ბ",
+        "text": "$2$"
+      },
+      {
+        "key": "გ",
+        "text": "$3$"
+      },
+      {
+        "key": "დ",
+        "text": "$4$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q09",
+    "examId": "2019-V1",
+    "number": 9,
+    "sourcePage": 10,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სვეტოვან დიაგრამაზე მოცემულია ერთი ოჯახის მიერ ზამთრის სამივე თვეში - დეკემბერში, იანვარსა და თებერვალში მომხმარებული ელექტროენერგია კილოვატ-საათებში (კვტ·სთ). დიაგრამის მიხედვით გამოთვალეთ ამ ზამთარში საშუალოდ რამდენი კილოვატ-საათი ელექტროენერგია მოიხმარდა ოჯახი ერთ თვეში?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "320 კვტ·სთ"
+      },
+      {
+        "key": "ბ",
+        "text": "300 კვტ·სთ"
+      },
+      {
+        "key": "გ",
+        "text": "280 კვტ·სთ"
+      },
+      {
+        "key": "დ",
+        "text": "260 კვტ·სთ"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2019-V1/q09.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q10",
+    "examId": "2019-V1",
+    "number": 10,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $a$-ს მნიშვნელობა, რომლისთვისაც განტოლებას $ax + 4 = 5 - 3(x + 1)$ არ გააჩნია ამონახსნი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-3$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-1$"
+      },
+      {
+        "key": "გ",
+        "text": "$4$"
+      },
+      {
+        "key": "დ",
+        "text": "$5$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q11",
+    "examId": "2019-V1",
+    "number": 11,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ რიცხვ ცხრამეტის წარმოდგენა ორობით სისტემაში.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$10101$"
+      },
+      {
+        "key": "ბ",
+        "text": "$10011$"
+      },
+      {
+        "key": "გ",
+        "text": "$10010$"
+      },
+      {
+        "key": "დ",
+        "text": "$10111$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q12",
+    "examId": "2019-V1",
+    "number": 12,
+    "sourcePage": 13,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $y = 3x^2 + 12x + 13$ პარაბოლას სიმეტრიის ღერძის განტოლება.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$x = \\frac{3}{2}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$x = \\frac{2}{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$x = -2$"
+      },
+      {
+        "key": "დ",
+        "text": "$x = 13$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q13",
+    "examId": "2019-V1",
+    "number": 13,
+    "sourcePage": 14,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ცნობილია, რომ $ax^2 + bx + c < 0$ უტოლობა, სადაც $a \\neq 0$, სამართლიანია ნებისმიერი ნამდვილი $x$ რიცხვისათვის. ქვემოთ ჩამოთვლილი პირობებიდან რომელს აკმაყოფილებს $a$, $b$ და $c$ კოეფიციენტები?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$a > 0$ და $b^2 - 4ac < 0$"
+      },
+      {
+        "key": "ბ",
+        "text": "$a > 0$ და $b^2 - 4ac > 0$"
+      },
+      {
+        "key": "გ",
+        "text": "$a < 0$ და $b^2 - 4ac > 0$"
+      },
+      {
+        "key": "დ",
+        "text": "$a < 0$ და $b^2 - 4ac < 0$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q14",
+    "examId": "2019-V1",
+    "number": 14,
+    "sourcePage": 15,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ცეკვის კონკურსში მონაწილეობს 8 ბიჭი და 8 გოგონა. ორგანიზატორებს სურთ მათი დაყოფა წყვილებად ისე, რომ თითოეული წყვილი შედგებოდეს ერთი ბიჭისაგან და ერთი გოგონასაგან. რამდენი სხვადასხვა გზით შეიძლება ამის განხორციელება?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$8!$"
+      },
+      {
+        "key": "ბ",
+        "text": "$C_{16}^2$"
+      },
+      {
+        "key": "გ",
+        "text": "$2! \\cdot C_{16}^2$"
+      },
+      {
+        "key": "დ",
+        "text": "$4! \\cdot 4!$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q15",
+    "examId": "2019-V1",
+    "number": 15,
+    "sourcePage": 16,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რამდენი გადაკვეთის წერტილი აქვს $y(x) = x + \\frac{1}{x}$ ფუნქციის გრაფიკს აბსცისათა ღერძთან?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "ერთი"
+      },
+      {
+        "key": "ბ",
+        "text": "ორი"
+      },
+      {
+        "key": "გ",
+        "text": "სამი"
+      },
+      {
+        "key": "დ",
+        "text": "არცერთი"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q16",
+    "examId": "2019-V1",
+    "number": 16,
+    "sourcePage": 17,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "საბავშვო დღესასწაულზე საჩუქრების გათამაშებისას urnაში $100$ მომგებიანი ბილეთი ჩაყარეს. ისინი გადანომრილი იყო რიცხვებით $1$-დან $100$-ის ჩათვლით. გიამ urnიდან ორი ბილეთი უნდა ამოიღოს. რა არის იმის ალბათობა, რომ ამ ბილეთებიდან ერთ-ერთის ნომერი მეორის ნომერზე ორჯერ მეტი იქნება?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{1}{100}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{1}{99}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{1}{50}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{1}{49}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q17",
+    "examId": "2019-V1",
+    "number": 17,
+    "sourcePage": 18,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ქვემოთ ჩამოთვლილი შუალედებიდან რომელს ეკუთვნის $\\arccos\\left(-\\frac{1}{4}\\right)$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\left(-\\pi; -\\frac{\\pi}{2}\\right)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\left(-\\frac{\\pi}{2}; 0\\right)$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\left(0; \\frac{\\pi}{2}\\right)$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\left(\\frac{\\pi}{2}; \\pi\\right)$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q18",
+    "examId": "2019-V1",
+    "number": 18,
+    "sourcePage": 19,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ისრებიან საათში წუთების მაჩვენებელი ისრის წვერო ბრუნვის ღერძის გარშემო ბრუნავს $0,2$ მ/სთ სიჩქარით. რა მანძილით არის დაშორებული ამ ისრის წვერო ბრუნვის ღერძიდან?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{0,1}{\\pi}$ მ"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{0,3}{\\pi}$ მ"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{0,6}{\\pi}$ მ"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{0,9}{\\pi}$ მ"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q19",
+    "examId": "2019-V1",
+    "number": 19,
+    "sourcePage": 20,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABC$ სამკუთხედის $BC$ გვერდზე აღებულია $N$ წერტილი ისე, რომ $\\frac{BN}{NC} = \\frac{1}{3}$ (იხ. სურათი). ქვემოთ მოცემული ტოლობებიდან რომელია ჭეშმარიტი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\vec{AN} = \\frac{3}{4}\\vec{AB} + \\frac{1}{4}\\vec{AC}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\vec{AN} = \\frac{1}{4}\\vec{AB} + \\frac{3}{4}\\vec{AC}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\vec{AN} = \\frac{1}{3}\\vec{AB} + \\frac{2}{3}\\vec{AC}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\vec{AN} = \\frac{1}{4}\\vec{AB} - \\frac{3}{4}\\vec{AC}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2019-V1/q19.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q20",
+    "examId": "2019-V1",
+    "number": 20,
+    "sourcePage": 21,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$M$ წერტილი დევს $ABCDA_1B_1C_1D_1$ კუბის $AA_1$ წიბოზე. იპოვეთ $C_1D_1M$ კუთხის სიდიდე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$90^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$120^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$180^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "დადგენა შეუძლებელია, რადგან კუთხის სიდიდე დამოკიდებულია $M$ წერტილის მდებარეობაზე."
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2019-V1/q20.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q21",
+    "examId": "2019-V1",
+    "number": 21,
+    "sourcePage": 22,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "წრეწირში გავლებებილი $AB$ და $CD$ ქორდები იკვეთებიან $O$ წერტილში ისე, რომ $AO:OB=2:3$ და $CO:OD=1:2$. იპოვეთ $AC:DB$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{1}{3}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{1}{\\sqrt{3}}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{2}{3}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{1}{2}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [
+      "content/images/2019-V1/q21.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q22",
+    "examId": "2019-V1",
+    "number": 22,
+    "sourcePage": 23,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $b_1, b_2, \\dots, b_n$ გეომეტრიული პროგრესიის მნიშვნელი, თუ ცნობილია, რომ $b_{10} = 30$ და $b_{19} = -70$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-\\left(\\frac{7}{3}\\right)^{\\frac{1}{9}}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-\\left(\\frac{7}{3}\\right)^{\\frac{1}{9}}$"
+      },
+      {
+        "key": "გ",
+        "text": "$-\\left(\\frac{3}{7}\\right)^{\\frac{1}{9}}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\left(\\frac{3}{7}\\right)^{\\frac{1}{9}}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "Note: options ა and ბ might have slight typos in the original test booklet regarding minus signs, but transcribed as they appear.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q23",
+    "examId": "2019-V1",
+    "number": 23,
+    "sourcePage": 24,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$A$ და $B$ წერტილები $3x+2y=5$ განტოლებით მოცემულ წრფეზე მდებარეობს და ერთმანეთისგან $10$ ერთეულია დაშორებული. იპოვეთ ამ წერტილების ორდინატების სხვაობის მოდული.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{30}{\\sqrt{13}}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{5}{\\sqrt{3}}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{20}{\\sqrt{13}}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{10\\sqrt{5}}{3}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q24",
+    "examId": "2019-V1",
+    "number": 24,
+    "sourcePage": 25,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $\\frac{3^{x-2}}{1 - 3^x} = \\frac{1}{2}$ განტოლების ამონახსნთა სიმრავლე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "${\\log_3 2; \\log_3 11}$"
+      },
+      {
+        "key": "ბ",
+        "text": "${\\log_3 2 + 2}$"
+      },
+      {
+        "key": "გ",
+        "text": "${\\log_3 11 - 2}$"
+      },
+      {
+        "key": "დ",
+        "text": "${\\varnothing}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "Option b is printed as {2 + \\log_3 2} and c as {2 - \\log_3 11}.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q25",
+    "examId": "2019-V1",
+    "number": 25,
+    "sourcePage": 26,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ხუთკუთხედის წვეროები წარმოადგენს $2$-ის ტოლი რადიუსის მქონე თანაუკვეთი წრეების ცენტრებს. სურათზე გამუქებულია ამ წრეების თანაკვეთა ხუთკუთხედთან. იპოვეთ გამუქებული ფიგურების ფართობების ჯამი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$3\\pi$"
+      },
+      {
+        "key": "ბ",
+        "text": "$4\\pi$"
+      },
+      {
+        "key": "გ",
+        "text": "$6\\pi$"
+      },
+      {
+        "key": "დ",
+        "text": "ვერ ვიპოვოთ, მონაცემები არ არის საკმარისი."
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2019-V1/q25.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q26",
+    "examId": "2019-V1",
+    "number": 26,
+    "sourcePage": 27,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ნამდვილ რიცხვთა $a_n$ მიმდევრობა შეადგინეს შემდეგი წესით: პირველი წევრი $a_1 = 30$, ხოლო მიმდევრობის ყოველი შემდგომი წევრი წინა წევრის საშუალებით გამოითვლება ფორმულით $a_{n+1} = \\log_2(a_n)$. წევრების რა უდიდესი რაოდენობა შეიძლება იყოს ამ მიმდევრობაში?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "5"
+      },
+      {
+        "key": "ბ",
+        "text": "6"
+      },
+      {
+        "key": "გ",
+        "text": "7"
+      },
+      {
+        "key": "დ",
+        "text": "8"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q27",
+    "examId": "2019-V1",
+    "number": 27,
+    "sourcePage": 28,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABCD$ მართკუთხედის $AB$ გვერდზე $M$ წერტილი ისეა აღებული, რომ $DM = DC$. იპოვეთ $\\angle MCD$ კუთხის სიდიდე, თუ $AB = 2BC$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$75^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$70^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$65^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$60^\\circ$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q28",
+    "examId": "2019-V1",
+    "number": 28,
+    "sourcePage": 29,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$f(x) = \\cos(6x + 1)$ ფუნქციის უმცირესი დადებითი პერიოდი ტოლია",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{\\pi}{3}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{\\pi}{3} + 1$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{\\pi}{3} - 1$"
+      },
+      {
+        "key": "დ",
+        "text": "$2\\pi + 1$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q29",
+    "examId": "2019-V1",
+    "number": 29,
+    "sourcePage": 30,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$a_1, a_2, a_3, \\dots, a_{10}$ რიცხვები შესაბამისად $2, 3, 4, \\dots, 11$ რიცხვების პროპორციულია. იპოვეთ $a_8$, თუ ცნობილია, რომ $a_1, a_2, a_3, \\dots, a_{10}$ რიცხვების ჯამი $13$-ის ტოლია.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{8}{13}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{8}{5}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{9}{5}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{11}{5}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q30",
+    "examId": "2019-V1",
+    "number": 30,
+    "sourcePage": 31,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "მართი სამკუთხა პრიზმის ფორმის ხის ძელაკის ფუძე მართკუთხა სამკუთხედია. ეს ძელაკი გადახერხეს დიდი გვერდითი წახნაგის პარალელურ სიბრტყეზე, რომელიც ფუძეების კათეტებს შუაზე ყოფს (იხ. სურათი). სურათზე მოცემული ზომების მიხედვით იპოვეთ პრიზმის გამოუქცეველი ნაწილის მოცულობა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$84$ $\\text{დმ}^3$"
+      },
+      {
+        "key": "ბ",
+        "text": "$112$ $\\text{დმ}^3$"
+      },
+      {
+        "key": "გ",
+        "text": "$126$ $\\text{დმ}^3$"
+      },
+      {
+        "key": "დ",
+        "text": "$252$ $\\text{დმ}^3$"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2019-V1/q30.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "ტექსტში 'გამოუქცეველი' ტექსტუალური შეცდომაა ორიგინალში, ალბათ 'გამოუქცევი' ან მსგავსი, მაგრამ გადაწერილია ზუსტად როგორც ორიგინალში: 'გამოუქცეველი'.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q31",
+    "examId": "2019-V1",
+    "number": 31,
+    "sourcePage": 32,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "ამოხსენით უტოლობათა სისტემა $\\begin{cases} 2x+11\\ge 1-3x \\\\ 4(x-3)<x+6 \\end{cases}$.",
+    "options": [],
+    "answer": "xin[-2;6)",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q32",
+    "examId": "2019-V1",
+    "number": 32,
+    "sourcePage": 33,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "იპოვეთ $1; -4; 12; x; 5; 3$ რიცხვითი მონაცემების საშუალო, თუ ამ მონაცემების მედიანა $3,8$-ის ტოლია.",
+    "options": [],
+    "answer": "3{,}6",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q33",
+    "examId": "2019-V1",
+    "number": 33,
+    "sourcePage": 34,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "$Oxy$ საკოორდინატო სიბრტყეზე მოცემულია წრეწირი ცენტრით კოორდინატთა სისტემის სათავეში. იპოვეთ ამ წრეწირის სიგრძე, თუ $A(3; 2)$ წერტილი მასზე მდებარეობს.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q34",
+    "examId": "2019-V1",
+    "number": 34,
+    "sourcePage": 35,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "იპოვეთ $x$, თუ ცნობილია, რომ რიცხვთა მიმდევრობა $-1; 3-\\sqrt{x-1}; 4$ არის არითმეტიკული პროგრესია.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q35",
+    "examId": "2019-V1",
+    "number": 35,
+    "sourcePage": 36,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "იპოვეთ $y = \\log_2 \\left(\\frac{x}{2x-1}\\right)$ ფუნქციის განსაზღვრის არე.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q36",
+    "examId": "2019-V1",
+    "number": 36,
+    "sourcePage": 37,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "იპოვეთ $a$ და $b$ პარამეტრების ყველა ის მნიშვნელობა, რომელთაცისაც $ax + 3b = 5bx - 4a + 1$ განტოლებას აქვს უამრავი ამონახსნი.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "Typo in original text: 'რომელთაცისაც' instead of 'რომელთათვისაც'",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q37",
+    "examId": "2019-V1",
+    "number": 37,
+    "sourcePage": 38,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "სხვადასხვა სიბრტყეში მდებარე ორ $ABC$ და $ABD$ ტოლფერდა სამკუთხედს აქვს საერთო $AB$ ფუძე, რომლის სიგრძე $8$ სმ-ია. იპოვეთ სამკუთხედების სიბრტყეებს შორის მდებარე ორწახნაგა კუთხის სიდიდე, თუ $AC = 4\\sqrt{5}$ სმ, $AD = \\sqrt{41}$ სმ და $CD = 7$ სმ.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q38",
+    "examId": "2019-V1",
+    "number": 38,
+    "sourcePage": 39,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "წრეწირი, რომლის ცენტრი $Q$ მოთავსებულია $60^\\circ$-იანი $A$ კუთხის გვერდზე, ეხება ამ კუთხის მეორე გვერდს $B$ წერტილში (იხ. სურათი). $A$ კუთხეში ჩააზულია მეორე წრეწირი ცენტრით $P$ წერტილში, რომელიც ეხება პირველ წრეწირს ისე, როგორც ეს სურათზეა გამოსახული. იპოვეთ დიდი წრეწირის რადიუსის შეფარდება პატარა წრეწირის რადიუსთან.",
+    "options": [],
+    "answer": "",
+    "images": [
+      "content/images/2019-V1/q38.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q39",
+    "examId": "2019-V1",
+    "number": 39,
+    "sourcePage": 40,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "რამდენი ლიტრი $40\\%$-იანი სპირტის ხსნარი და რამდენი ლიტრი $52\\%$-იანი სპირტის ხსნარი უნდა შევურიოთ ერთმანეთს, რომ მივიღოთ $10$ ლიტრი $48\\%$-იანი სპირტის ხსნარი.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2019-V1-Q40",
+    "examId": "2019-V1",
+    "number": 40,
+    "sourcePage": 41,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "იპოვეთ $a$ პარამეტრის ყველა ის მნიშვნელობა, რომელთათვისაც კვადრატულ განტოლებას $3x^2 - (2a+1)x + 3a = 0$ გააჩნია ორი ნამდვილი, ერთმანეთისაგან განსხვავებული ფესვი $x_1$ და $x_2$, რომლებიც აკმაყოფილებს პირობას $(x_1)^2 + (x_2)^2 < 1$.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  }
+]

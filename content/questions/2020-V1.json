@@ -1,0 +1,1286 @@
+[
+  {
+    "code": "2020-V1-Q01",
+    "examId": "2020-V1",
+    "number": 1,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$2\\frac{3}{8} - 0,6 =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$0,31$"
+      },
+      {
+        "key": "ბ",
+        "text": "$0,32$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{7}{4}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{71}{40}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q02",
+    "examId": "2020-V1",
+    "number": 2,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $34$-ის და $51$-ის უმცირესი საერთო ჯერადი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$17$"
+      },
+      {
+        "key": "ბ",
+        "text": "$85$"
+      },
+      {
+        "key": "გ",
+        "text": "$102$"
+      },
+      {
+        "key": "დ",
+        "text": "$1734$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q03",
+    "examId": "2020-V1",
+    "number": 3,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "გიას ხელფასი $20\\%$-ის ტოლი საშემოსავლო გადასახადის დაკთვის შემდეგ შეადგენს $1500$ ლარს. რისი ტოლია გიას ხელფასი დაკთხვამდე?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$1700$ ლარი"
+      },
+      {
+        "key": "ბ",
+        "text": "$1800$ ლარი"
+      },
+      {
+        "key": "გ",
+        "text": "$1875$ ლარი"
+      },
+      {
+        "key": "დ",
+        "text": "$1900$ ლარი"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q04",
+    "examId": "2020-V1",
+    "number": 4,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სამკუთხედის გვერდისა და მისი პარალელური შუახაზის სიგრძეთა ჯამი $15$ სმ-ის ტოლია. იპოვეთ ამ შუახაზის სიგრძე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$3$ სმ"
+      },
+      {
+        "key": "ბ",
+        "text": "$5$ სმ"
+      },
+      {
+        "key": "გ",
+        "text": "$6$ სმ"
+      },
+      {
+        "key": "დ",
+        "text": "$7$ სმ"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q05",
+    "examId": "2020-V1",
+    "number": 5,
+    "sourcePage": 6,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "პარალელოგრამის ორი კუთხის ჯამი $150^\\circ$-ის ტოლია. რას უდრის პარალელოგრამის ბლაგვი კუთხე?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$105^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$110^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$115^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$120^\\circ$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q06",
+    "examId": "2020-V1",
+    "number": 6,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$\\frac{a^3 - b^3}{a^2 + ab + b^2} =$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$a - b$"
+      },
+      {
+        "key": "ბ",
+        "text": "$a + b$"
+      },
+      {
+        "key": "გ",
+        "text": "$(a - b)^2$"
+      },
+      {
+        "key": "დ",
+        "text": "$(a + b)^2$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q07",
+    "examId": "2020-V1",
+    "number": 7,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ორ ქალაქს შორის მანძილი $120$ კილომეტრია. რა მანძილია ამ ქალაქებს შორის რუკაზე, რომლის მასშტაბია $1:500000$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$24$ სმ"
+      },
+      {
+        "key": "ბ",
+        "text": "$2,4$ სმ"
+      },
+      {
+        "key": "გ",
+        "text": "$41\\frac{2}{3}$ სმ"
+      },
+      {
+        "key": "დ",
+        "text": "$4\\frac{1}{6}$ სმ"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q08",
+    "examId": "2020-V1",
+    "number": 8,
+    "sourcePage": 9,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$O$ სათავის მქონე რიცხვით ღერძზე მინიშნებულია $m$, $n$ და $p$ რიცხვების შესაბამისი წერტილები (იხ. სურათი). ქვემოთ მოცემული უტოლობებიდან რომელია მცდარი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(n-m)\\cdot p>0$"
+      },
+      {
+        "key": "ბ",
+        "text": "$m\\cdot n>0$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{1}{m}>\\frac{1}{n}$"
+      },
+      {
+        "key": "დ",
+        "text": "$p-m<p$"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2020-V1/q08.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q09",
+    "examId": "2020-V1",
+    "number": 9,
+    "sourcePage": 10,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ოჯახის მიერ დეკემბერში, იანვარსა და თებერვალში მომხმარებული ბუნებრივი აირი (კუბურ მეტრებში) წარმოდგენილია სვეტოვანი დიაგრამის სახით (იხ. სურათი). იგივე მონაცემები რომ წარმოადგინოთ წრიული დიაგრამის სახით, რამდენი გრადუსის ტოლი ცენტრალური კუთხე ექნება დეკემბრის თვის შესაბამის წრიულ სექტორს?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$72^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\left(\\frac{540}{7}\\right)^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\left(\\frac{720}{7}\\right)^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$144^\\circ$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [
+      "content/images/2020-V1/q09.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q10",
+    "examId": "2020-V1",
+    "number": 10,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ამოხსენი უტოლობა $x^2 - 16 > (x - 3)^2$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\left(\\frac{25}{6}; \\infty\\right)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\left(-\\infty; \\frac{25}{6}\\right)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(3; 16)$"
+      },
+      {
+        "key": "დ",
+        "text": "ამონახსენი არ აქვს"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q11",
+    "examId": "2020-V1",
+    "number": 11,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $11; -2; 35; -2; 11; 3$ რიცხვითი მონაცემების მედიანა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$17,5$"
+      },
+      {
+        "key": "ბ",
+        "text": "$16,5$"
+      },
+      {
+        "key": "გ",
+        "text": "$7$"
+      },
+      {
+        "key": "დ",
+        "text": "$14$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q12",
+    "examId": "2020-V1",
+    "number": 12,
+    "sourcePage": 13,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "დაალაგეთ ზრდის მიხედვით რიცხვები: $\\sqrt{2}$, $\\sqrt[3]{3}$, $\\sqrt[6]{6}$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\sqrt{2}$, $\\sqrt[3]{3}$, $\\sqrt[6]{6}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\sqrt[6]{6}$, $\\sqrt{2}$, $\\sqrt[3]{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\sqrt[6]{6}$, $\\sqrt[3]{3}$, $\\sqrt{2}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\sqrt[3]{3}$, $\\sqrt[6]{6}$, $\\sqrt{2}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q13",
+    "examId": "2020-V1",
+    "number": 13,
+    "sourcePage": 14,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "პრიზმას აქვს $36$ წიბო. რამდენი გვერდი აქვს პრიზმის ფუძეს?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$10$"
+      },
+      {
+        "key": "ბ",
+        "text": "$12$"
+      },
+      {
+        "key": "გ",
+        "text": "$16$"
+      },
+      {
+        "key": "დ",
+        "text": "$18$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q14",
+    "examId": "2020-V1",
+    "number": 14,
+    "sourcePage": 15,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "კლასი შედგება $10$ ვაჟისაგან და $15$ გოგონასგან. $4$ მოსწავლის შერჩევის რამდენი ისეთი ვარიანტი არსებობს, რომ თითოეულ ვარიანტში $3$ ვაჟი და $1$ გოგონა იყოს?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$10 \\cdot 13 \\cdot 14$"
+      },
+      {
+        "key": "ბ",
+        "text": "$3 \\cdot 10 \\cdot 15$"
+      },
+      {
+        "key": "გ",
+        "text": "$4 \\cdot 10 \\cdot 15$"
+      },
+      {
+        "key": "დ",
+        "text": "$10 \\cdot 12 \\cdot 15$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "Combinatorics counting problem representing choosing combinations, but since options are simple products without binomial coefficients printed explicitly, transcribed as they appear in the image.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q15",
+    "examId": "2020-V1",
+    "number": 15,
+    "sourcePage": 16,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABC$ სამკუთხედი მართკუთخა საკოორდინატო სიბრطყის მეორე მეოთხეში მდებარობს. $A_1B_1C_1$ სამკუთხედი წარმოადგენს $ABC$ სამკუთხედის სიმეტრიულ ფიგურას კოორდინატთა სათავის მიმართ. რომელ მეოთხედში მდებარობს $A_1B_1C_1$ სამკუთხედის სიმეტრიული ფიგურა ორდინატთა ღერძის მიმართ?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "პირველ მეოთხედში;"
+      },
+      {
+        "key": "ბ",
+        "text": "მეორე მეოთხედში;"
+      },
+      {
+        "key": "გ",
+        "text": "მესამე მეოთხედში;"
+      },
+      {
+        "key": "დ",
+        "text": "მეოთხე მეოთხედში."
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: خط"
+      ]
+    }
+  },
+  {
+    "code": "2020-V1-Q16",
+    "examId": "2020-V1",
+    "number": 16,
+    "sourcePage": 17,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$10$ სმ სიგრძის $AB$ მონაკვეთზე აღებულია ორი წერტილი $C$ და $D$ ისე, რომ $AC = 4$ სმ და $DB = 7$ სმ. იპოვეთ ალბათობა იმისა, რომ $AB$ მონაკვეთიდან შემთხვევით არჩეული წერტილი ეკუთვნის $CD$ მონაკვეთს.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$0,1$"
+      },
+      {
+        "key": "ბ",
+        "text": "$0,3$"
+      },
+      {
+        "key": "გ",
+        "text": "$0,5$"
+      },
+      {
+        "key": "დ",
+        "text": "$0,6$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q17",
+    "examId": "2020-V1",
+    "number": 17,
+    "sourcePage": 18,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$f(x) = 3^x$ ფუნქციის მნიშვნელობა $x_1$ წერტილში $27$-ჯერ მეტია ფუნქციის მნიშვნელობაზე $x_2$ წერტილში. რას უდრის $x_2 - x_1$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-9$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-3$"
+      },
+      {
+        "key": "გ",
+        "text": "$3$"
+      },
+      {
+        "key": "დ",
+        "text": "$9$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q18",
+    "examId": "2020-V1",
+    "number": 18,
+    "sourcePage": 19,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABCD$ პარალელოგრამის შიგნით მდებარე $K$ წერტილი შეერთებულია პარალელოგრამის წვეროებთან (იხ. სურათი). იპოვეთ $ABK$ სამკუთხედის ფართობი, თუ ცნობილია, რომ $ABCD$ პარალელოგრამის ფართობია $20 \\text{ სმ}^2$, ხოლო $CKD$ სამკუთხედის ფართობია $2\\sqrt{7} \\text{ სმ}^2$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$10 - 2\\sqrt{7} \\text{ სმ}^2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$10 - \\sqrt{7} \\text{ სმ}^2$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\sqrt{13} \\text{ სმ}^2$"
+      },
+      {
+        "key": "დ",
+        "text": "$3 + \\sqrt{7} \\text{ სმ}^2$"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2020-V1/q18.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q19",
+    "examId": "2020-V1",
+    "number": 19,
+    "sourcePage": 20,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "მოცემულია $\\vec{a}(x; -2)$ და $\\vec{b}(1; -1)$ ურთიერთმართობული ვექტორები. იპოვეთ $\\vec{a}$ ვექტორის სიგრძე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2\\sqrt{2}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$3$"
+      },
+      {
+        "key": "გ",
+        "text": "$3\\sqrt{2}$"
+      },
+      {
+        "key": "დ",
+        "text": "$2\\sqrt{7}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q20",
+    "examId": "2020-V1",
+    "number": 20,
+    "sourcePage": 21,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "კონუსის ფუძის რადიუსის სიგრძე $7$ სმ-ია. მისი მსახველი ფუძის სიბრტყესთან ადგენს $30^\\circ$-ის ტოლ კუთხეს. იპოვეთ კონუსის ღერძული კვეთის ფართობი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{49}{3}$ $\\text{სმ}^2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{49\\sqrt{3}}{2}$ $\\text{სმ}^2$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{49}{\\sqrt{3}}$ $\\text{სმ}^2$"
+      },
+      {
+        "key": "დ",
+        "text": "$49\\sqrt{3}$ $\\text{სმ}^2$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q21",
+    "examId": "2020-V1",
+    "number": 21,
+    "sourcePage": 22,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "წრის სექტორის რუკალის სიგრძე $7$ სმ-ია, ხოლო ამ სექტორის ფართობი $7 \\text{ სმ}^2$-ია. იპოვეთ წრის რადიუსი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2\\sqrt{2}$ სმ"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{7}{2}$ სმ"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{7}{\\pi}$ სმ"
+      },
+      {
+        "key": "დ",
+        "text": "$2$ სმ"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q22",
+    "examId": "2020-V1",
+    "number": 22,
+    "sourcePage": 23,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე გამოსახულია $[0; 2\\pi]$ შუალედზე განსაზღვრული $f(x) = a\\sin x$ და $g(x) = b + \\cos x$ ფუნქციების გრაფიკები, სადაც $a$ და $b$ ნამდვილი რიცხვებია. სურათის მიხედვით იპოვეთ $a + b$ გამოსახულების მნიშვნელობა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$4$"
+      },
+      {
+        "key": "ბ",
+        "text": "$3$"
+      },
+      {
+        "key": "გ",
+        "text": "$2$"
+      },
+      {
+        "key": "დ",
+        "text": "$1$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [
+      "content/images/2020-V1/q22.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q23",
+    "examId": "2020-V1",
+    "number": 23,
+    "sourcePage": 24,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ საკოორდინატო სიბრطყეზე ჰომოთეტიას ცენტრით $M$ წერტილში და $\\frac{4}{3}$-ის ტოლი კოეფიციენტით, $A(5; -3)$ წერტილი გადაჰყავს $B(-2; 4)$ წერტილში. იპოვეთ $M$ წერტილის კოორდინატები.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(20; -21)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(26; -24)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(15; -20)$"
+      },
+      {
+        "key": "დ",
+        "text": "$(18; -24)$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: ط"
+      ]
+    }
+  },
+  {
+    "code": "2020-V1-Q24",
+    "examId": "2020-V1",
+    "number": 24,
+    "sourcePage": 25,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$f$ ფუნციქის განსაზღვრის არეა $[-3; 1]$ შუალედი, რომელზეც ის მოცემულია $f(x) = \\log_2(x^2 + 4x + 12)$ ტოლობით. იპოვეთ ამ ფუნციქის უმცირესი მნიშვნელობა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\log_2 9$"
+      },
+      {
+        "key": "ბ",
+        "text": "$4$"
+      },
+      {
+        "key": "გ",
+        "text": "$3$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\log_2 17$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q25",
+    "examId": "2020-V1",
+    "number": 25,
+    "sourcePage": 26,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABC$ მახვილკუთხა სამკუთხედზე შემطაზულია წრეწირი, რომლის ცენტრია $O$ წერტილი, ხოლო რადიუსი $R$-ის ტოლია. იპოვეთ $AC$ გვერდის სიგრძე, თუ $\\angle OAB = \\alpha$ და $\\angle OCB = \\beta$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2R\\cos(\\alpha + \\beta)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$R\\sin(\\alpha + \\beta)$"
+      },
+      {
+        "key": "გ",
+        "text": "$2R\\sin\\alpha \\cdot \\sin\\beta$"
+      },
+      {
+        "key": "დ",
+        "text": "$2R\\sin(\\alpha + \\beta)$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": [
+        "foreign letters in text: ط"
+      ]
+    }
+  },
+  {
+    "code": "2020-V1-Q26",
+    "examId": "2020-V1",
+    "number": 26,
+    "sourcePage": 27,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $\\lg\\frac{3-x}{x-5} \\le \\lg(3-x) - \\lg(x-5)$ უტოლობის ამონახსნთა სიმრავლე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(-\\infty; +\\infty)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$(3; 5)$"
+      },
+      {
+        "key": "გ",
+        "text": "$(-\\infty; 3) \\cup (5; +\\infty)$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\varnothing$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q27",
+    "examId": "2020-V1",
+    "number": 27,
+    "sourcePage": 28,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$a_1, a_2, ..., a_{50}$ გეომეტრიულ პროგრესიაში პირველი წევრი $2$-ის, ხოლო მნიშვნელი $\\frac{1}{3}$-ის ტოლია. ქვემოთ ჩამოთვლილთაგან რომელ ინტერვალს ეკუთვნის ამ პროგრესიის ყველა წევრის ჯამი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$(2; 3)$"
+      },
+      {
+        "key": "ბ",
+        "text": "$[3; 4)$"
+      },
+      {
+        "key": "გ",
+        "text": "$[4; 5)$"
+      },
+      {
+        "key": "დ",
+        "text": "$[5; \\infty)$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q28",
+    "examId": "2020-V1",
+    "number": 28,
+    "sourcePage": 29,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $\\sin\\left(\\frac{\\pi}{6}x\\right)=\\frac{1}{2}$ განტოლების $[0; 15]$ შუალედში მოთავსებული ამონახსნების ჯამი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$6$"
+      },
+      {
+        "key": "ბ",
+        "text": "$16$"
+      },
+      {
+        "key": "გ",
+        "text": "$19$"
+      },
+      {
+        "key": "დ",
+        "text": "$20$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q29",
+    "examId": "2020-V1",
+    "number": 29,
+    "sourcePage": 30,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "გარკვეული ნივთიერების მასის ცვლილება რადიოაქტიური დაშლის დროს აღიწერება ფორმულით $m(t)=m_0 2^{-0,5t}$, სადაც $m_0$ საწყისი მასაა, ხოლო $m(t)$ არის $t$ საათის გასვლის შემდეგ დარჩენილი ნივთიერების მასა. რამდენი საათში შეიცვლება ნივთიერების მასა $m_0$-დან $\\frac{m_0}{3}$-მდე?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$0,5 \\log_3 2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$0,5 \\log_2 3$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\log_3 4$"
+      },
+      {
+        "key": "დ",
+        "text": "$2\\log_2 3$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q30",
+    "examId": "2020-V1",
+    "number": 30,
+    "sourcePage": 31,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "მართ სამკუთხა პრიზმაში ყველა წიბო ერთმანეთის ტოლია. იპოვეთ ამ პრიზმის მოცულობა, თუ მისი გვერდითი ზედაპირის ფართობი $9$ $\\text{სმ}^2$-ია.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{9\\sqrt{3}}{4}$ $\\text{სმ}^3$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{27}{4}$ $\\text{სმ}^3$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{9}{4}$ $\\text{სმ}^3$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{3}{4}$ $\\text{სმ}^3$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q31",
+    "examId": "2020-V1",
+    "number": 31,
+    "sourcePage": 32,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "ამოხსენით განტოლებათა სისტემა $\\begin{cases} 2x+3y=7 \\\\ 5x-4y=11 \\end{cases}$",
+    "options": [],
+    "answer": "x=\frac{61}{23}, y=\frac{13}{23}",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q32",
+    "examId": "2020-V1",
+    "number": 32,
+    "sourcePage": 33,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "ღვინის მწარმოებელი ფირმა ღვინოს ყიდის პარტიებად შემდეგი წესით: $x$ ბოთლისგან შედგენილი პარტიის ყიდვის შემთხვევაში, სადაც $x \\le 4900$, თითოეული ბოთლი ღვინის ფასი იქნება $500 - 0,1x$ ლარი. სულ მცირე, რამდენი ბოთლი ღვინო იყიდა მყიდველმა, თუ მან თითოეულ ბოთლ ღვინოში $15$ ლარზე ნაკლები გადაიხადა?",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q33",
+    "examId": "2020-V1",
+    "number": 33,
+    "sourcePage": 34,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "იპოვეთ $ABC$ მართკუთხა სამკუთხედის უმცირესი კუთხის ტანგენსი, თუ $\\angle ACB = 90^\\circ$, $AB = 2\\sqrt{5}$ და $BC = 4$.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q34",
+    "examId": "2020-V1",
+    "number": 34,
+    "sourcePage": 35,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "იპოვეთ $x$-ის ყველა შესაძლო მნიშვნელობა, თუ $1; -3; 10; x; 5; 4$ რიცხვითი მონაცემების გაბნევის დიაპაზონი $17$-ის ტოლია.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q35",
+    "examId": "2020-V1",
+    "number": 35,
+    "sourcePage": 36,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "მოცემულია $(a_n)$ არითმეტიკული პროგრესია, რომლის სხვაობა განსხვავებულია ნულისაგან. იპოვეთ ისეთი $k$ და $m$ ნომრები, რომ $k+m=13$ და $2a_k + a_3 = a_m + 2a_7$.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q36",
+    "examId": "2020-V1",
+    "number": 36,
+    "sourcePage": 37,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "$f(x) = a \\cdot 3^{bx}$ ფუნქციის გრაფიკი გადის $(1; 9)$ და $(2; 16)$ წერტილებზე. იპოვეთ $a$ და $b$ პარამეტრების მნიშვნელობები.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q37",
+    "examId": "2020-V1",
+    "number": 37,
+    "sourcePage": 38,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "სამკუთხა პირამიდის ფუძე წარმოადგენს მართკუთხა სამკუთხედს, რომლის კათეტები ტოლია $3$ სმ-ის და $\\sqrt{3}$ სმ-ის. იპოვეთ პირამიდის გვერდითი წიბოების მიერ ფუძის სიბრტყესთან შედგენილი კუთხეები, თუ ცნობილია, რომ ამ პირამიდის ყველა გვერდითი წიბოს სიგრძე $2$ სმ-ის ტოლია.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q38",
+    "examId": "2020-V1",
+    "number": 38,
+    "sourcePage": 39,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "$ABC$ ტოლფერდა სამკუთხედის $AC$ ფუძეზე აღებულია $F$ წერტილი ისე, რომ მანძილი $F$ წერტილიდან $AB$  და $BC$ წრფეებამდე შესაბამისად $1$ სმ-ის და $5$ სმ-ის ტოლია. იპოვეთ $AF$ მონაკვეთის სიგრძე, თუ $ABC$ სამკუთხედის ფართობი $12\\sqrt{3}$ $\\text{სმ}^2$-ის ტოლია, ხოლო $FC > 6$ სმ-ზე.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q39",
+    "examId": "2020-V1",
+    "number": 39,
+    "sourcePage": 40,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "$A$ და $B$ პუნქტების დამმაკავშირებელი გზის სიგრძე $240$ კილომეტრია. $A$ პუნქტიდან $B$ პუნქტის მიმართულებით მუდმივი სიჩქარით გაემართა ავტობუსი. $1$ საათის შემდეგ $B$ პუნქტიდან $A$ პუნქტის მიმართულებით მუდმივი სიჩქარით გაემართა მსუბუქი ავტომობილი. ავტობუსი და მსუბუქი ავტომობილი ერთმანეთს $A$ და $B$ პუნქტების შემარერთებელი გზის შუაში შეხვდნენ. ამის შემდეგ, მათ შეუფერხებლად იმავე სიჩქარეებით გააგრძელეს გზა და როდესაც მათ შორის მანძილი $180$ კმ გახდა, ავტობუსის გამოსვლიდან ზუსტად $3$ საათი იყო გასული. იპოვეთ მსუბუქი ავტომობილის სიჩქარე.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2020-V1-Q40",
+    "examId": "2020-V1",
+    "number": 40,
+    "sourcePage": 41,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "სიბრტყეზე განვიხილოთ ყველა ტოლფერდა ტრაპეცია, რომელთა მახვილი კუთხეა $\\alpha$ და ფართობია $10 \\text{ სმ}^2$. ამ ტრაპეციების პერიმეტრებს შორის იპოვეთ უმცირესი, თუ $\\sin \\alpha = \\frac{1}{5}$.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  }
+]

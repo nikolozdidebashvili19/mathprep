@@ -4,6 +4,8 @@ import { signIn, getSession } from 'next-auth/react';
 import { useAuthStore } from '@/features/auth/hooks/useAuthStore';
 import { User } from '@/features/auth/types/auth.types';
 import { LoginType } from '@/features/auth/validations/auth.validation';
+import { AUTH_ERROR_MESSAGES, AUTH_FALLBACK_ERRORS } from '@/shared/const/auth.const';
+import { HOME_ROUTE_AFTER_LOGIN } from '@/shared/const/routes.const';
 
 
 export const useLogin = () => {
@@ -22,7 +24,7 @@ export const useLogin = () => {
       avatar: sessionUser.avatar ?? '',
     });
 
-    window.location.href = sessionUser.role === 'admin' ? '/dashboard' : '/';
+    window.location.href = HOME_ROUTE_AFTER_LOGIN;
   };
 
   const login = async (data: LoginType) => {
@@ -36,15 +38,15 @@ export const useLogin = () => {
       });
 
       if (result?.error) {
-        setError('Invalid email or password');
+        setError(AUTH_ERROR_MESSAGES.INVALID_CREDENTIALS);
         return;
       }
 
       if (result?.ok) {
         await handleSession(setUser);
       }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Login failed');
+    } catch {
+      setError(AUTH_FALLBACK_ERRORS.login);
     } finally {
       setLoading(false);
     }

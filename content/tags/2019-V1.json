@@ -1,0 +1,592 @@
+[
+  {
+    "code": "2019-V1-Q01",
+    "skills": [
+      "N2"
+    ],
+    "primarySkill": "N2",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q02",
+    "skills": [
+      "N7"
+    ],
+    "primarySkill": "N7",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q03",
+    "skills": [
+      "N3",
+      "N4"
+    ],
+    "primarySkill": "N3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q04",
+    "skills": [
+      "G7"
+    ],
+    "primarySkill": "G7",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q05",
+    "skills": [
+      "G1"
+    ],
+    "primarySkill": "G1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q06",
+    "skills": [
+      "A2",
+      "E1"
+    ],
+    "primarySkill": "A2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Algebraic simplification using sum/difference of cubes formula with fractional exponents.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q07",
+    "skills": [
+      "N4",
+      "G7"
+    ],
+    "primarySkill": "N4",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Scale factor for areas is the square of the linear scale factor.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q08",
+    "skills": [
+      "N1"
+    ],
+    "primarySkill": "N1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Divisibility and remainders modulo 5.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q09",
+    "skills": [
+      "P5",
+      "P6"
+    ],
+    "primarySkill": "P5",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Reading data from a bar chart and computing the arithmetic mean.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q10",
+    "skills": [
+      "A4"
+    ],
+    "primarySkill": "A4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Linear equation having no solution (parameter value where coefficient of x is zero and constant is non-zero).",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q11",
+    "skills": [
+      "N8"
+    ],
+    "primarySkill": "N8",
+    "difficulty": 1,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Re-tagged by hand after adding skills V4/N8 (Gemini daily quota exhausted).",
+    "problems": [],
+    "provider": "manual",
+    "model": "claude-code"
+  },
+  {
+    "code": "2019-V1-Q12",
+    "skills": [
+      "F4"
+    ],
+    "primarySkill": "F4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Axis of symmetry of a parabola.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q13",
+    "skills": [
+      "A8",
+      "F4"
+    ],
+    "primarySkill": "A8",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Quadratic inequality always negative.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q14",
+    "skills": [
+      "P2",
+      "P1"
+    ],
+    "primarySkill": "P2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Combinatorics/permutations of pairing boys and girls.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q15",
+    "skills": [
+      "F1",
+      "F2"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "Domain and roots/intercepts of a rational function.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q16",
+    "skills": [
+      "P3",
+      "P1"
+    ],
+    "primarySkill": "P3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q17",
+    "skills": [
+      "T5"
+    ],
+    "primarySkill": "T5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q18",
+    "skills": [
+      "G8"
+    ],
+    "primarySkill": "G8",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q19",
+    "skills": [
+      "V3",
+      "N4"
+    ],
+    "primarySkill": "V3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q20",
+    "skills": [
+      "K1",
+      "K2"
+    ],
+    "primarySkill": "K1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q21",
+    "skills": [
+      "G3",
+      "G5"
+    ],
+    "primarySkill": "G3",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Similar triangles ACO and DBO formed by intersecting chords.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q22",
+    "skills": [
+      "S2"
+    ],
+    "primarySkill": "S2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Geometric progression formula relating terms and common ratio.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q23",
+    "skills": [
+      "V1",
+      "V2",
+      "G4"
+    ],
+    "primarySkill": "V1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Distance formula on a line and slope relationship.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q24",
+    "skills": [
+      "E3",
+      "A4"
+    ],
+    "primarySkill": "E3",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Exponential equation reducible by substitution.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q25",
+    "skills": [
+      "G7",
+      "G8",
+      "G6"
+    ],
+    "primarySkill": "G7",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "Sum of interior angles of a pentagon used to find total sector area.",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q26",
+    "skills": [
+      "E2",
+      "F1"
+    ],
+    "primarySkill": "E2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q27",
+    "skills": [
+      "G2",
+      "G6",
+      "T1"
+    ],
+    "primarySkill": "G2",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q28",
+    "skills": [
+      "T5"
+    ],
+    "primarySkill": "T5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q29",
+    "skills": [
+      "N4"
+    ],
+    "primarySkill": "N4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q30",
+    "skills": [
+      "K2",
+      "G7"
+    ],
+    "primarySkill": "K2",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 0.95,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q31",
+    "skills": [
+      "A5"
+    ],
+    "primarySkill": "A5",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q32",
+    "skills": [
+      "P5"
+    ],
+    "primarySkill": "P5",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q33",
+    "skills": [
+      "V1",
+      "G8"
+    ],
+    "primarySkill": "G8",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q34",
+    "skills": [
+      "S1",
+      "A11"
+    ],
+    "primarySkill": "S1",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q35",
+    "skills": [
+      "F1",
+      "E5",
+      "A5"
+    ],
+    "primarySkill": "F1",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q36",
+    "skills": [
+      "A4"
+    ],
+    "primarySkill": "A4",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q37",
+    "skills": [
+      "G9",
+      "G4",
+      "K1"
+    ],
+    "primarySkill": "G9",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q38",
+    "skills": [
+      "G5",
+      "G3",
+      "G4"
+    ],
+    "primarySkill": "G5",
+    "difficulty": 4,
+    "offProgram": false,
+    "confidence": 0.9,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q39",
+    "skills": [
+      "A12",
+      "A6"
+    ],
+    "primarySkill": "A12",
+    "difficulty": 2,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  },
+  {
+    "code": "2019-V1-Q40",
+    "skills": [
+      "A7",
+      "A8"
+    ],
+    "primarySkill": "A7",
+    "difficulty": 3,
+    "offProgram": false,
+    "confidence": 1,
+    "notes": "",
+    "problems": [],
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  }
+]

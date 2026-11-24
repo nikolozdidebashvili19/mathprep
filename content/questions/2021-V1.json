@@ -1,0 +1,1138 @@
+[
+  {
+    "code": "2021-V1-Q01",
+    "examId": "2021-V1",
+    "number": 1,
+    "sourcePage": 2,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$\\left(1-\\frac{5}{6}\\right)\\cdot 0,6=$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$0,5$"
+      },
+      {
+        "key": "ბ",
+        "text": "$0,3$"
+      },
+      {
+        "key": "გ",
+        "text": "$0,1$"
+      },
+      {
+        "key": "დ",
+        "text": "$0,2$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q02",
+    "examId": "2021-V1",
+    "number": 2,
+    "sourcePage": 3,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ უდიდესი მთელი რიცხვი, რომელიც ნაკლებია $\\sqrt{41}$-ზე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$5$"
+      },
+      {
+        "key": "ბ",
+        "text": "$6$"
+      },
+      {
+        "key": "გ",
+        "text": "$7$"
+      },
+      {
+        "key": "დ",
+        "text": "$8$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q03",
+    "examId": "2021-V1",
+    "number": 3,
+    "sourcePage": 4,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რამდენი პროცენტით შემცირდა ავტომობილის ფასი, თუ მისი ფასი $40000$ ლარიდან შემცირდა $34000$ ლარამდე?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$10\\%$"
+      },
+      {
+        "key": "ბ",
+        "text": "$12\\%$"
+      },
+      {
+        "key": "გ",
+        "text": "$15\\%$"
+      },
+      {
+        "key": "დ",
+        "text": "$20\\%$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q04",
+    "examId": "2021-V1",
+    "number": 4,
+    "sourcePage": 5,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სამკუთხედის კუთხეების გრადუსული ზომები ისე შეeფარდება ერთმანეთს, როგორც $1:3:5$. იპოვეთ ამ სამკუთხედის ბლაგვი კუთხის სიდიდე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$95^\\circ$"
+      },
+      {
+        "key": "ბ",
+        "text": "$150^\\circ$"
+      },
+      {
+        "key": "გ",
+        "text": "$120^\\circ$"
+      },
+      {
+        "key": "დ",
+        "text": "$100^\\circ$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q05",
+    "examId": "2021-V1",
+    "number": 5,
+    "sourcePage": 6,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ტოლფერდა მართკუთხა სამკუთხედში ჰიპოტენუზის პარალელური შუახაზის სიგრძე $6$ სმ-ის ტოლია. იპოვეთ ამ მართკუთხა სამკუთხედის ჰიპოტენუზაზე დაშვებული სიმაღლის სიგრძე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$3$ სმ"
+      },
+      {
+        "key": "ბ",
+        "text": "$6$ სმ"
+      },
+      {
+        "key": "გ",
+        "text": "$8$ სმ"
+      },
+      {
+        "key": "დ",
+        "text": "$12$ სმ"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q06",
+    "examId": "2021-V1",
+    "number": 6,
+    "sourcePage": 7,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$27^{-\\frac{2}{3}} =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{1}{9}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$9$"
+      },
+      {
+        "key": "გ",
+        "text": "$-9$"
+      },
+      {
+        "key": "დ",
+        "text": "$-\\frac{1}{9}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q07",
+    "examId": "2021-V1",
+    "number": 7,
+    "sourcePage": 8,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რა უდიდესი მნიშვნელობა შეიძლება მიიღოს $\\frac{a}{b}$ შეფარდებამ, თუ $1 \\le a \\le 4$ და $2 \\le b \\le 6$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$1$"
+      },
+      {
+        "key": "ბ",
+        "text": "$2$"
+      },
+      {
+        "key": "გ",
+        "text": "$3$"
+      },
+      {
+        "key": "დ",
+        "text": "$4$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q08",
+    "examId": "2021-V1",
+    "number": 8,
+    "sourcePage": 9,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $\\frac{2}{7}x + 1,4 < -2$ უტოლობის უდიდესი მთელი ამონახსენი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-14$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-13$"
+      },
+      {
+        "key": "გ",
+        "text": "$-12$"
+      },
+      {
+        "key": "დ",
+        "text": "$-11$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q09",
+    "examId": "2021-V1",
+    "number": 9,
+    "sourcePage": 10,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "სურათზე მოცემულია სვეგოვანი დიაგრამა, რომელიც გამოხატავს კომპანიის მიერ ოთხი წლის განმავლობაში ყოველწლიურად გამოშვებული ერთი სახის პროდუქტის რაოდენობას. ყოველი 500 ერთეული პროდუქტი კომპანიას აძლევს 12000 ლარის მოგებას. გამოთვალეთ კომპანიის ჯამური მოგება ამ ოთხი წლის განმავლობაში.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "120000 ლარი"
+      },
+      {
+        "key": "ბ",
+        "text": "216000 ლარი"
+      },
+      {
+        "key": "გ",
+        "text": "200000 ლარი"
+      },
+      {
+        "key": "დ",
+        "text": "240000 ლარი"
+      }
+    ],
+    "answer": "დ",
+    "images": [
+      "content/images/2021-V1/q09.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q10",
+    "examId": "2021-V1",
+    "number": 10,
+    "sourcePage": 11,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "რამდენი ამონახსენი აქვს განტოლებას $(x + 4)\\sqrt{x + 1} = 0$ ?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$1$"
+      },
+      {
+        "key": "ბ",
+        "text": "$2$"
+      },
+      {
+        "key": "გ",
+        "text": "$4$"
+      },
+      {
+        "key": "დ",
+        "text": "არც ერთი"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q11",
+    "examId": "2021-V1",
+    "number": 11,
+    "sourcePage": 12,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$2; -4; 3; x; 6; -1$ მონაცემების გაბნევის დიაპაზონია $11$. იპოვეთ $x$, თუ ის უარყოფითი რიცხვია.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-7$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-6$"
+      },
+      {
+        "key": "გ",
+        "text": "$-5$"
+      },
+      {
+        "key": "დ",
+        "text": "$-4$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q12",
+    "examId": "2021-V1",
+    "number": 12,
+    "sourcePage": 13,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ტურისტი დილით გავიდა ბანაკიდან, მივიდა ტბამდე, გაჩერდა ზუსტად 20 წუთი და იმავე გზით დაბრუნდა ბანაკში. ქვემოთ მოცემული სურათებიდან რომელი შეიძლება წარმოდგენდეს ტურისტსა და ბანაკს შორის მანძილის დროზე დამოკიდებულების გრაფიკს? (ჩაივალეთ, რომ ტურისტი მოძრაობდა სწორხაზოვან გზაზე).",
+    "options": [
+      {
+        "key": "ა",
+        "text": "იხ. გრაფიკი"
+      },
+      {
+        "key": "ბ",
+        "text": "იხ. გრაფიკი"
+      },
+      {
+        "key": "გ",
+        "text": "იხ. გრაფიკი"
+      },
+      {
+        "key": "დ",
+        "text": "იხ. გრაფიკი"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2021-V1/q12.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.99,
+      "notes": "Picture options: one combined labelled image, options point to it.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q13",
+    "examId": "2021-V1",
+    "number": 13,
+    "sourcePage": 14,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ქვემოთ ჩამოთვლილი ფიგურებიდან რომელს არ გააჩნია სიმეტრიის ცენტრი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "მონაკვეთი;"
+      },
+      {
+        "key": "ბ",
+        "text": "წრე;"
+      },
+      {
+        "key": "გ",
+        "text": "მართკუთხედი;"
+      },
+      {
+        "key": "დ",
+        "text": "წესიერი სამკუთხედი."
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q14",
+    "examId": "2021-V1",
+    "number": 14,
+    "sourcePage": 15,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "მასწავლებელს სურს $8$ მოსწავლისგან შეადგინოს $3$ ჯგუფი, სადაც ნომერ პირველ და ნომერ მეორე ჯგუფში იქნება სამ-სამი მოსწავლე, ხოლო ნომერ მეშამეში კი - ორი მოსწავლე. ჯგუფებში მოსწავლეთა ასეთი განაწილების სულ რამდენი განსხვავებული ვარიანტი არსებობს?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$280$"
+      },
+      {
+        "key": "ბ",
+        "text": "$560$"
+      },
+      {
+        "key": "გ",
+        "text": "$640$"
+      },
+      {
+        "key": "დ",
+        "text": "$1120$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "Typo in original text 'ნომერ მეშამეში' instead of 'ნომერ მესამეში', but transcribed verbatim.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q15",
+    "examId": "2021-V1",
+    "number": 15,
+    "sourcePage": 16,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$a_1, a_2, ..., a_{10}$ არითმეტიკული პროგრესიის სხვაობა არის $3$-ის ტოლი. ამ პროგრესიის ყველა წევრი გამრავლდა $5$-ზე. იპოვეთ მიღებულ რიცხვებს შორის უდიდესისა და უმცირესის სხვაობა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$135$"
+      },
+      {
+        "key": "ბ",
+        "text": "$130$"
+      },
+      {
+        "key": "გ",
+        "text": "$150$"
+      },
+      {
+        "key": "დ",
+        "text": "$50$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q16",
+    "examId": "2021-V1",
+    "number": 16,
+    "sourcePage": 17,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იმის ალბათობა, რომ ელექტროჩაიდანი იმუშავებს $1$ წელზე მეტს, ტოლია $0,6$-ის, ხოლო იმის ალბათობა, რომ ის იმუშავებს $2$ წელზე ნაკლებს, ტოლია $0,7$-ის. იპოვეთ იმის ალბათობა, რომ ეს ელექტროჩაიდანი იმუშავებს $1$ წელზე მეტს, მაგრამ $2$ წელზე ნაკლებს.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$0,1$"
+      },
+      {
+        "key": "ბ",
+        "text": "$0,2$"
+      },
+      {
+        "key": "გ",
+        "text": "$0,3$"
+      },
+      {
+        "key": "დ",
+        "text": "$0,4$"
+      }
+    ],
+    "answer": "გ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q17",
+    "examId": "2021-V1",
+    "number": 17,
+    "sourcePage": 18,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "იპოვეთ $\\log_{2}(x+2)-\\log_{2}(x+1)=4$ განტოლების ამონახსნთა სიმრავლე.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\left\\{-\\frac{1}{8}\\right\\}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\left\\{-\\frac{14}{15}\\right\\}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\left\\{-\\frac{15}{16}\\right\\}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\left\\{-\\frac{14}{15}; \\frac{13}{16}\\right\\}$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q18",
+    "examId": "2021-V1",
+    "number": 18,
+    "sourcePage": 19,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$ABC$ სამკუთხედში $M$ და $N$ წერტილები მდებობს შესაბამისად $AB$ და $BC$ გვერდებზე ისე, რომ $MN$ მონაკვეთი $AC$ გვერდის პარალელურია. რას უდრის $AC:MN$, თუ $BMN$ სამკუთხედის ფართობი $AMNC$ ოთხკუთხედის ფართობის ტოლია?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$2$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\sqrt{3}$"
+      },
+      {
+        "key": "გ",
+        "text": "$3$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\sqrt{2}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q19",
+    "examId": "2021-V1",
+    "number": 19,
+    "sourcePage": 20,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$\\vec{a}(-1; 3)$ და $\\vec{b}(x; y)$ ურთიერთპარალელური ვექტორებია. რამდენჯერ მეტია $\\vec{b}$ ვექტორის სიგრძე $\\vec{a}$ ვექტორის სიგრძეზე, თუ $\\vec{a}\\cdot\\vec{b} = 24$?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{5}{12}$-ჯერ"
+      },
+      {
+        "key": "ბ",
+        "text": "$2,4$-ჯერ"
+      },
+      {
+        "key": "გ",
+        "text": "$3$-ჯერ"
+      },
+      {
+        "key": "დ",
+        "text": "$3,5$-ჯერ"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q20",
+    "examId": "2021-V1",
+    "number": 20,
+    "sourcePage": 21,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "ორი ნატურალური რიცხვის ნამრავლი ტოლია $288$-ის. ქვემოთ ჩამოთვლილი რიცხვებიდან რომლის ტოლი არ შეიძლება იყოს ამ ორი რიცხვის საერთო ჯერადი?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$24$"
+      },
+      {
+        "key": "ბ",
+        "text": "$36$"
+      },
+      {
+        "key": "გ",
+        "text": "$48$"
+      },
+      {
+        "key": "დ",
+        "text": "$96$"
+      }
+    ],
+    "answer": "ბ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q21",
+    "examId": "2021-V1",
+    "number": 21,
+    "sourcePage": 22,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ საკოორდინატო სიბრტყეზე გამუქებული ნახევარსიბრტყე წარმოადგენს $ax + by + c \\ge 0$ უტოლობის ამონახსნთა სიმრავლეს (იხ. სურათი), სადაც $a$, $b$ და $c$ ნამდვილი რიცხვებია. სურათზე მითითებულ მონაცემებზე დაყრდნობით იპოვეთ $\\frac{2a + b}{|c|}$ გამოსულების მნიშვნელობა.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-0,7$"
+      },
+      {
+        "key": "ბ",
+        "text": "$0,7$"
+      },
+      {
+        "key": "გ",
+        "text": "$2,8$"
+      },
+      {
+        "key": "დ",
+        "text": "$-2,8$"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2021-V1/q21.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q22",
+    "examId": "2021-V1",
+    "number": 22,
+    "sourcePage": 23,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "გამოთვალეთ $\\sin(2\\alpha)$, თუ ცნობილია, რომ $90^\\circ < \\alpha < 270^\\circ$ და $\\sin\\alpha = \\frac{1}{3}$.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$-\\frac{4\\sqrt{2}}{9}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$-\\frac{2\\sqrt{2}}{9}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{4\\sqrt{2}}{9}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{2}{3}$"
+      }
+    ],
+    "answer": "ა",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q23",
+    "examId": "2021-V1",
+    "number": 23,
+    "sourcePage": 24,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$Oxy$ მართკუთხა საკოორდინატო სიბრტყეში $A$ არის $O$ წერტილის სიმეტრიული წერტილი $x=-17$ წრფის მიმართ, ხოლო $B$ არის $O$ წერტილის სიმეტრიული წერტილი $x=18$ წრფის მიმართ. იპოვეთ $A$ და $B$ წერტილებს შორის მანძილი.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$17,5$"
+      },
+      {
+        "key": "ბ",
+        "text": "$35$"
+      },
+      {
+        "key": "გ",
+        "text": "$0,5$"
+      },
+      {
+        "key": "დ",
+        "text": "$70$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q24",
+    "examId": "2021-V1",
+    "number": 24,
+    "sourcePage": 25,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "თუ $\\log_{5} 2 = a$, მაშინ $\\log_{4} 50 =$",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{1}{2} + a$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{a+1}{a+2}$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{a+1}{2}$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{1}{2} + \\frac{1}{a}$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q25",
+    "examId": "2021-V1",
+    "number": 25,
+    "sourcePage": 26,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "$60^\\circ$-იანი $ABC$ კუთხის წვეროდან მიმოხაზული წრეწირის $AC$ რკალი გარედან ეხება ამ კუთხეში ჩაზაზულ წრეს (იხ. სურათი). იპოვეთ კუთხეში ჩაზაზული წრის ფართობის შეფარდება $ABC$ სექტორის ფართობთან.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{\\sqrt{3}}{3}$"
+      },
+      {
+        "key": "ბ",
+        "text": "$\\frac{\\sqrt{3}}{2}$"
+      },
+      {
+        "key": "გ",
+        "text": "$6$"
+      },
+      {
+        "key": "დ",
+        "text": "$\\frac{2}{\\sqrt{3}}$"
+      }
+    ],
+    "answer": "გ",
+    "images": [
+      "content/images/2021-V1/q25.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.95,
+      "notes": "Typos in the question text from the original scan: 'მიმოხაზული' instead of 'შემმოხაზული', 'ჩაზაზულ' instead of 'ჩაზახულ' (or similar, standard Georgian math term 'ჩაზახული' vs 'ჩაზაზული'). Preserved exact text as printed.",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q26",
+    "examId": "2021-V1",
+    "number": 26,
+    "sourcePage": 27,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "გარკვეული $a$, $b$ და $c$ ნამდვილი რიცხვებისათვის $ax^2 + bx \\le c$ უტოლობის ამონახსნთა სიმრავლეა $[2; 7]$ სეგმენტი. $x$-ის რა მნიშვნელობისათვის იღებს $f(x) = ax^2 + bx - 3$ ფუნქცია უმცირეს მნიშვნელობას?",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$x = -3$"
+      },
+      {
+        "key": "ბ",
+        "text": "$x = 2{,}5$"
+      },
+      {
+        "key": "გ",
+        "text": "$x = 3$"
+      },
+      {
+        "key": "დ",
+        "text": "$x = 4{,}5$"
+      }
+    ],
+    "answer": "დ",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q27",
+    "examId": "2021-V1",
+    "number": 27,
+    "sourcePage": 28,
+    "type": "multiple_choice",
+    "maxPoints": 1,
+    "text": "მართკუთხა პარალელეპიპედის ფორმის ჭიქაში ასხია სითხე. ჭიქა გადახრილია ისე, რომ სითხე მთლიანად ფარავს ჭიქის ფსკერს, სითხის ზედაპირი ჭიქის ფსკერთან ადგენს $30^\\circ$-იან ორწახნაგა კუთხეს და სითხეს აქვს სამკუთხა პრიზმის ფორმა (იხ. სურათი). იპოვეთ სითხის მოცულობა ჭიქაში, თუ ჭიქის ფსკერი წარმოადგენს კვადრატს, რომლის გვერდის სიგრძეა $3$ სმ.",
+    "options": [
+      {
+        "key": "ა",
+        "text": "$\\frac{9\\sqrt{3}}{2} \\text{ სმ}^3$"
+      },
+      {
+        "key": "ბ",
+        "text": "$9\\sqrt{3} \\text{ სმ}^3$"
+      },
+      {
+        "key": "გ",
+        "text": "$\\frac{27}{2}\\sqrt{3} \\text{ სმ}^3$"
+      },
+      {
+        "key": "დ",
+        "text": "$27\\sqrt{3} \\text{ სმ}^3$"
+      }
+    ],
+    "answer": "ა",
+    "images": [
+      "content/images/2021-V1/q27.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q28",
+    "examId": "2021-V1",
+    "number": 28,
+    "sourcePage": 29,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "ამოხსენით განტოლება: $|2x + 9| = \\frac{3}{5}$.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q29",
+    "examId": "2021-V1",
+    "number": 29,
+    "sourcePage": 30,
+    "type": "written",
+    "maxPoints": 2,
+    "text": "ინვესტორმა $300000$ ლარად შეიძინა საავტომობილო კონცერნისა და სამშენებლო საწარმოს აქციები. ამასთან მან საავტომობილო კონცერნის აქციებში $3$-ჯერ მეტი თანხა გადაიხადა, ვიდრე სამშენებლო საწარმოს აქციებში. რა მოგება ნახა ინვესტორმა პირველ წელს, თუ საავტომობილო კონცერნის აქციების წლიურმა მოგებამ შეადგენა მასში გადახდილი თანხის $10\\%$, ხოლო სამშენებლო საწარმოს აქციების წლიურმა მოგებამ შეადგენა მასში გადახდილი თანხის $8\\%$?",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q30",
+    "examId": "2021-V1",
+    "number": 30,
+    "sourcePage": 31,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "$ABCD$ კვადრატის $AD$ და $BC$ გვერდებზე აგებულია ორი ტოლგვერდა სამკუთხედი ისე, როგორც სურათზეა გამოსახული. იპოვეთ სამკუთხედების თანაკვეთით შექმნილი გამუქებული ფიგურის ფართობი, თუ კვადრატის გვერდი $a$-ს ტოლია.",
+    "options": [],
+    "answer": "",
+    "images": [
+      "content/images/2021-V1/q30.png"
+    ],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q31",
+    "examId": "2021-V1",
+    "number": 31,
+    "sourcePage": 32,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "არითმეტიკული პროგრესიის პირველი $n$ წევრის ჯამი გამოითვლება ფორმულით $S_n = 29n - n^2$. ამასთან ამ პროგრესიის ერთ-ერთი წევრი $4$-ის ტოლია. იპოვეთ ამ წევრის ნომერი.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q32",
+    "examId": "2021-V1",
+    "number": 32,
+    "sourcePage": 33,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "იპოვეთ $f(x) = \\frac{1}{\\sqrt{14 - 3^x}} + \\log_{7,2}(5x - 4)$ ფუნქციის განსაზღვრის არე.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q33",
+    "examId": "2021-V1",
+    "number": 33,
+    "sourcePage": 34,
+    "type": "written",
+    "maxPoints": 3,
+    "text": "$ACB$ ტოლფერდა სამკუთხედის $AB$ ფუძე $\\Pi$ სიბრტყეზე მდებარეობს, ხოლო სამკუთხედის სიბრტყე $\\Pi$ სიბრტყესთან $\\alpha$ სიდიდის ორწახნაგა კუთხეს ადგენს. იპოვეთ $AC$ წედრის მიერ $\\Pi$ სიბრტყესთან შედგენილი კუთხის სინუსი, თუ $AB = m$, $AC = n$.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q34",
+    "examId": "2021-V1",
+    "number": 34,
+    "sourcePage": 35,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "პირველი ველოსიპედისტი $P$ პუნქტიდან, ხოლო მეორე ველოსიპედისტი $Q$ პუნქტიდან ერთდროულად ერთმანეთის შემხვედრი მიმართულებით მუდმივი სიჩქარეებით გაემგზავრნენ. ისინი ერთმანეთს შეხვდნენ გამოსვლიდან $36$ წუთის შემდეგ და შეუჩერებლად გააგრძელეს გზა. შეხვედრის შემდეგ პირველმა ველოსიპედისტმა სიჩქარე გააორმაგა, მეორემ კი სიჩქარე $10\\%$-ით შეამცირა. პირველი ველოსიპედისტი ჩავიდა $Q$ პუნქტში $6$ წუთით გვიან, ვიდრე მეორე ველოსიპედისტი $P$ პუნქტში. რა დრო მოანდომა პირველმა ველოსიპედისტმა $P$ პუნქტიდან $Q$ პუნქტამდე გზის გავლას?",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 0.98,
+      "notes": "",
+      "problems": []
+    }
+  },
+  {
+    "code": "2021-V1-Q35",
+    "examId": "2021-V1",
+    "number": 35,
+    "sourcePage": 36,
+    "type": "written",
+    "maxPoints": 4,
+    "text": "$f(x) = 1 + ax - x^2$ ფუნქცია განსაზღვრულია $[1; 2]$ შუალედზე. იპოვეთ $a$ პარამეტრის ყველა იმ მნიშვნელობათა სიმრავლე, რომელთათვისაც ამ ფუნქციის უდიდესი მნიშვნელობა მოთავსებულია $(3; 10)$ ინტერვალში.",
+    "options": [],
+    "answer": "",
+    "images": [],
+    "extraction": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "confidence": 1,
+      "notes": "",
+      "problems": []
+    }
+  }
+]

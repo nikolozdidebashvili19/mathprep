@@ -1,13 +1,22 @@
 'use client';
-import { LayoutDashboard, type LucideIcon } from 'lucide-react';
+import { BookOpen, ClipboardList, House, Map, Route, TrendingUp, type LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { SIDEBAR_NAV_ITEMS, type SidebarNavItem } from '@/shared/const/navigation.const';
+import {
+  SIDEBAR_NAV_ITEMS,
+  SIDEBAR_SECTION_LABEL,
+  type SidebarNavItem,
+} from '@/shared/const/navigation.const';
 import { cn } from '@/shared/lib/utils';
 
 const SIDEBAR_ICON_MAP: Record<SidebarNavItem['icon'], LucideIcon> = {
-  dashboard: LayoutDashboard,
+  home: House,
+  clipboard: ClipboardList,
+  map: Map,
+  route: Route,
+  trending: TrendingUp,
+  book: BookOpen,
 };
 
 type SidebarProps = {
@@ -21,17 +30,17 @@ export const Sidebar = ({ className, onNavigate }: SidebarProps) => {
   return (
     <aside
       className={cn(
-        'flex w-64 shrink-0 flex-col gap-1 border-r border-border bg-sidebar p-3',
+        'flex w-64 shrink-0 flex-col gap-2 border-r-2 border-border bg-sidebar p-4',
         className
       )}
     >
-      <p className="px-3 pb-2 pt-1 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-        Workspace
+      <p className="px-3 pb-2 pt-1 text-sm font-extrabold text-muted-foreground">
+        {SIDEBAR_SECTION_LABEL}
       </p>
-      <nav className="flex flex-col gap-1">
+      <nav className="flex flex-col gap-2">
         {SIDEBAR_NAV_ITEMS.map(({ href, label, icon }) => {
           const Icon = SIDEBAR_ICON_MAP[icon];
-          const isActive = pathname === href;
+          const isActive = pathname === href || pathname.startsWith(`${href}/`);
 
           return (
             <Link
@@ -40,13 +49,13 @@ export const Sidebar = ({ className, onNavigate }: SidebarProps) => {
               onClick={onNavigate}
               aria-current={isActive ? 'page' : undefined}
               className={cn(
-                'flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors',
+                'flex items-center gap-4 rounded-xl border-2 px-3 py-2.5 text-sm font-extrabold transition-colors',
                 isActive
-                  ? 'bg-primary/10 text-primary'
-                  : 'text-muted-foreground hover:bg-accent hover:text-foreground'
+                  ? 'border-sky bg-sky/10 text-sky'
+                  : 'border-transparent text-muted-foreground hover:bg-muted hover:text-foreground'
               )}
             >
-              <Icon className="size-4 shrink-0" />
+              <Icon className="size-6 shrink-0" strokeWidth={2.25} />
               {label}
             </Link>
           );
