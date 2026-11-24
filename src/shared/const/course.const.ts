@@ -115,6 +115,8 @@ export const PRACTICE_COPY = {
   doneSubtitle: 'ყოველი პასუხი შენს ცოდნის რუკას აახლებს.',
   correctLabel: 'სწორი',
   accuracyLabel: 'სიზუსტე',
+  xpLabel: 'XP',
+  seeProgress: 'ჩემი პროგრესი',
   toCourse: 'კურსზე დაბრუნება',
   checkDayTitle: 'დღეს შემოწმების დღეა',
   checkDayBody: 'ყოველკვირეული შემოწმება და საბოლოო გამოცდა მალე დაემატება. დღეს შეგიძლია დაისვენო ან გაიმეორო ცოდნის რუკიდან.',

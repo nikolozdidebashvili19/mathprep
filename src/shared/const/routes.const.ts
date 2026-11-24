@@ -1,6 +1,6 @@
 export const AUTH_ROUTES = ['/sign-in', '/sign-up'];
 
-export const PROTECTED_ROUTES = ['/dashboard', '/onboarding', '/diagnostic', '/report', '/course', '/progress'];
+export const PROTECTED_ROUTES = ['/dashboard', '/onboarding', '/diagnostic', '/report', '/course', '/progress', '/revision'];
 
 export const HOME_ROUTE_AFTER_LOGIN = '/dashboard';
 
@@ -16,3 +16,5 @@ export const COURSE_DAY_ROUTE = '/course/day';
 export const QUESTION_IMAGE_ROUTE = '/api/question-images';
 export const WORK_PHOTO_ROUTE = '/api/diagnostic/photos';
 export const REPORT_ROUTE = '/report';
+export const PROGRESS_ROUTE = '/progress';
+export const REVISION_ROUTE = '/revision';

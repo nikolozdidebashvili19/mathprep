@@ -12,12 +12,15 @@ import { usePracticeStore } from '@/features/course/hooks/usePracticeStore';
 import { PracticeSessionView } from '@/features/course/types/course.types';
 import { AnswerOptionTile } from '@/features/diagnostic/components/answer-option-tile';
 import { SessionProgressBar } from '@/features/diagnostic/components/session-progress-bar';
+import { answerXp } from '@/features/progress/service/progress-stats';
 import { SolutionSteps } from '@/features/question/components/solution-steps';
 import { TutorChat } from '@/features/tutor/components/tutor-chat';
+import { SoundToggle } from '@/shared/components/layout/sound-toggle';
 import { Button } from '@/shared/components/ui/button';
 import { MathText } from '@/shared/components/ui/math-text';
 import { COURSE_COPY, HINT_COPY, PRACTICE_COPY } from '@/shared/const/course.const';
 import { DIAGNOSTIC_COPY } from '@/shared/const/diagnostic.const';
+import { XP_RULES } from '@/shared/const/progress.const';
 import { COURSE_ROUTE } from '@/shared/const/routes.const';
 import { cn } from '@/shared/lib/utils';
 
@@ -64,7 +67,11 @@ export const PracticeSession = ({ initialView }: PracticeSessionProps) => {
   if (!item) {
     const questions = view.items.filter((i) => i.question);
     const result = summary ?? { correctCount: questions.filter((i) => i.correct).length, questionCount: questions.length };
-    return <PracticeComplete correctCount={result.correctCount} questionCount={result.questionCount} />;
+    const answeredItems = view.items.filter((i) => i.answered);
+    const xp =
+      answeredItems.reduce((sum, i) => sum + answerXp({ isQuestion: !!i.question, correct: i.correct, hintsUsed: i.hints.length }), 0) +
+      (answeredItems.length === view.items.length ? XP_RULES.dayBonus : 0);
+    return <PracticeComplete correctCount={result.correctCount} questionCount={result.questionCount} xp={xp} />;
   }
 
   const ids = view.items.map((_, i) => `item-${i}`);
@@ -80,6 +87,7 @@ export const PracticeSession = ({ initialView }: PracticeSessionProps) => {
       <div className="mx-auto flex w-full max-w-3xl items-center gap-4 px-4 pt-6">
         <CloseButton />
         <SessionProgressBar total={ids.length} currentIndex={index} answeredIds={answered} questionIds={ids} label={PRACTICE_COPY.questionOf} />
+        <SoundToggle />
       </div>
 
       <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-4 py-8">

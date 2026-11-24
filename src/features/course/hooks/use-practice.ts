@@ -3,6 +3,7 @@ import { usePracticeStore } from '@/features/course/hooks/usePracticeStore';
 import { PracticeAnswerResult } from '@/features/course/types/course.types';
 import { HINT_COPY, PRACTICE_COPY } from '@/shared/const/course.const';
 import { http } from '@/shared/lib/http';
+import { sound } from '@/shared/lib/sound';
 
 /** Daily-session actions: check an answer (instant feedback), mark a theory card read, continue, go back. */
 export const usePractice = () => {
@@ -27,7 +28,9 @@ export const usePractice = () => {
   const check = async () => {
     if (!selected || feedback) return;
     const result = await send(selected);
-    if (result) markAnswered(index, selected, { correct: result.correct, correctAnswer: result.correctAnswer, solution: result.solution });
+    if (!result) return;
+    sound.play(result.correct ? 'correct' : 'wrong');
+    markAnswered(index, selected, { correct: result.correct, correctAnswer: result.correctAnswer, solution: result.solution });
   };
 
   const gotIt = async () => {

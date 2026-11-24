@@ -77,3 +77,5 @@ export const EXAM_LEVEL_DIFFICULTY = 3;
 export const MASTERY_READY = 0.6;
 /** Repeated conceptual mistakes on one skill send it back to the foundation stage. */
 export const CONCEPTUAL_RESET_COUNT = 2;
+/** Below this mastery a skill shows as weak on progress bars and revision tiles (MASTERY_SOLID and up = strong). */
+export const MASTERY_WEAK_BELOW = 0.4;

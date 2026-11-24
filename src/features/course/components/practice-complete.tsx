@@ -1,21 +1,32 @@
-import { Target, Trophy } from 'lucide-react';
+'use client';
+import { Target, Trophy, Zap } from 'lucide-react';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 import { Button } from '@/shared/components/ui/button';
 import { PRACTICE_COPY } from '@/shared/const/course.const';
-import { COURSE_ROUTE } from '@/shared/const/routes.const';
+import { COURSE_ROUTE, PROGRESS_ROUTE } from '@/shared/const/routes.const';
+import { sound } from '@/shared/lib/sound';
 import { cn } from '@/shared/lib/utils';
 
 type PracticeCompleteProps = {
   correctCount: number;
   questionCount: number;
+  xp: number;
 };
 
-/** End of the day (T-029 lesson-complete): stat tiles pop in, one primary continue. */
-export const PracticeComplete = ({ correctCount, questionCount }: PracticeCompleteProps) => {
+const STAGGER = ['', 'animate-rise-1', 'animate-rise-2'];
+
+/** End of the day (T-029 lesson-complete): XP, correct and accuracy tiles pop in, a short fanfare, one primary continue. */
+export const PracticeComplete = ({ correctCount, questionCount, xp }: PracticeCompleteProps) => {
+  useEffect(() => {
+    sound.play('complete');
+  }, []);
+
   const accuracy = questionCount > 0 ? Math.round((correctCount / questionCount) * 100) : 0;
   const tiles = [
-    { icon: Trophy, label: PRACTICE_COPY.correctLabel, value: `${correctCount}/${questionCount}`, tone: 'border-xp text-xp' },
+    { icon: Zap, label: PRACTICE_COPY.xpLabel, value: `+${xp}`, tone: 'border-xp text-xp' },
+    { icon: Trophy, label: PRACTICE_COPY.correctLabel, value: `${correctCount}/${questionCount}`, tone: 'border-sky text-sky' },
     { icon: Target, label: PRACTICE_COPY.accuracyLabel, value: `${accuracy}%`, tone: 'border-primary text-primary' },
   ];
   return (
@@ -24,9 +35,9 @@ export const PracticeComplete = ({ correctCount, questionCount }: PracticeComple
         <h1 className="text-3xl">{PRACTICE_COPY.doneTitle}</h1>
         <p className="font-semibold text-muted-foreground">{PRACTICE_COPY.doneSubtitle}</p>
       </div>
-      <div className="grid w-full grid-cols-2 gap-3">
+      <div className="grid w-full grid-cols-3 gap-3">
         {tiles.map(({ icon: Icon, label, value, tone }, i) => (
-          <div key={label} className={cn('animate-pop flex flex-col overflow-hidden rounded-2xl border-2', tone, i === 1 && 'animate-rise-1')}>
+          <div key={label} className={cn('animate-pop flex flex-col overflow-hidden rounded-2xl border-2', tone, STAGGER[i])}>
             <p className="bg-current py-1 text-xs font-extrabold">
               <span className="text-background">{label}</span>
             </p>
@@ -37,9 +48,14 @@ export const PracticeComplete = ({ correctCount, questionCount }: PracticeComple
           </div>
         ))}
       </div>
-      <Button asChild size="lg" className="w-full sm:w-auto">
-        <Link href={COURSE_ROUTE}>{PRACTICE_COPY.toCourse}</Link>
-      </Button>
+      <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+        <Button asChild size="lg" className="w-full sm:w-auto">
+          <Link href={COURSE_ROUTE}>{PRACTICE_COPY.toCourse}</Link>
+        </Button>
+        <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
+          <Link href={PROGRESS_ROUTE}>{PRACTICE_COPY.seeProgress}</Link>
+        </Button>
+      </div>
     </div>
   );
 };

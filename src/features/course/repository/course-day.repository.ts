@@ -24,6 +24,11 @@ export const courseDayRepository = {
     return CourseDayModel.findOne({ courseId, dayIndex }).lean<CourseDayDocument>().exec();
   },
 
+  async countCompleted(courseId: string): Promise<number> {
+    await mongo.connect();
+    return CourseDayModel.countDocuments({ courseId, completed: true }).exec();
+  },
+
   async markCompleted(courseId: string, dayIndex: number): Promise<void> {
     await mongo.connect();
     await CourseDayModel.updateOne({ courseId, dayIndex }, { $set: { completed: true, 'blocks.$[].completed': true } }).exec();

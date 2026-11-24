@@ -33,7 +33,7 @@ const hintsFor = (q: QuestionDocument | undefined, skill: SkillDocument | undefi
   q ? buildHints({ skillName: skill?.nameKa ?? null, firstRule: skill?.theoryCard?.rules[0] ?? null, solutionSteps: [...(q.solutionSteps ?? [])] }) : [];
 
 /** The skill's theory card for the browser (null until one is written). */
-function toTheoryView(skill: SkillDocument | undefined): TheoryCardView | null {
+export function toTheoryView(skill: SkillDocument | undefined): TheoryCardView | null {
   const card = skill?.theoryCard;
   if (!card) return null;
   const example = (e: { problem: string; steps: string[]; answer: string }) => ({ problem: e.problem, steps: [...e.steps], answer: e.answer });

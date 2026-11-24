@@ -32,6 +32,7 @@ export const config = {
     '/report/:path*',
     '/course/:path*',
     '/progress/:path*',
+    '/revision/:path*',
     '/onboarding',
     '/sign-in',
     '/sign-up',

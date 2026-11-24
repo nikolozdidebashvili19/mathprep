@@ -15,6 +15,12 @@ export const practiceSessionRepository = {
     return PracticeSessionModel.findOne({ courseId, dayIndex }).lean<PracticeSessionDocument>().exec();
   },
 
+  /** All of a student's sessions (any course), oldest first: the source for XP, streaks and learnt theory. */
+  async findByUser(userId: string): Promise<PracticeSessionDocument[]> {
+    await mongo.connect();
+    return PracticeSessionModel.find({ userId }).sort({ createdAt: 1 }).lean<PracticeSessionDocument[]>().exec();
+  },
+
   async create(input: { userId: string; courseId: string; dayIndex: number; items: NewItem[] }): Promise<PracticeSessionDocument> {
     await mongo.connect();
     const doc = await PracticeSessionModel.create({

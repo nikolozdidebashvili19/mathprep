@@ -24,6 +24,6 @@ The student experience should feel like a playful language-learning app: short b
 - Keep tap targets ≥ 44px, focus rings visible (sky), all motion behind `prefers-reduced-motion`.
 
 ## Open
-- [ ] Real streak/XP/daily-goal data: the dashboard shows honest zeros until T-020/T-024 record sessions
-- [ ] Optional: sound effects for correct/incorrect (off by default, toggle in settings)
+- [x] Real streak/XP/daily-goal data (T-024 v1, 2026-11-24)
+- [x] Sound effects for correct / wrong / day complete: our own Web Audio tones (`shared/lib/sound.ts`, no audio files). On by default because the user asked for them; mute toggle in the session header, remembered per browser
 - [ ] Visual review in a browser (light + dark, phone width)

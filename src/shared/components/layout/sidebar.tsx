@@ -1,5 +1,5 @@
 'use client';
-import { ClipboardList, House, Map, Route, TrendingUp, type LucideIcon } from 'lucide-react';
+import { BookOpen, ClipboardList, House, Map, Route, TrendingUp, type LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -16,6 +16,7 @@ const SIDEBAR_ICON_MAP: Record<SidebarNavItem['icon'], LucideIcon> = {
   map: Map,
   route: Route,
   trending: TrendingUp,
+  book: BookOpen,
 };
 
 type SidebarProps = {

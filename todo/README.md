@@ -27,9 +27,9 @@ Tickets come from [PRODUCT.md](../PRODUCT.md). Each ticket is a file `T-NNN-<slu
 | T-019 | [Course setup UI](T-019-course-setup-ui.md) | Course | 5 | ✅ done |
 | T-020 | [Daily session + theory cards](T-020-daily-session.md) | Course | 5 | 🟡 v1: daily practice with instant feedback + mastery updates; theory cards todo |
 | T-021 | [SymPy service + templates](T-021-math-service-templates.md) | Course | 6 | todo |
-| T-022 | [Spaced repetition](T-022-spaced-repetition.md) | Course | 6 | todo |
+| T-022 | [Spaced repetition](T-022-spaced-repetition.md) | Course | 6 | todo (theory revision library `/revision` done) |
 | T-023 | [Weekly check + re-plan](T-023-weekly-check-replan.md) | Adaptation | 7 | todo |
-| T-024 | [Progress dashboard](T-024-progress-dashboard.md) | Adaptation | 7 | todo |
+| T-024 | [Progress dashboard](T-024-progress-dashboard.md) | Adaptation | 7 | 🟡 v1: streak, XP, calendar, weekly XP, course + mastery bars; real dashboard stats |
 | T-025 | [Final mock + before/after](T-025-final-mock.md) | Adaptation | 7 | todo |
 | T-026 | [Analytics + metrics](T-026-analytics-metrics.md) | Beta | 8 | todo |
 | T-027 | [Minors' data + privacy](T-027-privacy-minors.md) | Beta | 8 | todo |

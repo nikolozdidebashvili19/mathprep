@@ -1,6 +1,13 @@
-import { SectionPlaceholder } from '@/shared/components/layout/section-placeholder';
-import { PROGRESS_SECTION } from '@/shared/const/sections.const';
+import { ProgressOverview } from '@/features/progress/components/progress-overview';
+import { getProgressService } from '@/features/progress/service/progress.service';
+import { auth } from '@/shared/lib/auth';
 
-export default function ProgressPage() {
-  return <SectionPlaceholder {...PROGRESS_SECTION} />;
+type SessionUser = { id?: string };
+
+export default async function ProgressPage() {
+  const session = await auth();
+  const userId = (session?.user as SessionUser | undefined)?.id ?? '';
+  const progress = await getProgressService(userId);
+
+  return <ProgressOverview progress={progress} />;
 }
