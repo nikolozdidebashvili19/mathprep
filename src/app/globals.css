@@ -157,6 +157,10 @@
   html {
     @apply font-sans;
   }
+  /* Fold-out rows draw their own chevron (Safari still shows the default triangle without this). */
+  summary::-webkit-details-marker {
+    display: none;
+  }
   h1,
   h2,
   h3 {

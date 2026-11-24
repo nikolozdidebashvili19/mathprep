@@ -13,8 +13,6 @@ export type SessionActivity = {
 
 export type CalendarDay = { key: string; active: boolean; today: boolean; future: boolean };
 
-export type WeekXp = { weeksAgo: number; xp: number };
-
 export type SkillProgress = { code: string; nameKa: string; value: number; observations: number };
 
 export type ProgressView = {
@@ -22,14 +20,8 @@ export type ProgressView = {
   bestStreak: number;
   activeToday: boolean;
   xp: number;
-  xpToday: number;
-  minutesToday: number;
-  dailyGoalMinutes: number;
-  answeredCount: number;
-  correctCount: number;
-  /** Weeks, oldest first, Monday to Sunday. */
-  calendar: CalendarDay[][];
-  weeklyXp: WeekXp[];
+  /** The current week, Monday to Sunday. */
+  week: CalendarDay[];
   course: { daysCompleted: number; durationDays: number; todayIndex: number } | null;
   skills: SkillProgress[];
 };

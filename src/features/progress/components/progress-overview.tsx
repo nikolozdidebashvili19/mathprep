@@ -1,15 +1,14 @@
-import { CheckCheck, Flame, Target, Trophy, Zap, type LucideIcon } from 'lucide-react';
+import { Flame, Zap } from 'lucide-react';
 import Link from 'next/link';
+import { type ReactNode } from 'react';
 
-import { DailyGoalCard } from '@/features/dashboard/components/learning-stats';
 import { SkillMasteryList } from '@/features/progress/components/skill-mastery-list';
-import { StreakCalendar } from '@/features/progress/components/streak-calendar';
-import { WeeklyXp } from '@/features/progress/components/weekly-xp';
+import { WeekStrip } from '@/features/progress/components/week-strip';
 import { ProgressView } from '@/features/progress/types/progress.types';
 import { Button } from '@/shared/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/shared/components/ui/card';
+import { ExpandableSection } from '@/shared/components/ui/expandable-section';
 import { SegmentedBar } from '@/shared/components/ui/segmented-bar';
-import { COURSE_BAR_SEGMENTS, PROGRESS_COPY } from '@/shared/const/progress.const';
+import { COURSE_BAR_SEGMENTS, PROGRESS_COPY, PROGRESS_VISIBLE_SKILLS } from '@/shared/const/progress.const';
 import { PRACTICE_TODAY_ROUTE } from '@/shared/const/routes.const';
 import { cn } from '@/shared/lib/utils';
 
@@ -17,133 +16,86 @@ type ProgressOverviewProps = {
   progress: ProgressView;
 };
 
-const STAGGER = ['animate-rise-1', 'animate-rise-2', 'animate-rise-3', 'animate-rise-4'];
-
-type StatTile = { icon: LucideIcon; label: string; value: string; tone: string };
-
 const streakMessage = (p: ProgressView) => {
   if (p.activeToday) return PROGRESS_COPY.streakAlive;
   return p.streakDays > 0 ? PROGRESS_COPY.streakAtRisk : PROGRESS_COPY.streakZero;
 };
 
-const StreakHero = ({ progress }: ProgressOverviewProps) => (
+/** Same shape as the dashboard's green banner: one big number, one line of encouragement, one action. */
+const StreakBanner = ({ progress }: ProgressOverviewProps) => (
   <div className="animate-rise animate-rise-1 flex flex-col gap-4 rounded-2xl bg-streak p-5 text-white shadow-edge-lg sm:flex-row sm:items-center">
-    <Flame className={cn('size-16 shrink-0', progress.activeToday && 'animate-bob')} fill="currentColor" />
+    <Flame className={cn('size-14 shrink-0', progress.activeToday && 'animate-bob')} fill="currentColor" />
     <div className="flex flex-1 flex-col gap-1">
-      <p className="text-4xl font-extrabold">
-        {progress.streakDays} <span className="text-xl">{PROGRESS_COPY.streakTitle}</span>
+      <p className="text-3xl font-extrabold">
+        {progress.streakDays} <span className="text-lg">{PROGRESS_COPY.streakTitle}</span>
       </p>
       <p className="font-bold opacity-90">{streakMessage(progress)}</p>
-      <p className="text-sm font-bold opacity-80">
-        {PROGRESS_COPY.bestStreak}: {progress.bestStreak}
+      <p className="flex items-center gap-3 text-sm font-extrabold opacity-90">
+        <span>
+          {PROGRESS_COPY.bestStreak}: {progress.bestStreak}
+        </span>
+        <span className="inline-flex items-center gap-1">
+          <Zap className="size-4" fill="currentColor" />
+          {progress.xp} {PROGRESS_COPY.totalXp}
+        </span>
       </p>
     </div>
     {!progress.activeToday && (
-      <Button asChild variant="outline" size="lg" className="shrink-0">
+      <Button asChild variant="outline" className="shrink-0">
         <Link href={PRACTICE_TODAY_ROUTE}>{PROGRESS_COPY.startToday}</Link>
       </Button>
     )}
   </div>
 );
 
-const StatTiles = ({ progress }: ProgressOverviewProps) => {
-  const accuracy = progress.answeredCount > 0 ? Math.round((progress.correctCount / progress.answeredCount) * 100) : 0;
-  const tiles: StatTile[] = [
-    { icon: Zap, label: PROGRESS_COPY.totalXp, value: `${progress.xp}`, tone: 'border-xp text-xp' },
-    { icon: Trophy, label: PROGRESS_COPY.todayXp, value: `+${progress.xpToday}`, tone: 'border-xp text-xp' },
-    { icon: CheckCheck, label: PROGRESS_COPY.answered, value: `${progress.answeredCount}`, tone: 'border-sky text-sky' },
-    { icon: Target, label: PROGRESS_COPY.accuracy, value: `${accuracy}%`, tone: 'border-primary text-primary' },
-  ];
-  return (
-    <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-      {tiles.map(({ icon: Icon, label, value, tone }, i) => (
-        <div key={label} className={cn('animate-pop flex flex-col overflow-hidden rounded-2xl border-2', tone, STAGGER[i % STAGGER.length])}>
-          <p className="bg-current px-2 py-1 text-center text-xs font-extrabold">
-            <span className="text-background">{label}</span>
-          </p>
-          <p className="flex items-center justify-center gap-1.5 bg-card px-2 py-3 text-lg font-extrabold">
-            <Icon className="size-5 shrink-0" />
-            {value}
-          </p>
-        </div>
-      ))}
+const Panel = ({ title, aside, children, className }: { title: string; aside?: string; children: ReactNode; className?: string }) => (
+  <section className={cn('animate-rise flex flex-col gap-4 rounded-2xl border-2 bg-card p-5', className)}>
+    <div className="flex items-center justify-between gap-3">
+      <h2 className="text-lg">{title}</h2>
+      {aside && <span className="text-sm font-extrabold text-muted-foreground">{aside}</span>}
     </div>
-  );
-};
+    {children}
+  </section>
+);
 
-const CourseCard = ({ course }: { course: ProgressView['course'] }) => (
-  <Card className="gap-4">
-    <CardHeader>
-      <CardTitle className="text-lg font-extrabold">{PROGRESS_COPY.courseTitle}</CardTitle>
-    </CardHeader>
-    <CardContent className="flex flex-col gap-3">
-      {course ? (
-        <>
+/** Progress page (T-024), kept simple: streak, this week, course, and the skills being worked on now. */
+export const ProgressOverview = ({ progress }: ProgressOverviewProps) => {
+  const visible = progress.skills.slice(0, PROGRESS_VISIBLE_SKILLS);
+  const rest = progress.skills.slice(PROGRESS_VISIBLE_SKILLS);
+  return (
+    <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
+      <h1 className="animate-rise text-2xl sm:text-3xl">{PROGRESS_COPY.title}</h1>
+
+      <StreakBanner progress={progress} />
+
+      <Panel title={PROGRESS_COPY.weekTitle} className="animate-rise-2">
+        <WeekStrip week={progress.week} />
+      </Panel>
+
+      {progress.course && (
+        <Panel
+          title={PROGRESS_COPY.courseTitle}
+          aside={PROGRESS_COPY.courseDays(progress.course.daysCompleted, progress.course.durationDays)}
+          className="animate-rise-3"
+        >
           <SegmentedBar
-            ratio={course.daysCompleted / course.durationDays}
+            ratio={progress.course.daysCompleted / progress.course.durationDays}
             segments={COURSE_BAR_SEGMENTS}
             fillClassName="bg-primary"
             label={PROGRESS_COPY.courseTitle}
-            valueText={PROGRESS_COPY.courseDays(course.daysCompleted, course.durationDays)}
+            valueText={PROGRESS_COPY.courseDays(progress.course.daysCompleted, progress.course.durationDays)}
           />
-          <p className="text-sm font-bold text-muted-foreground">{PROGRESS_COPY.courseDays(course.daysCompleted, course.durationDays)}</p>
-        </>
-      ) : (
-        <p className="text-sm font-semibold text-muted-foreground">{PROGRESS_COPY.noCourse}</p>
+        </Panel>
       )}
-    </CardContent>
-  </Card>
-);
 
-/** Progress page (T-024): streak, XP, active-day calendar, weekly XP, course completion and skill mastery. */
-export const ProgressOverview = ({ progress }: ProgressOverviewProps) => (
-  <div className="mx-auto flex w-full max-w-5xl flex-col gap-6">
-    <div className="animate-rise flex flex-col gap-1">
-      <h1 className="text-2xl sm:text-3xl">{PROGRESS_COPY.title}</h1>
-      <p className="font-semibold text-muted-foreground">{PROGRESS_COPY.subtitle}</p>
+      <Panel title={PROGRESS_COPY.masteryTitle} className="animate-rise-4">
+        <SkillMasteryList skills={visible} />
+        {rest.length > 0 && (
+          <ExpandableSection title={PROGRESS_COPY.allSkills} count={progress.skills.length} className="bg-transparent">
+            <SkillMasteryList skills={rest} />
+          </ExpandableSection>
+        )}
+      </Panel>
     </div>
-
-    <StreakHero progress={progress} />
-    <StatTiles progress={progress} />
-
-    <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-      <div className="flex flex-col gap-6">
-        <Card className="gap-4">
-          <CardHeader>
-            <CardTitle className="text-lg font-extrabold">{PROGRESS_COPY.calendarTitle}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <StreakCalendar weeks={progress.calendar} />
-          </CardContent>
-        </Card>
-        <DailyGoalCard
-          stats={{
-            streakDays: progress.streakDays,
-            xp: progress.xp,
-            minutesToday: progress.minutesToday,
-            dailyGoalMinutes: progress.dailyGoalMinutes,
-          }}
-        />
-        <CourseCard course={progress.course} />
-      </div>
-      <div className="flex flex-col gap-6">
-        <Card className="gap-4">
-          <CardHeader>
-            <CardTitle className="text-lg font-extrabold">{PROGRESS_COPY.weeklyXpTitle}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <WeeklyXp weeks={progress.weeklyXp} />
-          </CardContent>
-        </Card>
-        <Card className="gap-4">
-          <CardHeader>
-            <CardTitle className="text-lg font-extrabold">{PROGRESS_COPY.masteryTitle}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <SkillMasteryList skills={progress.skills} />
-          </CardContent>
-        </Card>
-      </div>
-    </div>
-  </div>
-);
+  );
+};

@@ -9,13 +9,12 @@ import {
   currentStreak,
   minutesOn,
   streakCalendar,
-  weeklyXp,
   xpEvents,
 } from '@/features/progress/service/progress-stats';
 import { ProgressView, SessionActivity, SkillProgress } from '@/features/progress/types/progress.types';
 import { skillRepository } from '@/features/skill/repository/skill.repository';
 import { LearningStats } from '@/shared/const/dashboard.const';
-import { DEFAULT_DAILY_GOAL_MINUTES, STREAK_CALENDAR_WEEKS, XP_HISTORY_WEEKS } from '@/shared/const/progress.const';
+import { DEFAULT_DAILY_GOAL_MINUTES } from '@/shared/const/progress.const';
 import { courseDayIndex, localDayKey } from '@/shared/utils/date';
 
 export const toActivity = (s: PracticeSessionDocument): SessionActivity => ({
@@ -41,7 +40,7 @@ export async function getLearningStatsService(userId: string, now = new Date()):
   };
 }
 
-/** Everything the progress page shows (T-024): streak calendar, weekly XP, course completion, skill mastery. */
+/** What the progress page shows (T-024): streak, this week's active days, course completion, skill mastery. */
 export async function getProgressService(userId: string, now = new Date()): Promise<ProgressView> {
   const [sessions, course, mastery, skills] = await Promise.all([
     practiceSessionRepository.findByUser(userId),
@@ -52,8 +51,6 @@ export async function getProgressService(userId: string, now = new Date()): Prom
   const activity = sessions.map(toActivity);
   const today = localDayKey(now);
   const days = activeDays(activity);
-  const events = xpEvents(activity);
-  const questions = activity.flatMap((s) => s.items.filter((i) => i.isQuestion && i.answeredAt));
 
   const courseView = course
     ? {
@@ -79,14 +76,8 @@ export async function getProgressService(userId: string, now = new Date()): Prom
     streakDays: currentStreak(days, today),
     bestStreak: bestStreak(days),
     activeToday: days.has(today),
-    xp: events.reduce((sum, e) => sum + e.xp, 0),
-    xpToday: events.filter((e) => e.day === today).reduce((sum, e) => sum + e.xp, 0),
-    minutesToday: minutesOn(activity, today),
-    dailyGoalMinutes: course?.minutesPerDay ?? DEFAULT_DAILY_GOAL_MINUTES,
-    answeredCount: questions.length,
-    correctCount: questions.filter((i) => i.correct).length,
-    calendar: streakCalendar(days, today, STREAK_CALENDAR_WEEKS),
-    weeklyXp: weeklyXp(events, today, XP_HISTORY_WEEKS),
+    xp: xpEvents(activity).reduce((sum, e) => sum + e.xp, 0),
+    week: streakCalendar(days, today, 1)[0],
     course: courseView,
     skills: skillRows,
   };

@@ -21,7 +21,7 @@ const STAGGER = ['animate-rise-1', 'animate-rise-2', 'animate-rise-3', 'animate-
 /** Every skill grouped by topic, coloured by its level in the latest quick check. */
 export const KnowledgeMap = ({ topics }: KnowledgeMapProps) => (
   <div className="flex flex-col gap-4">
-    <ul className="flex flex-wrap gap-2" aria-label={REPORT_COPY.title}>
+    <ul className="flex flex-wrap gap-2 pt-1" aria-label={REPORT_COPY.title}>
       {LEGEND.map((level) => (
         <li key={level} className={cn('rounded-full border-2 px-3 py-1 text-xs font-extrabold', LEVEL_STYLES[level])}>
           {REPORT_COPY.levels[level]}
@@ -29,9 +29,9 @@ export const KnowledgeMap = ({ topics }: KnowledgeMapProps) => (
       ))}
     </ul>
 
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+    <div className="flex flex-col gap-4">
       {topics.map((topic, i) => (
-        <section key={topic.code} className={cn('animate-rise flex flex-col gap-3 rounded-2xl border-2 bg-card p-4', STAGGER[i % STAGGER.length])}>
+        <section key={topic.code} className={cn('animate-rise flex flex-col gap-2 border-t-2 pt-4', STAGGER[i % STAGGER.length])}>
           <h3 className="text-base">{topic.nameKa}</h3>
           <ul className="flex flex-wrap gap-2">
             {topic.skills.map((skill) => (

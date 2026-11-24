@@ -47,6 +47,7 @@ export const COURSE_COPY = {
   needsDiagnosticCta: 'სწრაფი შემოწმება',
   dayOf: (day: number, total: number) => `დღე ${day} / ${total}`,
   todayTitle: 'დღევანდელი გეგმა',
+  todaySummary: (steps: number, minutes: number) => `${steps} ნაწილი · ${minutes} წთ`,
   start: 'დაწყება',
   upcomingTitle: 'მომდევნო დღეები',
   pastTitle: 'წინა დღეები',

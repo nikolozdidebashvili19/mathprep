@@ -76,14 +76,13 @@ describe('getLearningStatsService', () => {
 });
 
 describe('getProgressService', () => {
-  it('lists course skills first, then other practised skills, and counts answers', async () => {
+  it('lists course skills first, then other practised skills, and marks this week', async () => {
     const view = await getProgressService('u1', NOW);
     expect(view.skills.map((s) => s.code)).toEqual(['A1', 'A2', 'G1']);
     expect(view.skills[1]).toEqual({ code: 'A2', nameKa: 'კვადრატული განტოლება', value: 0, observations: 0 });
-    expect(view.answeredCount).toBe(2);
-    expect(view.correctCount).toBe(1);
+    expect(view.week.map((d) => d.active)).toEqual([true, true, false, false, false, false, false]);
     expect(view.course).toEqual({ daysCompleted: 1, durationDays: 30, todayIndex: 1 });
     expect(view.activeToday).toBe(true);
-    expect(view.xpToday).toBe(XP_RULES.theory + XP_RULES.wrong);
+    expect(view.xp).toBe(XP_RULES.correct + XP_RULES.dayBonus + XP_RULES.theory + XP_RULES.wrong);
   });
 });

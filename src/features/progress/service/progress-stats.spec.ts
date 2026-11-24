@@ -8,8 +8,6 @@ import {
   itemXp,
   sessionXp,
   streakCalendar,
-  weeklyXp,
-  xpEvents,
 } from '@/features/progress/service/progress-stats';
 import { ActivityItem, SessionActivity } from '@/features/progress/types/progress.types';
 import { XP_RULES } from '@/shared/const/progress.const';
@@ -65,18 +63,6 @@ describe('time and history', () => {
     expect(activeMinutes([])).toBe(0);
     expect(activeMinutes([t(0)])).toBe(1);
     expect(activeMinutes([t(0), t(3), t(5), t(40)])).toBe(1 + 3 + 2 + 1);
-  });
-
-  it('groups XP by Monday-to-Sunday weeks', () => {
-    const sessions: SessionActivity[] = [
-      { completedAt: null, items: [q('2026-11-23T08:00:00Z', true), q('2026-11-16T08:00:00Z', true), q('2026-10-01T08:00:00Z', true)] },
-    ];
-    const weeks = weeklyXp(xpEvents(sessions), '2026-11-24', 3);
-    expect(weeks).toEqual([
-      { weeksAgo: 2, xp: 0 },
-      { weeksAgo: 1, xp: XP_RULES.correct },
-      { weeksAgo: 0, xp: XP_RULES.correct },
-    ]);
   });
 
   it('builds a Monday-first calendar that ends with the current week', () => {

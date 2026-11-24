@@ -1,10 +1,13 @@
-import { BookOpen, CalendarCheck, Check, Dumbbell, History, Target, Trophy, type LucideIcon } from 'lucide-react';
+import { BookOpen, CalendarCheck, Check, Dumbbell, History, Play, Target, Trophy, type LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 
 import { ReplanButton } from '@/features/course/components/replan-button';
 import { BlockKind, BlockView, CourseView, DayView, PlannedSkillStatus } from '@/features/course/types/course.types';
 import { Button } from '@/shared/components/ui/button';
+import { ExpandableSection } from '@/shared/components/ui/expandable-section';
+import { SegmentedBar } from '@/shared/components/ui/segmented-bar';
 import { COURSE_COPY, PRACTICE_COPY } from '@/shared/const/course.const';
+import { COURSE_BAR_SEGMENTS } from '@/shared/const/progress.const';
 import { COURSE_DAY_ROUTE, PRACTICE_TODAY_ROUTE } from '@/shared/const/routes.const';
 import { cn } from '@/shared/lib/utils';
 import { formatDate } from '@/shared/utils/format';
@@ -96,73 +99,79 @@ const PastDay = ({ day }: { day: DayView }) => {
   );
 };
 
-/** The running course: progress, today's blocks, the next days, skills in teaching order and what is left out. */
-export const CourseOverview = ({ course }: CourseOverviewProps) => {
-  const progress = Math.round(((course.todayIndex + 1) / course.durationDays) * 10);
+/** Same shape as the dashboard banner: where the student is, what today holds, one action. */
+const TodayBanner = ({ course }: CourseOverviewProps) => {
+  const blocks = course.today?.blocks ?? [];
+  const minutes = blocks.reduce((sum, b) => sum + b.minutes, 0);
   return (
-    <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-8 lg:grid-cols-3">
-      <div className="flex flex-col gap-6 lg:col-span-2">
-        <div className="animate-rise flex flex-col gap-3">
-          <p className="text-sm font-extrabold text-sky">{COURSE_COPY.dayOf(course.todayIndex + 1, course.durationDays)}</p>
-          <h1 className="text-2xl sm:text-3xl">{COURSE_COPY.todayTitle}</h1>
-          <div className="h-3 overflow-hidden rounded-full bg-muted">
-            <div className={cn('h-full rounded-full bg-primary', PROGRESS_WIDTH[progress])} />
-          </div>
+    <div className="animate-rise flex flex-col gap-4 rounded-2xl bg-primary p-5 text-primary-foreground shadow-edge-primary-lg">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p className="text-sm font-extrabold opacity-80">{COURSE_COPY.dayOf(course.todayIndex + 1, course.durationDays)}</p>
+          <h1 className="text-2xl">{COURSE_COPY.todayTitle}</h1>
+          <p className="mt-1 text-sm font-semibold opacity-90">
+            {course.todayCompleted ? PRACTICE_COPY.todayDone : COURSE_COPY.todaySummary(blocks.length, minutes)}
+          </p>
         </div>
-
         {course.today && (
-          <section className="animate-rise-1 flex flex-col gap-3">
-            <ul className="flex flex-col gap-3">
-              {course.today.blocks.map((block) => (
-                <BlockRow key={`${block.kind}-${block.skillCode}`} block={block} />
-              ))}
-            </ul>
-            {course.todayCompleted ? (
-              <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border-2 border-primary bg-primary/10 p-3">
-                <p className="flex items-center gap-2 font-extrabold text-primary">
-                  <Check className="size-5" />
-                  {PRACTICE_COPY.todayDone}
-                </p>
-                <Button asChild variant="outline" size="sm">
-                  <Link href={PRACTICE_TODAY_ROUTE}>{PRACTICE_COPY.review}</Link>
-                </Button>
-              </div>
-            ) : (
-              <Button asChild size="lg" className="sm:self-start">
-                <Link href={PRACTICE_TODAY_ROUTE}>{COURSE_COPY.start}</Link>
-              </Button>
-            )}
-          </section>
+          <Button asChild variant="outline" size="lg" className="shrink-0">
+            <Link href={PRACTICE_TODAY_ROUTE}>
+              {course.todayCompleted ? <Check className="size-5" /> : <Play className="size-5" fill="currentColor" />}
+              {course.todayCompleted ? PRACTICE_COPY.review : COURSE_COPY.start}
+            </Link>
+          </Button>
         )}
+      </div>
+      <SegmentedBar
+        ratio={(course.todayIndex + 1) / course.durationDays}
+        segments={COURSE_BAR_SEGMENTS}
+        fillClassName="bg-primary-foreground"
+        label={COURSE_COPY.dayOf(course.todayIndex + 1, course.durationDays)}
+        className="h-2.5 bg-primary-foreground/25"
+      />
+    </div>
+  );
+};
 
-        {course.upcoming.length > 0 && (
-          <section className="animate-rise-2 flex flex-col gap-3">
-            <h2 className="text-xl">{COURSE_COPY.upcomingTitle}</h2>
-            <ul className="flex flex-col gap-2">
-              {course.upcoming.map((day) => (
-                <UpcomingDay key={day.dayIndex} day={day} />
-              ))}
-            </ul>
-          </section>
-        )}
-        {course.pastDays.length > 0 && (
-          <section className="animate-rise-3 flex flex-col gap-3">
-            <div className="flex flex-col gap-1">
-              <h2 className="text-xl">{COURSE_COPY.pastTitle}</h2>
-              <p className="text-sm font-semibold text-muted-foreground">{COURSE_COPY.pastHint}</p>
-            </div>
+/** The running course, kept simple: today's banner and steps; next days, past days and the skill order fold away. */
+export const CourseOverview = ({ course }: CourseOverviewProps) => (
+  <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
+    <TodayBanner course={course} />
+
+    {course.today && course.today.blocks.length > 0 && (
+      <ul className="animate-rise animate-rise-1 flex flex-col gap-3">
+        {course.today.blocks.map((block) => (
+          <BlockRow key={`${block.kind}-${block.skillCode}`} block={block} />
+        ))}
+      </ul>
+    )}
+
+    <div className="animate-rise animate-rise-2 flex flex-col gap-3">
+      {course.upcoming.length > 0 && (
+        <ExpandableSection title={COURSE_COPY.upcomingTitle} count={course.upcoming.length}>
+          <ul className="flex flex-col gap-2">
+            {course.upcoming.map((day) => (
+              <UpcomingDay key={day.dayIndex} day={day} />
+            ))}
+          </ul>
+        </ExpandableSection>
+      )}
+
+      {course.pastDays.length > 0 && (
+        <ExpandableSection title={COURSE_COPY.pastTitle} count={course.pastDays.length}>
+          <div className="flex flex-col gap-3">
+            <p className="text-sm font-semibold text-muted-foreground">{COURSE_COPY.pastHint}</p>
             <ul className="flex flex-col gap-2">
               {course.pastDays.map((day) => (
                 <PastDay key={day.dayIndex} day={day} />
               ))}
             </ul>
-          </section>
-        )}
-      </div>
+          </div>
+        </ExpandableSection>
+      )}
 
-      <aside className="animate-rise-3 flex flex-col gap-6">
-        <section className="flex flex-col gap-3 rounded-2xl border-2 bg-card p-4">
-          <h2 className="text-lg">{COURSE_COPY.planTitle}</h2>
+      <ExpandableSection title={COURSE_COPY.planTitle} count={course.plannedSkills.length}>
+        <div className="flex flex-col gap-3">
           <p className="text-xs font-semibold text-muted-foreground">{COURSE_COPY.planNote}</p>
           <ol className="flex flex-col gap-1.5">
             {course.plannedSkills.map((s, i) => (
@@ -175,20 +184,17 @@ export const CourseOverview = ({ course }: CourseOverviewProps) => {
               </li>
             ))}
           </ol>
-        </section>
-
-        {course.omitted.length > 0 && (
-          <section className="flex flex-col gap-2 rounded-2xl border-2 border-dashed p-4">
-            <h2 className="text-base">{COURSE_COPY.omittedTitle}</h2>
-            <p className="text-sm font-semibold text-muted-foreground">{course.omitted.map((s) => s.nameKa).join(', ')}</p>
-          </section>
-        )}
-
-        <ReplanButton />
-      </aside>
+          {course.omitted.length > 0 && (
+            <div className="flex flex-col gap-1 border-t-2 pt-3">
+              <h3 className="text-sm">{COURSE_COPY.omittedTitle}</h3>
+              <p className="text-sm font-semibold text-muted-foreground">{course.omitted.map((s) => s.nameKa).join(', ')}</p>
+            </div>
+          )}
+          <div className="border-t-2 pt-3">
+            <ReplanButton />
+          </div>
+        </div>
+      </ExpandableSection>
     </div>
-  );
-};
-
-/** Progress bar widths in 10% steps (no inline styles, no arbitrary values). */
-const PROGRESS_WIDTH = ['w-0', 'w-1/10', 'w-2/10', 'w-3/10', 'w-4/10', 'w-5/10', 'w-6/10', 'w-7/10', 'w-8/10', 'w-9/10', 'w-full'];
+  </div>
+);

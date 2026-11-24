@@ -1,4 +1,4 @@
-import { CalendarDay, ActivityItem, SessionActivity, WeekXp } from '@/features/progress/types/progress.types';
+import { ActivityItem, CalendarDay, SessionActivity } from '@/features/progress/types/progress.types';
 import { FIRST_ANSWER_MINUTES, MAX_ACTIVE_GAP_MINUTES, XP_RULES } from '@/shared/const/progress.const';
 import { localDayKey, shiftDayKey, weekdayIndex } from '@/shared/utils/date';
 
@@ -79,17 +79,6 @@ export const minutesOn = (sessions: SessionActivity[], dayKey: string) =>
 
 /** Monday of the week that contains the day. */
 const weekStart = (key: string) => shiftDayKey(key, weekdayIndex(key));
-
-/** XP per Monday-to-Sunday week, oldest first, ending with the current week. */
-export function weeklyXp(events: { day: string; xp: number }[], todayKey: string, weeks: number): WeekXp[] {
-  const thisWeek = weekStart(todayKey);
-  const totals = Array.from({ length: weeks }, (_, i) => ({ weeksAgo: weeks - 1 - i, xp: 0 }));
-  for (const e of events) {
-    const weeksAgo = Math.round((Date.parse(thisWeek) - Date.parse(weekStart(e.day))) / (7 * 24 * 60 * 60 * 1000));
-    if (weeksAgo >= 0 && weeksAgo < weeks) totals[weeks - 1 - weeksAgo].xp += e.xp;
-  }
-  return totals;
-}
 
 /** Calendar grid of the last `weeks` weeks (Monday first), the current week last. */
 export function streakCalendar(days: Set<string>, todayKey: string, weeks: number): CalendarDay[][] {

@@ -17,8 +17,8 @@ export const MAX_ACTIVE_GAP_MINUTES = 5;
 export const FIRST_ANSWER_MINUTES = 1;
 
 export const DEFAULT_DAILY_GOAL_MINUTES = 30;
-export const STREAK_CALENDAR_WEEKS = 5;
-export const XP_HISTORY_WEEKS = 6;
+/** Skills listed on the progress page before "show all". */
+export const PROGRESS_VISIBLE_SKILLS = 5;
 export const PROGRESS_BAR_SEGMENTS = 10;
 export const COURSE_BAR_SEGMENTS = 20;
 
@@ -26,25 +26,17 @@ export const WEEKDAY_SHORT = ['ორშ', 'სამ', 'ოთხ', 'ხუთ'
 
 export const PROGRESS_COPY = {
   title: 'პროგრესი',
-  subtitle: 'ყოველი ამოხსნილი ამოცანა აქ აისახება.',
   streakTitle: 'დღე ზედიზედ',
   bestStreak: 'რეკორდი',
-  totalXp: 'XP სულ',
-  todayXp: 'დღეს',
-  calendarTitle: 'აქტიური დღეები',
-  calendarHint: 'ცეცხლი = იმ დღეს ივარჯიშე',
-  weeklyXpTitle: 'XP კვირების მიხედვით',
-  thisWeek: 'ეს კვირა',
-  weeksAgo: (n: number) => `${n} კვირის წინ`,
-  courseTitle: 'კურსის პროგრესი',
-  courseDays: (done: number, total: number) => `${done} / ${total} დღე დასრულებულია`,
-  noCourse: 'კურსი ჯერ არ გაქვს. აწყობის შემდეგ აქ გამოჩნდება.',
-  masteryTitle: 'უნარების დაუფლება',
+  totalXp: 'XP',
+  weekTitle: 'ეს კვირა',
+  courseTitle: 'კურსი',
+  courseDays: (done: number, total: number) => `${done} / ${total} დღე`,
+  masteryTitle: 'უნარები',
   masteryEmpty: 'დიაგნოსტიკის ან ვარჯიშის შემდეგ აქ გამოჩნდება შენი უნარები.',
-  answered: 'ამოხსნილი ამოცანა',
-  accuracy: 'სიზუსტე',
-  startToday: 'დღევანდელი ვარჯიში',
-  streakAlive: 'დღეს ივარჯიშე, სერია გრძელდება!',
-  streakAtRisk: 'დღეს ჯერ არ გივარჯიშია. ერთი ამოცანაც კი ინარჩუნებს სერიას.',
+  allSkills: 'ყველა უნარი',
+  startToday: 'ვარჯიში',
+  streakAlive: 'დღეს ივარჯიშე. ასე გააგრძელე!',
+  streakAtRisk: 'დღეს ჯერ არ გივარჯიშია. ერთი ამოცანაც ინარჩუნებს სერიას.',
   streakZero: 'დაიწყე დღეს და პირველი ცეცხლი აანთე.',
 };
