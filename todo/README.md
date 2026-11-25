@@ -25,7 +25,7 @@ Tickets come from [PRODUCT.md](../PRODUCT.md). Each ticket is a file `T-NNN-<slu
 | T-017 | [Diagnostic report + Knowledge Map](T-017-diagnostic-report.md) | Diagnostic | 4 | 🟡 v1: knowledge map, history, per-question review with photos; dashboard card |
 | T-018 | [Course planner](T-018-course-planner.md) | Course | 5 | ✅ done |
 | T-019 | [Course setup UI](T-019-course-setup-ui.md) | Course | 5 | ✅ done |
-| T-020 | [Daily session + theory cards](T-020-daily-session.md) | Course | 5 | 🟡 v1: daily practice with instant feedback + mastery updates; theory cards todo |
+| T-020 | [Daily session + theory cards](T-020-daily-session.md) | Course | 5 | 🟡 teaching-first: full lessons (10/67), easy→hard ramp, second chance, "I'm stuck" ladder + stuck tutor |
 | T-021 | [SymPy service + templates](T-021-math-service-templates.md) | Course | 6 | todo |
 | T-022 | [Spaced repetition](T-022-spaced-repetition.md) | Course | 6 | todo (theory revision library `/revision` done) |
 | T-023 | [Weekly check + re-plan](T-023-weekly-check-replan.md) | Adaptation | 7 | todo |

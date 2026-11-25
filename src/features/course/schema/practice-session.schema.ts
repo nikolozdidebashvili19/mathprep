@@ -12,7 +12,12 @@ const PracticeItemSchema = new Schema(
     answer: { type: String, required: false },
     correct: { type: Boolean, required: false },
     answeredAt: { type: Date, required: false },
+    /** Real hints (hint / walkthrough rungs): lower XP and the answer's mastery weight. */
     hintsUsed: { type: Number, default: 0 },
+    /** All "I'm stuck" rungs revealed, including the free ones (restate, plan). */
+    guideStepsUsed: { type: Number, default: 0 },
+    /** Inserted after a wrong answer: an easier question on the same skill (one per original question). */
+    secondChance: { type: Boolean, default: false },
   },
   { _id: false }
 );

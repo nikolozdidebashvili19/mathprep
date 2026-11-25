@@ -16,12 +16,14 @@ import { cn } from '@/shared/lib/utils';
 type TutorChatProps = {
   sessionId: string;
   itemIndex: number;
+  /** stuck = before answering: the helper guides but never gives the answer. */
+  mode?: 'explain' | 'stuck';
 };
 
 /** "Ask the helper" for an answered practice question: closed by default, a short chat when opened. */
-export const TutorChat = ({ sessionId, itemIndex }: TutorChatProps) => {
+export const TutorChat = ({ sessionId, itemIndex, mode = 'explain' }: TutorChatProps) => {
   const [open, setOpen] = useState(false);
-  const { turns, remaining, knownRemaining, pending, error, ask } = useTutor(sessionId, itemIndex);
+  const { turns, remaining, knownRemaining, pending, error, ask } = useTutor(sessionId, itemIndex, mode);
   const form = useForm<TutorMessageFormType>({ resolver: zodResolver(TutorMessageFormSchema), defaultValues: { message: '' } });
 
   const onSubmit = async ({ message }: TutorMessageFormType) => {
@@ -44,7 +46,9 @@ export const TutorChat = ({ sessionId, itemIndex }: TutorChatProps) => {
         <Bot className="size-5" />
         {TUTOR_COPY.title}
       </h3>
-      {turns.length === 0 && <p className="text-sm font-semibold text-muted-foreground">{TUTOR_COPY.intro}</p>}
+      {turns.length === 0 && (
+        <p className="text-sm font-semibold text-muted-foreground">{mode === 'stuck' ? TUTOR_COPY.stuckIntro : TUTOR_COPY.intro}</p>
+      )}
 
       <ul className="flex flex-col gap-2" aria-live="polite">
         {turns.map((turn, i) => (
@@ -71,7 +75,12 @@ export const TutorChat = ({ sessionId, itemIndex }: TutorChatProps) => {
             render={({ field }) => (
               <FormItem className="flex-1">
                 <FormControl>
-                  <Input {...field} placeholder={TUTOR_COPY.placeholder} disabled={pending || remaining === 0} autoComplete="off" />
+                  <Input
+                    {...field}
+                    placeholder={mode === 'stuck' ? TUTOR_COPY.stuckPlaceholder : TUTOR_COPY.placeholder}
+                    disabled={pending || remaining === 0}
+                    autoComplete="off"
+                  />
                 </FormControl>
               </FormItem>
             )}

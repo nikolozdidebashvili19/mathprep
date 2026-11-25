@@ -24,6 +24,16 @@ const QuestionOptionSchema = new Schema(
   { _id: false }
 );
 
+/** "I'm stuck" guidance (content/guidance/): made once offline from the verified solution, never the answer. */
+const QuestionGuidanceSchema = new Schema(
+  {
+    restate: { type: String, required: true },
+    plan: { type: [String], default: [] },
+    hints: { type: [String], default: [] },
+  },
+  { _id: false }
+);
+
 const QuestionSchema = new Schema(
   {
     code: { type: String, required: true, unique: true },
@@ -44,6 +54,7 @@ const QuestionSchema = new Schema(
     markingCriteria: { type: String, required: false },
     solutionSteps: { type: [String], default: [] },
     commonMistakes: { type: [String], default: [] },
+    guidance: { type: QuestionGuidanceSchema, required: false },
     skills: { type: [QuestionSkillSchema], default: [] },
     primarySkill: { type: String, required: false },
     status: { type: String, enum: [...CONTENT_STATUSES], default: 'draft', required: true },

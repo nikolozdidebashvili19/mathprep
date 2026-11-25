@@ -10,4 +10,6 @@ export type TutorContext = {
   studentAnswer: string;
   solutionSteps: string[];
   skillName: string | null;
+  /** Stuck mode: the ladder rungs the student has already seen, so the tutor builds on them. */
+  seenGuidance: string[];
 };

@@ -1,6 +1,6 @@
 'use client';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { TriangleAlert } from 'lucide-react';
+import { GraduationCap, TriangleAlert } from 'lucide-react';
 import { useForm, useWatch } from 'react-hook-form';
 
 import { useCreateCourse } from '@/features/course/hooks/use-create-course';
@@ -8,7 +8,7 @@ import { CoursePreview } from '@/features/course/types/course.types';
 import { CreateCourseSchema, CreateCourseType } from '@/features/course/validations/course.validation';
 import { Button } from '@/shared/components/ui/button';
 import { Form, FormField, FormItem, FormLabel } from '@/shared/components/ui/form';
-import { COURSE_COPY } from '@/shared/const/course.const';
+import { COURSE_COPY, LEVEL_COPY } from '@/shared/const/course.const';
 import { COURSE_DURATION_MONTHS, DAILY_MINUTES_OPTIONS } from '@/shared/const/domain.const';
 import { cn } from '@/shared/lib/utils';
 
@@ -19,10 +19,24 @@ type CourseSetupProps = {
 const TILE = 'h-16 text-base font-extrabold';
 const TILE_SELECTED = 'border-sky bg-sky/10 text-sky shadow-edge-sky hover:bg-sky/15';
 
+/** The level the diagnostic put the student at, and what it means for where the course starts. */
+const LevelNote = ({ level }: { level: CoursePreview['level'] }) => (
+  <div className="flex items-start gap-3 rounded-2xl border-2 border-sky bg-sky/5 p-4">
+    <GraduationCap className="mt-0.5 size-6 shrink-0 text-sky" />
+    <div className="flex flex-col gap-1">
+      <p className="font-extrabold">
+        {LEVEL_COPY.label}: <span className="text-sky">{LEVEL_COPY.names[level]}</span>
+      </p>
+      <p className="text-sm font-semibold text-muted-foreground">{LEVEL_COPY.notes[level]}</p>
+    </div>
+  </div>
+);
+
 const PreviewPanel = ({ preview }: { preview: CoursePreview }) => {
   const total = preview.skillCount + preview.omittedCount;
   return (
     <section className="animate-rise flex flex-col gap-4 rounded-2xl border-2 bg-card p-5" aria-live="polite">
+      <LevelNote level={preview.level} />
       <div className="flex items-baseline justify-between gap-3">
         <h2 className="text-lg">{COURSE_COPY.previewTitle}</h2>
         <p className="text-sm font-extrabold text-primary">{COURSE_COPY.skillsCovered(preview.skillCount, total)}</p>

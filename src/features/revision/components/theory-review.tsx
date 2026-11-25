@@ -1,6 +1,7 @@
 import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
+import { LessonDocument } from '@/features/course/components/lesson-document';
 import { TheoryCard } from '@/features/course/components/theory-card';
 import { TheoryReviewView } from '@/features/revision/types/revision.types';
 import { Button } from '@/shared/components/ui/button';
@@ -24,7 +25,11 @@ export const TheoryReview = ({ review }: TheoryReviewProps) => (
       <span className="text-sm font-extrabold text-muted-foreground">{REVISION_COPY.position(review.position, review.total)}</span>
     </div>
 
-    <TheoryCard key={review.code} skillName={review.skillName} prerequisiteNames={review.prerequisiteNames} theory={review.theory} mastery={review.mastery} />
+    {review.lesson ? (
+      <LessonDocument key={review.code} lesson={review.lesson} skillName={review.skillName} prerequisiteNames={review.prerequisiteNames} />
+    ) : (
+      <TheoryCard key={review.code} skillName={review.skillName} prerequisiteNames={review.prerequisiteNames} theory={review.theory} mastery={review.mastery} />
+    )}
 
     <nav className="grid grid-cols-2 gap-3 border-t-2 pt-6">
       {review.previous ? (

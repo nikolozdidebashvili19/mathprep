@@ -26,6 +26,7 @@ export const usePracticeStore = () => {
       next: state.next,
       back: state.back,
       setHints: state.setHints,
+      insertItem: state.insertItem,
       setBusy: state.setBusy,
       setError: state.setError,
       setSummary: state.setSummary,

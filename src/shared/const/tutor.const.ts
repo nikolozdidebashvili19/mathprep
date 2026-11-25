@@ -2,6 +2,8 @@
 export const TUTOR_DAILY_LIMIT = 20;
 export const TUTOR_MAX_HISTORY = 4;
 export const TUTOR_MAX_MESSAGE = 400;
+/** explain = after answering (may discuss the answer); stuck = before answering (guides, never gives the answer). */
+export const TUTOR_MODES = ['explain', 'stuck'] as const;
 
 export const TUTOR_COPY = {
   open: 'ჰკითხე დამხმარეს',
@@ -14,4 +16,6 @@ export const TUTOR_COPY = {
   limitReached: 'დღევანდელი ლიმიტი ამოიწურა. ხვალ ისევ შეგიძლია იკითხო.',
   error: 'დამხმარემ ვერ უპასუხა. სცადე ცოტა ხანში.',
   you: 'შენ',
+  stuckIntro: 'მითხარი, სად გაიჭედე: რომელი ნაბიჯი ან სიტყვა ვერ გაიგე. პასუხს არ გეტყვი, მაგრამ ერთად მივალთ.',
+  stuckPlaceholder: 'მაგ.: არ ვიცი, საიდან დავიწყო',
 };

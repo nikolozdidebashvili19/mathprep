@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { TUTOR_MAX_HISTORY, TUTOR_MAX_MESSAGE } from '@/shared/const/tutor.const';
+import { TUTOR_MAX_HISTORY, TUTOR_MAX_MESSAGE, TUTOR_MODES } from '@/shared/const/tutor.const';
 
 export const TutorTurnSchema = z.object({
   role: z.enum(['student', 'tutor']),
@@ -12,6 +12,7 @@ export const AskTutorSchema = z.object({
   itemIndex: z.number().int().min(0).max(200),
   message: z.string().trim().min(2).max(TUTOR_MAX_MESSAGE),
   history: z.array(TutorTurnSchema).max(TUTOR_MAX_HISTORY).default([]),
+  mode: z.enum(TUTOR_MODES).default('explain'),
 });
 export type AskTutorType = z.infer<typeof AskTutorSchema>;
 

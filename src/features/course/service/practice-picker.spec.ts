@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { pickQuestions, PickableQuestion, PickRequest, questionCount, targetDifficulty } from '@/features/course/service/practice-picker';
+import { difficultyRamp, pickQuestions, pickSecondChance, PickableQuestion, PickRequest, questionCount, targetDifficulty } from '@/features/course/service/practice-picker';
 
 const q = (id: string, primarySkill: string, difficulty: number, skills: string[] = [primarySkill]): PickableQuestion => ({
   id,
@@ -37,10 +37,24 @@ describe('targetDifficulty / questionCount', () => {
   });
 });
 
+describe('difficultyRamp', () => {
+  it('runs from one below to one above the target, clamped to 1–5', () => {
+    expect(difficultyRamp(3, 3)).toEqual([2, 3, 4]);
+    expect(difficultyRamp(1, 2)).toEqual([1, 2]);
+    expect(difficultyRamp(5, 1)).toEqual([4]);
+  });
+});
+
 describe('pickQuestions', () => {
-  it('picks the skill\'s questions closest to the target difficulty, the skill as main topic first', () => {
-    // 10 min at difficulty 2 → 3 questions.
-    expect(pickQuestions(base)).toEqual(['a2', 'a1', 'a3']);
+  it('climbs from easy to harder around the target, the skill as main topic first', () => {
+    // 10 min at difficulty 2 → 3 questions on the ramp 1 → 2 → 3, shown easiest first.
+    expect(pickQuestions(base)).toEqual(['a1', 'a2', 'a3']);
+  });
+
+  it('never presents a harder question before an easier one', () => {
+    const picked = pickQuestions({ ...base, minutes: 30, mastery: 0.6 });
+    const difficulty = (id: string) => pool.find((x) => x.id === id)!.difficulty;
+    expect(picked.map(difficulty)).toEqual([...picked.map(difficulty)].sort((a, b) => a - b));
   });
 
   it('prefers unseen questions and never repeats one within a day', () => {
@@ -55,5 +69,19 @@ describe('pickQuestions', () => {
   it('mixed blocks draw from the course skills only', () => {
     const picked = pickQuestions({ ...base, skillCode: null, courseSkills: new Set(['G7']), minutes: 30 });
     expect(picked).toEqual(['g2']);
+  });
+});
+
+describe('pickSecondChance', () => {
+  const input = { pool, failed: { skill: 'A4', difficulty: 3 }, exclude: new Set(['a3']), seen: new Set<string>(), seed: 0 };
+
+  it('picks the same skill one step easier, never harder', () => {
+    expect(pickSecondChance(input)).toBe('a2');
+    expect(pickSecondChance({ ...input, exclude: new Set(['a3', 'a2']) })).toBe('a1');
+  });
+
+  it('prefers unseen questions and returns null when nothing fits', () => {
+    expect(pickSecondChance({ ...input, seen: new Set(['a2']) })).toBe('a1');
+    expect(pickSecondChance({ ...input, failed: { skill: 'A4', difficulty: 1 }, exclude: new Set(['a1']) })).toBeNull();
   });
 });

@@ -9,7 +9,7 @@ import { http } from '@/shared/lib/http';
  * AI helper conversation for one answered practice question. The conversation lives only in this panel; only the
  * last TUTOR_MAX_HISTORY turns are sent with each question (token budget).
  */
-export const useTutor = (sessionId: string, itemIndex: number) => {
+export const useTutor = (sessionId: string, itemIndex: number, mode: 'explain' | 'stuck' = 'explain') => {
   const [turns, setTurns] = useState<TutorTurn[]>([]);
   const [remaining, setRemaining] = useState<number | null>(null);
   const [pending, setPending] = useState(false);
@@ -21,7 +21,7 @@ export const useTutor = (sessionId: string, itemIndex: number) => {
     const history = turns.slice(-TUTOR_MAX_HISTORY);
     setTurns((t) => [...t, { role: 'student', text: message }]);
     try {
-      const result = await http.post<TutorReply>('/tutor/ask', { sessionId, itemIndex, message, history });
+      const result = await http.post<TutorReply>('/tutor/ask', { sessionId, itemIndex, message, history, mode });
       setTurns((t) => [...t, { role: 'tutor', text: result.reply }]);
       setRemaining(result.remaining);
     } catch (e) {

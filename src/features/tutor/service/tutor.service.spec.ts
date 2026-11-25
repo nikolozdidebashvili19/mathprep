@@ -16,7 +16,7 @@ import { PracticeSessionDocument, PracticeSessionModel } from '@/features/course
 import { questionRepository } from '@/features/question/repository/question.repository';
 import { QuestionDocument, QuestionModel } from '@/features/question/schema/question.schema';
 import { tutorMessageRepository } from '@/features/tutor/repository/tutor-message.repository';
-import { askTutorService, buildTutorPrompt, normalizeMessage } from '@/features/tutor/service/tutor.service';
+import { askTutorService, buildStuckPrompt, buildTutorPrompt, normalizeMessage } from '@/features/tutor/service/tutor.service';
 import { TUTOR_DAILY_LIMIT } from '@/shared/const/tutor.const';
 import { aiVision } from '@/shared/lib/ai-vision';
 
@@ -47,7 +47,7 @@ const question: QuestionDocument = new QuestionModel({
   solutionSteps: ['ორივე მხარე გავყოთ $2$-ზე', '$x=3$'],
 }).toObject();
 
-const input = { sessionId: SESSION.toString(), itemIndex: 0, message: 'რატომ არის 3?', history: [] };
+const input = { sessionId: SESSION.toString(), itemIndex: 0, message: 'რატომ არის 3?', history: [], mode: 'explain' as const };
 
 beforeEach(() => {
   vi.clearAllMocks();
@@ -60,7 +60,7 @@ beforeEach(() => {
 describe('buildTutorPrompt', () => {
   it('gives the model the problem, both answers, the stored solution and recent turns', () => {
     const prompt = buildTutorPrompt(
-      { questionText: 'Q?', options: [{ key: 'ა', text: '1' }], correctAnswer: 'ა', studentAnswer: 'ბ', solutionSteps: ['s1'], skillName: 'წილადები' },
+      { questionText: 'Q?', options: [{ key: 'ა', text: '1' }], correctAnswer: 'ა', studentAnswer: 'ბ', solutionSteps: ['s1'], skillName: 'წილადები', seenGuidance: [] },
       [{ role: 'student', text: 'hi' }],
       'რატომ?'
     );
@@ -75,7 +75,31 @@ describe('buildTutorPrompt', () => {
   });
 });
 
+describe('buildStuckPrompt', () => {
+  it('keeps the solution secret and tells the model never to give the answer', () => {
+    const prompt = buildStuckPrompt(
+      { questionText: 'Q?', options: [{ key: 'ა', text: '1' }], correctAnswer: 'ა', studentAnswer: '', solutionSteps: ['s1'], skillName: null, seenGuidance: ['h1'] },
+      [],
+      'ვერ ვიწყებ'
+    );
+    expect(prompt).toContain('NEVER state the final result');
+    expect(prompt).toContain('- h1');
+    expect(prompt).not.toContain('Correct answer');
+  });
+});
+
 describe('askTutorService', () => {
+  it('stuck mode helps before answering, never after, and keeps its own cache', async () => {
+    vi.mocked(practiceSessionRepository.findById).mockResolvedValue(session(false));
+    vi.mocked(aiVision.generateJson).mockResolvedValue('{"reply": "რას ნიშნავს $x$?"}');
+    const res = await askTutorService(USER.toString(), { ...input, mode: 'stuck' });
+    expect(res.status).toBe(200);
+    expect(vi.mocked(aiVision.generateJson).mock.calls[0][0].prompt).toContain('NEVER say which option is correct');
+    expect(repo.findReply).toHaveBeenCalledWith(Q1.toString(), expect.any(String), 'stuck');
+    vi.mocked(practiceSessionRepository.findById).mockResolvedValue(session(true));
+    expect((await askTutorService(USER.toString(), { ...input, mode: 'stuck' })).data).toEqual({ error: 'ALREADY_ANSWERED' });
+  });
+
   it('only helps after the question was answered, and only its owner', async () => {
     vi.mocked(practiceSessionRepository.findById).mockResolvedValue(session(false));
     expect((await askTutorService(USER.toString(), input)).data).toEqual({ error: 'NOT_ANSWERED' });

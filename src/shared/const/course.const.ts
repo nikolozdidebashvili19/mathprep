@@ -72,6 +72,26 @@ export const COURSE_COPY = {
   savedMistakes: 'შენახული შეცდომები',
 };
 
+/**
+ * Student level from the latest diagnostic's score share: below BEGINNER_BELOW = beginner (the course starts from the
+ * very basics), below ADVANCED_FROM = intermediate, else advanced.
+ */
+export const STUDENT_LEVELS = ['beginner', 'intermediate', 'advanced'] as const;
+export const BEGINNER_BELOW = 0.4;
+export const ADVANCED_FROM = 0.75;
+/** A beginner's untested skill is practised as if mastery were this low (difficulty-1 questions first). */
+export const BEGINNER_START_MASTERY = 0.1;
+
+export const LEVEL_COPY = {
+  label: 'შენი დონე',
+  names: { beginner: 'დამწყები', intermediate: 'საშუალო', advanced: 'მოწინავე' },
+  notes: {
+    beginner: 'კურსი სულ საფუძვლებიდან დაიწყება: ჯერ ის, რასაც ყველაფერი ეყრდნობა, მერე ნაბიჯ-ნაბიჯ უფრო რთული.',
+    intermediate: 'კურსი შენი ხარვეზებით დაიწყება, საფუძვლებიდან რთულისკენ.',
+    advanced: 'კურსი პირდაპირ შენს სუსტ ადგილებზე და გამოცდის დონის ამოცანებზე იქნება.',
+  },
+};
+
 /** Weak-first planning: proven weaknesses outrank untested skills, which get a short check-in instead of lessons. */
 export const WEAK_PRIORITY_BOOST = 2;
 export const UNTESTED_PRIORITY_FACTOR = 0.5;
@@ -79,6 +99,9 @@ export const UNTESTED_CHECKIN_DAYS = 1;
 
 /** Daily session (T-020): how many questions fit a block, and how hard they are for the student's mastery. */
 export const MAX_QUESTIONS_PER_BLOCK = 8;
+/** Practice climbs from this far below the target difficulty to this far above it (T-020 difficulty ramp). */
+export const RAMP_BELOW_TARGET = 1;
+export const RAMP_ABOVE_TARGET = 1;
 /** Estimated minutes for one question of difficulty d: 2 + 0.5 × d (easy ≈ 2.5 min, hardest ≈ 4.5 min). */
 export const minutesPerQuestion = (difficulty: number) => 2 + 0.5 * difficulty;
 /** Tagged skills other than the question's primary skill count this much in the mastery update. */
@@ -132,10 +155,37 @@ export const HINT_WEIGHT_PENALTY = 0.25;
 export const MIN_HINTED_WEIGHT = 0.25;
 export const hintedWeight = (hintsUsed: number) => Math.max(MIN_HINTED_WEIGHT, 1 - HINT_WEIGHT_PENALTY * hintsUsed);
 
+/** "I'm stuck" ladder (T-020): rung kinds, which ones are free, and how many hints at most. */
+export const STUCK_STEP_KINDS = ['restate', 'theory', 'plan', 'example', 'hint', 'walkthrough', 'solution'] as const;
+export const FREE_STUCK_KINDS: readonly string[] = ['restate', 'theory', 'plan', 'example'];
+/** Seeing the full solution counts like this many hints (the answer then counts the minimum toward mastery). */
+export const SOLUTION_HINT_COST = 3;
+/** Formulas / rules shown in the "theory" rung. */
+export const MAX_STUCK_THEORY = 3;
+export const MAX_STUCK_HINTS = 3;
+/** Second-chance questions after wrong answers, at most this many per day (the day must stay finishable). */
+export const MAX_SECOND_CHANCES = 3;
+
 export const HINT_COPY = {
-  button: 'მინიშნება',
+  button: 'გავიჭედე',
+  more: 'კიდევ დამეხმარე',
   label: (n: number, total: number) => `მინიშნება ${n}/${total}`,
+  kinds: {
+    restate: 'რას გვეკითხება',
+    theory: 'გავიხსენოთ თეორია',
+    plan: 'დავყოთ ნაბიჯებად',
+    example: 'მსგავსი ამოხსნილი მაგალითი',
+    hint: 'მინიშნება',
+    walkthrough: 'ერთად ვიფიქროთ',
+    solution: 'სრული ამოხსნა',
+  },
+  theoryIntro: 'ამ ამოცანისთვის ეს წესები გჭირდება:',
+  solutionIntro: 'აი, სრული ამოხსნა. ჩაიკითხე თითოეული ნაბიჯი, მერე თავად აირჩიე პასუხი:',
+  answerLabel: 'პასუხი',
+  planIntro: 'ეს ამოცანა ასე იხსნება:',
+  walkthroughIntro: 'გავიაროთ მსჯელობა ერთად. ბოლო ნაბიჯი შენ გააკეთე და პასუხი თავად აირჩიე:',
+  free: 'ეს ქულას არ ამცირებს',
+  stillStuck: 'რომელიმე ნაბიჯი გაუგებარია? ჰკითხე დამხმარეს. პასუხს არ გეტყვის, მაგრამ მიგიყვანს.',
   none: 'ამ ამოცანისთვის მინიშნება ჯერ არ გვაქვს.',
   error: 'მინიშნება ვერ ჩაიტვირთა.',
-  ruleHint: (skillName: string) => `ეს ამოცანა ეხება თემას „${skillName}“. გაიხსენე მთავარი წესი:`,
 };

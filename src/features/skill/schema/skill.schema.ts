@@ -31,6 +31,8 @@ const SkillSchema = new Schema(
     minPracticeMinutes: { type: Number, required: true, min: 0 },
     prerequisites: { type: [String], default: [] },
     theoryCard: { type: TheoryCardSchema, required: false },
+    // Full lesson (content/lessons/): sections of mixed shape, validated by LessonSchema when seeded and when read.
+    lesson: { type: Schema.Types.Mixed, required: false },
   },
   { timestamps: true }
 );

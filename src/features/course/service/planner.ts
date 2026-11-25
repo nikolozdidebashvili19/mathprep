@@ -16,11 +16,19 @@
  * 4. Order: prerequisites first; among ready skills the highest rank wins, where rank = the best gap × weight of the
  *    skill and of everything it unlocks (so N1 → A4 → A12 starts early); the same topic is not repeated when
  *    another ready skill is close in rank.
+ * Student level (from the diagnostic score) changes steps 2–4:
+ *   beginner     — every prerequisite not shown to be known is taught first (no benefit of the doubt), untested
+ *                  skills get full lessons, and the order is foundations first (prerequisite depth, then rank),
+ *                  so a student who scored 0 starts from natural numbers, not from pyramids;
+ *   intermediate — evidence-based prerequisites as above, but the order is still foundations first;
+ *   advanced     — weak-first by value, as described above.
  * 5. Days: theory on a skill's first day, practice on the focus skill, drills on the weakest skill started so far,
  *    revision of skills finished 3 / 7 / 14 days earlier. Learning days left at the end become mixed exam practice.
  */
+import { prerequisiteDepths } from '@/features/course/service/student-level';
 import {
   CoursePlan,
+  StudentLevel,
   PlanBlock,
   PlanDay,
   PlannedSkill,
@@ -70,19 +78,23 @@ function toCandidates(
   skills: PlannerSkillInput[],
   mastery: ReadonlyMap<string, number>,
   observed: ReadonlySet<string>,
-  focusMinutes: number
+  focusMinutes: number,
+  level: StudentLevel
 ): Map<string, Candidate> {
+  const beginner = level === 'beginner';
   const m = (code: string) => mastery.get(code) ?? MASTERY_PRIOR;
   const out = new Map<string, Candidate>();
   for (const s of skills) {
     const gap = Math.round((TARGET_MASTERY - m(s.code)) * 1000) / 1000;
     if (gap <= 0) continue;
     const status = skillStatus(m(s.code), observed.has(s.code));
-    const blocking = s.prerequisites.filter((p) => observed.has(p) && m(p) < MASTERY_READY);
+    // A beginner gets no benefit of the doubt: an untested prerequisite is taught first too.
+    const blocking = s.prerequisites.filter((p) => (beginner || observed.has(p)) && m(p) < MASTERY_READY);
     const readiness = blocking.length === 0 ? 1 : NOT_READY_FACTOR;
     const minutes = Math.ceil(s.minPracticeMinutes * gap);
-    const days = status === 'untested' ? UNTESTED_CHECKIN_DAYS : Math.max(1, Math.ceil(minutes / focusMinutes));
-    const value = gap * s.examWeight * STATUS_FACTOR[status];
+    // An untested skill is only a short check-in for students who already know a lot; a beginner learns it properly.
+    const days = status === 'untested' && !beginner ? UNTESTED_CHECKIN_DAYS : Math.max(1, Math.ceil(minutes / focusMinutes));
+    const value = gap * s.examWeight * (beginner && status === 'untested' ? 1 : STATUS_FACTOR[status]);
     out.set(s.code, { ...s, blocking, gap, value, priority: value * readiness, minutes, days, status });
   }
   return out;
@@ -115,18 +127,20 @@ function unlockRanks(chosen: Candidate[]): Map<string, number> {
   return rank;
 }
 
-function orderInterleaved(chosen: Candidate[]): Candidate[] {
+function orderInterleaved(chosen: Candidate[], depths: ReadonlyMap<string, number> | null): Candidate[] {
   const rank = unlockRanks(chosen);
   const r = (c: Candidate) => rank.get(c.code) ?? c.value;
+  const depth = (c: Candidate) => depths?.get(c.code) ?? 0;
   const remaining = new Map(chosen.map((c) => [c.code, c]));
   const ordered: Candidate[] = [];
   while (remaining.size > 0) {
-    const ready = [...remaining.values()]
-      .filter((c) => c.blocking.every((p) => !remaining.has(p)))
-      .sort((a, b) => r(b) - r(a) || a.code.localeCompare(b.code));
+    // Foundations first (when depths are given): only the most basic ready skills compete, then rank decides.
+    const unblocked = [...remaining.values()].filter((c) => c.blocking.every((p) => !remaining.has(p)));
+    const minDepth = Math.min(...unblocked.map(depth));
+    const ready = unblocked.filter((c) => depth(c) === minDepth).sort((a, b) => r(b) - r(a) || a.code.localeCompare(b.code));
     const lastTopic = ordered.at(-1)?.topic;
     const other = ready.find((c) => c.topic !== lastTopic);
-    const pick = ready[0].topic === lastTopic && other && r(other) >= r(ready[0]) / 2 ? other : ready[0];
+    const pick = ready[0].topic === lastTopic && other && (depths !== null || r(other) >= r(ready[0]) / 2) ? other : ready[0];
     ordered.push(pick);
     remaining.delete(pick.code);
   }
@@ -175,12 +189,15 @@ export function planCourse(input: {
   observed?: ReadonlySet<string>;
   durationDays: number;
   minutesPerDay: DailyMinutes;
+  /** From the diagnostic score; decides how much prior knowledge the plan may assume (default advanced). */
+  level?: StudentLevel;
 }): CoursePlan {
   const { skills, mastery, durationDays, minutesPerDay } = input;
+  const level = input.level ?? 'advanced';
   const observed = input.observed ?? new Set(mastery.keys());
   const template = SESSION_TEMPLATES[minutesPerDay];
   const learningDays = Array.from({ length: durationDays }, (_, i) => i).filter((i) => !isCheckDay(i, durationDays)).length;
-  const candidates = toCandidates(skills, mastery, observed, template.theory + template.practice);
+  const candidates = toCandidates(skills, mastery, observed, template.theory + template.practice, level);
 
   const selected = new Set<string>();
   let daysLeft = learningDays;
@@ -193,7 +210,7 @@ export function planCourse(input: {
     daysLeft -= cost;
   }
 
-  const order = orderInterleaved([...selected].map((code) => candidates.get(code)!));
+  const order = orderInterleaved([...selected].map((code) => candidates.get(code)!), level === 'advanced' ? null : prerequisiteDepths(skills));
   const weighted = (list: Candidate[]) => list.reduce((sum, c) => sum + c.gap * c.examWeight, 0);
   const coverage = weighted([...candidates.values()]) === 0 ? 1 : weighted(order) / weighted([...candidates.values()]);
 
@@ -208,6 +225,7 @@ export function planCourse(input: {
   return {
     durationDays,
     minutesPerDay,
+    level,
     learningDays,
     skills: planned,
     omitted: ranked.filter((c) => !selected.has(c.code)).map((c) => c.code),

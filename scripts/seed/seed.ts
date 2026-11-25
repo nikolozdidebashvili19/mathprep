@@ -12,12 +12,14 @@ import path from 'node:path';
 import { examRepository } from '@/features/exam/repository/exam.repository';
 import { questionRepository } from '@/features/question/repository/question.repository';
 import { skillRepository } from '@/features/skill/repository/skill.repository';
+import { LessonSchema } from '@/features/skill/validations/lesson.validation';
 import { TheoryCardSchema } from '@/features/skill/validations/theory.validation';
 import { mongo } from '@/shared/lib/mongo';
 
-import { mapExam, mapExplanation, mapQuestion, mapSkills, mapTag, type SkillFile } from './seed-mappers';
+import { mapExam, mapExplanation, mapGuidance, mapQuestion, mapSkills, mapTag, type SkillFile } from './seed-mappers';
 import { CONTENT_DIR, log, readIndex } from '../extract/content-index';
 import { ExplanationSchema } from '../extract/explanation';
+import { GuidanceSchema } from '../extract/guidance';
 import { QuestionImportSchema } from '../extract/question-import';
 import { SkillTagSchema } from '../extract/skill-tag';
 
@@ -38,11 +40,21 @@ async function main() {
   }
   log(`theory cards: ${theoryFiles.length} applied`);
 
+  // Full lessons: content/lessons/<code>.json (10–15 min, examples easy → hard, checks, a simpler re-explanation).
+  const lessonDir = path.join(CONTENT_DIR, 'lessons');
+  const lessonFiles = existsSync(lessonDir) ? readdirSync(lessonDir).filter((f) => f.endsWith('.json')) : [];
+  for (const file of lessonFiles) {
+    const { code, ...lesson } = LessonSchema.parse(JSON.parse(readFileSync(path.join(lessonDir, file), 'utf8')));
+    await skillRepository.setLesson(code, lesson);
+  }
+  log(`lessons: ${lessonFiles.length} applied`);
+
   let inserted = 0;
   let updated = 0;
   let refreshed = 0;
   let tagged = 0;
   let explained = 0;
+  let guided = 0;
   for (const entry of readIndex()) {
     const examId = await examRepository.upsertByCode(mapExam(entry));
     const file = path.join(CONTENT_DIR, 'questions', `${entry.id}.json`);
@@ -73,6 +85,11 @@ async function main() {
         explanations.map((e) => ({ code: e.code, fields: e.method === 'blind' && e.verified ? mapExplanation(e) : NO_EXPLANATION }))
       );
     }
+    const guidanceFile = path.join(CONTENT_DIR, 'guidance', `${entry.id}.json`);
+    if (existsSync(guidanceFile)) {
+      const guidance = GuidanceSchema.array().parse(JSON.parse(readFileSync(guidanceFile, 'utf8')));
+      guided += await questionRepository.refreshDraftContentByCode(guidance.map((g) => ({ code: g.code, fields: mapGuidance(g) })));
+    }
     const tagFile = path.join(CONTENT_DIR, 'tags', `${entry.id}.json`);
     if (existsSync(tagFile)) {
       const tags = SkillTagSchema.array().parse(JSON.parse(readFileSync(tagFile, 'utf8')));
@@ -84,6 +101,7 @@ async function main() {
   log(`questions: ${inserted} inserted, ${updated} refreshed (source fields only)`);
   log(`skill tags (T-009) applied to ${tagged} draft questions`);
   log(`explanations (blind-verified shown, guided held for review) applied to ${explained} draft questions`);
+  log(`"I'm stuck" guidance applied to ${guided} draft questions`);
   if (refreshDrafts) log(`--refresh-drafts: content re-applied to ${refreshed} draft questions`);
   const byStatus = await questionRepository.countByStatus();
   log(`in database by status: ${byStatus.map((s) => `${s._id}=${s.count}`).join(', ')}`);

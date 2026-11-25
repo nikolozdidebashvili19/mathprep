@@ -2,9 +2,11 @@ import { courseDayRepository } from '@/features/course/repository/course-day.rep
 import { courseRepository } from '@/features/course/repository/course.repository';
 import { CourseDayDocument } from '@/features/course/schema/course-day.schema';
 import { planCourse, skillStatus } from '@/features/course/service/planner';
-import { CoursePlan, CoursePreview, CourseView, DayView } from '@/features/course/types/course.types';
+import { studentLevel } from '@/features/course/service/student-level';
+import { CoursePlan, CoursePreview, CourseView, DayView, StudentLevel } from '@/features/course/types/course.types';
 import { CreateCourseType } from '@/features/course/validations/course.validation';
 import { diagnosticSessionRepository } from '@/features/diagnostic/repository/diagnostic-session.repository';
+import { DiagnosticSessionDocument } from '@/features/diagnostic/schema/diagnostic-session.schema';
 import { ensureMasteryService, getMasteryMapService, rebuildMasteryService } from '@/features/mastery/service/mastery.service';
 import { skillRepository } from '@/features/skill/repository/skill.repository';
 import { SkillDocument } from '@/features/skill/schema/skill.schema';
@@ -18,15 +20,23 @@ const UPCOMING_DAYS = 6;
 const OMITTED_PREVIEW = 6;
 
 
-type PlanningInputs = { skills: SkillDocument[]; mastery: Map<string, number>; observed: Set<string> };
+type PlanningInputs = { skills: SkillDocument[]; mastery: Map<string, number>; observed: Set<string>; level: StudentLevel };
+
+/** Share of the latest finished diagnostic answered correctly (quick: correct / questions; full: score / max). */
+export function diagnosticScoreShare(d: DiagnosticSessionDocument | undefined): number | null {
+  if (!d) return null;
+  if (d.kind === 'quick') return d.questionIds.length > 0 ? d.correctCount / d.questionIds.length : null;
+  return d.maxScore > 0 ? d.score / d.maxScore : null;
+}
 
 async function loadPlanningInputs(userId: string): Promise<PlanningInputs> {
-  const skills = await skillRepository.findAll();
+  const [skills, diagnostics] = await Promise.all([skillRepository.findAll(), diagnosticSessionRepository.findCompletedByUser(userId)]);
   const states = [...(await getMasteryMapService(userId, skills.map((s) => s.code))).values()];
   return {
     skills,
     mastery: new Map(states.map((m) => [m.skillCode, m.value])),
     observed: new Set(states.filter((m) => m.observations > 0).map((m) => m.skillCode)),
+    level: studentLevel(diagnosticScoreShare(diagnostics[0])),
   };
 }
 
@@ -36,6 +46,7 @@ function toPreview(plan: CoursePlan, months: number, skills: SkillDocument[]): C
   const needed = [...plan.skills.map((s) => s.code), ...plan.omitted];
   return {
     months,
+    level: plan.level,
     minutesPerDay: plan.minutesPerDay,
     skillCount: plan.skills.length,
     omittedCount: plan.omitted.length,
@@ -58,10 +69,10 @@ function toPreview(plan: CoursePlan, months: number, skills: SkillDocument[]): C
 export async function getCoursePreviewsService(userId: string): Promise<ServiceResult<CoursePreview[]>> {
   if ((await diagnosticSessionRepository.countCompletedByUser(userId)) === 0) return { data: { error: 'NO_DIAGNOSTIC' }, status: 409 };
   await ensureMasteryService(userId);
-  const { skills, mastery, observed } = await loadPlanningInputs(userId);
+  const { skills, mastery, observed, level } = await loadPlanningInputs(userId);
   const previews = COURSE_DURATION_MONTHS.flatMap((months) =>
     DAILY_MINUTES_OPTIONS.map((minutesPerDay) =>
-      toPreview(planCourse({ skills, mastery, observed, durationDays: months * DAYS_PER_MONTH, minutesPerDay }), months, skills)
+      toPreview(planCourse({ skills, mastery, observed, level, durationDays: months * DAYS_PER_MONTH, minutesPerDay }), months, skills)
     )
   );
   return { data: previews, status: 200 };
@@ -73,9 +84,9 @@ export async function createCourseService(userId: string, input: CreateCourseTyp
   if (await courseRepository.findActiveByUser(userId)) return { data: { error: 'COURSE_EXISTS' }, status: 409 };
 
   await rebuildMasteryService(userId);
-  const { skills, mastery, observed } = await loadPlanningInputs(userId);
+  const { skills, mastery, observed, level } = await loadPlanningInputs(userId);
   const minutesPerDay: DailyMinutes = input.minutesPerDay;
-  const plan = planCourse({ skills, mastery, observed, durationDays: input.months * DAYS_PER_MONTH, minutesPerDay });
+  const plan = planCourse({ skills, mastery, observed, level, durationDays: input.months * DAYS_PER_MONTH, minutesPerDay });
   const startDate = startOfUtcDay(new Date());
 
   const course = await courseRepository.create({
@@ -87,6 +98,7 @@ export async function createCourseService(userId: string, input: CreateCourseTyp
     omittedSkills: plan.omitted,
     coverage: plan.coverage,
     realistic: plan.realistic,
+    level: plan.level,
   });
   const courseId = course._id.toString();
   await courseDayRepository.insertMany(

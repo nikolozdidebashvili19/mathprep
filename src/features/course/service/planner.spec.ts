@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { planCourse } from '@/features/course/service/planner';
+import { prerequisiteDepths, studentLevel } from '@/features/course/service/student-level';
 import { PlannerSkillInput } from '@/features/course/types/course.types';
 
 const skill = (code: string, topic: string, examWeight: number, prerequisites: string[] = [], minPracticeMinutes = 40): PlannerSkillInput => ({
@@ -105,5 +106,56 @@ describe('planCourse', () => {
     const finishedFirst = days[0].blocks[1].skillCode;
     const revised = days.flatMap((d) => d.blocks.filter((b) => b.kind === 'revision' && b.skillCode === finishedFirst));
     expect(revised.length).toBeGreaterThan(0);
+  });
+});
+
+describe('student level', () => {
+  it('maps the diagnostic score share to a level; no diagnostic counts as a beginner', () => {
+    expect([null, 0, 0.39, 0.4, 0.74, 0.75, 1].map(studentLevel)).toEqual([
+      'beginner',
+      'beginner',
+      'beginner',
+      'intermediate',
+      'intermediate',
+      'advanced',
+      'advanced',
+    ]);
+  });
+
+  it('measures how basic each skill is by its longest prerequisite chain', () => {
+    expect(Object.fromEntries(prerequisiteDepths(skills))).toEqual({ N2: 0, A2: 1, A7: 2, G7: 0, L1: 0 });
+  });
+
+  // A beginner who got everything wrong on a quick check that only touched the deep skills K3 and A12.
+  const graph = [
+    skill('N1', 'N', 0.5, [], 200),
+    skill('N2', 'N', 0.8, ['N1']),
+    skill('A4', 'A', 1.0, ['N2']),
+    skill('A12', 'A', 2.5, ['A4', 'N2']),
+    skill('G2', 'G', 0.6),
+    skill('G4', 'G', 0.9, ['G2', 'N2']),
+    skill('K3', 'K', 2.2, ['G4']),
+  ];
+  const zero = new Map([
+    ['A12', 0.1],
+    ['K3', 0.1],
+  ]);
+  const observed = new Set(['A12', 'K3']);
+  const course = (level: 'beginner' | 'advanced') =>
+    planCourse({ skills: graph, mastery: zero, observed, durationDays: 150, minutesPerDay: 60, level });
+
+  it('a beginner starts from the very basics: untested prerequisites are taught first, foundations before anything deep', () => {
+    const order = course('beginner').skills.map((s) => s.code);
+    expect(order.slice(0, 2).sort()).toEqual(['G2', 'N1']);
+    for (const s of graph) for (const p of s.prerequisites) expect(order.indexOf(p)).toBeLessThan(order.indexOf(s.code));
+    expect(order.at(-1)).toBe('K3');
+    // Untested skills get full lessons, not a one-day check-in.
+    expect(course('beginner').skills.find((s) => s.code === 'N1')!.days).toBeGreaterThan(1);
+    expect(course('advanced').skills.find((s) => s.code === 'N1')!.days).toBe(1);
+  });
+
+  it('an advanced student keeps the weak-first plan (untested prerequisites get the benefit of the doubt)', () => {
+    const order = course('advanced').skills.map((s) => s.code);
+    expect(order.indexOf('A12')).toBeLessThan(order.indexOf('N1'));
   });
 });
