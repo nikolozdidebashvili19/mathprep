@@ -25,6 +25,12 @@ export const createPracticeStore = (initState: Partial<PracticeState> = {}) => {
       set((state) =>
         state.view ? { view: { ...state.view, items: state.view.items.map((item, i) => (i === index ? { ...item, hints } : item)) } } : {}
       ),
+    insertItem: (position, item) =>
+      set((state) => {
+        if (!state.view) return {};
+        const items = [...state.view.items.slice(0, position), item, ...state.view.items.slice(position)].map((it, i) => ({ ...it, index: i }));
+        return { view: { ...state.view, items } };
+      }),
     back: () => set((state) => ({ index: Math.max(0, state.index - 1), selected: null, feedback: null, error: null })),
     select: (selected) => set({ selected }),
     markAnswered: (index, answer, feedback) =>
@@ -36,7 +42,15 @@ export const createPracticeStore = (initState: Partial<PracticeState> = {}) => {
               ...state.view,
               items: state.view.items.map((item, i) =>
                 i === index
-                  ? { ...item, answered: true, answer, correct: feedback.correct, correctAnswer: feedback.correctAnswer, solution: feedback.solution }
+                  ? {
+                    ...item,
+                    answered: true,
+                    answer,
+                    correct: feedback.correct,
+                    correctAnswer: feedback.correctAnswer,
+                    solution: feedback.solution,
+                    reteach: feedback.reteach,
+                  }
                   : item
               ),
             },

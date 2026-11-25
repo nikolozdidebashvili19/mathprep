@@ -19,6 +19,7 @@
     "content:tag": "node --env-file=.env scripts/extract/tag-skills.ts",
     "content:repair-text": "node --env-file=.env scripts/extract/repair-text.ts",
     "content:explain": "node --env-file=.env scripts/extract/explain-questions.ts",
+    "content:guide": "node --env-file=.env scripts/extract/guide-questions.ts",
     "content:weights": "node scripts/extract/compute-skill-weights.ts",
     "seed": "node --env-file=.env --import tsx scripts/seed/seed.ts"
   },

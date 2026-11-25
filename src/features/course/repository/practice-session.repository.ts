@@ -41,13 +41,27 @@ export const practiceSessionRepository = {
     return result.matchedCount;
   },
 
-  /** Reveals one more hint while the item is unanswered and hints remain (atomic; 0 = nothing changed). */
-  async incrementHints(sessionId: string, itemIndex: number, max: number): Promise<number> {
+  /**
+   * Reveals the next "I'm stuck" rung while the item is unanswered and rungs remain (atomic; 0 = nothing changed).
+   * `hintCost` real hints are added for it (0 for teaching rungs).
+   */
+  async revealGuideStep(sessionId: string, itemIndex: number, expectedRevealed: number, hintCost: number): Promise<number> {
     await mongo.connect();
     const path = `items.${itemIndex}`;
+    const revealed = expectedRevealed === 0 ? { $in: [0, null] } : expectedRevealed;
     const result = await PracticeSessionModel.updateOne(
-      { _id: sessionId, status: 'in_progress', [`${path}.answeredAt`]: { $exists: false }, [`${path}.hintsUsed`]: { $not: { $gte: max } } },
-      { $inc: { [`${path}.hintsUsed`]: 1 } }
+      { _id: sessionId, status: 'in_progress', [`${path}.answeredAt`]: { $exists: false }, [`${path}.guideStepsUsed`]: revealed },
+      { $set: { [`${path}.guideStepsUsed`]: expectedRevealed + 1 }, $inc: { [`${path}.hintsUsed`]: hintCost } }
+    ).exec();
+    return result.matchedCount;
+  },
+
+  /** Inserts a second-chance question right after the item just answered (only while the session runs). */
+  async insertItem(sessionId: string, position: number, item: NewItem & { secondChance: boolean }): Promise<number> {
+    await mongo.connect();
+    const result = await PracticeSessionModel.updateOne(
+      { _id: sessionId, status: 'in_progress' },
+      { $push: { items: { $each: [{ ...item, skillCode: item.skillCode ?? undefined, questionId: item.questionId ?? undefined }], $position: position } } }
     ).exec();
     return result.matchedCount;
   },

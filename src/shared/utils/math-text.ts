@@ -21,3 +21,12 @@ export function splitMathSegments(source: string): MathSegment[] {
   }
   return segments;
 }
+
+export type BoldSegment = { bold: boolean; value: string };
+
+/** Splits plain text on **bold** markers (used for key terms in lessons). An unmatched "**" stays as text. */
+export function splitBold(source: string): BoldSegment[] {
+  const parts = source.split('**');
+  if (parts.length % 2 === 0) return [{ bold: false, value: source }];
+  return parts.flatMap((value, i) => (value ? [{ bold: i % 2 === 1, value }] : []));
+}

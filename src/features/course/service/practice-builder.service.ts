@@ -1,10 +1,11 @@
 import { attemptRepository } from '@/features/attempt/repository/attempt.repository';
-import { PickableQuestion, pickQuestions } from '@/features/course/service/practice-picker';
-import { BlockKind } from '@/features/course/types/course.types';
+import { PickableQuestion, pickQuestions, pickSecondChance } from '@/features/course/service/practice-picker';
+import { BlockKind, StudentLevel } from '@/features/course/types/course.types';
 import { examRepository } from '@/features/exam/repository/exam.repository';
 import { getMasteryMapService } from '@/features/mastery/service/mastery.service';
 import { questionRepository } from '@/features/question/repository/question.repository';
 import { QuestionDocument } from '@/features/question/schema/question.schema';
+import { BEGINNER_START_MASTERY } from '@/shared/const/course.const';
 import { MASTERY_PRIOR } from '@/shared/const/domain.const';
 import { hasBrokenLetters } from '@/shared/utils/text-quality';
 
@@ -29,7 +30,11 @@ const toPickable = (q: QuestionDocument): PickableQuestion => ({
 /** Turns the day's blocks into session items: one per theory card, one per picked question. */
 type DayBlock = { kind: BlockKind; skillCode?: string | null; minutes: number };
 
-export async function buildDayItemsService(userId: string, dayIndex: number, blocks: DayBlock[], courseSkills: string[]) {
+/**
+ * `level` = the course's student level: for a beginner, a skill with no evidence yet is practised as if mastery
+ * were BEGINNER_START_MASTERY, so the ramp starts at the easiest questions instead of exam level.
+ */
+export async function buildDayItemsService(userId: string, dayIndex: number, blocks: DayBlock[], courseSkills: string[], level: StudentLevel = 'advanced') {
   const [pool, outcomes, mastery] = await Promise.all([
     loadPracticePool(),
     attemptRepository.findOutcomesByUser(userId),
@@ -38,7 +43,11 @@ export async function buildDayItemsService(userId: string, dayIndex: number, blo
   const pickable = pool.map(toPickable);
   const seen = new Set(outcomes.map((o) => o.questionId.toString()));
   const wrong = new Set(outcomes.filter((o) => o.points < o.maxPoints).map((o) => o.questionId.toString()));
-  const masteryOf = (code: string) => mastery.get(code)?.value ?? MASTERY_PRIOR;
+  const masteryOf = (code: string) => {
+    const state = mastery.get(code);
+    if (level === 'beginner' && !state?.observations) return BEGINNER_START_MASTERY;
+    return state?.value ?? MASTERY_PRIOR;
+  };
   const avgMastery = courseSkills.length ? courseSkills.reduce((sum, c) => sum + masteryOf(c), 0) / courseSkills.length : MASTERY_PRIOR;
   const usedToday = new Set<string>();
   const items: NewItem[] = [];
@@ -69,3 +78,21 @@ export async function buildDayItemsService(userId: string, dayIndex: number, blo
   return items;
 }
 
+
+/** Another question on the failed question's skill (easier or equal), or null when the pool has none left. */
+export async function pickSecondChanceService(
+  userId: string,
+  failed: QuestionDocument,
+  inSession: string[],
+  seed: number
+): Promise<string | null> {
+  if (!failed.primarySkill) return null;
+  const [pool, outcomes] = await Promise.all([loadPracticePool(), attemptRepository.findOutcomesByUser(userId)]);
+  return pickSecondChance({
+    pool: pool.map(toPickable),
+    failed: { skill: failed.primarySkill, difficulty: failed.difficulty },
+    exclude: new Set(inSession),
+    seen: new Set(outcomes.map((o) => o.questionId.toString())),
+    seed,
+  });
+}

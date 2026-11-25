@@ -1,5 +1,8 @@
 import { TutorMessageModel } from '@/features/tutor/schema/tutor-message.schema';
+import { TUTOR_MODES } from '@/shared/const/tutor.const';
 import { mongo } from '@/shared/lib/mongo';
+
+type TutorMode = (typeof TUTOR_MODES)[number];
 
 type NewTutorMessage = {
   userId: string;
@@ -7,6 +10,7 @@ type NewTutorMessage = {
   sessionId: string;
   message: string;
   normalized: string;
+  mode: TutorMode;
   reply: string;
   cached: boolean;
   provider?: string;
@@ -20,9 +24,13 @@ export const tutorMessageRepository = {
     return TutorMessageModel.countDocuments({ userId, cached: false, createdAt: { $gte: since } }).exec();
   },
 
-  async findReply(questionId: string, normalized: string): Promise<string | null> {
+  /** Cached reply for the same first message on the same question, in the same mode (older rows are "explain"). */
+  async findReply(questionId: string, normalized: string, mode: TutorMode): Promise<string | null> {
     await mongo.connect();
-    const doc = await TutorMessageModel.findOne({ questionId, normalized, cached: false }, { reply: 1 }).lean<{ reply: string }>().exec();
+    const modeFilter = mode === 'explain' ? { $in: ['explain', null] } : mode;
+    const doc = await TutorMessageModel.findOne({ questionId, normalized, cached: false, mode: modeFilter }, { reply: 1 })
+      .lean<{ reply: string }>()
+      .exec();
     return doc?.reply ?? null;
   },
 

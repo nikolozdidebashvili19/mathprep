@@ -8,7 +8,7 @@ vi.mock('@/features/course/repository/course-day.repository', () => ({
   courseDayRepository: { insertMany: vi.fn(), findRange: vi.fn() },
 }));
 vi.mock('@/features/diagnostic/repository/diagnostic-session.repository', () => ({
-  diagnosticSessionRepository: { countCompletedByUser: vi.fn() },
+  diagnosticSessionRepository: { countCompletedByUser: vi.fn(), findCompletedByUser: vi.fn().mockResolvedValue([]) },
 }));
 vi.mock('@/features/mastery/service/mastery.service', () => ({
   ensureMasteryService: vi.fn(),

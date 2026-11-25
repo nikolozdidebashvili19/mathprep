@@ -3,6 +3,7 @@
  */
 import type { ExamIndexEntry } from '../extract/content-index';
 import type { Explanation } from '../extract/explanation';
+import type { Guidance } from '../extract/guidance';
 import type { QuestionImport } from '../extract/question-import';
 import type { SkillTag } from '../extract/skill-tag';
 
@@ -87,6 +88,11 @@ export function mapQuestion(q: QuestionImport, examObjectId: string, year: numbe
 /** Verified explanation → question fields (shown to students only after they answer). */
 export function mapExplanation(e: Explanation) {
   return { solutionSteps: e.steps, commonMistakes: e.commonMistake ? [e.commonMistake] : [] };
+}
+
+/** "I'm stuck" guidance → question field (shown rung by rung before answering; never contains the answer). */
+export function mapGuidance(g: Guidance) {
+  return { guidance: { restate: g.restate, plan: g.plan, hints: g.hints } };
 }
 
 /** T-009 suggestion → question fields. Applied to `draft` questions only; approval happens in admin review (T-011). */

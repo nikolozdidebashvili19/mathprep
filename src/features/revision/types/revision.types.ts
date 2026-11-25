@@ -1,4 +1,4 @@
-import { TheoryCardView } from '@/features/course/types/course.types';
+import { LessonView, TheoryCardView } from '@/features/course/types/course.types';
 
 export type LearntSkill = { code: string; nameKa: string; mastery: number | null };
 
@@ -15,7 +15,9 @@ export type TheoryReviewView = {
   code: string;
   skillName: string;
   prerequisiteNames: string[];
-  theory: TheoryCardView;
+  /** The full lesson when written, otherwise the short theory card (one of the two is always set). */
+  lesson: LessonView | null;
+  theory: TheoryCardView | null;
   mastery: number | null;
   /** Neighbours in the learnt list, so the student can flip through cards. */
   previous: { code: string; nameKa: string } | null;

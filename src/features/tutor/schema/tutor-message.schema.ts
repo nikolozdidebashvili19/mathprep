@@ -1,5 +1,7 @@
 import mongoose, { Schema, InferSchemaType } from 'mongoose';
 
+import { TUTOR_MODES } from '@/shared/const/tutor.const';
+
 /** One question a student asked the AI helper about a practice question, and the reply (also the reply cache). */
 const TutorMessageSchema = new Schema(
   {
@@ -7,6 +9,8 @@ const TutorMessageSchema = new Schema(
     questionId: { type: Schema.Types.ObjectId, ref: 'Question', required: true },
     sessionId: { type: Schema.Types.ObjectId, ref: 'PracticeSession', required: true },
     message: { type: String, required: true },
+    /** Replies are cached per mode: an "explain" reply may contain the answer, a "stuck" one never should. */
+    mode: { type: String, enum: [...TUTOR_MODES], default: 'explain' },
     /** Lower-case, single-spaced first message: reused for the same question at zero tokens. */
     normalized: { type: String, required: true },
     reply: { type: String, required: true },

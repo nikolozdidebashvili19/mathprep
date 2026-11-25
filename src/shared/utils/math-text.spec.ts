@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { splitMathSegments } from '@/shared/utils/math-text';
+import { splitBold, splitMathSegments } from '@/shared/utils/math-text';
 
 describe('splitMathSegments', () => {
   it('splits prose and inline math', () => {
@@ -27,5 +27,16 @@ describe('splitMathSegments', () => {
       { kind: 'text', value: 'a ' },
       { kind: 'text', value: ' b' },
     ]);
+  });
+});
+
+describe('splitBold', () => {
+  it('marks **bold** parts and keeps unmatched markers as text', () => {
+    expect(splitBold('ეს არის **უსგ**, არა უსჯ')).toEqual([
+      { bold: false, value: 'ეს არის ' },
+      { bold: true, value: 'უსგ' },
+      { bold: false, value: ', არა უსჯ' },
+    ]);
+    expect(splitBold('a ** b')).toEqual([{ bold: false, value: 'a ** b' }]);
   });
 });

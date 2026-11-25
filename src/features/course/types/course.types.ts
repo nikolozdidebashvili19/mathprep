@@ -1,11 +1,15 @@
 import { DiagnosticQuestion } from '@/features/diagnostic/types/diagnostic.types';
+import { LessonType } from '@/features/skill/validations/lesson.validation';
 import { TheoryCardType } from '@/features/skill/validations/theory.validation';
-import { DailyMinutes } from '@/shared/const/course.const';
+import { DailyMinutes, STUCK_STEP_KINDS, STUDENT_LEVELS } from '@/shared/const/course.const';
 import { SESSION_BLOCK_KINDS } from '@/shared/const/domain.const';
 
 export type BlockKind = (typeof SESSION_BLOCK_KINDS)[number];
 
 /** What the planner needs to know about a skill (from the skill graph). */
+/** How much the student already knows, from the diagnostic score (STUDENT_LEVELS). */
+export type StudentLevel = (typeof STUDENT_LEVELS)[number];
+
 export type PlannerSkillInput = {
   code: string;
   topic: string;
@@ -27,6 +31,7 @@ export type PlannedSkill = { code: string; topic: string; gap: number; priority:
 export type CoursePlan = {
   durationDays: number;
   minutesPerDay: DailyMinutes;
+  level: StudentLevel;
   learningDays: number;
   /** Selected skills in teaching order. */
   skills: PlannedSkill[];
@@ -41,6 +46,7 @@ export type CoursePlan = {
 /** One duration × daily-time option on the setup screen. */
 export type CoursePreview = {
   months: number;
+  level: StudentLevel;
   minutesPerDay: DailyMinutes;
   skillCount: number;
   omittedCount: number;
@@ -82,18 +88,30 @@ export type PracticeItemView = {
   /** Theory items: names of the skill's prerequisites, the card (null until written) and the student's mastery. */
   prerequisiteNames: string[];
   theory: TheoryCardView | null;
+  /** The full lesson, when one is written (preferred over the short theory card). */
+  lesson: LessonView | null;
+  /** Question items, once answered: the simpler second explanation of the question's skill. */
+  reteach: LessonView['reteach'] | null;
   mastery: number | null;
   question: DiagnosticQuestion | null;
   answered: boolean;
   answer: string | null;
   correct: boolean | null;
   correctAnswer: string | null;
-  /** Hints revealed so far (from the server, one at a time) and how many exist. */
-  hints: string[];
+  /** "I'm stuck" rungs revealed so far (from the server, one at a time) and how many exist. */
+  hints: StuckStep[];
   hintsTotal: number;
+  /** Inserted after a wrong answer: an easier question on the same skill. */
+  secondChance: boolean;
   /** Step-by-step explanation; only after the item is answered (it would give the answer away). */
   solution: QuestionSolution | null;
 };
+
+/** One rung of the "I'm stuck" ladder (what is asked → steps → hints → walkthrough). */
+export type StuckStep = { kind: (typeof STUCK_STEP_KINDS)[number]; text: string; items: string[] };
+
+/** A full lesson as the browser sees it (content/lessons/, validated by LessonSchema). */
+export type LessonView = Omit<LessonType, 'code' | 'status'>;
 
 /** Stored explanation of a question (generated once offline, verified against the answer key). */
 export type QuestionSolution = { steps: string[]; commonMistake: string | null };
@@ -111,11 +129,19 @@ export type PracticeAnswerResult = {
   correct: boolean;
   correctAnswer: string | null;
   solution: QuestionSolution | null;
+  reteach: LessonView['reteach'] | null;
   /** Set when this answer finished the day. */
   summary: { correctCount: number; questionCount: number } | null;
+  /** Set after a wrong answer: the next item, already inserted into the session. */
+  secondChance: PracticeItemView | null;
 };
 
-export type PracticeFeedback = { correct: boolean; correctAnswer: string | null; solution: QuestionSolution | null };
+export type PracticeFeedback = {
+  correct: boolean;
+  correctAnswer: string | null;
+  solution: QuestionSolution | null;
+  reteach: LessonView['reteach'] | null;
+};
 
 export type PracticeState = {
   view: PracticeSessionView | null;
@@ -133,7 +159,9 @@ export type PracticeActions = {
   markAnswered: (index: number, answer: string, feedback: PracticeFeedback) => void;
   next: () => void;
   back: () => void;
-  setHints: (index: number, hints: string[]) => void;
+  setHints: (index: number, hints: StuckStep[]) => void;
+  /** Adds a second-chance question at `position` (already saved on the server) and renumbers the items. */
+  insertItem: (position: number, item: PracticeItemView) => void;
   setBusy: (busy: boolean) => void;
   setError: (error: string | null) => void;
   setSummary: (summary: PracticeAnswerResult['summary']) => void;

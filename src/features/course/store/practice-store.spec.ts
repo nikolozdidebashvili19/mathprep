@@ -10,6 +10,8 @@ const item = (index: number, answered: boolean): PracticeItemView => ({
   skillName: 'წრფივი განტოლებები',
   prerequisiteNames: [],
   theory: null,
+  lesson: null,
+  reteach: null,
   mastery: null,
   question: null,
   answered,
@@ -19,6 +21,7 @@ const item = (index: number, answered: boolean): PracticeItemView => ({
   solution: null,
   hints: [],
   hintsTotal: 0,
+  secondChance: false,
 });
 
 const view = (answered: boolean[], completed = false): PracticeSessionView => ({
@@ -52,5 +55,16 @@ describe('practice store', () => {
     expect(store.getState().index).toBe(0);
     store.getState().next();
     expect(store.getState().index).toBe(1);
+  });
+});
+
+describe('insertItem (second chance)', () => {
+  it('puts the new question right after the answered one and renumbers the rest', () => {
+    const store = createPracticeStore();
+    store.getState().startPractice(view([true, false]));
+    store.getState().insertItem(1, { ...item(99, false), secondChance: true });
+    const items = store.getState().view!.items;
+    expect(items.map((i) => i.index)).toEqual([0, 1, 2]);
+    expect(items.map((i) => i.secondChance)).toEqual([false, true, false]);
   });
 });

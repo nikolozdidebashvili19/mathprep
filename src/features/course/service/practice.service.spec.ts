@@ -12,7 +12,8 @@ vi.mock('@/features/course/repository/practice-session.repository', () => ({
     create: vi.fn(),
     recordAnswer: vi.fn(),
     complete: vi.fn(),
-    incrementHints: vi.fn(),
+    revealGuideStep: vi.fn(),
+    insertItem: vi.fn(),
   },
 }));
 vi.mock('@/features/attempt/repository/attempt.repository', () => ({
@@ -162,7 +163,10 @@ describe('answerPracticeService', () => {
       correct: false,
       correctAnswer: 'ა',
       solution: { steps: ['ნაბიჯი 1', 'ნაბიჯი 2', 'პასუხი ა'], commonMistake: null },
+      reteach: null,
       summary: { correctCount: 0, questionCount: 1 },
+      // No easier A4 question left in the pool, so no second chance and the day is done.
+      secondChance: null,
     });
     expect(vi.mocked(attemptRepository.insertMany).mock.calls[0][0][0]).toMatchObject({ context: 'practice', points: 0, maxPoints: 1 });
     expect(recordPracticeMasteryService).toHaveBeenCalledWith(USER.toString(), expect.objectContaining({ primarySkill: 'A4' }), 0, 1);
@@ -176,21 +180,56 @@ describe('answerPracticeService', () => {
   });
 });
 
+describe('second chance', () => {
+  // Missed difficulty 5 → ideal is 4: Q1 (difficulty 2) is closer than the difficulty-1 question.
+  it('after a wrong answer inserts an easier question on the same skill right after it, and the day goes on', async () => {
+    const Q3 = new Types.ObjectId();
+    const easy = { ...question(Q3, 1), code: 'Q-easy' };
+    vi.mocked(questionRepository.findQuickCheckPool).mockResolvedValue([question(Q1, 2), question(Q2, 5), easy]);
+    vi.mocked(questionRepository.findByIds).mockImplementation(async (ids) => [question(Q1, 2), question(Q2, 5), easy].filter((q) => ids.includes(q._id.toString())));
+    const before = sessionWith([{ kind: 'theory', answeredAt: new Date() }, { questionId: Q2 }]);
+    const after = sessionWith([{ kind: 'theory', answeredAt: new Date() }, { questionId: Q2, answeredAt: new Date(), correct: false }, { questionId: Q1 }]);
+    vi.mocked(practiceSessionRepository.findById).mockResolvedValueOnce(before).mockResolvedValueOnce(after);
+    vi.mocked(practiceSessionRepository.recordAnswer).mockResolvedValue(1);
+    vi.mocked(practiceSessionRepository.insertItem).mockResolvedValue(1);
+
+    const res = (await answerPracticeService(USER.toString(), { sessionId: SESSION.toString(), itemIndex: 1, answer: 'ბ' })).data as PracticeAnswerResult;
+
+    expect(practiceSessionRepository.insertItem).toHaveBeenCalledWith(SESSION.toString(), 2, expect.objectContaining({ questionId: Q1.toString(), secondChance: true }));
+    expect(res.secondChance).toMatchObject({ index: 2, answered: false, correctAnswer: null });
+    expect(res.summary).toBeNull();
+    expect(practiceSessionRepository.complete).not.toHaveBeenCalled();
+  });
+});
+
 describe('hintPracticeService', () => {
   const input = { sessionId: SESSION.toString(), itemIndex: 0 };
 
-  it('reveals the next hint (solution steps, never the last one)', async () => {
+  const hint = (text: string) => ({ kind: 'hint', text, items: [] });
+
+  it('without guidance: solution steps one by one as hints, then the full solution last', async () => {
     vi.mocked(practiceSessionRepository.findById).mockResolvedValue(sessionWith([{ questionId: Q1, hintsUsed: 1 }]));
-    vi.mocked(practiceSessionRepository.incrementHints).mockResolvedValue(1);
+    vi.mocked(practiceSessionRepository.revealGuideStep).mockResolvedValue(1);
     const res = await hintPracticeService(USER.toString(), input);
-    expect(res.data).toEqual({ hints: ['ნაბიჯი 1', 'ნაბიჯი 2'], hintsTotal: 2 });
-    expect(practiceSessionRepository.incrementHints).toHaveBeenCalledWith(SESSION.toString(), 0, 2);
+    expect(res.data).toEqual({ hints: [hint('ნაბიჯი 1'), hint('ნაბიჯი 2')], hintsTotal: 3 });
+    expect(practiceSessionRepository.revealGuideStep).toHaveBeenCalledWith(SESSION.toString(), 0, 1, 1);
   });
 
-  it('refuses when no hint is left or the question is answered', async () => {
-    vi.mocked(practiceSessionRepository.findById).mockResolvedValue(sessionWith([{ questionId: Q1, hintsUsed: 2 }]));
-    vi.mocked(practiceSessionRepository.incrementHints).mockResolvedValue(0);
+  it('with guidance: what is asked and the plan come first and are free, then hints', async () => {
+    const guided = { ...question(Q1, 2), guidance: { restate: 'რას ეძებენ', plan: ['p1', 'p2'], hints: ['h1'] } };
+    vi.mocked(questionRepository.findByIds).mockResolvedValue([guided]);
+    vi.mocked(practiceSessionRepository.findById).mockResolvedValue(sessionWith([{ questionId: Q1 }]));
+    vi.mocked(practiceSessionRepository.revealGuideStep).mockResolvedValue(1);
+    const res = await hintPracticeService(USER.toString(), input);
+    // restate, plan, one hint, walkthrough, full solution = 5 rungs (no lesson in this test, so no theory/example).
+    expect(res.data).toEqual({ hints: [{ kind: 'restate', text: 'რას ეძებენ', items: [] }], hintsTotal: 5 });
+    expect(practiceSessionRepository.revealGuideStep).toHaveBeenCalledWith(SESSION.toString(), 0, 0, 0);
+  });
+
+  it('refuses when no rung is left', async () => {
+    vi.mocked(practiceSessionRepository.findById).mockResolvedValue(sessionWith([{ questionId: Q1, hintsUsed: 3 }]));
     expect((await hintPracticeService(USER.toString(), input)).data).toEqual({ error: 'NO_MORE_HINTS' });
+    expect(practiceSessionRepository.revealGuideStep).not.toHaveBeenCalled();
   });
 
   it('counts a hinted answer less toward mastery', async () => {

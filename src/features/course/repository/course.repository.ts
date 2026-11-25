@@ -1,4 +1,5 @@
 import { CourseDocument, CourseModel } from '@/features/course/schema/course.schema';
+import { StudentLevel } from '@/features/course/types/course.types';
 import { mongo } from '@/shared/lib/mongo';
 
 type NewCourse = {
@@ -10,6 +11,7 @@ type NewCourse = {
   omittedSkills: string[];
   coverage: number;
   realistic: boolean;
+  level: StudentLevel;
 };
 
 export const courseRepository = {

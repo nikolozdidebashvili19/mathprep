@@ -1,5 +1,5 @@
 import { practiceSessionRepository } from '@/features/course/repository/practice-session.repository';
-import { toTheoryView } from '@/features/course/service/practice.service';
+import { toLessonView, toTheoryView } from '@/features/course/service/practice-views';
 import { masteryRepository } from '@/features/mastery/repository/mastery.repository';
 import { RevisionLibraryView, TheoryReviewView } from '@/features/revision/types/revision.types';
 import { skillRepository } from '@/features/skill/repository/skill.repository';
@@ -20,7 +20,7 @@ async function learntSkills(userId: string): Promise<{ learnt: SkillDocument[]; 
   const read = new Set(sessions.flatMap((s) => s.items.flatMap((i) => (i.kind === 'theory' && i.answeredAt && i.skillCode ? [i.skillCode] : []))));
   const topicOrder = new Map<string, number>(TOPICS.map((t, i) => [t.code, i]));
   const learnt = skills
-    .filter((s) => s.theoryCard && read.has(s.code))
+    .filter((s) => (s.theoryCard || s.lesson) && read.has(s.code))
     .sort((a, b) => (topicOrder.get(a.topic) ?? 99) - (topicOrder.get(b.topic) ?? 99) || a.code.localeCompare(b.code));
   return { learnt, all: skills, mastery: new Map(mastery.map((m) => [m.skillCode, m.value])) };
 }
@@ -32,7 +32,7 @@ export async function getRevisionLibraryService(userId: string): Promise<Revisio
     nameKa: t.nameKa,
     skills: learnt.filter((s) => s.topic === t.code).map((s) => ({ code: s.code, nameKa: s.nameKa, mastery: mastery.get(s.code) ?? null })),
   })).filter((t) => t.skills.length > 0);
-  return { topics, learntCount: learnt.length, cardCount: all.filter((s) => s.theoryCard).length };
+  return { topics, learntCount: learnt.length, cardCount: all.filter((s) => s.theoryCard || s.lesson).length };
 }
 
 /** One learnt card to re-read. A card the student has not reached yet is not opened here (the course teaches it first). */
@@ -41,7 +41,8 @@ export async function getTheoryReviewService(userId: string, code: string): Prom
   const index = learnt.findIndex((s) => s.code === code);
   const skill = learnt[index];
   const theory = toTheoryView(skill);
-  if (!skill || !theory) return { data: { error: 'NOT_FOUND' }, status: 404 };
+  const lesson = toLessonView(skill);
+  if (!skill || (!theory && !lesson)) return { data: { error: 'NOT_FOUND' }, status: 404 };
   const nameOf = new Map(all.map((s) => [s.code, s.nameKa]));
   const neighbour = (s: SkillDocument | undefined) => (s ? { code: s.code, nameKa: s.nameKa } : null);
   return {
@@ -49,6 +50,7 @@ export async function getTheoryReviewService(userId: string, code: string): Prom
       code: skill.code,
       skillName: skill.nameKa,
       prerequisiteNames: skill.prerequisites.map((c) => nameOf.get(c) ?? c),
+      lesson,
       theory,
       mastery: mastery.get(skill.code) ?? null,
       previous: neighbour(learnt[index - 1]),
