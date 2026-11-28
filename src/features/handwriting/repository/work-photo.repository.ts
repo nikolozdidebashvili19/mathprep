@@ -1,7 +1,7 @@
 import { mongo as mongoDriver, Types } from 'mongoose';
 
 import { WorkPhotoDocument, WorkPhotoModel } from '@/features/handwriting/schema/work-photo.schema';
-import { CompletedWorkAnalysis, FailedWorkAnalysis } from '@/features/handwriting/types/handwriting.types';
+import { CompletedPracticeAnalysis, CompletedWorkAnalysis, FailedWorkAnalysis, PracticePhotoMode } from '@/features/handwriting/types/handwriting.types';
 import { mongo } from '@/shared/lib/mongo';
 
 type NewWorkPhoto = { userId: string; sessionId: string; questionId: string; mimeType: string; data: Buffer };
@@ -30,6 +30,42 @@ export const workPhotoRepository = {
   },
 
   /**
+   * Practice photo: one per question per practice session; a retake replaces the image, resets the analysis and
+   * counts one more upload (capped per question by the service).
+   */
+  async upsertPractice(photo: NewWorkPhoto & { mode: PracticePhotoMode }): Promise<{ id: string; uploads: number }> {
+    await mongo.connect();
+    const doc = await WorkPhotoModel.findOneAndUpdate(
+      { sessionId: photo.sessionId, questionId: photo.questionId },
+      {
+        $set: {
+          userId: new Types.ObjectId(photo.userId),
+          context: 'practice',
+          mode: photo.mode,
+          mimeType: photo.mimeType,
+          size: photo.data.length,
+          data: photo.data,
+          analysis: { status: 'pending', mistakes: [], skillsShown: [] },
+        },
+        $inc: { uploads: 1 },
+      },
+      { upsert: true, returnDocument: 'after', projection: { _id: 1, uploads: 1 } }
+    ).exec();
+    return { id: doc._id.toString(), uploads: doc.uploads };
+  },
+
+  /** Practice photos (distinct questions) the student sent since `since`: the daily limit. */
+  async countPracticeSince(userId: string, since: Date): Promise<number> {
+    await mongo.connect();
+    return WorkPhotoModel.countDocuments({ userId: new Types.ObjectId(userId), context: 'practice', updatedAt: { $gte: since } }).exec();
+  },
+
+  async findById(id: string): Promise<WorkPhotoDocument | null> {
+    await mongo.connect();
+    return WorkPhotoModel.findById(id, WITHOUT_DATA).lean<WorkPhotoDocument>().exec();
+  },
+
+  /**
    * The image as a real Buffer. MongoDB returns stored bytes as a BSON Binary, and Buffer.from(binary) silently
    * yields an empty buffer, so the bytes are taken from binary.buffer.
    */
@@ -51,7 +87,7 @@ export const workPhotoRepository = {
     return WorkPhotoModel.findOne({ sessionId, questionId }, WITHOUT_DATA).lean<WorkPhotoDocument>().exec();
   },
 
-  async setAnalysis(id: string, analysis: CompletedWorkAnalysis | FailedWorkAnalysis): Promise<void> {
+  async setAnalysis(id: string, analysis: CompletedWorkAnalysis | CompletedPracticeAnalysis | FailedWorkAnalysis): Promise<void> {
     await mongo.connect();
     await WorkPhotoModel.updateOne({ _id: id }, { $set: { analysis } }).exec();
   },

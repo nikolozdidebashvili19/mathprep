@@ -21,16 +21,27 @@ export const createPracticeStore = (initState: Partial<PracticeState> = {}) => {
       const firstOpen = view.items.findIndex((i) => !i.answered);
       set({ ...DEFAULT_STATE, view, index: view.completed || firstOpen === -1 ? 0 : firstOpen });
     },
-    setHints: (index, hints) =>
+    setHints: (index, hints, stage) =>
       set((state) =>
-        state.view ? { view: { ...state.view, items: state.view.items.map((item, i) => (i === index ? { ...item, hints } : item)) } } : {}
+        state.view
+          ? { view: { ...state.view, items: state.view.items.map((item, i) => (i === index ? { ...item, hints, stuckStage: stage } : item)) } }
+          : {}
       ),
-    insertItem: (position, item) =>
+    // Inserting at the current step (reinforcement) moves the student onto the first new question.
+    insertItems: (position, added) =>
       set((state) => {
-        if (!state.view) return {};
-        const items = [...state.view.items.slice(0, position), item, ...state.view.items.slice(position)].map((it, i) => ({ ...it, index: i }));
-        return { view: { ...state.view, items } };
+        if (!state.view || added.length === 0) return {};
+        const items = [...state.view.items.slice(0, position), ...added, ...state.view.items.slice(position)].map((it, i) => ({ ...it, index: i }));
+        return { view: { ...state.view, items }, ...(position <= state.index ? { selected: null, feedback: null, error: null } : {}) };
       }),
+    replaceItem: (index, item) =>
+      set((state) =>
+        state.view ? { view: { ...state.view, items: state.view.items.map((it, i) => (i === index ? { ...item, index } : it)) } } : {}
+      ),
+    setWorkPhoto: (index, workPhoto) =>
+      set((state) =>
+        state.view ? { view: { ...state.view, items: state.view.items.map((it, i) => (i === index ? { ...it, workPhoto } : it)) } } : {}
+      ),
     back: () => set((state) => ({ index: Math.max(0, state.index - 1), selected: null, feedback: null, error: null })),
     select: (selected) => set({ selected }),
     markAnswered: (index, answer, feedback) =>

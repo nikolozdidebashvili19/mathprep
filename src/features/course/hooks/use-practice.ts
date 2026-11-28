@@ -1,13 +1,13 @@
 'use client';
 import { usePracticeStore } from '@/features/course/hooks/usePracticeStore';
-import { PracticeAnswerResult, StuckStep } from '@/features/course/types/course.types';
+import { PracticeAnswerResult, PracticeHintResult } from '@/features/course/types/course.types';
 import { HINT_COPY, PRACTICE_COPY } from '@/shared/const/course.const';
 import { http } from '@/shared/lib/http';
 import { sound } from '@/shared/lib/sound';
 
 /** Daily-session actions: check an answer (instant feedback), mark a theory card read, continue, go back. */
 export const usePractice = () => {
-  const { view, index, selected, feedback, markAnswered, next, back, setHints, setBusy, setError, setSummary, insertItem } = usePracticeStore();
+  const { view, index, selected, feedback, markAnswered, next, back, setHints, setBusy, setError, setSummary, insertItems, replaceItem } = usePracticeStore();
 
   const send = async (answer: string) => {
     if (!view?.id) return null;
@@ -30,9 +30,17 @@ export const usePractice = () => {
     const result = await send(selected);
     if (!result) return;
     sound.play(result.correct ? 'correct' : 'wrong');
-    markAnswered(index, selected, { correct: result.correct, correctAnswer: result.correctAnswer, solution: result.solution, reteach: result.reteach });
+    markAnswered(index, selected, {
+      correct: result.correct,
+      correctAnswer: result.correctAnswer,
+      solution: result.solution,
+      reteach: result.reteach,
+      levelUp: result.adjusted?.direction === 'up',
+    });
     // A wrong answer brings an easier question on the same skill right after this one.
-    if (result.secondChance) insertItem(index + 1, result.secondChance);
+    if (result.secondChance) insertItems(index + 1, [result.secondChance]);
+    // Adaptive difficulty: the block's next question was swapped (its index already counts the second chance).
+    if (result.adjusted) replaceItem(result.adjusted.index, result.adjusted.item);
   };
 
   const gotIt = async () => {
@@ -43,14 +51,18 @@ export const usePractice = () => {
     }
   };
 
-  /** "I'm stuck": reveals the next rung (the server decides what it is; real hints lower how much the answer counts). */
+  /**
+   * "I'm stuck": reveals the next stage (the server decides what it holds; real hints lower how much the answer
+   * counts). Stage 4 inserts easier questions before this one, and the student moves onto the first of them.
+   */
   const requestHint = async () => {
     if (!view?.id) return;
     setBusy(true);
     setError(null);
     try {
-      const result = await http.post<{ hints: StuckStep[]; hintsTotal: number }>('/course/practice/hint', { sessionId: view.id, itemIndex: index });
-      setHints(index, result.hints);
+      const result = await http.post<PracticeHintResult>('/course/practice/hint', { sessionId: view.id, itemIndex: index });
+      setHints(index, result.hints, result.stage);
+      if (result.inserted.length > 0) insertItems(index, result.inserted);
     } catch {
       setError(HINT_COPY.error);
     } finally {

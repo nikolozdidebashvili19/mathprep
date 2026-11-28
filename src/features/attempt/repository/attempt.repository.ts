@@ -14,6 +14,8 @@ export type NewAttempt = Omit<AttemptDocument, '_id' | 'createdAt' | 'updatedAt'
 
 type PracticeAttemptRow = { questionId: Types.ObjectId; points: number; maxPoints: number; hintsUsed?: number; createdAt: Date };
 
+export type AttemptHistoryRow = { questionId: Types.ObjectId; answer?: string; points: number; maxPoints: number; createdAt: Date };
+
 export const attemptRepository = {
   async insertMany(attempts: NewAttempt[]): Promise<number> {
     await mongo.connect();
@@ -26,6 +28,15 @@ export const attemptRepository = {
     await mongo.connect();
     return AttemptModel.find({ userId }, { questionId: 1, points: 1, maxPoints: 1 })
       .lean<{ questionId: Types.ObjectId; points: number; maxPoints: number }[]>()
+      .exec();
+  },
+
+  /** Every answer of the student (any context), oldest first: the source of the saved-mistakes list. */
+  async findHistoryByUser(userId: string): Promise<AttemptHistoryRow[]> {
+    await mongo.connect();
+    return AttemptModel.find({ userId }, { questionId: 1, answer: 1, points: 1, maxPoints: 1, createdAt: 1 })
+      .sort({ createdAt: 1 })
+      .lean<AttemptHistoryRow[]>()
       .exec();
   },
 

@@ -64,6 +64,12 @@ export const MAX_WORK_PHOTO_BYTES = 2 * 1024 * 1024;
 
 export const WORK_PHOTO_MIME_TYPES = ['image/jpeg', 'image/png', 'image/webp'] as const;
 
+/** Where a work photo was taken, and (practice) why: stuck before answering, or finding the mistake after. */
+export const WORK_PHOTO_CONTEXTS = ['diagnostic', 'practice'] as const;
+export const PRACTICE_PHOTO_MODES = ['stuck', 'mistake'] as const;
+/** What a practice photo shows: a wrong step, working that stopped, or correct working so far. */
+export const PHOTO_PROGRESS = ['mistake', 'stopped', 'on_track'] as const;
+
 /** Knowledge-map level of a skill from its quick-check evidence score (−1…1); no evidence = untested. */
 export const SKILL_LEVELS = ['weak', 'mixed', 'strong', 'untested'] as const;
 export const WEAK_SCORE_BELOW = -0.15;

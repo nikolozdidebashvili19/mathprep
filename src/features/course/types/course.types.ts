@@ -1,7 +1,7 @@
 import { DiagnosticQuestion } from '@/features/diagnostic/types/diagnostic.types';
 import { LessonType } from '@/features/skill/validations/lesson.validation';
 import { TheoryCardType } from '@/features/skill/validations/theory.validation';
-import { DailyMinutes, STUCK_STEP_KINDS, STUDENT_LEVELS } from '@/shared/const/course.const';
+import { DailyMinutes, SCAFFOLD_LEVELS, STUCK_STEP_KINDS, STUDENT_LEVELS } from '@/shared/const/course.const';
 import { SESSION_BLOCK_KINDS } from '@/shared/const/domain.const';
 
 export type BlockKind = (typeof SESSION_BLOCK_KINDS)[number];
@@ -98,17 +98,57 @@ export type PracticeItemView = {
   answer: string | null;
   correct: boolean | null;
   correctAnswer: string | null;
-  /** "I'm stuck" rungs revealed so far (from the server, one at a time) and how many exist. */
+  /** Free guidance shown before the student asks (faded scaffolding: full → light → solo) and its steps. */
+  scaffold: ScaffoldLevel;
+  scaffoldSteps: StuckStep[];
+  /** "I'm stuck" steps revealed so far, the stage reached (0 = none) and how many stages this question has. */
   hints: StuckStep[];
-  hintsTotal: number;
+  stuckStage: number;
+  stuckStages: number;
   /** Inserted after a wrong answer: an easier question on the same skill. */
   secondChance: boolean;
+  /** Inserted by "I'm stuck" stage 4: an easier question before returning to the original. */
+  reinforcement: boolean;
+  /** Name of the weakness a reinforcement question targets (from the photo analysis), if it is not the same skill. */
+  reinforcementSkillName: string | null;
+  /** Warm-up before a new lesson: a quick question on something learnt earlier. */
+  warmup: boolean;
+  /** A spaced review (1 / 3 / 7 / 14 days after learning) of this question's skill. */
+  review: boolean;
+  /** The latest analysed photo of the handwritten working for this question (stage 3, or after a wrong answer). */
+  workPhoto: PracticePhotoFeedback | null;
   /** Step-by-step explanation; only after the item is answered (it would give the answer away). */
   solution: QuestionSolution | null;
 };
 
 /** One rung of the "I'm stuck" ladder (what is asked → steps → hints → walkthrough). */
-export type StuckStep = { kind: (typeof STUCK_STEP_KINDS)[number]; text: string; items: string[] };
+export type StuckStep = { kind: (typeof STUCK_STEP_KINDS)[number]; stage: number; text: string; items: string[] };
+
+export type ScaffoldLevel = (typeof SCAFFOLD_LEVELS)[number];
+
+/**
+ * What the photo analysis tells the student. `stuck` = before answering (where they went wrong or stopped + one next
+ * step, never the answer); `mistake` = after a wrong answer (the exact wrong step and how to fix it).
+ * `unreadable` / `other_question` ask for a new photo instead of guessing.
+ */
+export type PracticePhotoFeedback = {
+  mode: 'stuck' | 'mistake';
+  status: 'done' | 'unreadable' | 'other_question' | 'failed';
+  progress: 'mistake' | 'stopped' | 'on_track' | null;
+  where: string;
+  issue: string;
+  nextStep: string;
+  weakSkillName: string | null;
+  retakesLeft: number;
+};
+
+export type PracticeHintResult = {
+  hints: StuckStep[];
+  stage: number;
+  stages: number;
+  /** Stage 4: easier questions inserted before the original (which moves after them). */
+  inserted: PracticeItemView[];
+};
 
 /** A full lesson as the browser sees it (content/lessons/, validated by LessonSchema). */
 export type LessonView = Omit<LessonType, 'code' | 'status'>;
@@ -134,6 +174,8 @@ export type PracticeAnswerResult = {
   summary: { correctCount: number; questionCount: number } | null;
   /** Set after a wrong answer: the next item, already inserted into the session. */
   secondChance: PracticeItemView | null;
+  /** Adaptive difficulty: the block's next question was swapped one level up (streak) or down (after a miss). */
+  adjusted: { index: number; item: PracticeItemView; direction: 'up' | 'down' } | null;
 };
 
 export type PracticeFeedback = {
@@ -141,6 +183,8 @@ export type PracticeFeedback = {
   correctAnswer: string | null;
   solution: QuestionSolution | null;
   reteach: LessonView['reteach'] | null;
+  /** The next question became one level harder after a streak. */
+  levelUp?: boolean;
 };
 
 export type PracticeState = {
@@ -159,9 +203,12 @@ export type PracticeActions = {
   markAnswered: (index: number, answer: string, feedback: PracticeFeedback) => void;
   next: () => void;
   back: () => void;
-  setHints: (index: number, hints: StuckStep[]) => void;
-  /** Adds a second-chance question at `position` (already saved on the server) and renumbers the items. */
-  insertItem: (position: number, item: PracticeItemView) => void;
+  setHints: (index: number, hints: StuckStep[], stage: number) => void;
+  /** Adds questions at `position` (already saved on the server) and renumbers the items. */
+  insertItems: (position: number, items: PracticeItemView[]) => void;
+  /** Swaps an unanswered item for another (adaptive difficulty). */
+  replaceItem: (index: number, item: PracticeItemView) => void;
+  setWorkPhoto: (index: number, feedback: PracticePhotoFeedback) => void;
   setBusy: (busy: boolean) => void;
   setError: (error: string | null) => void;
   setSummary: (summary: PracticeAnswerResult['summary']) => void;

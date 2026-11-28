@@ -19,9 +19,17 @@ const item = (index: number, answered: boolean): PracticeItemView => ({
   correct: answered ? true : null,
   correctAnswer: answered ? 'ა' : null,
   solution: null,
+  scaffold: 'none',
+  scaffoldSteps: [],
   hints: [],
-  hintsTotal: 0,
+  stuckStage: 0,
+  stuckStages: 0,
   secondChance: false,
+  reinforcement: false,
+  reinforcementSkillName: null,
+  warmup: false,
+  review: false,
+  workPhoto: null,
 });
 
 const view = (answered: boolean[], completed = false): PracticeSessionView => ({
@@ -58,13 +66,37 @@ describe('practice store', () => {
   });
 });
 
-describe('insertItem (second chance)', () => {
-  it('puts the new question right after the answered one and renumbers the rest', () => {
+describe('insertItems', () => {
+  it('second chance: puts the new question right after the answered one and renumbers the rest', () => {
     const store = createPracticeStore();
     store.getState().startPractice(view([true, false]));
-    store.getState().insertItem(1, { ...item(99, false), secondChance: true });
+    store.getState().insertItems(1, [{ ...item(99, false), secondChance: true }]);
     const items = store.getState().view!.items;
     expect(items.map((i) => i.index)).toEqual([0, 1, 2]);
     expect(items.map((i) => i.secondChance)).toEqual([false, true, false]);
+  });
+
+  it('reinforcement: easier questions go before the current one and the student moves onto the first of them', () => {
+    const store = createPracticeStore();
+    store.getState().startPractice(view([true, false]));
+    store.getState().select('ბ');
+    store.getState().insertItems(1, [{ ...item(98, false), reinforcement: true }, { ...item(99, false), reinforcement: true }]);
+    const { index, selected, view: v } = store.getState();
+    expect([index, selected]).toEqual([1, null]);
+    expect(v!.items.map((i) => i.reinforcement)).toEqual([false, true, true, false]);
+  });
+});
+
+describe('adaptive updates', () => {
+  it('replaces an item in place (difficulty swap) and stores the stage and the photo analysis', () => {
+    const store = createPracticeStore();
+    store.getState().startPractice(view([true, false, false]));
+    store.getState().replaceItem(2, { ...item(7, false), skillName: 'სხვა' });
+    store.getState().setHints(1, [{ kind: 'hint', stage: 1, text: 'h', items: [] }], 1);
+    const photo = { mode: 'stuck' as const, status: 'done' as const, progress: 'mistake' as const, where: 'w', issue: 'i', nextStep: 'n', weakSkillName: null, retakesLeft: 2 };
+    store.getState().setWorkPhoto(1, photo);
+    const items = store.getState().view!.items;
+    expect(items[2]).toMatchObject({ index: 2, skillName: 'სხვა' });
+    expect(items[1]).toMatchObject({ stuckStage: 1, workPhoto: photo });
   });
 });

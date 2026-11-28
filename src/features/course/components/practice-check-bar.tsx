@@ -4,7 +4,7 @@ import { ArrowLeft, Check, HandHelping, X } from 'lucide-react';
 import { PracticeItemView } from '@/features/course/types/course.types';
 import { Button } from '@/shared/components/ui/button';
 import { MathText } from '@/shared/components/ui/math-text';
-import { HINT_COPY, PRACTICE_COPY } from '@/shared/const/course.const';
+import { ADAPTIVE_COPY, HINT_COPY, PRACTICE_COPY } from '@/shared/const/course.const';
 import { cn } from '@/shared/lib/utils';
 
 type PracticeCheckBarProps = {
@@ -13,6 +13,8 @@ type PracticeCheckBarProps = {
   shown: { correct: boolean; correctAnswer: string | null } | null;
   canGoBack: boolean;
   canAskForHelp: boolean;
+  /** Correct answer that made the next question one level harder. */
+  levelUp: boolean;
   isTheory: boolean;
   selected: string | null;
   busy: boolean;
@@ -30,6 +32,7 @@ export const PracticeCheckBar = ({
   shown,
   canGoBack,
   canAskForHelp,
+  levelUp,
   isTheory,
   selected,
   busy,
@@ -66,6 +69,7 @@ export const PracticeCheckBar = ({
             </span>
             <div className="flex flex-col">
               <span className="text-lg font-extrabold">{shown.correct ? PRACTICE_COPY.correct : PRACTICE_COPY.wrong}</span>
+              {shown.correct && levelUp && <span className="text-sm font-bold">{ADAPTIVE_COPY.levelUp}</span>}
               {!shown.correct && shown.correctAnswer && (
                 <span className="text-sm font-bold">
                   {PRACTICE_COPY.correctAnswerIs} {shown.correctAnswer}){' '}

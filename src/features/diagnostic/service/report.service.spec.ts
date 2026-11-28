@@ -104,6 +104,8 @@ describe('getDiagnosticReviewService', () => {
       {
         id: 'p1',
         questionId: Q1.toString(),
+        mode: null,
+        uploads: 0,
         analysis: { status: 'done', readable: true, approach: 'ფესვი', feedback: 'გაიმეორე', mistakes: [{ type: 'conceptual', skillCode: 'A7', description: 'ნიშანი დაკარგა' }], skillsShown: [] },
       },
     ]);

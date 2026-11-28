@@ -20,14 +20,14 @@ Tickets come from [PRODUCT.md](../PRODUCT.md). Each ticket is a file `T-NNN-<slu
 | T-012 | [Exam-taking UI](T-012-exam-taking-ui.md) | Diagnostic | 3 | 🟡 adaptive quick check (12 q + work photos) is the default, full exam = full mock; browser test pending |
 | T-013 | [Auto-grading MC/numeric](T-013-auto-grading.md) | Diagnostic | 3 | ✅ done (mastery hook waits for T-016) |
 | T-014 | [Private photo storage](T-014-photo-storage.md) | Diagnostic | 3 | 🟡 interim: photos in MongoDB; R2 before launch |
-| T-015 | [Handwriting grading](T-015-handwriting-grading.md) | Diagnostic | 4 | 🟡 v1 photo analysis (mistakes → skills) in the quick check; step checking todo |
+| T-015 | [Handwriting grading](T-015-handwriting-grading.md) | Diagnostic | 4 | 🟡 v1 photo analysis in the quick check + daily practice ("I'm stuck", "find my mistake"); step checking todo |
 | T-016 | [Mastery model](T-016-mastery-model.md) | Diagnostic | 5 | ✅ done (from diagnostics; practice joins in T-020) |
 | T-017 | [Diagnostic report + Knowledge Map](T-017-diagnostic-report.md) | Diagnostic | 4 | 🟡 v1: knowledge map, history, per-question review with photos; dashboard card |
 | T-018 | [Course planner](T-018-course-planner.md) | Course | 5 | ✅ done |
 | T-019 | [Course setup UI](T-019-course-setup-ui.md) | Course | 5 | ✅ done |
-| T-020 | [Daily session + theory cards](T-020-daily-session.md) | Course | 5 | 🟡 teaching-first: full lessons (10/67), easy→hard ramp, second chance, "I'm stuck" ladder + stuck tutor |
+| T-020 | [Daily session + theory cards](T-020-daily-session.md) | Course | 5 | 🟡 teaching-first: lessons (15/67), 4-stage "I'm stuck" with photo analysis + reinforcement, guided first questions, adaptive difficulty, warm-ups |
 | T-021 | [SymPy service + templates](T-021-math-service-templates.md) | Course | 6 | todo |
-| T-022 | [Spaced repetition](T-022-spaced-repetition.md) | Course | 6 | todo (theory revision library `/revision` done) |
+| T-022 | [Spaced repetition](T-022-spaced-repetition.md) | Course | 6 | 🟡 v1: reviews 1/3/7/14 days after learning, saved mistakes on `/revision` |
 | T-023 | [Weekly check + re-plan](T-023-weekly-check-replan.md) | Adaptation | 7 | todo |
 | T-024 | [Progress dashboard](T-024-progress-dashboard.md) | Adaptation | 7 | 🟡 v1: streak, XP, calendar, weekly XP, course + mastery bars; real dashboard stats |
 | T-025 | [Final mock + before/after](T-025-final-mock.md) | Adaptation | 7 | todo |

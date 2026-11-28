@@ -1,8 +1,28 @@
+import { Types } from 'mongoose';
+
 import { PracticeSessionDocument, PracticeSessionModel } from '@/features/course/schema/practice-session.schema';
-import { BlockKind } from '@/features/course/types/course.types';
+import { BlockKind, ScaffoldLevel } from '@/features/course/types/course.types';
 import { mongo } from '@/shared/lib/mongo';
 
-type NewItem = { blockIndex: number; kind: BlockKind; skillCode: string | null; questionId: string | null };
+export type NewPracticeItem = {
+  blockIndex: number;
+  kind: BlockKind;
+  skillCode: string | null;
+  questionId: string | null;
+  scaffold?: ScaffoldLevel;
+  secondChance?: boolean;
+  reinforcement?: boolean;
+  reinforcementSkill?: string | null;
+  warmup?: boolean;
+  review?: boolean;
+};
+
+const toStored = (i: NewPracticeItem) => ({
+  ...i,
+  skillCode: i.skillCode ?? undefined,
+  questionId: i.questionId ?? undefined,
+  reinforcementSkill: i.reinforcementSkill ?? undefined,
+});
 
 export const practiceSessionRepository = {
   async findById(id: string): Promise<PracticeSessionDocument | null> {
@@ -21,12 +41,9 @@ export const practiceSessionRepository = {
     return PracticeSessionModel.find({ userId }).sort({ createdAt: 1 }).lean<PracticeSessionDocument[]>().exec();
   },
 
-  async create(input: { userId: string; courseId: string; dayIndex: number; items: NewItem[] }): Promise<PracticeSessionDocument> {
+  async create(input: { userId: string; courseId: string; dayIndex: number; items: NewPracticeItem[] }): Promise<PracticeSessionDocument> {
     await mongo.connect();
-    const doc = await PracticeSessionModel.create({
-      ...input,
-      items: input.items.map((i) => ({ ...i, skillCode: i.skillCode ?? undefined, questionId: i.questionId ?? undefined })),
-    });
+    const doc = await PracticeSessionModel.create({ ...input, items: input.items.map(toStored) });
     return doc.toObject() as PracticeSessionDocument;
   },
 
@@ -42,26 +59,44 @@ export const practiceSessionRepository = {
   },
 
   /**
-   * Reveals the next "I'm stuck" rung while the item is unanswered and rungs remain (atomic; 0 = nothing changed).
-   * `hintCost` real hints are added for it (0 for teaching rungs).
+   * Reveals the next "I'm stuck" stage while the item is unanswered and still at `expectedStage` (atomic; 0 = nothing
+   * changed). `hintCost` real hints are added; `reinforcedWith` is stored when stage 4 inserts easier questions.
    */
-  async revealGuideStep(sessionId: string, itemIndex: number, expectedRevealed: number, hintCost: number): Promise<number> {
+  async revealStage(sessionId: string, itemIndex: number, expectedStage: number, hintCost: number, reinforcedWith?: number): Promise<number> {
     await mongo.connect();
     const path = `items.${itemIndex}`;
-    const revealed = expectedRevealed === 0 ? { $in: [0, null] } : expectedRevealed;
+    const stage = expectedStage === 0 ? { $in: [0, null] } : expectedStage;
+    const set: Record<string, number> = { [`${path}.stuckStage`]: expectedStage + 1 };
+    if (reinforcedWith !== undefined) set[`${path}.reinforcedWith`] = reinforcedWith;
     const result = await PracticeSessionModel.updateOne(
-      { _id: sessionId, status: 'in_progress', [`${path}.answeredAt`]: { $exists: false }, [`${path}.guideStepsUsed`]: revealed },
-      { $set: { [`${path}.guideStepsUsed`]: expectedRevealed + 1 }, $inc: { [`${path}.hintsUsed`]: hintCost } }
+      { _id: sessionId, status: 'in_progress', [`${path}.answeredAt`]: { $exists: false }, [`${path}.stuckStage`]: stage },
+      { $set: set, $inc: { [`${path}.hintsUsed`]: hintCost } }
     ).exec();
     return result.matchedCount;
   },
 
-  /** Inserts a second-chance question right after the item just answered (only while the session runs). */
-  async insertItem(sessionId: string, position: number, item: NewItem & { secondChance: boolean }): Promise<number> {
+  /** Inserts questions at `position` (second chance after an answer, reinforcement before one) while the session runs. */
+  async insertItems(sessionId: string, position: number, items: NewPracticeItem[]): Promise<number> {
     await mongo.connect();
     const result = await PracticeSessionModel.updateOne(
       { _id: sessionId, status: 'in_progress' },
-      { $push: { items: { $each: [{ ...item, skillCode: item.skillCode ?? undefined, questionId: item.questionId ?? undefined }], $position: position } } }
+      { $push: { items: { $each: items.map(toStored), $position: position } } }
+    ).exec();
+    return result.matchedCount;
+  },
+
+  /** Swaps an unanswered item's question (adaptive difficulty); only if it still holds `expectedQuestionId`. */
+  async replaceQuestion(sessionId: string, itemIndex: number, expectedQuestionId: string, questionId: string): Promise<number> {
+    await mongo.connect();
+    const path = `items.${itemIndex}`;
+    const result = await PracticeSessionModel.updateOne(
+      {
+        _id: sessionId,
+        status: 'in_progress',
+        [`${path}.answeredAt`]: { $exists: false },
+        [`${path}.questionId`]: new Types.ObjectId(expectedQuestionId),
+      },
+      { $set: { [`${path}.questionId`]: new Types.ObjectId(questionId) } }
     ).exec();
     return result.matchedCount;
   },

@@ -1,15 +1,16 @@
 'use client';
-import { CalendarCheck, RefreshCw, X } from 'lucide-react';
+import { CalendarCheck, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
 
-import { HintList } from '@/features/course/components/hint-list';
 import { LessonPlayer } from '@/features/course/components/lesson-player';
 import { LessonReteach } from '@/features/course/components/lesson-sections';
 import { PracticeCheckBar } from '@/features/course/components/practice-check-bar';
 import { PracticeComplete } from '@/features/course/components/practice-complete';
+import { ItemBanner, QuestionHelp } from '@/features/course/components/practice-item-help';
 import { TheoryCard } from '@/features/course/components/theory-card';
+import { WorkPhotoPanel } from '@/features/course/components/work-photo-panel';
 import { usePractice } from '@/features/course/hooks/use-practice';
 import { usePracticeStore } from '@/features/course/hooks/usePracticeStore';
 import { stepHintCost } from '@/features/course/service/hints';
@@ -23,7 +24,7 @@ import { SoundToggle } from '@/shared/components/layout/sound-toggle';
 import { Button } from '@/shared/components/ui/button';
 import { ExpandableSection } from '@/shared/components/ui/expandable-section';
 import { MathText } from '@/shared/components/ui/math-text';
-import { COURSE_COPY, HINT_COPY, PRACTICE_COPY } from '@/shared/const/course.const';
+import { COURSE_COPY, PRACTICE_COPY } from '@/shared/const/course.const';
 import { DIAGNOSTIC_COPY } from '@/shared/const/diagnostic.const';
 import { LESSON_COPY } from '@/shared/const/lesson.const';
 import { XP_RULES } from '@/shared/const/progress.const';
@@ -43,8 +44,9 @@ const CloseButton = () => (
 
 /**
  * Daily session (T-020 + T-029 lesson rules): a full lesson first, then questions from easy to harder, one per
- * screen with instant feedback. Stuck → a guided ladder (what is asked → steps → hints → reasoning → tutor).
- * Wrong → the solution, a simpler re-explanation, and a second-chance question on the same skill.
+ * screen with instant feedback. A new skill's first questions are guided (solved together → one hint → alone).
+ * Stuck → four stages (a hint → more detail → a photo of the working → easier questions first), never the answer.
+ * Wrong → the solution, a simpler re-explanation, "find my mistake" from a photo, and a second-chance question.
  */
 export const PracticeSession = ({ initialView }: PracticeSessionProps) => {
   const { view, index, selected, feedback, busy, error, summary, startPractice, select } = usePracticeStore();
@@ -90,7 +92,7 @@ export const PracticeSession = ({ initialView }: PracticeSessionProps) => {
   const solution = feedback?.solution ?? item.solution;
   const reteach = feedback?.reteach ?? item.reteach;
   const isTheory = item.kind === 'theory' || !item.question;
-  const allRungsShown = item.hints.length >= item.hintsTotal;
+  const allStagesShown = item.stuckStage >= item.stuckStages;
 
   const header = (
     <div className="mx-auto flex w-full max-w-3xl items-center gap-4 px-4 pt-6">
@@ -133,12 +135,7 @@ export const PracticeSession = ({ initialView }: PracticeSessionProps) => {
           <TheoryCard skillName={item.skillName} prerequisiteNames={item.prerequisiteNames} theory={item.theory} mastery={item.mastery} />
         ) : (
           <div key={item.index} className="animate-rise flex flex-col gap-6">
-            {item.secondChance && (
-              <p className="flex items-center gap-2 rounded-2xl border-2 border-sky bg-sky/10 p-3 text-sm font-extrabold text-sky">
-                <RefreshCw className="size-4 shrink-0" />
-                {LESSON_COPY.secondChance}
-              </p>
-            )}
+            <ItemBanner item={item} />
             <h1 className="text-lg font-bold sm:text-xl">
               <MathText text={item.question.text} />
             </h1>
@@ -153,13 +150,7 @@ export const PracticeSession = ({ initialView }: PracticeSessionProps) => {
                 className="h-auto max-h-96 w-full rounded-2xl border-2 bg-white object-contain p-2"
               />
             ))}
-            <HintList hints={item.hints} />
-            {!shown && item.hints.length > 0 && view.id && (
-              <div className="flex flex-col gap-2">
-                <p className="text-sm font-bold text-muted-foreground">{HINT_COPY.stillStuck}</p>
-                <TutorChat key={`stuck-${item.index}`} sessionId={view.id} itemIndex={item.index} mode="stuck" />
-              </div>
-            )}
+            <QuestionHelp item={item} sessionId={view.id} answered={shown !== null} />
             <div role="radiogroup" aria-label={DIAGNOSTIC_COPY.chooseAnswer} className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {item.question.options.map((option) => (
                 <AnswerOptionTile
@@ -178,6 +169,15 @@ export const PracticeSession = ({ initialView }: PracticeSessionProps) => {
                 <LessonReteach reteach={reteach} />
               </ExpandableSection>
             )}
+            {shown && !shown.correct && view.id && (
+              <WorkPhotoPanel
+                key={`mistake-${item.index}`}
+                sessionId={view.id}
+                itemIndex={item.index}
+                mode="mistake"
+                feedback={item.workPhoto?.mode === 'mistake' ? item.workPhoto : null}
+              />
+            )}
             {shown && view.id && <TutorChat key={item.index} sessionId={view.id} itemIndex={item.index} />}
           </div>
         )}
@@ -187,7 +187,8 @@ export const PracticeSession = ({ initialView }: PracticeSessionProps) => {
         item={item}
         shown={shown}
         canGoBack={index > 0}
-        canAskForHelp={!shown && !isTheory && !allRungsShown}
+        canAskForHelp={!shown && !isTheory && !allStagesShown}
+        levelUp={!!feedback?.levelUp}
         isTheory={isTheory}
         selected={selected}
         busy={busy}

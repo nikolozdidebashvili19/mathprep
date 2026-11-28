@@ -1,7 +1,8 @@
 import { BookOpen, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
-import { RevisionLibraryView } from '@/features/revision/types/revision.types';
+import { MistakeNotebook } from '@/features/revision/components/mistake-notebook';
+import { RevisionLibraryView, SavedMistake } from '@/features/revision/types/revision.types';
 import { Button } from '@/shared/components/ui/button';
 import { SegmentedBar } from '@/shared/components/ui/segmented-bar';
 import { PROGRESS_BAR_SEGMENTS } from '@/shared/const/progress.const';
@@ -13,6 +14,7 @@ import { MASTERY_BAND_TONES, masteryBand } from '@/shared/utils/mastery-band';
 
 type TheoryLibraryProps = {
   library: RevisionLibraryView;
+  mistakes: SavedMistake[];
 };
 
 const STAGGER = ['animate-rise-1', 'animate-rise-2', 'animate-rise-3', 'animate-rise-4'];
@@ -30,8 +32,8 @@ const EmptyLibrary = () => (
   </div>
 );
 
-/** Every theory card the student has read, grouped by topic. One tap opens it for re-reading. */
-export const TheoryLibrary = ({ library }: TheoryLibraryProps) => (
+/** Every theory card the student has read, grouped by topic (one tap opens it), and the saved mistakes folded above. */
+export const TheoryLibrary = ({ library, mistakes }: TheoryLibraryProps) => (
   <div className="mx-auto flex w-full max-w-3xl flex-col gap-6">
     <div className="animate-rise flex flex-col gap-2">
       <h1 className="text-2xl sm:text-3xl">{REVISION_COPY.title}</h1>
@@ -40,6 +42,8 @@ export const TheoryLibrary = ({ library }: TheoryLibraryProps) => (
         <p className="text-sm font-extrabold text-sky">{REVISION_COPY.learntCount(library.learntCount, library.cardCount)}</p>
       )}
     </div>
+
+    <MistakeNotebook mistakes={mistakes} />
 
     {library.topics.length === 0 ? (
       <EmptyLibrary />
