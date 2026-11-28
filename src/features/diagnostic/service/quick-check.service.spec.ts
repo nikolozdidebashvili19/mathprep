@@ -104,6 +104,8 @@ const quickSession = (overrides: SessionOverrides = {}) =>
 const photo = (questionId: Types.ObjectId, analysis: Partial<WorkPhotoSummary['analysis']> = {}): WorkPhotoSummary => ({
   id: 'photo-1',
   questionId: questionId.toString(),
+  mode: null,
+  uploads: 0,
   analysis: { status: 'done', readable: true, workShown: true, mistakes: [], skillsShown: [], ...analysis },
 });
 

@@ -1,9 +1,11 @@
 import { workPhotoRepository } from '@/features/handwriting/repository/work-photo.repository';
 import { WorkPhotoDocument } from '@/features/handwriting/schema/work-photo.schema';
-import { AnalysisSkill, WorkPhotoSummary } from '@/features/handwriting/types/handwriting.types';
-import { ModelWorkAnalysisSchema } from '@/features/handwriting/validations/handwriting.validation';
+import { buildPracticePhotoPrompt, dropLeakingSentences } from '@/features/handwriting/service/practice-photo';
+import { AnalysisSkill, PracticePhotoContext, PracticePhotoMode, WorkPhotoSummary } from '@/features/handwriting/types/handwriting.types';
+import { ModelPracticePhotoSchema, ModelWorkAnalysisSchema } from '@/features/handwriting/validations/handwriting.validation';
 import { aiVision } from '@/shared/lib/ai-vision';
 import { ServiceResult } from '@/shared/types/common';
+import { startOfUtcDay } from '@/shared/utils/date';
 import { parseModelJson } from '@/shared/utils/model-json';
 
 export type AnalysisContext = {
@@ -48,14 +50,21 @@ Write maths in plain text (x^2, sqrt(3), 1/2), never LaTeX or backslashes.
 const toSummary = (photo: WorkPhotoDocument): WorkPhotoSummary => ({
   id: photo._id.toString(),
   questionId: photo.questionId.toString(),
+  mode: photo.mode ?? null,
+  uploads: photo.uploads ?? 0,
   analysis: {
     status: photo.analysis?.status ?? 'pending',
     readable: photo.analysis?.readable,
+    matchesQuestion: photo.analysis?.matchesQuestion,
     workShown: photo.analysis?.workShown,
     approach: photo.analysis?.approach,
     mistakes: (photo.analysis?.mistakes ?? []).map((m) => ({ type: m.type, skillCode: m.skillCode, description: m.description })),
     skillsShown: photo.analysis?.skillsShown ?? [],
     feedback: photo.analysis?.feedback,
+    progress: photo.analysis?.progress,
+    where: photo.analysis?.where,
+    issue: photo.analysis?.issue,
+    nextStep: photo.analysis?.nextStep,
   },
 });
 
@@ -131,4 +140,69 @@ export async function analyzeWorkPhotoService(photoId: string, context: Analysis
     });
     return { data: { status: 'failed' }, status: 200 };
   }
+}
+
+export async function savePracticePhotoService(input: {
+  userId: string;
+  sessionId: string;
+  questionId: string;
+  mode: PracticePhotoMode;
+  mimeType: string;
+  data: Buffer;
+}): Promise<{ photoId: string; uploads: number }> {
+  const { id, uploads } = await workPhotoRepository.upsertPractice(input);
+  return { photoId: id, uploads };
+}
+
+/** Practice photos the student sent today (UTC day), for the daily limit. */
+export const countPracticePhotosTodayService = (userId: string, now = new Date()) =>
+  workPhotoRepository.countPracticeSince(userId, startOfUtcDay(now));
+
+/**
+ * Analyses one practice photo now (the student is waiting) and stores the result. Before an answer (`stuck`), every
+ * sentence that would give the answer away is dropped. Never throws: a failed call is stored and returned as
+ * `failed`, and the student can retake the photo.
+ */
+export async function analyzePracticePhotoService(photoId: string, ctx: PracticePhotoContext): Promise<WorkPhotoSummary | null> {
+  const photo = await workPhotoRepository.findImageById(photoId);
+  if (!photo) return null;
+  const by = aiVision.describe();
+  try {
+    const raw = await aiVision.generateJson({
+      prompt: buildPracticePhotoPrompt(ctx),
+      images: [{ mimeType: photo.mimeType, base64: photo.data.toString('base64') }],
+    });
+    const parsed = ModelPracticePhotoSchema.safeParse(parseModelJson(raw));
+    if (!parsed.success) throw new Error(`model output failed validation: ${parsed.error.issues[0]?.message}`);
+
+    const result = parsed.data;
+    const usable = result.readable && result.matchesQuestion;
+    const allowed = new Set(ctx.skills.map((s) => s.code));
+    const correctText = ctx.question.options.find((o) => o.key === ctx.question.answer)?.text ?? '';
+    const finalStep = ctx.solutionSteps.at(-1) ?? '';
+    const safe = (text: string) => (!usable ? '' : ctx.mode === 'stuck' ? dropLeakingSentences(text, correctText, finalStep) : text);
+    await workPhotoRepository.setAnalysis(photoId, {
+      status: 'done',
+      readable: result.readable,
+      matchesQuestion: result.matchesQuestion,
+      progress: result.progress,
+      where: safe(result.where),
+      issue: safe(result.issue),
+      nextStep: safe(result.nextStep),
+      // Unknown codes are dropped rather than trusted; an unreadable or off-topic photo is no evidence.
+      mistakes: usable ? result.mistakes.filter((m) => allowed.has(m.skillCode)) : [],
+      skillsShown: [],
+      ...by,
+      analyzedAt: new Date(),
+    });
+  } catch (error) {
+    await workPhotoRepository.setAnalysis(photoId, {
+      status: 'failed',
+      error: (error as Error).message.slice(0, 300),
+      ...by,
+      analyzedAt: new Date(),
+    });
+  }
+  const stored = await workPhotoRepository.findById(photoId);
+  return stored ? toSummary(stored) : null;
 }

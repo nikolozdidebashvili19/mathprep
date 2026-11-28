@@ -24,8 +24,11 @@ export const NOT_READY_FACTOR = 0.3;
 /** Below this share of the (gap × exam weight) the student needs, the plan is flagged as not realistic. */
 export const REALISTIC_COVERAGE = 0.6;
 
-/** Spaced revision of a finished skill after these many days. */
-export const REVISION_INTERVALS_DAYS = [3, 7, 14] as const;
+/**
+ * Spaced revision: a skill is reviewed this many days after it was learnt (1, 3, 7 and 14 days). The planner uses it
+ * for the plan preview; the daily session schedules the real reviews from what the student actually practised (T-022).
+ */
+export const REVISION_INTERVALS_DAYS = [1, 3, 7, 14] as const;
 
 export const COURSE_COPY = {
   setupTitle: 'კურსის აწყობა',
@@ -102,6 +105,21 @@ export const MAX_QUESTIONS_PER_BLOCK = 8;
 /** Practice climbs from this far below the target difficulty to this far above it (T-020 difficulty ramp). */
 export const RAMP_BELOW_TARGET = 1;
 export const RAMP_ABOVE_TARGET = 1;
+/**
+ * Readiness ceiling: a skill's practice never goes more than this many levels above the hardest question the student
+ * has solved on it, so exam-level questions only come once the levels below have been solved.
+ */
+export const LEVELS_ABOVE_HARDEST_SOLVED = 1;
+/** This many correct answers in a row without help → the next question in the block becomes one level harder. */
+export const STEP_UP_STREAK = 2;
+
+/**
+ * Guided problem solving (faded scaffolding) for a skill that is new or weak for the student: the first question of
+ * its practice block is solved together (what is asked + the steps), the second gets one small hint, the third is
+ * solved alone. `none` = no scaffolding (known skill, mixed practice, inserted questions).
+ */
+export const SCAFFOLD_LEVELS = ['full', 'light', 'solo', 'none'] as const;
+export const SCAFFOLD_SEQUENCE = ['full', 'light', 'solo'] as const;
 /** Estimated minutes for one question of difficulty d: 2 + 0.5 × d (easy ≈ 2.5 min, hardest ≈ 4.5 min). */
 export const minutesPerQuestion = (difficulty: number) => 2 + 0.5 * difficulty;
 /** Tagged skills other than the question's primary skill count this much in the mastery update. */
@@ -155,37 +173,95 @@ export const HINT_WEIGHT_PENALTY = 0.25;
 export const MIN_HINTED_WEIGHT = 0.25;
 export const hintedWeight = (hintsUsed: number) => Math.max(MIN_HINTED_WEIGHT, 1 - HINT_WEIGHT_PENALTY * hintsUsed);
 
-/** "I'm stuck" ladder (T-020): rung kinds, which ones are free, and how many hints at most. */
-export const STUCK_STEP_KINDS = ['restate', 'theory', 'plan', 'example', 'hint', 'walkthrough', 'solution'] as const;
-export const FREE_STUCK_KINDS: readonly string[] = ['restate', 'theory', 'plan', 'example'];
-/** Seeing the full solution counts like this many hints (the answer then counts the minimum toward mastery). */
-export const SOLUTION_HINT_COST = 3;
-/** Formulas / rules shown in the "theory" rung. */
+
+/**
+ * "I'm stuck" (T-020, rebuilt 2026-11-25): four stages, each press gives more help than the one before, and none of
+ * them gives the answer or the full solution.
+ *   1. a small hint      — what is asked + the first targeted hint
+ *   2. more detail       — the next hint, the formulas with when to use them, the problem split into small steps,
+ *                          a similar solved example
+ *   3. show your work    — the last hint + a photo of the handwritten working: the AI finds where the student went
+ *                          wrong or stopped and gives the next step (an unclear photo → retake, never a guess)
+ *   4. reinforcement     — easier questions on the weakness the photo showed (or the same skill), then back to this one
+ */
+export const STUCK_STEP_KINDS = ['restate', 'hint', 'theory', 'plan', 'example', 'photo', 'reinforce'] as const;
+export const FREE_STUCK_KINDS: readonly string[] = ['restate', 'theory', 'plan', 'example', 'photo', 'reinforce'];
+/** Formulas / rules shown in the theory step. */
 export const MAX_STUCK_THEORY = 3;
 export const MAX_STUCK_HINTS = 3;
 /** Second-chance questions after wrong answers, at most this many per day (the day must stay finishable). */
 export const MAX_SECOND_CHANCES = 3;
+/** Questions that get stage-4 reinforcement per day, and how many easier questions each one gets at most. */
+export const MAX_REINFORCEMENTS_PER_DAY = 2;
+export const MAX_REINFORCEMENT_QUESTIONS = 2;
+/** Practice work photos: distinct questions per student per day, and photos (first + retakes) per question. */
+export const PRACTICE_PHOTO_DAILY_LIMIT = 10;
+export const PRACTICE_PHOTO_PER_QUESTION = 3;
 
 export const HINT_COPY = {
   button: 'გავიჭედე',
   more: 'კიდევ დამეხმარე',
-  label: (n: number, total: number) => `მინიშნება ${n}/${total}`,
+  stageTitles: { small: 'პატარა მინიშნება', detail: 'უფრო დაწვრილებით', photo: 'მაჩვენე შენი ამოხსნა', easier: 'ჯერ უფრო მარტივი' },
+  stageOf: (n: number, total: number) => `დახმარება ${n}/${total}`,
   kinds: {
     restate: 'რას გვეკითხება',
-    theory: 'გავიხსენოთ თეორია',
-    plan: 'დავყოთ ნაბიჯებად',
-    example: 'მსგავსი ამოხსნილი მაგალითი',
     hint: 'მინიშნება',
-    walkthrough: 'ერთად ვიფიქროთ',
-    solution: 'სრული ამოხსნა',
+    theory: 'გავიხსენოთ თეორია',
+    plan: 'დავყოთ პატარა ნაბიჯებად',
+    example: 'მსგავსი ამოხსნილი მაგალითი',
+    photo: 'რა ვნახე შენს ამოხსნაში',
+    reinforce: 'ჯერ უფრო მარტივი ამოცანა',
   },
   theoryIntro: 'ამ ამოცანისთვის ეს წესები გჭირდება:',
-  solutionIntro: 'აი, სრული ამოხსნა. ჩაიკითხე თითოეული ნაბიჯი, მერე თავად აირჩიე პასუხი:',
+  planIntro: 'ეს ამოცანა ასე იყოფა პატარა ნაბიჯებად:',
   answerLabel: 'პასუხი',
-  planIntro: 'ეს ამოცანა ასე იხსნება:',
-  walkthroughIntro: 'გავიაროთ მსჯელობა ერთად. ბოლო ნაბიჯი შენ გააკეთე და პასუხი თავად აირჩიე:',
+  photoIntro: 'გადაუღე ფოტო ფურცელს, სადაც ამოხსნა დაიწყე, სადამდეც მიხვედი. ვნახავ, სად შეცდი ან სად გაჩერდი, და შემდეგ ნაბიჯს მიგანიშნებ. პასუხს არ გეტყვი.',
+  reinforceIntro: 'ჯერ უფრო მარტივ ამოცანას ამოვხსნით, მერე ამას დავუბრუნდებით.',
+  reinforceNone: 'უფრო მარტივი მსგავსი ამოცანა ახლა არ გვაქვს. ჰკითხე დამხმარეს: ერთად გავივლით.',
   free: 'ეს ქულას არ ამცირებს',
   stillStuck: 'რომელიმე ნაბიჯი გაუგებარია? ჰკითხე დამხმარეს. პასუხს არ გეტყვის, მაგრამ მიგიყვანს.',
+  noPhotoHint: 'ფურცელი ან კამერა არ გაქვს? დააჭირე „კიდევ დამეხმარე“: ჯერ უფრო მარტივ ამოცანას ამოვხსნით.',
   none: 'ამ ამოცანისთვის მინიშნება ჯერ არ გვაქვს.',
   error: 'მინიშნება ვერ ჩაიტვირთა.',
+};
+
+/** Guided problem solving (faded scaffolding): free help shown before the student asks for it. */
+export const SCAFFOLD_COPY = {
+  fullTitle: 'ამ ამოცანას ერთად ამოვხსნით',
+  fullBody: 'მიჰყევი ნაბიჯებს ფურცელზე, ბოლოს პასუხი თავად აირჩიე.',
+  lightTitle: 'პატარა მინიშნება',
+  solo: 'ახლა თავად სცადე! თუ გაიჭედე, დააჭირე „გავიჭედე“.',
+};
+
+/** Photo of the handwritten working: stage 3 of "I'm stuck", or "find my mistake" after a wrong answer. */
+export const WORK_PHOTO_COPY = {
+  take: 'ამოხსნის გადაღება',
+  retake: 'ხელახლა გადაღება',
+  analysing: 'ვამოწმებ შენს ამოხსნას...',
+  findMistake: 'მაჩვენე, სად შევცდი',
+  findMistakeIntro: 'გადაუღე ფოტო შენს ამოხსნას და გეტყვი, რომელ ნაბიჯზე შეცდი და როგორ გაასწორო.',
+  unreadable: 'ფოტოზე ამოხსნა კარგად არ ჩანს, ამიტომ ვერ გამოვიცნობ. გადაუღე ხელახლა: კარგ შუქზე, ახლოდან, ისე, რომ მთელი ამოხსნა ჩანდეს.',
+  otherQuestion: 'ეს ამოხსნა სხვა ამოცანას ჰგავს. გადაუღე ამ ამოცანის ამოხსნას.',
+  failed: 'ფოტო ვერ შემოწმდა. სცადე ხელახლა.',
+  onTrack: 'სწორ გზაზე ხარ! გააგრძელე.',
+  where: 'სად:',
+  issue: 'რა ხდება:',
+  nextStep: 'სცადე ახლა:',
+  fix: 'როგორ გაასწორო:',
+  weakSkill: (name: string) => `სავარჯიშოა: ${name}`,
+  retakesLeft: (n: number) => `კიდევ ${n} ფოტო შეგიძლია ამ ამოცანისთვის`,
+  dailyLimit: 'დღევანდელი ფოტოების ლიმიტი ამოიწურა. ჰკითხე დამხმარეს ან დააჭირე „კიდევ დამეხმარე“.',
+  questionLimit: 'ამ ამოცანისთვის მეტი ფოტო ვეღარ შემოწმდება. ჰკითხე დამხმარეს.',
+  safeNextStep: 'თავიდან გადახედე ამ ნაბიჯს და შეამოწმე, რომ წესი სწორად გამოიყენე. თუ ისევ გაგიჭირდა, ჰკითხე დამხმარეს.',
+  photoAlt: 'შენი ამოხსნის ფოტო',
+};
+
+/** Banners on inserted and adjusted questions (adaptive difficulty, reinforcement, spaced review). */
+export const ADAPTIVE_COPY = {
+  reinforcement: 'ჯერ ეს უფრო მარტივი ამოცანა: იგივე იდეა, პატარა ნაბიჯით',
+  reinforcementFor: (name: string) => `ჯერ ვივარჯიშოთ: ${name}`,
+  backToOriginal: 'ახლა დავუბრუნდეთ თავდაპირველ ამოცანას. ახლა უკვე შეძლებ!',
+  levelUp: 'ყოჩაღ! შემდეგი ამოცანა ოდნავ უფრო რთული იქნება.',
+  warmup: (name: string) => `გახურება: გავიხსენოთ „${name}“`,
+  review: (name: string) => `გამეორება: „${name}“ ხომ არ დაგავიწყდა?`,
 };

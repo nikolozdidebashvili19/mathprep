@@ -1,9 +1,17 @@
-import { buildStuckLadder, SolvedExample } from '@/features/course/service/hints';
-import { LessonView, QuestionSolution, StuckStep, TheoryCardView } from '@/features/course/types/course.types';
+import { buildScaffold, buildStuckStages, SolvedExample, StuckInput } from '@/features/course/service/hints';
+import {
+  LessonView,
+  PracticePhotoFeedback,
+  QuestionSolution,
+  ScaffoldLevel,
+  StuckStep,
+  TheoryCardView,
+} from '@/features/course/types/course.types';
+import { WorkPhotoSummary } from '@/features/handwriting/types/handwriting.types';
 import { QuestionDocument } from '@/features/question/schema/question.schema';
 import { SkillDocument } from '@/features/skill/schema/skill.schema';
 import { LessonSchema } from '@/features/skill/validations/lesson.validation';
-import { MAX_STUCK_THEORY } from '@/shared/const/course.const';
+import { MAX_STUCK_THEORY, PRACTICE_PHOTO_PER_QUESTION } from '@/shared/const/course.const';
 
 /** Pure builders from stored documents to what the daily session sends the browser (no DB access). */
 
@@ -27,20 +35,48 @@ function exampleFor(skill: SkillDocument | undefined): SolvedExample | null {
   return card ? { problem: card.problem, steps: [...card.steps], answer: card.answer } : null;
 }
 
-/** The question's "I'm stuck" ladder: guidance, the skill's theory and example, hints, walkthrough, solution. */
-export function ladderFor(q: QuestionDocument | undefined, skill: SkillDocument | undefined): StuckStep[] {
-  if (!q) return [];
+const stuckInput = (q: QuestionDocument, skill: SkillDocument | undefined): StuckInput => {
   const g = q.guidance;
-  return buildStuckLadder({
+  return {
     guidance: g?.restate ? { restate: g.restate, plan: [...g.plan], hints: [...g.hints] } : null,
     theory: theoryFor(skill),
     example: exampleFor(skill),
     solutionSteps: [...(q.solutionSteps ?? [])],
-  });
+  };
+};
+
+/** What a practice item needs to build its help: its scaffold level and whether it was itself inserted. */
+type HelpItem = { scaffold?: ScaffoldLevel | null; secondChance?: boolean | null; reinforcement?: boolean | null };
+
+/**
+ * The question's help: the free scaffold shown up front and the "I'm stuck" stages (without what the scaffold showed).
+ * Inserted questions (second chance, reinforcement) get no stage 4, so reinforcement never nests.
+ */
+export function helpFor(q: QuestionDocument | undefined, skill: SkillDocument | undefined, item: HelpItem): { scaffold: StuckStep[]; ladder: StuckStep[] } {
+  if (!q) return { scaffold: [], ladder: [] };
+  const input = stuckInput(q, skill);
+  const level = item.scaffold ?? 'none';
+  return { scaffold: buildScaffold(input, level), ladder: buildStuckStages(input, level, !item.secondChance && !item.reinforcement) };
 }
 
-/** Rungs already revealed (older items only counted real hints). */
-export const revealedSteps = (item: { guideStepsUsed?: number | null; hintsUsed?: number | null }) => item.guideStepsUsed || item.hintsUsed || 0;
+/** A stored practice photo as the student sees it (unreadable / other question → ask for a new photo). */
+export function toPhotoFeedback(photo: WorkPhotoSummary, nameOf: (code: string) => string | null): PracticePhotoFeedback | null {
+  if (!photo.mode || photo.analysis.status === 'pending') return null;
+  const a = photo.analysis;
+  const status: PracticePhotoFeedback['status'] =
+    a.status === 'failed' ? 'failed' : a.readable === false ? 'unreadable' : a.matchesQuestion === false ? 'other_question' : 'done';
+  const weak = status === 'done' ? a.mistakes[0]?.skillCode : undefined;
+  return {
+    mode: photo.mode,
+    status,
+    progress: status === 'done' ? a.progress ?? null : null,
+    where: a.where ?? '',
+    issue: a.issue ?? '',
+    nextStep: a.nextStep ?? '',
+    weakSkillName: weak ? nameOf(weak) : null,
+    retakesLeft: Math.max(0, PRACTICE_PHOTO_PER_QUESTION - photo.uploads),
+  };
+}
 
 /** The skill's theory card for the browser (null until one is written). */
 export function toTheoryView(skill: SkillDocument | undefined): TheoryCardView | null {

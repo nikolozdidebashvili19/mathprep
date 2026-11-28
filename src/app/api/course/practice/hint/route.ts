@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-import { hintPracticeService } from '@/features/course/service/practice.service';
+import { hintPracticeService } from '@/features/course/service/practice-help.service';
 import { PracticeHintSchema } from '@/features/course/validations/course.validation';
 import { auth } from '@/shared/lib/auth';
 import { validateBody } from '@/shared/middleware/validate-body';

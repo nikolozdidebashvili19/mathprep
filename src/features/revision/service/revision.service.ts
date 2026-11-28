@@ -1,9 +1,14 @@
+import { attemptRepository } from '@/features/attempt/repository/attempt.repository';
 import { practiceSessionRepository } from '@/features/course/repository/practice-session.repository';
-import { toLessonView, toTheoryView } from '@/features/course/service/practice-views';
+import { toLessonView, toSolution, toTheoryView } from '@/features/course/service/practice-views';
+import { toQuestionView } from '@/features/diagnostic/service/diagnostic.service';
 import { masteryRepository } from '@/features/mastery/repository/mastery.repository';
-import { RevisionLibraryView, TheoryReviewView } from '@/features/revision/types/revision.types';
+import { questionRepository } from '@/features/question/repository/question.repository';
+import { openMistakes } from '@/features/revision/service/saved-mistakes';
+import { RevisionLibraryView, SavedMistake, TheoryReviewView } from '@/features/revision/types/revision.types';
 import { skillRepository } from '@/features/skill/repository/skill.repository';
 import { SkillDocument } from '@/features/skill/schema/skill.schema';
+import { SAVED_MISTAKES_LIMIT } from '@/shared/const/revision.const';
 import { TOPICS } from '@/shared/const/topics.const';
 import { ServiceResult } from '@/shared/types/common';
 
@@ -60,4 +65,37 @@ export async function getTheoryReviewService(userId: string, code: string): Prom
     },
     status: 200,
   };
+}
+
+/**
+ * The student's saved mistakes: questions answered wrong (in a diagnostic or in practice) and not solved since, most
+ * recent first, each with the verified step-by-step solution. Skipped questions ("I don't know") are not mistakes.
+ */
+export async function getSavedMistakesService(userId: string): Promise<SavedMistake[]> {
+  const history = await attemptRepository.findHistoryByUser(userId);
+  const open = openMistakes(
+    history
+      .filter((a) => (a.answer ?? '') !== '')
+      .map((a) => ({ questionId: a.questionId.toString(), answer: a.answer ?? '', correct: a.points >= a.maxPoints, at: new Date(a.createdAt) })),
+    SAVED_MISTAKES_LIMIT
+  );
+  if (open.length === 0) return [];
+  const [questions, skills] = await Promise.all([questionRepository.findByIds(open.map((m) => m.questionId)), skillRepository.findAll()]);
+  const byId = new Map(questions.map((q) => [q._id.toString(), q]));
+  const nameOf = new Map(skills.map((s) => [s.code, s.nameKa]));
+  return open.flatMap((m) => {
+    const q = byId.get(m.questionId);
+    if (!q) return [];
+    return [
+      {
+        question: toQuestionView(q),
+        skillName: q.primarySkill ? nameOf.get(q.primarySkill) ?? null : null,
+        yourAnswer: m.lastAnswer,
+        correctAnswer: q.answer ?? null,
+        solution: toSolution(q),
+        wrongCount: m.wrongCount,
+        lastWrongAt: m.lastWrongAt.toISOString(),
+      },
+    ];
+  });
 }
